@@ -1,0 +1,259 @@
+---
+sidebar: sidebar 
+permalink: concept-cloud-compliance.html 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, on-prem ontap, file shares, object storage, aip labels, governance, data sense 
+summary: Cloud Data Sense は、社内のオンプレミスデータソースやクラウドデータソース、作業環境をスキャンしてデータをマッピング、分類し、プライベート情報を特定する、 Cloud Manager のデータガバナンスサービスです。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。 
+---
+= クラウドデータの意味をご確認ください
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Data Sense は、社内のオンプレミスデータソースやクラウドデータソース、作業環境をスキャンしてデータをマッピング、分類し、プライベート情報を特定する、 Cloud Manager のデータガバナンスサービスです。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。
+
+https://cloud.netapp.com/netapp-cloud-data-sense["Cloud Data Sense のユースケースについて説明します"^]。
+
+
+
+== の機能
+
+Cloud Data Sense には、コンプライアンスの取り組みに役立つツールがいくつか用意されています。データセンスを使用すると、次のことができます。
+
+* 個人識別情報（ PII ）の識別
+* GDPR 、 CCPA 、 PCI 、 HIPAA の各プライバシー規制の要件に応じて、さまざまな機密情報の範囲を特定します
+* データサブジェクトアクセス要求への応答（ dsar ）
+* ファイルに特定のが含まれている場合は、 Cloud Manager ユーザに E メールで通知します PII （この基準は、を使用して定義します link:task-org-private-data.html#controlling-your-data-using-policies["ポリシー"^])
+* 表示と変更 link:https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection （ AIP ）ラベル"^] ファイルに保存できます
+* ファイルにカスタムタグを追加し（「移動が必要」など）、 Cloud Manager ユーザを割り当てて、ユーザがファイルの更新を所有できるようにします
+* ファイルをコピー、移動、および削除します
+
+
+クラウドデータセンスには、ガバナンスの取り組みに役立つツールも用意されています。Cloud Data Sense を使用すると、次のことが可能になります。
+
+* 古いデータ、ビジネス以外のデータ、重複するファイル、開いている権限を持つファイル、システム内の大容量ファイルを特定します。
++
+この情報を使用して、一部のファイルを低コストのオブジェクトストレージに移動、削除、または階層化するかどうかを決定できます。
+
+* データのサイズ、および移動前に機密情報が含まれているデータがないかどうかを確認する。
++
+これは、オンプレミスの場所からクラウドにデータを移行する場合に便利です。
+
+
+
+
+
+== サポートされている作業環境とデータソース
+
+Cloud Data Sense では、次のような作業環境やデータソースからデータをスキャンできます。
+
+* 作業環境： *
+
+* Cloud Volumes ONTAP （ AWS 、 Azure 、 GCP に導入）
+* オンプレミスの ONTAP クラスタ
+* Azure NetApp Files の特長
+* ONTAP 対応の Amazon FSX
+* Amazon S3
+
+
+* データソース： *
+
+* ネットアップ以外のファイル共有
+* オブジェクトストレージ（ S3 プロトコルを使用）
+* データベース
+* OneDrive アカウント
+* SharePoint アカウント
+
+
+Data Sense は、 NFS バージョン 3.x 、 4.0 、 4.1 、および CIFS バージョン 1.x 、 2.0 、 2.1 、 3.0 をサポートしています。
+
+
+
+== コスト
+
+* クラウドデータセンスの使用コストは、スキャンするデータの量によって異なります。データをスキャンする、 Cloud Manager ワークスペース内の最初の 1TB のデータは無料です。これには、すべての作業環境とデータソースのすべてのデータが含まれます。この時点以降もデータのスキャンを続行するには、 AWS 、 Azure 、 GCP Marketplace 、またはネットアップの BYOL ライセンスのサブスクリプションが必要です。を参照してください https://cloud.netapp.com/netapp-cloud-data-sense["価格設定"^] を参照してください。
++
+link:task-licensing-datasense.html["Cloud Data Sense のライセンスを取得する方法について説明します"^]。
+
+* クラウドにクラウドデータセンスをインストールするには、クラウドインスタンスを導入する必要があります。その場合、クラウドインスタンスが導入されているクラウドプロバイダから料金が発生します。を参照してください <<The Cloud Data Sense instance,各クラウドに導入されるインスタンスのタイプ プロバイダ>>。データセンスをオンプレミスシステムにインストールしても、コストはかかりません。
+* Cloud Data Sense を使用するには、コネクタを導入しておく必要があります。多くの場合、 Cloud Manager で他のストレージとサービスを使用しているため、すでにコネクタが用意されています。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["クラウドプロバイダごとに導入されるインスタンスのタイプ"^]。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。
+
+
+
+
+=== データ転送コスト
+
+データ転送のコストは設定によって異なります。Cloud Data Sense インスタンスとデータソースが同じアベイラビリティゾーンとリージョンにある場合は、データ転送コストは発生しない。ただし、 Cloud Volumes ONTAP クラスタや S3 バケットなどのデータソースが _different _Availability Zone またはリージョンにある場合は、クラウドプロバイダにデータ転送コストが請求されます。詳細については、次のリンクを参照してください。
+
+* https://aws.amazon.com/ec2/pricing/on-demand/["AWS ： Amazon EC2 価格設定"^]
+* https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure ： Bandwidth Pricing Details 』"^]
+* https://cloud.google.com/storage-transfer/pricing["Google Cloud ：ストレージ転送サービスの価格"^]
+
+
+
+
+== Cloud Data Sense インスタンス
+
+クラウドにデータセンスを導入すると、 Cloud Manager はコネクタと同じサブネットにインスタンスを導入します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタの詳細については、こちらをご覧ください。"^]
+
+
+NOTE: コネクタがオンプレミスにインストールされている場合は、要求内の最初の Cloud Volumes ONTAP システムと同じ VPC または VNet にクラウドデータセンスインスタンスを導入します。データセンスはオンプレミスにもインストールできます。
+
+image:diagram_cloud_compliance_instance.png["クラウドプロバイダで実行されている Cloud Manager インスタンスと Cloud Data Sense インスタンスを示す図。"]
+
+デフォルトのインスタンスについては、次の点に注意してください。
+
+* AWS では、 Cloud Data Sense はで実行されます link:https://aws.amazon.com/ec2/instance-types/m5/["m5.mc2[ インスタンス"] 500 GB の gp2 ディスクです。オペレーティングシステムイメージは Amazon Linux 2 （ Red Hat 7.3.1 ）です。
++
+m5.mcd を使用できない領域では、代わりに m4.mcd インスタンスに対してデータセンスを実行します。
+
+* Azure では、 Cloud Data Sense はで実行されます link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"] 512 GB ディスクオペレーティングシステムのイメージは CentOS 7.8 です。
+* GCP では、 Cloud Data Sense はで実行されます link:https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types["N2-standard-16 VM"] 512 GB の標準パーシステントディスクオペレーティングシステムイメージは CentOS 7.9 です。
++
+n2-dstandard-16 を使用できない地域では、データセンスは n2D-standard-16 または n1-standard-16 VM で実行されます。
+
+* インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_
+* コネクタごとに展開されるデータセンスインスタンスは 1 つだけです。
+* データセンスソフトウェアのアップグレードは、インスタンスがインターネットにアクセスできるかぎり自動化されます。
+
+
+
+TIP: Cloud Data Sense がデータを継続的にスキャンするため、インスタンスは常時実行している必要があります。
+
+
+
+=== 小さいインスタンスタイプを使用しています
+
+CPU の数と RAM の数が少ないシステムには Data Sense を導入できますが、このような低パフォーマンスのシステムを使用する場合はいくつかの制限事項があります。
+
+[cols="18,26,56"]
+|===
+| システムサイズ | 仕様 | 制限 
+
+
+| Extra Large （デフォルト） | CPU × 16 、 64GB RAM 、 500GB SSD | なし 
+
+
+| 中 | CPU × 8 、 32GB RAM 、 200GB SSD | スキャンに時間がかかり、スキャンできるファイルは最大 100 万個です。 
+
+
+| 小規模 | CPU × 8 、 16GB RAM 、 100GB SSD | 「中」と同じ制限に加えて、特定する機能 link:task-responding-to-dsar.html["データ主体名"] 内部ファイルは無効です。 
+|===
+クラウドにデータセンスを導入する場合は、 ng-contact-data-sense@netapp.com に電子メールを送信して、これらの小規模なシステムのいずれかを使用する場合のサポートを依頼してください。これらの小規模なクラウド構成を導入するには、弊社と協力する必要があります。
+
+データセンスをオンプレミスで導入する場合は、小さい仕様の Linux ホストを使用するだけです。ネットアップにお問い合わせいただく必要はありません。
+
+
+
+== Cloud Data Sense の仕組み
+
+Cloud Data Sense の概要は次のようになります。
+
+. Cloud Manager でデータセンスのインスタンスを導入します。
+. 概要マッピングまたは詳細レベルスキャンは、 1 つ以上の作業環境またはデータソースで有効にします。
+. データセンスは、 AI 学習プロセスを使用してデータをスキャンします。
+. 提供されているダッシュボードとレポートツールを使用して、コンプライアンスとガバナンスの取り組みを支援します。
+
+
+
+
+== スキャンの動作
+
+Cloud Data Sense を有効にして、スキャンするボリューム、バケット、データベーススキーマ、 OneDrive または SharePoint のユーザデータを選択すると、データのスキャンがただちに開始され、個人データや機密データが識別されます。組織のデータをマッピングし、各ファイルを分類して、データ内のエンティティと定義済みパターンを特定して抽出します。スキャンの結果は、個人情報、機密性の高い個人情報、データカテゴリ、およびファイルタイプのインデックスです。
+
+データセンスは、 NFS ボリュームと CIFS ボリュームをマウントすることで、他のクライアントと同様にデータに接続します。NFS ボリュームには読み取り専用で自動的にアクセスされますが、 CIFS ボリュームをスキャンするためには Active Directory のクレデンシャルを指定する必要があります。
+
+image:diagram_cloud_compliance_scan.png["クラウドプロバイダで実行されている Cloud Manager インスタンスと Cloud Data Sense インスタンスを示す図。データセンスインスタンスは、 NFS ボリュームと CIFS ボリューム、 S3 バケット、 OneDrive アカウント、データベースに接続してスキャンします。"]
+
+初回スキャン後は、データを継続的にスキャンして、増分変更を検出します（そのため、インスタンスの実行を維持することが重要です）。
+
+スキャンは、ボリュームレベル、バケットレベル、データベーススキーマレベル、 OneDrive ユーザレベル、 SharePoint サイトレベルで有効または無効にできます。
+
+
+
+=== マッピングスキャンと分類スキャンの違いは何ですか
+
+Cloud Data Sense を使用すると、選択した作業環境やデータソースに対して、一般的な「マッピング」スキャンを実行できます。マッピングではデータの概要のみが示され、分類ではデータの詳細なスキャンが提供されます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。
+
+多くのユーザは、この機能を気に入っています。たとえば、より多くの調査が必要なデータソースをすばやくスキャンして特定したうえで、それらのデータソースまたはボリュームに対してのみ分類スキャンを有効にする必要があるためです。
+
+次の表に、いくつかの相違点を示します。
+
+[cols="50,20,20"]
+|===
+| フィーチャー（ Feature ） | 分類 | マッピング 
+
+
+| スキャン速度 | 遅い | 高速 
+
+
+| ファイルタイプと使用済み容量のリスト | はい。 | はい。 
+
+
+| ファイル数と使用済み容量 | はい。 | はい。 
+
+
+| ファイルの経過時間とサイズ | はい。 | はい。 
+
+
+| を実行する機能 link:task-generating-compliance-reports.html#data-mapping-report["データマッピングレポート"] | はい。 | はい。 
+
+
+| [ データ調査 ] ページでファイルの詳細を確認します | はい。 | いいえ 
+
+
+| ファイル内の名前を検索します | はい。 | いいえ 
+
+
+| 作成 link:task-org-private-data.html#controlling-your-data-using-policies["ポリシー"] カスタムの検索結果が表示されます | はい。 | いいえ 
+
+
+| AIP ラベルおよびステータスタグを使用してデータを分類します | はい。 | いいえ 
+
+
+| ソースファイルをコピー、削除、および移動します | はい。 | いいえ 
+
+
+| 他のレポートを実行できます | はい。 | いいえ 
+|===
+
+
+== Cloud Data がインデックス化する情報
+
+データセンスは、カテゴリを収集してインデックスを作成し、データ（ファイル）に割り当てます。データセンスインデックスには、次のデータが含まれます。
+
+標準メタデータ:: Cloud Data Sense は、ファイルの種類、サイズ、作成日、変更日など、ファイルに関する標準的なメタデータを収集します。
+個人データ:: メールアドレス、識別番号、クレジットカード番号など、個人を特定できる情報。 link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["個人データの詳細については、こちらをご覧ください"^]。
+機密性の高い個人データ:: GDPR やその他のプライバシー規制で定義されている、健康データ、民族的起源、政治的見解などの機密情報の特殊な種類。 link:task-controlling-private-data.html#viewing-files-that-contain-sensitive-personal-data["機密性の高い個人データの詳細をご覧ください"^]。
+カテゴリ:: Cloud Data Sense は、スキャンしたデータをさまざまなタイプのカテゴリに分割します。カテゴリは、各ファイルのコンテンツとメタデータの AI 分析に基づくトピックです。 link:task-controlling-private-data.html#viewing-files-by-categories["カテゴリの詳細については、こちらをご覧ください"^]。
+タイプ（ Types ）:: Cloud Data Sense は、スキャンしたデータをファイルタイプ別に分類します。 link:task-controlling-private-data.html#viewing-files-by-file-types["タイプの詳細については、こちらをご覧ください"^]。
+名前エンティティ認識:: Cloud Data Sense は、 AI を使用して、ドキュメントから自然な人物の名前を抽出します。 link:task-responding-to-dsar.html["データ主体のアクセスリクエストへの対応について説明します"^]。
+
+
+
+
+== ネットワークの概要
+
+Cloud Manager は、コネクタインスタンスからのインバウンド HTTP 接続を可能にするセキュリティグループを使用して、 Cloud Data Sense インスタンスを導入します。
+
+SaaS モードで Cloud Manager を使用する場合は、 Cloud Manager への接続に HTTPS が使用され、ブラウザと Data Sense インスタンス間で送信されるプライベートデータはエンドツーエンドの暗号化で保護されます。つまり、ネットアップとサードパーティがこのデータを読み取ることはできません。
+
+アウトバウンドルールは完全にオープンです。データセンスソフトウェアをインストールしてアップグレードし、使用率指標を送信するには、インターネットアクセスが必要です。
+
+ネットワーク要件が厳しい場合は、 link:task-deploy-cloud-compliance.html#reviewing-prerequisites["Cloud Data が接触するエンドポイントについて説明します"^]。
+
+
+
+== コンプライアンス情報へのユーザアクセス
+
+各ユーザには、 Cloud Manager 内と Cloud Data Sense 内で異なる機能が割り当てられています。
+
+* * アカウント管理者 * は、コンプライアンス設定を管理し、すべての作業環境のコンプライアンス情報を表示できます。
+* * ワークスペース管理者 * は、アクセス権を持つシステムについてのみ、コンプライアンス設定を管理し、コンプライアンス情報を表示できます。ワークスペース管理者が Cloud Manager の作業環境にアクセスできない場合は、 [ データセンス ] タブに作業環境のコンプライアンス情報が表示されません。
+* コンプライアンスビューア * の役割を持つユーザーは、アクセス権を持つシステムのコンプライアンス情報を表示し、レポートを生成することのみができます。これらのユーザは、ボリューム、バケット、またはデータベーススキーマのスキャンを有効または無効にすることはできません。これらのユーザーは、ファイルのコピー、移動、または削除もできません。
+
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["Cloud Manager のロールに関する詳細情報"^] そして方法 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-cloud-central-accounts.html#adding-users["特定のロールのユーザを追加します"^]。

@@ -1,0 +1,131 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-sharepoint.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, data sense 
+summary: Cloud Data Sense を使用して、 SharePoint アカウント内のファイルのスキャンを開始するには、いくつかの手順を実行します。 
+---
+= SharePoint アカウントをスキャンしています
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Data Sense を使用して、 SharePoint アカウント内のファイルのスキャンを開始するには、いくつかの手順を実行します。
+
+
+
+== クイックスタート
+
+これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
+
+[role="quick-margin-para"]
+SharePoint アカウントにログインするための管理者資格情報があり、スキャンする SharePoint サイトの URL があることを確認します。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
+
+[role="quick-margin-para"]
+管理者ユーザーの資格情報を使用して、アクセスする SharePoint アカウントにログインし、新しいデータソース / 作業環境として追加します。
+
+[role="quick-margin-para"]
+SharePoint アカウントでスキャンする SharePoint サイト URL のリストを追加し、スキャンの種類を選択します。一度に最大 100 個の URL を追加できます。
+
+
+
+== SharePoint の要件を確認する
+
+以下の前提条件を確認して、 SharePoint アカウントで Cloud Data Sense を有効にする準備ができていることを確認します。
+
+* すべての SharePoint サイトへの読み取りアクセスを提供する SharePoint アカウントの管理者ログインクレデンシャルが必要です。
+* スキャンするすべてのデータについて、 SharePoint サイトの URL の行区切りリストが必要です。
+
+
+
+
+== Cloud Data Sense インスタンスの導入
+
+導入済みのインスタンスがない場合は Cloud Data Sense を導入
+
+データセンスは、のいずれかです link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]。
+
+Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
+
+データセンスは、の場合もあります link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスの場所に導入されている"^]。ただし、 SharePoint ファイルをスキャンするには、インターネット経由でいくつかの選択したエンドポイントにアクセスできるようにする必要があります。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["必要なエンドポイントのリストを参照してください"]。
+
+
+
+== SharePoint アカウントを追加しています
+
+ユーザーファイルが存在する SharePoint アカウントを追加します。
+
+.手順
+. [ 作業環境の構成 ] ページで、 [ * データソースの追加 *>* SharePoint Online アカウントの追加 * ] をクリックします。
++
+image:screenshot_compliance_add_sharepoint_button.png["SharePoint の追加ボタンをクリックできる [ スキャン構成 ] ページのスクリーンショット。"]
+
+. [SharePoint Online アカウントの追加 ] ダイアログで、 [* SharePoint にサインインする * ] をクリックします。
+. 表示される Microsoft ページで、 SharePoint アカウントを選択し、必要な管理者ユーザーとパスワードを入力してから、 *Accept * をクリックして Cloud Data Sense がこのアカウントからデータを読み取ることを許可します。
+
+
+SharePoint アカウントが作業環境のリストに追加されます。
+
+
+
+== SharePoint サイトをコンプライアンススキャンに追加する
+
+個々の SharePoint サイト、またはアカウント内のすべての SharePoint サイトを追加して、関連するファイルが Cloud Data Sense によってスキャンされるようにすることができます。
+
+.手順
+. [_Configuration_] ページで、 SharePoint アカウントの [*Configuration*] ボタンをクリックします。
++
+image:screenshot_compliance_sharepoint_add_sites.png["設定ボタンを選択できるスキャン設定ページのスクリーンショット。"]
+
+. この SharePoint アカウントのサイトを初めて追加する場合は、 [ * 最初の SharePoint サイトを追加する * ] をクリックします。
++
+image:screenshot_compliance_sharepoint_add_initial_sites.png["スキャンする最初のサイトを追加する [ 最初の SharePoint サイトを追加する ] ボタンを示すスクリーンショット。"]
+
++
+SharePoint アカウントからユーザーを追加する場合は、 [* SharePoint サイトの追加 * ] をクリックします。
+
++
+image:screenshot_compliance_sharepoint_add_more_sites.png["アカウントにサイトを追加する SharePoint サイトの追加ボタンを示すスクリーンショット。"]
+
+. スキャンするファイルがあるサイトの URL を 1 行に 1 つ追加し（セッションあたり最大 100 URL ）、 [ サイトの追加 ] をクリックします。
++
+image:screenshot_compliance_sharepoint_add_site.png["スキャン対象のサイトを追加できる SharePoint サイトの追加ページのスクリーンショット。"]
+
++
+確認ダイアログに追加されたサイトの数が表示されます。
+
++
+ダイアログに追加できなかったサイトが表示された場合は、問題 を解決できるようにこの情報を記録します。場合によっては、 URL を修正してサイトを再追加することができます。
+
+. SharePoint サイト内のファイルに対して、マッピングのみのスキャン、またはマッピングと分類スキャンを有効にします。
++
+[cols="45,45"]
+|===
+| 終了： | 手順： 
+
+
+| ファイルのマッピングのみのスキャンを有効にします | [* マップ * ] をクリックします 
+
+
+| ファイルのフルスキャンを有効にします | [ マップと分類 *] をクリックします 
+
+
+| ファイルのスキャンを無効にします | [ * Off * ] をクリックします 
+|===
+
+
+Cloud Data Sense によって、追加した SharePoint サイトのファイルのスキャンが開始され、結果がダッシュボードやその他の場所に表示されます。
+
+
+
+== SharePoint サイトをコンプライアンススキャンから削除します
+
+今後 SharePoint サイトを削除する場合や、 SharePoint サイト内のファイルをスキャンしない場合は、個々の SharePoint サイトのファイルがいつでもスキャンされないようにすることができます。[ 構成 ] ページで [SharePoint サイトの削除 ] をクリックします。
+
+image:screenshot_compliance_sharepoint_remove_site.png["単一の SharePoint サイトを削除してファイルをスキャンする方法を示すスクリーンショット。"]

@@ -1,0 +1,185 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-cloud-compliance.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance 
+summary: クラウドデータセンスをクラウドに導入するには、いくつかの手順を実行します。 
+---
+= クラウドにクラウドデータセンスを導入
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+クラウドデータセンスをクラウドに導入するには、いくつかの手順を実行します。
+
+また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセスできる Linux ホストに Data Sense を導入する"]。オンプレミスの ONTAP システムもオンプレミスにある Data Sense インスタンスを使用してオンプレミスの システムをスキャンする場合は、インストールのタイプを選択することをお勧めしますが、これは必須ではありません。どのインストール方法を選択しても、ソフトウェアはまったく同じように機能します。
+
+
+
+== クイックスタート
+
+これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
+
+[role="quick-margin-para"]
+コネクタがない場合は、ここでコネクタを作成します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS でコネクタを作成する"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["GCP でコネクタを作成する"^]。
+
+[role="quick-margin-para"]
+また可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタをオンプレミスに導入"^] 自社ネットワーク内またはクラウド内の Linux ホスト
+
+[role="quick-margin-para"]
+環境が前提条件を満たしていることを確認します。これには、インスタンスのアウトバウンドインターネットアクセス、ポート 443 を介したコネクタとクラウドデータセンスの接続などが含まれます。 <<Review prerequisites,すべてのリストを参照してください>>。
+
+[role="quick-margin-para"]
+デフォルトの構成では、 Cloud Data Sense インスタンス用に 16 個の vCPU が必要です。を参照してください link:concept-cloud-compliance.html#the-cloud-data-sense-instance["インスタンスタイプの詳細"^]。
+
+[role="quick-margin-para"]
+インストールウィザードを起動して、クラウドに Cloud Data Sense インスタンスを導入します。
+
+[role="quick-margin-para"]
+Cloud Data Sense によってスキャンされる最初の 1TB のデータは、 Cloud Manager に無料で保存されています。そのあともデータのスキャンを続行するには、クラウドプロバイダ Marketplace での Cloud Manager のサブスクリプション、または NetApp からの BYOL ライセンスが必要です。
+
+
+
+== コネクタを作成します
+
+コネクタがない場合は、クラウドプロバイダでコネクタを作成します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS でコネクタを作成する"^] または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Azure でコネクタを作成する"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["GCP でコネクタを作成する"^]。ほとんどの場合、 Cloud Data Sense を有効にする前にコネクタをセットアップしておくことができます https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Cloud Manager の機能にはコネクタが必要です"]ただし、ここで設定する必要がある場合もあります。
+
+特定のクラウドプロバイダに導入されているコネクタを使用する必要がある場合は、次のような状況があります。
+
+* AWS 、 Amazon FSX for ONTAP 、または AWS S3 バケット内の Cloud Volumes ONTAP のデータをスキャンするときは、 AWS のコネクタを使用します。
+* Azure または Azure NetApp Files で Cloud Volumes ONTAP 内のデータをスキャンする場合は、 Azure のコネクタを使用します。
+* GCP の Cloud Volumes ONTAP でデータをスキャンする場合は、 GCP のコネクタを使用します。
+
+
+オンプレミスの ONTAP システムでは、ネットアップ以外のファイル共有、汎用の S3 オブジェクトストレージ、データベース、 OneDrive フォルダ、 SharePoint アカウントを、これらのクラウドコネクタのいずれかを使用してスキャンできます。
+
+また、次のことも可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタをオンプレミスに導入"^] 自社ネットワーク内またはクラウド内の Linux ホストデータセンスをオンプレミスにインストールする予定のユーザによっては、 Connector をオンプレミスにインストールすることもできます。
+
+ご覧のように、を使用する必要がある状況もあります https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["複数のコネクタ"]。
+
+
+NOTE: Azure NetApp Files ボリュームのスキャンを計画している場合は、スキャンするボリュームと同じリージョンに導入する必要があります。
+
+
+
+== 前提条件を確認する
+
+クラウドに Cloud Data Sense を導入する前に、以下の前提条件を確認し、サポートされている構成であることを確認してください。
+
+Cloud Data Sense からのアウトバウンドインターネットアクセスを有効にする:: Cloud Data Sense では、アウトバウンドのインターネットアクセスが必要。仮想ネットワークまたは物理ネットワークでインターネットアクセスにプロキシサーバを使用している場合は、 Data sense インスタンスにアウトバウンドのインターネットアクセスがあり、次のエンドポイントに接続できることを確認します。クラウドにデータセンスを導入すると、コネクタと同じサブネットに配置されます。
++
+--
+AWS 、 Azure 、 GCP のいずれに Cloud Data Sense を導入しているかに応じて、次の表を参照してください。
+
+* AWS 環境に必要なエンドポイント： *
+
+[cols="43,57"]
+|===
+| エンドポイント | 目的 
+
+
+| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含む Cloud Manager サービスとの通信 
+
+
+| ¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com | NetApp Cloud Central との通信により、ユーザ認証を一元的に行うことができます。 
+
+
+| https://cloud-compliance-support-netapp.s3.us-west-2.amazonaws.com \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、およびテンプレートにアクセスできます。 
+
+
+| \ https://kinesis.us-east-1.amazonaws.com | ネットアップが監査レコードからデータをストリーミングできるようにします。 
+
+
+| ¥ https://cognito-idp.us-east-1.amazonaws.com ¥ https://cognito-identity.us-east-1.amazonaws.com ¥ https://user-feedback-store-prod.s3.us-west-2.amazonaws.com ¥ https://customer-data-production.s3.us-west-2.amazonaws.com | Cloud Data Sense を使用して、マニフェストやテンプレートにアクセスしてダウンロードしたり、ログや指標を送信したりできます。 
+|===
+* Azure と GCP の導入に必要なエンドポイント： *
+
+[cols="43,57"]
+|===
+| エンドポイント | 目的 
+
+
+| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含む Cloud Manager サービスとの通信 
+
+
+| ¥ https://netapp-cloud-account.auth0.com ¥ https://auth0.com | NetApp Cloud Central との通信により、ユーザ認証を一元的に行うことができます。 
+
+
+| https://support.compliance.cloudmanager.cloud.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | ソフトウェアイメージ、マニフェスト、テンプレートへのアクセス、およびログとメトリックの送信を提供します。 
+
+
+| \ https://support.compliance.cloudmanager.cloud.netapp.com/ | ネットアップが監査レコードからデータをストリーミングできるようにします。 
+|===
+--
+Cloud Manager に必要な権限が割り当てられていることを確認します:: Cloud Manager に、リソースを導入する権限と、 Cloud Data Sense インスタンス用のセキュリティグループを作成する権限があることを確認します。最新の Cloud Manager 権限は、で確認できます https://mysupport.netapp.com/site/info/cloud-manager-policies["ネットアップが提供するポリシー"^]。
++
+--
+* 注： * Cloud Manager 3.9.10 以上を使用して GCP でコネクタを作成した場合、すべて設定されます。以前のバージョンを使用してコネクタを作成した場合、 Cloud Data Sense を GCP に展開するには、コネクタに関連付けられている GCP サービスアカウントに次の権限を追加する必要があります。
+
+[source, json]
+----
+compute.instances.addAccessConfig
+compute.subnetworks.use
+compute.subnetworks.useExternalIp
+----
+--
+vCPU の制限を確認してください:: クラウドプロバイダの vCPU 制限によって、 16 コアのインスタンスの導入が許可されていることを確認してください。Cloud Manager が実行されているリージョン内の関連するインスタンスファミリーの vCPU 制限を確認する必要があります。 link:concept-cloud-compliance.html#the-cloud-data-sense-instance["必要なインスタンスタイプを参照してください"]。
++
+--
+vCPU の制限の詳細については、次のリンクを参照してください。
+
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS のドキュメント： Amazon EC2 サービスクォータ"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure のドキュメント：「仮想マシンの vCPU クォータ"^]
+* https://cloud.google.com/compute/quotas["Google Cloud のドキュメント：リソースクォータ"^]
++
+CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
+
+
+
+--
+Cloud Manager Connector が Cloud Data Sense にアクセスできることを確認する:: コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。この接続により、データセンスインスタンスの展開が可能になり、 [ コンプライアンス（ Compliance ） ] タブと [ ガバナンス（ Governance ） ] タブで情報を表示できます。
++
+--
+Cloud Data Sense は、 AWS や Azure の政府機関でサポートされています。AWS と AWS GovCloud を導入する場合は、追加のインバウンドおよびアウトバウンドのルールが必要です。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#rules-for-the-connector-in-aws["AWS のコネクタのルール"^] を参照してください。
+
+--
+クラウドデータを常に運用しておく必要があります:: データを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。
+Web ブラウザから Cloud Data Sense への接続を確認する:: Cloud Data Sense を有効にしたら、データセンスインスタンスに接続されているホストから Cloud Manager のインターフェイスにユーザがアクセスすることを確認する。
++
+--
+データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータがインターネットにアクセスできないようにします。そのため、 Cloud Manager へのアクセスに使用する Web ブラウザは、そのプライベート IP アドレスに接続する必要があります。この接続は、クラウドプロバイダ（ VPN など）への直接接続、またはデータセンスインスタンスと同じネットワーク内にあるホストから行うことができます。
+
+--
+
+
+
+
+== クラウドにデータを導入するメリット
+
+クラウドデータセンスのインスタンスをクラウドに導入するには、次の手順を実行します。
+
+.手順
+. Cloud Manager で、 * Data sense * をクリックします。
+. [ データセンスを活動化（ Activate Data sense ） ] をクリックし
++
+image:screenshot_cloud_compliance_deploy_start.png["Cloud Data Sense を有効にするボタンを選択するスクリーンショット。"]
+
+. Activate Data Sense * をクリックして、クラウド導入ウィザードを開始します。
++
+image:screenshot_cloud_compliance_deploy_cloud.png["クラウドにクラウドデータセンスを導入するボタンを選択するスクリーンショット。"]
+
+. 導入手順が完了すると、ウィザードに進捗状況が表示されます。問題が発生すると停止し、入力を求められます。
++
+image:screenshot_cloud_compliance_wizard_start.png["新しいインスタンスを導入するための Cloud Data Sense ウィザードのスクリーンショット。"]
+
+. インスタンスが配備されたら、 * 設定に進む * をクリックして _Configuration_page に移動します。
+
+
+Cloud Manager によってクラウドデータ検出インスタンスがクラウドプロバイダに導入されます。
+
+設定ページで、スキャンするデータソースを選択できます。
+
+また可能です link:task-licensing-datasense.html["クラウドデータセンスのライセンスをセットアップする"] 現時点では、データ量が 1TB を超えるまでは料金は発生しません。

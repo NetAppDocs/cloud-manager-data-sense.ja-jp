@@ -1,0 +1,342 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-compliance-dark-site.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
+summary: インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入するには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。 
+---
+= クラウドデータをオンプレミスに導入しても、インターネットアクセスは不要
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入するには、いくつかの手順を実行します。このタイプのインストールは、セキュアなサイトに最適です。
+
+また、次のことも可能です link:task-deploy-compliance-onprem.html["インターネットにアクセス可能なオンプレミスサイトにデータセンスを導入"]。
+
+
+
+== サポートされているデータソース
+
+この方法でインストールすると（「オフライン」または「ダーク」サイトと呼ばれることもあります）、データ検出でスキャンできるのは、オンプレミスサイトに対してもローカルなデータソースのデータのみです。現時点では、 Data Sense は次のローカルデータソースをスキャンできます。
+
+* オンプレミスの ONTAP システム
+* データベーススキーマ
+* ネットアップ以外の NFS または CIFS ファイル共有
+* Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
+
+
+Cloud Manager を非常にセキュアにインストールする必要があるが、 OneDrive アカウントや SharePoint アカウントをスキャンする場合は、 Data Sense オフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <<SharePoint and OneDrive special requirements,SharePoint と OneDrive の特別な要件>> を参照してください。
+
+現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP の FSX 、または AWS S3 アカウントのスキャンはサポートされていません。
+
+
+
+== 制限
+
+ほとんどのデータセンス機能は、インターネットにアクセスできないサイトに導入されている場合に機能します。ただし、インターネットアクセスを必要とする特定の機能はサポートされていません。たとえば、次のような機能があります。
+
+* Microsoft Azure Information Protection （ AIP ）ラベルの管理
+* Cloud Manager からのソフトウェアの自動アップグレード
++
+Cloud Manager Connector と Data Sense は、新しい機能を有効にするために、定期的な手動アップグレードを必要とします。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、ソフトウェアアップデートパッケージが利用可能になるタイミングを確認します。次に、の手順を実行します <<Upgrade Data Sense software,データセンスソフトウェアをアップグレードします>>。
+
+
+
+
+
+== クイックスタート
+
+これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
+
+[role="quick-margin-para"]
+オフラインのオンプレミスサイトにコネクタがまだインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["コネクタを配置します"^] Linux ホストの場合は、
+
+[role="quick-margin-para"]
+Linux システムがを満たしていることを確認します <<Prepare the Linux host system,ホストの要件>>必要なソフトウェアがすべてインストールされていること、およびオフライン環境が要件を満たしていることを確認します <<Verify Cloud Manager and Data Sense prerequisites,権限と接続>>。
+
+[role="quick-margin-para"]
+ネットアップサポートサイトから Cloud Data Sense ソフトウェアをダウンロードし、使用する Linux ホストにインストーラファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従って Cloud Data Sense インスタンスを導入します。
+
+[role="quick-margin-para"]
+Cloud Data Sense によってスキャンされる最初の 1TB のデータは、 Cloud Manager に無料で保存されています。そのあともデータのスキャンを続行するには、ネットアップの BYOL ライセンスが必要です。
+
+
+
+== Cloud Manager Connector をインストール
+
+オフラインのオンプレミスサイトに Cloud Manager Connector がインストールされていない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["コネクタを配置します"^] オフラインサイトの Linux ホスト
+
+
+
+== Linux ホストシステムを準備
+
+データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。
+
+* オペレーティングシステム： Red Hat Enterprise Linux または CentOS バージョン 8.0 または 8.1
++
+** バージョン 7.8 を使用できますが、 Linux カーネルのバージョンは 4.14 以降である必要があります
+** OS が Docker Engine をインストールできる必要があります（必要に応じて、 _firewalld_service を無効にするなど）。
+
+
+* Disk ： 500GiB の SSD を / 、またはで使用できます
++
+** 100 GiB は /opt で利用できます
+** /var で 400GiB の可用性を確保
+
+
+* RAM ： 64GB （ホストでスワップメモリを無効にする必要があります）
+* CPU ： 16 コア
++
+CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
+
+
+
+Data Sense をインストールする前に、次のソフトウェアをホストにインストールする必要があります。
+
+* Docker Engine バージョン 19 以降。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]。
+* Python 3 バージョン 3.6 以降。 https://www.python.org/downloads/["インストール手順を確認します"^]。
+
+
+
+
+== Cloud Manager と Data Sense の前提条件を確認
+
+Cloud Data Sense を導入する前に、次の前提条件を確認し、サポートされている構成であることを確認してください。
+
+* Cloud Manager に、リソースを導入する権限と、 Cloud Data Sense インスタンス用のセキュリティグループを作成する権限があることを確認します。
+* Cloud Manager Connector がデータセンスインスタンスにアクセスできることを確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。
++
+この接続により、データセンスインスタンスの展開が可能になり、コンプライアンスとガバナンスの情報を表示できます。
+
++
+Cloud Manager でインストールの進捗状況を確認できるように、ポート 8080 が開いていることを確認してください。
+
+* クラウドデータを常に運用しておく必要がありますデータを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。
+* Web ブラウザから Cloud Data Sense への接続を確認するCloud Data Sense を有効にしたら、データセンスインスタンスに接続されているホストから Cloud Manager のインターフェイスにユーザがアクセスすることを確認する。
++
+データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータが他のユーザーにアクセスできないようにします。そのため、 Cloud Manager へのアクセスに使用する Web ブラウザは、そのプライベート IP アドレスに接続する必要があります。この接続は、データセンスインスタンスと同じネットワーク内にあるホストから確立できます。
+
+
+
+
+
+== SharePoint と OneDrive の特別な要件
+
+インターネットにアクセスできないサイトに Cloud Manager と Data Sense を導入している場合は、 SharePoint アカウントと OneDrive アカウントでファイルをスキャンできます。そのためには、選択したいくつかのエンドポイントにインターネットアクセスを提供しています。
+
+[cols="50,50"]
+|===
+| エンドポイント | 目的 
+
+
+| ¥ login.microsoft.com ¥ graph.microsoft.com | 選択したオンラインサービスにログインするための Microsoft サーバとの通信。 
+
+
+| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含む Cloud Manager サービスとの通信 
+|===
+_cloudmanager.cloud.netapp.com_ へのアクセスは、これらの外部サービスへの初期接続時にのみ必要です。
+
+
+
+== データセンスの導入
+
+一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["これらの手順を参照してください"]。
+
+ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["これらの手順を参照してください"]。
+
+
+
+=== 一般的な構成でのシングルホストインストール
+
+オフライン環境で単一のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。
+
+.必要なもの
+* Linux システムがを満たしていることを確認します <<Prepare the Linux host system,ホストの要件>>。
+* 前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。
+* Linux システムに対する root 権限があることを確認してください。
+* オフライン環境が要件を満たしていることを確認します <<Verify Cloud Manager and Data Sense prerequisites,権限と接続>>。
+
+
+.手順
+. インターネットに接続されたシステムで、から Cloud Data Sense ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は * DataSense - offline-bundle-<version>.tar.gz * です。
+. ダークサイトで使用する Linux ホストにインストーラバンドルをコピーします。
+. ホストマシンでインストーラバンドルを解凍します。次に例を示します。
++
+[source, cli]
+----
+tar -xzf DataSense-offline-bundle-v1.10.0.tar.gz
+----
++
+これにより、必要なソフトウェアと実際のインストールファイル * cc_onpm_installer_<version>.tar.gz * が抽出されます。
+
+. Cloud Manager を起動し、 * Data Sense * タブをクリックします。
+. [ データセンスを活動化（ Activate Data sense ） ] をクリックし
++
+image:screenshot_cloud_compliance_deploy_start.png["Cloud Data Sense を有効にするボタンを選択するスクリーンショット。"]
+
+. [Deploy *] をクリックして、オンプレミス展開ウィザードを開始します。
++
+image:screenshot_cloud_compliance_deploy_darksite.png["クラウドデータセンスをオンプレミスに導入するボタンを選択するスクリーンショット。"]
+
+. _Deploy Data Sense on Premises _ Dialog で、提供されたコマンドをコピーしてテキストファイルに貼り付け、後で使用できるようにして、 * Close * をクリックします。例：
++
+「 sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq -- darksite
+
+. ホストマシンでインストールファイルを解凍します。次に例を示します。
++
+[source, cli]
+----
+tar -xzf cc_onprem_installer_1.10.0.tar.gz
+----
+. インストーラからプロンプトが表示されたら、一連のプロンプトで必要な値を入力するか、または最初のプロンプトでコマンド全体を入力できます。
++
+[cols="50a,50"]
+|===
+| プロンプトに従ってパラメータを入力します。 | 完全なコマンドを入力します。 
+
+
+ a| 
+.. 手順 7 からコピーした情報を貼り付けます。 'UDO./ install.sh -a <account_id> -c <agent_id> -t <token> --darksite
+.. コネクタインスタンスからアクセスできるように、 Data Sense ホストマシンの IP アドレスまたはホスト名を入力します。
+.. Cloud Manager Connector ホストマシンの IP アドレスまたはホスト名を入力して、 Data Sense インスタンスからアクセスできるようにします。
+.. プロンプトが表示されたら、プロキシの詳細を入力Cloud Manager ですでにプロキシが使用されている場合は、 Cloud Manager が使用するプロキシが Data Sense で自動的に使用されるため、ここでもう一度入力する必要はありません。
+
+| または、コマンド全体を事前に作成して、最初のプロンプトに「 sudo ./install.sh -a <account_id>-c <agent_id>-t <token> --host <ds_host>--cm-host<proxy_host>--proxy-host <proxy_host>--dark-proxy-proxy-password-pxe-password-proxy-px<proxy-password> 」と入力することもできます 
+|===
++
+変数値：
+
++
+** _account_id _ = ネットアップアカウント ID
+** _agent_id _ = コネクタ ID
+** _ctoken _ = JWT ユーザートークン
+** _ds_host_ = Data Sense Linux システムの IP アドレスまたはホスト名
+** _cm_host_= Cloud Manager Connector システムの IP アドレスまたはホスト名。
+** _proxy_host_ = ホストがプロキシサーバの背後にある場合は、プロキシサーバの IP 名またはホスト名。
+** _proxy_port_= プロキシサーバに接続するポート（デフォルトは 80 ）です。
+** _proxy_scheme_= 接続方式： https または http （デフォルト http ）。
+** _proxy_user_= ベーシック認証が必要な場合、プロキシサーバに接続するための認証されたユーザ。
+** _proxy_password_ = 指定したユーザ名のパスワード。
+
+
+
+
+Data Sense インストーラは、パッケージをインストールし、インストールを登録し、 Data Sense をインストールします。インストールには 10~20 分かかります。
+
+ホストマシンとコネクタインスタンス間のポート 8080 を介した接続がある場合、 Cloud Manager の Data sense タブにインストールの進行状況が表示されます。
+
+設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および link:task-scanning-databases.html["データベース"] をスキャンします。
+
+また可能です link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["クラウドデータセンスを使用する BYOL ライセンスをセットアップする"] 現時点では、デジタルウォレットのページから入手できます。データ量が 1TB を超えるまでは料金は発生しません。
+
+
+
+=== 大規模構成向けのマルチホストインストール
+
+ペタバイト規模のデータをスキャンする大規模な構成では、複数のホストを含めて処理能力を追加できます。複数のホストシステムを使用する場合、プライマリシステムは _Managernode_name と呼ばれ、追加の処理能力を提供する追加システムは _Scanner Node_と 呼ばれます。
+
+オフライン環境で複数のオンプレミスホストに Data Sense ソフトウェアをインストールする場合は、次の手順を実行します。
+
+.必要なもの
+* Manager ノードと Scanner ノードのすべての Linux システムが、を満たしていることを確認します <<Prepare the Linux host system,ホストの要件>>。
+* 前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。
+* Linux システムに対する root 権限があることを確認してください。
+* オフライン環境が要件を満たしていることを確認します <<Verify Cloud Manager and Data Sense prerequisites,権限と接続>>。
+* 使用するスキャナノードホストの IP アドレスを確認しておく必要があります。
+* すべてのホストで次のポートとプロトコルを有効にする必要があります。
++
+[cols="15,20,55"]
+|===
+| ポート | プロトコル | 説明 
+
+
+| 2377 | TCP | クラスタ管理通信 
+
+
+| 7946 | tcp 、 udp です | ノード間通信 
+
+
+| 4789 | UDP | オーバーレイネットワークトラフィック 
+
+
+| 50 | ESP | 暗号化された IPsec オーバーレイネットワーク（ ESP ）トラフィック 
+
+
+| 111 | tcp 、 udp です | ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要） 
+
+
+| 2049 | tcp 、 udp です | ホスト間でファイルを共有するための NFS サーバ（各スキャナノードからマネージャノードに必要） 
+|===
+
+
+.手順
+. から手順 1~8 を実行します link:task-deploy-compliance-dark-site.html#deploy-data-sense-on-a-single-host-typical-configuration["シングルホストインストール"] マネージャーノード。
+. 手順 9 で示すように、インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、最初のプロンプトでコマンド全体を入力します。
++
+シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n <Node_IP> * を使用してスキャナノードの IP アドレスを指定します。複数のノードの IP をカンマで区切って指定します。
+
++
+たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'UDO./ install.sh -a <account_id>-c <agent_id>-t <token> --host <DS_host>*-n <Node_ip1> 、 <node-dark_ip2> 、 <node-dark3>*-proxy-proxy-pproxy-pproxy-password</password>
+
+. マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーし、テキストファイルに保存します。例：
++
+sudo ./node_install.sh -m 10.11.12.13-t ふぁいる EF-1u69m1-1s35212`
+
+. 各 * スキャナノードホストで：
++
+.. データセンスインストーラファイル（ * cc_onpm_installer_< バージョン >.tar.gz * ）をホストマシンにコピーします。
+.. インストーラファイルを解凍します。
+.. 手順 3 でコピーしたコマンドを貼り付けて実行します。
++
+すべてのスキャナノードでインストールが完了し、それらのノードがマネージャノードに参加したら、マネージャノードのインストールも完了します。
+
+
+
+
+
+Cloud Data Sense インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 15 ～ 25 分かかる場合があります。
+
+設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および link:task-scanning-databases.html["データベース"] をスキャンします。
+
+また可能です link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["クラウドデータセンスを使用する BYOL ライセンスをセットアップする"] 現時点では、デジタルウォレットのページから入手できます。データ量が 1TB を超えるまでは料金は発生しません。
+
+
+
+== Data Sense ソフトウェアをアップグレードする
+
+データセンスソフトウェアは定期的に新しい機能で更新されるため、定期的に新しいバージョンをチェックして最新のソフトウェアや機能を使用していることを確認する必要があります。自動的にアップグレードを実行するためのインターネット接続がないため、 Data Sense ソフトウェアを手動でアップグレードする必要があります。
+
+.作業を開始する前に
+* データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン 1.9.x がインストールされている場合は、 1.10.x にのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
+* オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrading-the-connector-on-prem-without-internet-access["コネクタのアップグレード手順を参照してください"^]。
+
+
+.手順
+. インターネットに接続されたシステムで、から Cloud Data Sense ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["ネットアップサポートサイト"^]。選択するファイルの名前は * DataSense - offline-bundle-<version>.tar.gz * です。
+. ダークサイトにデータセンスをインストールした Linux ホストにソフトウェアバンドルをコピーします。
+. ホストマシンでソフトウェアバンドルを解凍します。次に例を示します。
++
+[source, cli]
+----
+tar -xvf DataSense-offline-bundle-v1.10.0.tar.gz
+----
++
+これにより、アップグレードスクリプト * START_ダーク site_upgrade.sh * および必要なサードパーティ製ソフトウェアが抽出されます。
+
+. ホストマシンでアップグレードスクリプトを実行します。次に例を示します。
++
+[source, cli]
+----
+start_darksite_upgrade.sh
+----
+
+
+データセンスソフトウェアはホスト上でアップグレードされます。更新には 5 ～ 10 分かかる場合があります。
+
+非常に大規模な構成のスキャン用に複数のホストシステムに Data Sense を導入している場合は、スキャナノードをアップグレードする必要はありません。
+
+ソフトウェアが更新されたことを確認するには、 Data Sense UI ページの下部にあるバージョンを確認します。

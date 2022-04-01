@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: task-add-active-directory-datasense.html 
+keywords: active directory, ad, data sense, cloud data sense 
+summary: グローバル Active Directory をクラウドデータセンスと統合すると、ファイル所有者や、ファイルにアクセスできるユーザーやグループについてデータセンスがレポートする結果を高めることができます。 
+---
+= Active Directory と Cloud Data Sense を統合
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+グローバル Active Directory をクラウドデータセンスと統合すると、ファイル所有者や、ファイルにアクセスできるユーザーやグループについてデータセンスがレポートする結果を高めることができます。
+
+一部のデータソース（以下に記載）を設定する場合、 CIFS ボリュームをスキャンするデータセンスを設定するためには、 Active Directory のクレデンシャルを入力する必要があります。この統合により、データセンスとファイル所有者、およびそれらのデータソースの権限の詳細が提供されます。これらのデータソースに対して入力した Active Directory は、ここで入力したグローバル Active Directory クレデンシャルと異なる場合があります。データセンスは、統合されたすべての Active Directory でユーザと権限の詳細を確認します。
+
+これは、データの意味において次のような場所で役立ちます。
+
+* 「ファイル所有者」を使用できます。 link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["フィルタ"] [ 調査 ] ペインで、ファイルのメタデータの結果を確認できます。SID （セキュリティ ID ）を含むファイル所有者ではなく、実際のユーザ名が入力されます。
+* を参照してください link:task-controlling-private-data.html#viewing-permissions-for-files["フルファイル権限"] 各ファイルについて、 [ すべてのアクセス許可の表示 ] ボタンをクリックします。
+* を参照してください link:task-controlling-governance-data.html["ガバナンスダッシュボード"]を選択すると、 [ アクセス許可 ] パネルに、データに関するより詳細な情報が表示されます。
+
+
+
+NOTE: ローカルユーザの SID および不明なドメインの SID は、実際のユーザ名に変換されません。
+
+
+
+== サポートされているデータソース
+
+Active Directory と Cloud Data Sense との統合により、次のデータソース内からデータを識別できます。
+
+* オンプレミスの ONTAP システム
+* Cloud Volumes ONTAP
+* Azure NetApp Files の特長
+* FSX for ONTAP の略
+* 他社の CIFS ファイル共有（ NFS ファイル共有ではない）
+
+
+データベーススキーマ、 OneDrive アカウント、 SharePoint アカウント、 Amazon S3 アカウント、 Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージから、ユーザおよび権限の情報を識別することはできません。
+
+
+
+== Active Directory サーバに接続しています
+
+データセンスを導入し、データソースでスキャンを有効化したら、 Active Directory とデータセンスを統合できます。
+
+Active Directory のクレデンシャルは読み取り専用ですが、管理者のクレデンシャルを指定することで、データセンスは昇格された権限を必要とするすべてのデータを読み取ることができます。クレデンシャルは Cloud Data Sense インスタンスに保存されます。
+
+.要件
+* 社内のユーザに対して Active Directory がすでに設定されている必要があります。
+* Active Directory の次の情報が必要です。
++
+** DNS サーバの IP アドレス、または複数の IP アドレス
+** サーバーのユーザー名とパスワード
+** ドメイン名（ Active Directory 名）
+** セキュアな LDAP （ LDAPS ）を使用しているかどうか
+** LDAP サーバポート（通常は LDAP では 389 、セキュア LDAP では 636 ）
+
+
+* Data Sense インスタンスによるアウトバウンド通信用に、次のポートが開いている必要があります。
++
+[cols="15,15,25,25"]
+|===
+| プロトコル | ポート | 宛先 | 目的 
+
+
+| TCP および UDP | 389 | Active Directory | LDAP 
+
+
+| TCP | 636 | Active Directory | LDAP over SSL 
+
+
+| TCP | 3268 | Active Directory | グローバルカタログ 
+
+
+| TCP | 3269 | Active Directory | SSL 経由のグローバルカタログ 
+|===
+
+
+.手順
+. Cloud Data Sense Configuration （クラウドデータセンス設定）ページで、 * Add Active Directory * （ Active Directory の追加）をクリックします。
++
+image:screenshot_compliance_integrate_active_directory.png["Active Directory サーバを Cloud Data Sense に追加するボタンをクリックすることを示すスクリーンショット。"]
+
+. Active Directory への接続ダイアログで、 Active Directory の詳細を入力し、 * 接続 * をクリックします。複数の IP アドレスを追加するには、エントリ間にカンマを追加します。
++
+image:screenshot_compliance_active_directory_dialog.png["データセンスと統合する Active Directory を定義するダイアログのスクリーンショット。"]
+
++
+データセンスは Active Directory に統合され、新しいセクションが [ 構成 ] ページに追加されます。
+
++
+image:screenshot_compliance_active_directory_added.png["データセンスに統合された新しい Active Directory を示すスクリーンショット。"]
+
+
+
+
+
+== Active Directory 統合の管理
+
+Active Directory 統合の値を変更する必要がある場合は、 * Edit * ボタンをクリックして変更を行います。
+
+不要になった統合は、をクリックして削除することもできます image:screenshot_gallery_options.gif["[ 詳細 ] ボタン"] ボタンをクリックして、 * Active Directory を削除 * をクリックします。

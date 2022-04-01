@@ -1,0 +1,217 @@
+---
+sidebar: sidebar 
+permalink: faq-cloud-compliance.html 
+keywords: faq, frequently asked questions, questions, cloud compliance, data sense 
+summary: この FAQ は、質問に対する簡単な回答を探している場合に役立ちます。 
+---
+= クラウドデータの意味についてよく寄せられる質問
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+この FAQ は、質問に対する簡単な回答を探している場合に役立ちます。
+
+
+
+== クラウドデータの意味
+
+クラウドデータセンスは、人工知能（ AI ）ベースのテクノロジを使用して、組織がデータコンテキストを理解し、ストレージシステム全体で機密データを識別できるようにするクラウドサービスです。システムには、 Azure NetApp Files 構成、 Amazon FSX for ONTAP 、 Cloud Volumes ONTAP システム（ AWS 、 Azure 、または GCP でホスト）、 Amazon S3 バケット、オンプレミス ONTAP システムがあります。 ネットアップ以外のファイル共有、汎用の S3 オブジェクトストレージ、データベース、 OneDrive アカウント、 SharePoint アカウント。
+
+Cloud Data Sense は、事前定義されたパラメータ（機密情報の種類やカテゴリなど）を提供し、 GDPR 、 CCPA 、 HIPAA などのデータプライバシーと機密性に関する新しいデータコンプライアンス規制に対応します。
+
+
+
+== クラウドデータが適している理由
+
+Cloud Data Sense は、データを活用して以下のことを支援します。
+
+* データコンプライアンスやプライバシーの規制に準拠
+* データ保持ポリシーに準拠
+* GDPR 、 CCPA 、 HIPAA 、その他のデータプライバシー規制の要件に応じて、データ主体に応じて特定のデータを容易に検索し、レポートを作成できます。
+
+
+
+
+== クラウドデータの意味でよく使用されるユースケースはどれですか？
+
+* 個人識別情報（ PII ）を識別します。
+* GDPR および CCPA のプライバシー規制の要件に応じて、さまざまな機密情報の範囲を特定します。
+* データプライバシーに関する新しい規制や今後の規制に対応できます。
+
+
+https://cloud.netapp.com/cloud-compliance["Cloud Data Sense のユースケースについて詳しくは、こちらをご覧ください"^]。
+
+
+
+== Cloud Data Sense でスキャンできるデータの種類はどれですか？
+
+クラウドデータセンスでは、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、オンプレミス ONTAP システム、およびネットアップ以外のファイル共有で管理されている NFS プロトコルと CIFS プロトコルを介した非構造化データのスキャンがサポートされます。Data Sense は、 NFS バージョン 3.x 、 4.0 、 4.1 、および CIFS バージョン 1.x 、 2.0 、 2.1 、 3.0 をサポートしています。
+
+また、 Amazon S3 バケットや汎用の S3 オブジェクトストレージに格納されたデータもスキャンできます。
+
+さらに、データセンスでは、任意の場所にあるデータベースやユーザファイルを OneDrive アカウントと SharePoint アカウントからスキャンできます。
+
+link:concept-cloud-compliance.html#how-scans-work["スキャンの仕組みを説明します"^]。
+
+
+
+== サポートされているクラウドプロバイダを教えてください。
+
+Cloud Data Sense は Cloud Manager の一部として機能し、 AWS 、 Azure 、 GCP をサポートします。これにより、異なるクラウドプロバイダ間で統一されたプライバシー可視性を実現できます。
+
+
+
+== Cloud Data Sense へのアクセス方法
+
+Cloud Data Sense は、 Cloud Manager を通じて運用、管理されます。Data Sense 機能には、 Cloud Manager の * Data Sense * タブからアクセスできます。
+
+
+
+== クラウドデータはどのように動作するのでしょうか。
+
+Cloud Data Sense は、 Cloud Manager システムやストレージシステムと並行して、もう 1 つの人工知能レイヤを導入します。次に、ボリューム、バケット、データベース、 OneDrive アカウントのデータをスキャンして、見つかったデータ分析のインデックスを作成します。
+
+link:concept-cloud-compliance.html["Cloud Data Sense の仕組みの詳細はこちらをご覧ください"^]。
+
+
+
+== クラウドデータのコストはどれくらいですか？
+
+クラウドデータセンスの使用コストは、スキャンするデータの量によって異なります。データをスキャンする、 Cloud Manager ワークスペース内の最初の 1TB のデータは無料です。この時点以降もデータのスキャンを続行するには、 AWS 、 Azure 、 GCP Marketplace 、またはネットアップの BYOL ライセンスのサブスクリプションが必要です。を参照してください https://cloud.netapp.com/netapp-cloud-data-sense#Pricing["価格設定"^] を参照してください。
+
+
+
+== クラウドデータセンスにはどのようなタイプのインスタンスまたは VM が必要ですか。
+
+いつ link:task-deploy-cloud-compliance.html["クラウドに導入"]：
+
+* AWS では、 Cloud Data Sense は、 500 GB の gp2 ディスクを使用する m5.-m構築 インスタンスで実行されます。
+* Azure では、 Cloud Data Sense は、 512 GB のディスクを搭載した Standard_D16s_v3 VM で実行されます。
+* GCP では、クラウドデータセンスは、 512 GB の標準永続ディスクを搭載した n2 標準の -16 VM で実行されます。
+
+
+データセンスソフトウェアは、ネットワーク内またはクラウド内でインターネットにアクセスできる Linux ホストにインストールできます。すべてが同じように機能し、 Cloud Manager を使用してスキャンの設定と結果を引き続き管理できます。を参照してください link:task-deploy-compliance-onprem.html["クラウドデータセンスをオンプレミスに導入"^] を参照してください。
+
+また、を使用することもできます link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスサイトにデータセンスを導入する"] 完全にセキュアなサイトに。
+
+CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください link:concept-cloud-compliance.html#using-a-smaller-instance-type["小さいインスタンスタイプを使用しています"] を参照してください。
+
+link:concept-cloud-compliance.html["Cloud Data Sense の仕組みの詳細はこちらをご覧ください"^]。
+
+
+
+== Cloud Data Sense はどのくらいの頻度でデータをスキャンしますか？
+
+データが頻繁に変更されるため、 Cloud Data Sense は、データに影響を与えることなくデータを継続的にスキャンします。データの初回スキャンには時間がかかる場合がありますが、その後のスキャンでは差分変更のみがスキャンされるため、システムのスキャン時間が短縮されます。
+
+link:concept-cloud-compliance.html#how-scans-work["スキャンの仕組みを説明します"^]。
+
+データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、低速スキャンを実行するようにデータセンスを設定できます。 link:task-managing-compliance.html#reducing-the-data-sense-scan-speed["スキャン速度を下げる方法を参照してください"]。
+
+
+
+== Cloud Data Sense はレポートを提供していますか？
+
+はい。Cloud Data Sense が提供する情報は、組織内の他の関係者にも関係があるため、レポートを作成して分析情報を共有することができます。
+
+Data Sense で使用できるレポートは次のとおりです。
+
+プライバシーリスクアセスメントレポート:: データからプライバシーに関する情報を収集し、プライバシーリスクスコアを取得します。 link:task-generating-compliance-reports.html["詳細はこちら。"^]。
+Data Subject Access Request レポート:: データサブジェクトの特定の名前または個人 ID に関する情報を含むすべてのファイルのレポートを抽出できます。 link:task-responding-to-dsar.html["詳細はこちら。"^]。
+PCI DSS レポート:: クレジットカード情報のファイルへの配布を識別するのに役立ちます。 link:task-generating-compliance-reports.html["詳細はこちら。"^]。
+HIPAA レポート:: 健常性情報がファイルにどのように分散されているかを確認できます。 link:task-generating-compliance-reports.html["詳細はこちら。"^]。
+データマッピングレポート:: 作業環境内のファイルのサイズと数について説明します。これには、使用容量、データの経過時間、データのサイズ、ファイルタイプが含まれます。 link:task-generating-compliance-reports.html#data-mapping-report["詳細はこちら。"^]。
+特定の情報タイプに関するレポート:: 個人データや機密性の高い個人データを含む、特定されたファイルの詳細を含むレポートを利用できます。カテゴリおよびファイルタイプ別に分類されたファイルを表示することもできます。 link:task-controlling-private-data.html["詳細はこちら。"^]。
+
+
+
+
+== スキャンのパフォーマンスは変化しますか？
+
+スキャンのパフォーマンスは、環境内のネットワーク帯域幅と平均ファイルサイズによって異なります。また、（クラウドまたはオンプレミスの）ホストシステムのサイズ特性にも左右されます。を参照してください link:concept-cloud-compliance.html#the-cloud-data-sense-instance["Cloud Data Sense インスタンス"] および link:task-deploy-cloud-compliance.html["Cloud Data Sense の導入"] を参照してください。
+
+新しいデータソースを最初に追加するときに、「分類」のフルスキャンではなく「マッピング」スキャンのみを実行するように選択することもできます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングスキャンと分類スキャンの違いを参照してください。"]
+
+
+
+== サポートされているファイルタイプはどれですか。
+
+Cloud Data Sense は、すべてのファイルをスキャンしてカテゴリやメタデータに関する分析情報を検索し、ダッシュボードのファイルタイプセクションにすべてのファイルタイプを表示します。
+
+データセンスが個人識別情報（ PII ）を検出した場合、または dsar 検索を実行した場合、サポートされるファイル形式は .csv 、 .dcm 、 .dcm 、 .dom 、 .DOC 、 .DOCX のみです。 .json 、 .pdf 、 .PPTX 、 .rtf 、 .TXT 、 .XLS 、 .xlsx のいずれかです。
+
+
+
+== クラウドデータセンスを有効にする方法
+
+まず、 Cloud Manager に Cloud Data Sense のインスタンスを導入する必要があります。インスタンスの実行が完了したら、 * Data Sense * タブまたは特定の作業環境を選択して、既存の作業環境およびデータベースでサービスを有効にすることができます。
+
+link:task-getting-started-compliance.html["開始方法をご確認ください"^]。
+
+
+NOTE: Cloud Data Sense をアクティブにすると、すぐに初期スキャンが実行されます。スキャン結果はすぐ後に表示されます。
+
+
+
+== クラウドデータセンスを無効にする方法
+
+データセンス構成ページでは、個々の作業環境、データベース、ファイル共有グループ、 OneDrive アカウント、 SharePoint アカウントをスキャンできないようにすることができます。
+
+link:task-managing-compliance.html["詳細はこちら。"^]。
+
+
+NOTE: クラウドデータセンスインスタンスを完全に削除するには、クラウドプロバイダのポータルまたはオンプレミスの場所から手動でデータセンスインスタンスを削除します。
+
+
+
+== ONTAP ボリュームでデータ階層化が有効になっている場合、どうなりますか？
+
+コールドデータをオブジェクトストレージに階層化する ONTAP システムでは、クラウドデータの意味を有効にすることができます。データ階層化が有効になっている場合、データセンスは、ディスクにあるすべてのデータと、オブジェクトストレージに階層化されたコールドデータをスキャンします。
+
+コンプライアンススキャンはコールドデータを加熱しません -- コールドデータを保存し ' オブジェクトストレージに階層化します
+
+
+
+== クラウドデータセンスを使用してオンプレミスの ONTAP ストレージをスキャンできますか。
+
+はい。オンプレミスの ONTAP クラスタを Cloud Manager で作業環境として検出しているかぎり、ボリュームデータをスキャンできます。
+
+
+
+== Cloud Data Sense は、自分の組織に通知を送信できますか？
+
+はい。ポリシー機能と一緒に、ポリシーの結果が返されたときに Cloud Manager のユーザ（日単位、週単位、または月単位）に E メールアラートを送信して、データを保護するための通知を受け取ることができます。の詳細を確認してください link:task-org-private-data.html#controlling-your-data-using-policies["ポリシー"^]。
+
+また、 [ ガバナンス ] ページと [ 調査 ] ページからステータスレポートをダウンロードして、組織内で共有することもできます。
+
+
+
+== 組織のニーズに合わせてサービスをカスタマイズできますか。
+
+Cloud Data Sense は、すぐに使用できる分析情報をデータに提供します。これらの分析情報を抽出して、組織のニーズに活用できます。
+
+また、「 * Data Fusion * 」機能を使用すると、スキャンしているデータベース内の特定の列にある条件に基づいて、すべてのデータをデータセンススキャンできます。基本的には、独自のカスタム個人データ型を作成できます。
+
+link:task-managing-data-fusion.html#creating-custom-personal-data-identifiers-from-your-databases["詳細はこちら。"^]。
+
+
+
+== ファイルに埋め込まれた AIP ラベルを使用して Cloud Data Sense を実行できますか。
+
+はい。加入している場合、 Cloud Data Sense がスキャンしているファイルで AIP ラベルを管理できます link:https://azure.microsoft.com/en-us/services/information-protection/["Azure 情報保護（ AIP ）"^]。既にファイルに割り当てられているラベルを表示したり、ファイルにラベルを追加したり、既存のラベルを変更したりできます。
+
+link:task-org-private-data.html#categorizing-your-data-using-aip-labels["詳細はこちら。"^]。
+
+
+
+== クラウドデータの意味に関する情報を特定のユーザに制限できますか。
+
+はい。 Cloud Data Sense は Cloud Manager と完全に統合されています。Cloud Manager ユーザは、ワークスペースの権限に基づいて表示可能な作業環境の情報のみを表示できます。
+
+また、特定のユーザーがデータセンス設定を管理することなくデータセンススキャン結果を表示できるようにするには、これらのユーザーに _Cloud Compliance Viewer_role を割り当てることができます。
+
+link:concept-cloud-compliance.html#user-access-to-compliance-information["詳細はこちら。"^]。

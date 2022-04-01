@@ -1,0 +1,163 @@
+---
+settings:
+  name: Cloud Data Sense
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: ja-jp,us-en,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: Cloud Manager のすべてのドキュメント
+    url: https://docs.netapp.com/us-en/cloud-manager-family
+  - title: Cloud Data Sense ドキュメント
+    url: "/index.html"
+  - title: リリースノート
+    url: "/whats-new.html"
+  - title: はじめに
+    entries:
+    - title: クラウドデータの意味をご確認ください
+      url: "/concept-cloud-compliance.html"
+    - title: クラウドデータの導入センス
+      entries:
+      - title: クラウドに導入
+        url: "/task-deploy-cloud-compliance.html"
+      - title: オンプレミスにインターネットアクセスで導入できます
+        url: "/task-deploy-compliance-onprem.html"
+      - title: オンプレミスでインターネットにアクセスせずに導入できます
+        url: "/task-deploy-compliance-dark-site.html"
+    - title: データソースでスキャンをアクティブ化します
+      entries:
+      - title: Cloud Volumes ONTAP とオンプレミス ONTAP
+        url: "/task-getting-started-compliance.html"
+      - title: Azure NetApp Files の特長
+        url: "/task-scanning-anf.html"
+      - title: ONTAP 対応の Amazon FSX
+        url: "/task-scanning-fsx.html"
+      - title: Amazon S3 バケット
+        url: "/task-scanning-s3.html"
+      - title: データベーススキーマ
+        url: "/task-scanning-databases.html"
+      - title: OneDrive アカウント
+        url: "/task-scanning-onedrive.html"
+      - title: SharePoint アカウント
+        url: "/task-scanning-sharepoint.html"
+      - title: ファイル共有
+        url: "/task-scanning-file-shares.html"
+      - title: オブジェクトストレージ
+        url: "/task-scanning-object-storage.html"
+    - title: Active Directory を統合します
+      url: "/task-add-active-directory-datasense.html"
+    - title: ライセンスをセットアップする
+      url: "/task-licensing-datasense.html"
+    - title: よく寄せられる質問
+      url: "/faq-cloud-compliance.html"
+  - title: クラウドデータセンスを活用
+    entries:
+    - title: データのガバナンスの詳細を確認できます
+      url: "/task-controlling-governance-data.html"
+    - title: データのコンプライアンスの詳細を表示します
+      url: "/task-controlling-private-data.html"
+    - title: プライベートデータを整理します
+      url: "/task-org-private-data.html"
+    - title: プライベートデータを管理
+      url: "/task-managing-highlights.html"
+    - title: カスタムの個人データ識別子を追加します
+      url: "/task-managing-data-fusion.html"
+    - title: レポートを生成します
+      url: "/task-generating-compliance-reports.html"
+    - title: dsar に応答します
+      url: "/task-responding-to-dsar.html"
+    - title: プライベートデータのカテゴリ
+      url: "/reference-private-data-categories.html"
+    - title: データセンスからデータソースを削除します
+      url: "/task-managing-compliance.html"
+  - title: 知識とサポート
+    entries:
+    - title: サポートに登録します
+      url: "/task-support-registration.html"
+    - title: ヘルプを表示します
+      url: "/task-get-help.html"
+  - title: 法的通知
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: はじめに
+    links:
+    - title: クラウドデータの意味をご確認ください
+      url: concept-cloud-compliance.html
+    - title: 新機能
+      url: whats-new.html
+    - title: クラウドにデータを導入するメリット
+      url: task-deploy-cloud-compliance.html
+    - title: インターネットでオンプレミスにデータセンスを導入
+      url: task-deploy-compliance-onprem.html
+    - title: インターネットを使用せずにオンプレミスにデータセンスを導入
+      url: task-deploy-compliance-dark-site.html
+    - title: Active Directory を統合します
+      url: task-add-active-directory-datasense.html
+    - title: ライセンスをセットアップする
+      url: task-licensing-datasense.html
+  - title: データソースでスキャンをアクティブ化します
+    links:
+    - title: Cloud Volumes ONTAP ボリューム
+      url: task-getting-started-compliance.html
+    - title: オンプレミスの ONTAP ボリューム
+      url: task-getting-started-compliance.html
+    - title: Azure NetApp Files ボリューム
+      url: task-scanning-anf.html
+    - title: ONTAP ボリュームの Amazon FSX
+      url: task-scanning-fsx.html
+    - title: Amazon S3 バケット
+      url: task-scanning-s3.html
+    - title: 汎用の S3 バケット
+      url: task-scanning-object-storage.html
+    - title: ネットアップ以外のファイル共有
+      url: task-scanning-file-shares.html
+    - title: データベーススキーマ
+      url: task-scanning-databases.html
+    - title: OneDrive アカウント
+      url: task-scanning-onedrive.html
+    - title: SharePoint アカウント
+      url: task-scanning-sharepoint.html
+  - title: プライベートデータを管理します
+    links:
+    - title: AIP ラベルを使用してデータを分類します
+      url: task-org-private-data.html#categorizing-your-data-using-aip-labels
+    - title: 準拠していないデータが見つかった場合にアラートを E メールで送信
+      url: task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found
+    - title: 独自のカスタム個人データ識別子を追加します
+      url: task-managing-data-fusion.html
+    - title: 注意が必要なファイルにタグと所有者を適用します
+      url: task-org-private-data.html#applying-tags-to-manage-your-scanned-files
+    - title: データサブジェクトのアクセス要求に応答します
+      url: task-responding-to-dsar.html
+    - title: ソースファイルをコピーします
+      url: task-managing-highlights.html#copying-source-files
+    - title: ソースファイルを移動します
+      url: task-managing-highlights.html#moving-source-files-to-an-nfs-share
+    - title: ソースファイルを削除します
+      url: task-managing-highlights.html#deleting-source-files
+  - title: データの詳細を表示します
+    links:
+    - title: 上位検索を表示するポリシーを作成します
+      url: task-org-private-data.html#controlling-your-data-using-policies
+    - title: プライベート情報を含むファイルを表示します
+      url: task-controlling-private-data.html
+    - title: ストレージに複製されているファイルを表示します
+      url: task-controlling-private-data.html#checking-for-duplicate-files-in-your-storage-systems
+    - title: コンプライアンスレポートを生成します
+      url: task-generating-compliance-reports.html
+  - title: ブログコミュニティ
+    links:
+    - title: ネットアップコミュニティ
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central のユースケース
+      url: https://cloud.netapp.com/netapp-cloud-data-sense
+    - title: Cloud Central のブログです
+      url: https://cloud.netapp.com/blog
+    - title: クラウドに関する Web セミナー
+      url: https://cloud.netapp.com/events
+product-family: {}

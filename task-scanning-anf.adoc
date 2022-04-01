@@ -1,0 +1,179 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-anf.html 
+keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, Azure NetApp Files, data sense 
+summary: Azure NetApp Files 向けクラウドデータセンスの導入を開始するには、いくつかの手順を実行します。 
+---
+= Azure NetApp Files 向けクラウドデータセンスの導入を開始する方法をご確認ください
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azure NetApp Files 向けクラウドデータセンスの導入を開始するには、いくつかの手順を実行します。
+
+
+
+== クイックスタート
+
+これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
+
+[role="quick-margin-para"]
+Azure NetApp Files ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["構成を検出するには、 Cloud Manager が設定されている必要があります"^]。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["Cloud Manager に Cloud Data Sense を導入"^] インスタンスが展開されていない場合。
+
+[role="quick-margin-para"]
+コンプライアンス * をクリックし、 * 構成 * タブを選択して、特定の作業環境でボリュームのコンプライアンススキャンを有効にします。
+
+[role="quick-margin-para"]
+Cloud Data Sense が有効になったので、すべてのボリュームにアクセスできることを確認します。
+
+* クラウドデータセンスインスタンスには、各 Azure NetApp Files サブネットへのネットワーク接続が必要です。
+* これらのポートが Data Sense インスタンスに対して開いていることを確認します。
++
+** NFS –ポート 111 および 2049 。
+** CIFS の場合 - ポート 139 および 445
+
+
+* NFS ボリュームエクスポートポリシーで、データセンスインスタンスからのアクセスを許可する必要があります。
+* CIFS ボリュームをスキャンするには、 Active Directory クレデンシャルが必要です。
++
+コンプライアンス * > * 構成 * > * CIFS クレデンシャルの編集 * をクリックし、クレデンシャルを入力します。
+
+
+
+[role="quick-margin-para"]
+スキャンするボリュームを選択または選択解除すると、 Cloud Data Sense でスキャンが開始または停止します。
+
+
+
+== スキャンする Azure NetApp Files システムを検出しています
+
+スキャンする Azure NetApp Files システムがまだ作業環境として Cloud Manager にない場合は、この時点でキャンバスに追加できます。
+
+https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["Cloud Manager で Azure NetApp Files システムを検出する方法をご覧ください"^]。
+
+
+
+== Cloud Data Sense インスタンスの導入
+
+link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
+
+Azure NetApp Files ボリュームをスキャンするときは、データセンスをクラウドに導入する必要があります。また、スキャンするボリュームと同じリージョンに導入する必要があります。
+
+* 注： * オンプレミスの場所にクラウドデータセンスを導入することは、 Azure NetApp Files ボリュームのスキャンでは現在サポートされていません。
+
+Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
+
+
+
+== 作業環境でクラウドデータを有効に活用
+
+Azure NetApp Files ボリュームでクラウドデータセンスを有効にすることができます。
+
+. Cloud Manager の上部で、 * Data Sense * をクリックし、 * Configuration * タブを選択します。
++
+image:screenshot_cloud_compliance_anf_scan_config.png["Cloud Data Sense インスタンスを展開した直後の [ 構成 ] タブのスクリーンショット。"]
+
+. 各作業環境でボリュームをスキャンする方法を選択します。 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングおよび分類スキャンについて説明します"]：
++
+** すべてのボリュームをマップするには、 * すべてのボリュームをマップ * をクリックします。
+** すべてのボリュームをマップして分類するには、 * すべてのボリュームをマップして分類 * をクリックします。
+** 各ボリュームのスキャンをカスタマイズするには、「 * 」をクリックするか、各ボリュームのスキャンタイプを選択してから、マッピングまたは分類するボリュームを選択します。
++
+を参照してください <<Enabling and disabling compliance scans on volumes,ボリュームのコンプライアンススキャンの有効化と無効化>> を参照してください。
+
+
+
+. 確認ダイアログボックスで、 [* 承認 ] をクリックして、ボリュームのスキャンを開始するデータセンスを設定します。
+
+
+Cloud Data Sense により、作業環境で選択したボリュームのスキャンが開始されます。結果は、 Cloud Data Sense が最初のスキャンを完了するとすぐに Compliance ダッシュボードに表示されます。所要時間はデータ量によって異なります。数分から数時間かかる場合もあります。
+
+
+
+== Cloud Data Sense がボリュームにアクセスできることの確認
+
+ネットワーク、セキュリティグループ、およびエクスポートポリシーを確認して、 Cloud Data Sense でボリュームにアクセスできることを確認します。CIFS ボリュームにアクセスできるようにするには、 CIFS クレデンシャルをデータセンスに指定する必要があります。
+
+.手順
+. クラウドデータセンスインスタンスと、 Azure NetApp Files 用のボリュームを含む各ネットワークの間にネットワーク接続が確立されていることを確認します。
++
+
+NOTE: Azure NetApp Files の場合、 Cloud Data Sense は Cloud Manager と同じリージョンにあるボリュームのみをスキャンできます。
+
+. 次のポートがデータセンスインスタンスに対して開いていることを確認します。
++
+** NFS –ポート 111 および 2049 。
+** CIFS の場合 - ポート 139 および 445
+
+
+. NFS ボリュームのエクスポートポリシーに、各ボリュームのデータにアクセスできるように Data sense インスタンスの IP アドレスが含まれていることを確認します。
+. CIFS を使用する場合は、 CIFS ボリュームをスキャンできるように、 Active Directory クレデンシャルを使用したデータセンスを設定します。
++
+.. Cloud Manager の上部で、 * Data Sense * をクリックします。
+.. [* 構成 *] タブをクリックします。
++
+image:screenshot_cifs_credentials.gif["コンテンツペインの右上にある [ スキャンステータス ] ボタンを示す [ 遵守 ] タブのスクリーンショット。"]
+
+.. 各作業環境について、 * CIFS 資格情報の編集 * をクリックし、システム上の CIFS ボリュームにアクセスするために必要なユーザー名とパスワードを入力します。
++
+クレデンシャルは読み取り専用ですが、管理者のクレデンシャルを指定することで、データセンスは昇格された権限が必要なデータを読み取ることができます。クレデンシャルは Cloud Data Sense インスタンスに保存されます。
+
++
+クレデンシャルを入力すると、すべての CIFS ボリュームが認証されたことを示すメッセージが表示されます。
+
++
+image:screenshot_cifs_status.gif["設定ページと Cloud Volumes ONTAP クレデンシャルが正しく指定された 1 つのシステムを示すスクリーンショット"]
+
+
+
+. _Configuration_page で、 *View Details * をクリックして、各 CIFS および NFS ボリュームのステータスを確認し、エラーを修正します。
++
+たとえば、次の図は 4 つのボリュームを示しています。 1 つは、データセンスインスタンスとボリュームの間のネットワーク接続の問題が原因でクラウドデータセンスでスキャンできないボリュームです。
+
++
+image:screenshot_compliance_volume_details.gif["スキャン設定の View Details ページのスクリーンショット。 4 つのボリュームが表示されます。 1 つは Data Sense とボリューム間のネットワーク接続が原因でスキャンされていません。"]
+
+
+
+
+
+== ボリュームのコンプライアンススキャンの有効化と無効化
+
+設定ページからは、作業環境でマッピング専用スキャンまたはマッピングおよび分類スキャンをいつでも開始または停止できます。マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。また、マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。すべてのボリュームをスキャンすることを推奨します。
+
+image:screenshot_volume_compliance_selection.png["個々のボリュームのスキャンを有効または無効にできる設定ページのスクリーンショット。"]
+
+[cols="45,45"]
+|===
+| 終了： | 手順： 
+
+
+| ボリュームに対してマッピングのみのスキャンを有効にします | ボリューム領域で、 * マップ * をクリックします 
+
+
+| ボリュームでフルスキャンを有効にします | ボリューム領域で、 * マップと分類 * をクリックします 
+
+
+| ボリュームのスキャンを無効にします | ボリューム領域で、 * オフ * をクリックします 
+
+
+|  |  
+
+
+| すべてのボリュームでマッピングのみのスキャンを有効にします | 見出し領域で、 * マップ * をクリックします 
+
+
+| すべてのボリュームでフルスキャンを有効にします | 見出し領域で、 * マップと分類 * をクリックします 
+
+
+| すべてのボリュームでスキャンを無効にします | 見出し領域で、 * Off * をクリックします 
+|===
+
+NOTE: 作業環境に追加された新しいボリュームは、見出し領域で * Map * または * Map & Classify * の設定を行った場合にのみ自動的にスキャンされます。見出し領域で * Custom * または * Off * に設定すると、作業環境に追加する新しいボリュームごとに、マッピングまたはフルスキャンを有効にする必要があります。

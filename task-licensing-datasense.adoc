@@ -1,0 +1,172 @@
+---
+sidebar: sidebar 
+permalink: task-licensing-datasense.html 
+keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, data sense, cloud data sense 
+summary: Cloud Data Sense によってスキャンされる、 Cloud Manager のワークスペース内の最初の 1TB のデータは無料です。そのあとも引き続きデータをスキャンするには、ネットアップの BYOL ライセンス、またはクラウドプロバイダの Marketplace からの Cloud Manager のサブスクリプションが必要です。 
+---
+= クラウドデータセンスのライセンスをセットアップする
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Data Sense によってスキャンされる、 Cloud Manager のワークスペース内の最初の 1TB のデータは無料です。そのあとも引き続きデータをスキャンするには、ネットアップの BYOL ライセンス、またはクラウドプロバイダのマーケットプレイスからの Cloud Manager サブスクリプションが必要です。
+
+さらに読む前に、いくつかのメモを記入してください。
+
+* クラウドプロバイダのマーケットプレイスで Cloud Manager の従量課金制（ PAYGO ）サブスクリプションにすでに登録している場合は、 Cloud Data Sense も自動的にサブスクライブされます。再度登録する必要はありません。
+* Cloud Data Sense Bring Your Own License （ BYOL ；お客様所有のライセンス）は、スキャンを計画しているワークスペース内のすべての作業環境およびデータソースで使用できるフローティングライセンスです。Digital Wallet にアクティブなサブスクリプションが表示されます。
+
+
+link:concept-cloud-compliance.html#cost["Cloud Data Sense に関連するライセンスとコストの詳細については、こちらをご覧ください"]。
+
+
+
+== クラウドデータ従量課金制のサブスクリプションを使用
+
+クラウドプロバイダのマーケットプレイスから従量課金制のサブスクリプションを購入すると、 Cloud Volumes ONTAP システムや、クラウドデータセンスなどの多数のクラウドデータサービスのライセンスを取得できます。
+
+いつでもサブスクライブでき、データ量が 1TB を超えるまでは料金は発生しません。データセンスダッシュボードからスキャンされているデータの総容量を常に確認できます。また、 [ 今すぐサブスクライブ ] ボタンを使用すると、準備が整ったときに簡単にサブスクライブできます。
+
+image:screenshot_compliance_subscribe.png["スキャンされているデータの量を示すスクリーンショットと、サービスにサブスクライブするための [ サブスクライブ（ Subscribe ） ] ボタン。"]
+
+これらの手順は、 _Account Admin_role 権限を持つユーザが実行する必要があります。
+
+. Cloud Manager コンソールの右上にある設定アイコンをクリックし、 * クレデンシャル * を選択します。
++
+image:screenshot_settings_icon.gif["Cloud Manager の右上のバナーのスクリーンショット。設定アイコンを選択できます。"]
+
+. AWS インスタンスプロファイル、 Azure Managed Service Identity 、 Google Project のクレデンシャルを検索します。
++
+サブスクリプションは、インスタンスプロファイル、マネージドサービス ID 、または Google プロジェクトに追加する必要があります。充電ができない。
+
++
+すでにサブスクリプション（ AWS の場合は以下を参照）をお持ちの場合、設定はすべて済みです。他に必要な機能はありません。
+
++
+image:screenshot_profile_subscription.gif["アクティブなサブスクリプションを持つインスタンスプロファイルを示す資格情報ページのスクリーンショット。"]
+
+. まだサブスクリプションをお持ちでない場合は、資格情報の上にカーソルを置いてアクションメニューをクリックし、 * サブスクリプションの関連付け * をクリックします。
++
+image:screenshot_add_subscription.gif["資格情報ページのメニューのスクリーンショット。サブスクリプションを資格情報に関連付けるボタンが表示されます。"]
+
+. 既存のサブスクリプションを選択し、 [* アソシエイト * ] をクリックするか、 [ * サブスクリプションの追加 * ] をクリックして、手順を実行します。
++
+次のビデオでは、を関連付ける方法を示します https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^] AWS サブスクリプションへのサブスクリプション：
+
++
+video::video_subscribing_aws.mp4[width=848,height=480]
++
+次のビデオでは、を関連付ける方法を示します https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace で入手できます"^] Azure サブスクリプションへのサブスクリプション：
+
++
+video::video_subscribing_azure.mp4[width=848,height=480]
++
+次のビデオでは、を関連付ける方法を示します https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP Marketplace"^] GCP サブスクリプションへのサブスクリプション：
+
++
+video::video_subscribing_gcp.mp4[width=848,height=480]
+
+
+
+
+== クラウドデータセンス BYOL ライセンスを使用する
+
+ネットアップが提供するお客様所有のライセンスには、 1 年、 2 年、 3 年の期間があります。BYOL * Cloud Data Sense * ライセンスは、 _ フローティング _ ライセンスで、 * すべての作業環境とデータソースで合計容量が共有され、初期ライセンス付与と更新が容易になります。
+
+クラウドデータセンスライセンスをお持ちでない場合は、こちらからお問い合わせください。
+
+* mailto ： ng-contact-data-sense@netapp.com ？ subject = ライセンス [ ライセンスを購入するために電子メールを送信 ] 。
+* Cloud Manager の右下にあるチャットアイコンをクリックして、ライセンスを申請してください。
+
+
+使用しない Cloud Volumes ONTAP 用の未割り当てのノードベースライセンスがある場合は、必要に応じて、ドル同等かつ同じ有効期限を持つ Cloud Data Sense ライセンスに変換できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
+
+Cloud Manager の Digital Wallet ページを使用して、 Cloud Data Sense BYOL ライセンスを管理します。新しいライセンスを追加したり、既存のライセンスを更新したりできます。
+
+
+
+=== Cloud Data Sense ライセンスファイルを入手します
+
+Cloud Data Sense ライセンスを購入したら、 Cloud Data Sense シリアル番号と NSS アカウントを入力するか、 NLF ライセンスファイルをアップロードして、 Cloud Manager でライセンスをアクティブ化します。次の手順は、 NLF ライセンスファイルを取得する方法を示しています。
+
+インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合は、インターネットに接続されたシステムからライセンスファイルを取得する必要があります。シリアル番号と NSS アカウントを使用してライセンスをアクティブ化することは、ダークサイトへのインストールには使用できません。
+
+.手順
+. にサインインします https://mysupport.netapp.com["ネットアップサポートサイト"^] [ システム ] 、 [ ソフトウェアライセンス ] の順にクリックします。
+. Cloud Data Sense ライセンスのシリアル番号を入力します。
++
+image:screenshot_cloud_tiering_license_step1.gif["シリアル番号で検索したあとのライセンスの一覧を示すスクリーンショット。"]
+
+. [* License Key] で、 [* Get NetApp License File* ] をクリックします。
+. Cloud Manager アカウント ID （サポートサイトではテナント ID と呼ばれます）を入力し、 * Submit * をクリックしてライセンスファイルをダウンロードします。
++
+image:screenshot_cloud_tiering_license_step2.gif["ライセンスの取得ダイアログボックスを示すスクリーンショット。テナント ID を入力し、送信をクリックしてライセンスファイルをダウンロードします。"]
+
++
+Cloud Manager アカウント ID は、 Cloud Manager の上部にある「 * Account * 」ドロップダウンを選択し、アカウントの横にある「 * Manage Account * 」をクリックすると確認できます。アカウント ID は、 [ 概要 ] タブにあります。
+
+
+
+
+
+=== Cloud Data Sense BYOL ライセンスをアカウントに追加します
+
+Cloud Manager アカウント用の Cloud Data Sense ライセンスを購入したら、そのライセンスを Cloud Manager に追加して Data Sense サービスを使用できるようにする必要があります。
+
+.手順
+. [ すべてのサービス ] 、 [ デジタルウォレット ] 、 [ データサービスライセンス ] の順にクリックします。
+. [ ライセンスの追加 ] をクリックします。
+. _ ライセンスの追加 _ ダイアログで、ライセンス情報を入力し、 * ライセンスの追加 * をクリックします。
++
+** データセンスライセンスのシリアル番号があり、 NSS アカウントを知っている場合は、 * シリアル番号を入力 * オプションを選択してその情報を入力します。
++
+お使いのネットアップサポートサイトのアカウントがドロップダウンリストにない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSS アカウントを Cloud Manager に追加します"^]。
+
+** データセンスライセンスファイル（ダークサイトにインストールする場合に必要）がある場合は、 * ライセンスファイルのアップロード * オプションを選択し、プロンプトに従ってファイルを添付します。
++
+image:screenshot_services_license_add.png["クラウドデータ使用ライセンスを追加するページを示すスクリーンショット。"]
+
+
+
+
+
+Cloud Manager によってライセンスが追加され、 Cloud Data Sense サービスがアクティブになります。
+
+
+
+=== クラウドデータ使用ライセンスを更新します
+
+ライセンス期間が有効期限に近づいている場合や、ライセンスで許可されている容量が上限に達している場合は、 Cloud Data Sense で通知が送信されます。
+
+image:screenshot_services_license_expire_cc1.png["Cloud Data Sense ページで期限切れになるライセンスを示すスクリーンショット。"]
+
+このステータスは、 [ デジタルウォレット ] ページにも表示されます。
+
+image:screenshot_services_license_expire_cc2.png["Digital Wallet ページに期限切れになるライセンスを示すスクリーンショット。"]
+
+Cloud Data Sense ライセンスは、期限が切れる前に更新できるため、データのスキャンが中断されることはありません。
+
+.手順
+. Cloud Manager の右下にあるチャットアイコンをクリックして、特定のシリアル番号の Cloud Data Sense ライセンスの期間延長または容量の追加をリクエストします。mailto ： ng-contact-data-sense@netapp.com ？ subject= Licensing [ ライセンスの更新をリクエストするメールを送信 ] もできます。
++
+ライセンスの支払いが完了し、ネットアップサポートサイトに登録されると、 Cloud Manager はデジタルウォレットとデータサービスのライセンスページのライセンスを自動的に更新し、 5 分から 10 分で変更が反映されます。
+
+
+
+. Cloud Manager がライセンスを自動更新できない場合（ダークサイトにインストールした場合など）は、ライセンスファイルを手動でアップロードする必要があります。
++
+.. 可能です <<Obtain your Cloud Data Sense license file,ライセンスファイルをネットアップサポートサイトから入手します>>。
+.. [ データサービスライセンス ] タブの [ デジタルウォレット ] ページで、をクリックします image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"] 更新するサービスシリアル番号の場合は、 ［ * ライセンスの更新 * ］ をクリックします。
++
+image:screenshot_services_license_update.png["特定のサービスの [ ライセンスの更新 ] ボタンを選択するスクリーンショット。"]
+
+.. _Update License_page で、ライセンスファイルをアップロードし、 * ライセンスの更新 * をクリックします。
+
+
+
+
+Cloud Manager によってライセンスが更新され、 Cloud Data Sense サービスが引き続きアクティブになるようになります。

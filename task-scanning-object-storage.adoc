@@ -1,0 +1,116 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-object-storage.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, Data Sense 
+summary: Cloud Data Sense で、オブジェクトストレージ内のデータのスキャンを開始するには、いくつかの手順を実行します。データセンスは、 Simple Storage Service （ S3 ）プロトコルを使用する任意の Object Storage サービスからデータをスキャンできます。具体的には、 NetApp StorageGRID 、 IBM Cloud Object Store 、 Azure Blob （ MinIO を使用）、 Linode 、 B2 Cloud Storage 、 Amazon S3 などです。 
+---
+= S3 プロトコルを使用するオブジェクトストレージをスキャンしています
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Data Sense で、オブジェクトストレージ内のデータのスキャンを開始するには、いくつかの手順を実行します。データセンスは、 Simple Storage Service （ S3 ）プロトコルを使用する任意の Object Storage サービスからデータをスキャンできます。具体的には、 NetApp StorageGRID 、 IBM Cloud Object Store 、 Azure Blob （ MinIO を使用）、 Linode 、 B2 Cloud Storage 、 Amazon S3 などです。
+
+
+
+== クイックスタート
+
+これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
+
+[role="quick-margin-para"]
+オブジェクトストレージサービスに接続するには、エンドポイント URL が必要です。
+
+[role="quick-margin-para"]
+Cloud Data Sense でバケットにアクセスできるように、オブジェクトストレージプロバイダからアクセスキーとシークレットキーを入手する必要があります。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
+
+[role="quick-margin-para"]
+オブジェクトストレージサービスをクラウドデータセンスに追加します。
+
+[role="quick-margin-para"]
+スキャンするバケットを選択すると、 Cloud Data Sense によってスキャンが開始されます。
+
+
+
+== オブジェクトストレージ要件の確認
+
+Cloud Data Sense を有効にする前に、次の前提条件を確認し、サポートされている構成であることを確認します。
+
+* オブジェクトストレージサービスに接続するには、エンドポイント URL が必要です。
+* データセンスでバケットにアクセスできるようにするには、オブジェクトストレージプロバイダからアクセスキーとシークレットキーを取得する必要があります。
+* Azure Blob のサポートにはを使用する必要があります link:https://min.io/["MinIO サービス"^]。
+
+
+
+
+== Cloud Data Sense インスタンスの導入
+
+導入済みのインスタンスがない場合は Cloud Data Sense を導入
+
+データセンスは、のいずれかです link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]。
+
+Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
+
+
+
+== Cloud Data Sense へのオブジェクトストレージサービスの追加
+
+オブジェクトストレージサービスを追加します。
+
+.手順
+. [ 作業環境の構成 ] ページで、 [ * データソースの追加 *>* オブジェクトストレージサービスの追加 *] をクリックします。
++
+image:screenshot_compliance_add_object_storage_button.png["［ スキャン設定 ］ ページのスクリーンショットで、 ［ ファイル共有グループの追加 ］ ボタンをクリックします。"]
+
+. Add Object Storage Service ダイアログで、オブジェクトストレージサービスの詳細を入力し、 * Continue * をクリックします。
++
+.. 作業環境に使用する名前を入力します。この名前には、接続先のオブジェクトストレージサービスの名前を指定する必要があります。
+.. エンドポイントの URL を入力してオブジェクトストレージサービスにアクセスします。
+.. Cloud Data Sense がオブジェクトストレージ内のバケットにアクセスできるように、アクセスキーとシークレットキーを入力します。
++
+image:screenshot_compliance_add_object_storage.png["オブジェクトストレージサービスにアクセスするための値を入力するダイアログのスクリーンショット。"]
+
+
+
+
+
+新しいオブジェクトストレージサービスが作業環境のリストに追加されます。
+
+
+
+== オブジェクトストレージバケットでの準拠スキャンの有効化と無効化
+
+オブジェクトストレージサービスで Cloud Data Sense を有効にしたら、次の手順でスキャンするバケットを設定します。Data Sense は、これらのバケットを検出し、作成した作業環境に表示します。
+
+.手順
+. 設定ページで、 Object Storage Service 作業環境の * 設定 * をクリックします。
++
+image:screenshot_compliance_object_storage_config.png["スキャンするバケットを選択できるように、作業環境の設定をクリックするスクリーンショット。"]
+
+. バケットでマッピング専用スキャン、またはマッピングスキャンと分類スキャンを有効にします。
++
+image:screenshot_compliance_object_storage_select_buckets.png["スキャンするオブジェクトストレージバケットを選択するスクリーンショット。"]
+
++
+[cols="45,45"]
+|===
+| 終了： | 手順： 
+
+
+| バケットでマッピングのみのスキャンを有効にする | [* マップ * ] をクリックします 
+
+
+| バケットでフルスキャンを有効にします | [ マップと分類 *] をクリックします 
+
+
+| バケットに対するスキャンを無効にする | [ * Off * ] をクリックします 
+|===
+
+
+Cloud Data Sense は、有効にしたバケットのスキャンを開始します。エラーが発生した場合は、エラーを修正するために必要なアクションとともに、 [ ステータス ] 列に表示されます。
