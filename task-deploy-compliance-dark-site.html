@@ -695,7 +695,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-01 18:05:13 +0000">04/01/2022</time>
+    <time datetime="2022-04-04 20:32:19 +0000">04/04/2022</time>
     
   
 
@@ -735,10 +735,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>Cloud Manager を非常にセキュアにインストールする必要があるが、 OneDrive アカウントや SharePoint アカウントをスキャンする場合は、 Data Sense オフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <a href="#SharePoint and OneDrive special requirements">SharePoint と OneDrive の特別な要件</a> を参照してください。</p>
-</div>
-<div class="paragraph">
-<p>現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP の FSX 、または AWS S3 アカウントのスキャンはサポートされていません。</p>
+<p>現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP 用 FSX 、 AWS S3 、 OneDrive 、 SharePoint のアカウントをスキャンすることはできません。</p>
 </div>
 </div>
 </div>
@@ -756,7 +753,7 @@
 <li>
 <p>Cloud Manager からのソフトウェアの自動アップグレード</p>
 <div class="paragraph">
-<p>Cloud Manager Connector と Data Sense は、新しい機能を有効にするために、定期的な手動アップグレードを必要とします。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します <a href="whats-new.html">"Cloud Data Sense リリースノート"</a> 各リリースの新機能と、ソフトウェアアップデートパッケージが利用可能になるタイミングを確認します。次に、の手順を実行します <a href="#Upgrade Data Sense software">データセンスソフトウェアをアップグレードします</a>。</p>
+<p>Cloud Manager Connector と Data Sense は、新しい機能を有効にするために、定期的な手動アップグレードを必要とします。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します <a href="whats-new.html">"Cloud Data Sense リリースノート"</a> 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します <a href="#Upgrade Data Sense software">データセンスソフトウェアをアップグレードします</a>。</p>
 </div>
 </li>
 </ul>
@@ -885,39 +882,6 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="sharepoint-と-onedrive-の特別な要件">SharePoint と OneDrive の特別な要件</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>インターネットにアクセスできないサイトに Cloud Manager と Data Sense を導入している場合は、 SharePoint アカウントと OneDrive アカウントでファイルをスキャンできます。そのためには、選択したいくつかのエンドポイントにインターネットアクセスを提供しています。</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">エンドポイント</th>
-<th class="tableblock halign-left valign-top">目的</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">¥ login.microsoft.com ¥ graph.microsoft.com</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">選択したオンラインサービスにログインするための Microsoft サーバとの通信。</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\ <a href="https://cloudmanager.cloud.netapp.com" class="bare">https://cloudmanager.cloud.netapp.com</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ネットアップアカウントを含む Cloud Manager サービスとの通信</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p><em>cloudmanager.cloud.netapp.com</em> へのアクセスは、これらの外部サービスへの初期接続時にのみ必要です。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="データセンスの導入">データセンスの導入</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -998,7 +962,7 @@
 </div>
 </li>
 <li>
-<p>インストーラからプロンプトが表示されたら、一連のプロンプトで必要な値を入力するか、または最初のプロンプトでコマンド全体を入力できます。</p>
+<p>インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1023,12 +987,9 @@
 <li>
 <p>Cloud Manager Connector ホストマシンの IP アドレスまたはホスト名を入力して、 Data Sense インスタンスからアクセスできるようにします。</p>
 </li>
-<li>
-<p>プロンプトが表示されたら、プロキシの詳細を入力Cloud Manager ですでにプロキシが使用されている場合は、 Cloud Manager が使用するプロキシが Data Sense で自動的に使用されるため、ここでもう一度入力する必要はありません。</p>
-</li>
 </ol>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">または、コマンド全体を事前に作成して、最初のプロンプトに「 sudo ./install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;token&gt; --host &lt;ds_host&gt;--cm-host&lt;proxy_host&gt;--proxy-host &lt;proxy_host&gt;--dark-proxy-proxy-password-pxe-password-proxy-px&lt;proxy-password&gt; 」と入力することもできます</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">また、必要なホストパラメータとして、「 sudo ./install.sh -a &lt;account_id &gt; -c &lt;agent_id &gt; -t &lt;token&gt; --host &lt;DS_host&gt; --manager-host &lt;cm_host&gt; --no-proxy --darksite 」を事前に指定して、コマンド全体を作成することもできます</p></td>
 </tr>
 </tbody>
 </table>
@@ -1051,21 +1012,6 @@
 </li>
 <li>
 <p><em>cm_host</em>= Cloud Manager Connector システムの IP アドレスまたはホスト名。</p>
-</li>
-<li>
-<p><em>proxy_host</em> = ホストがプロキシサーバの背後にある場合は、プロキシサーバの IP 名またはホスト名。</p>
-</li>
-<li>
-<p><em>proxy_port</em>= プロキシサーバに接続するポート（デフォルトは 80 ）です。</p>
-</li>
-<li>
-<p><em>proxy_scheme</em>= 接続方式： https または http （デフォルト http ）。</p>
-</li>
-<li>
-<p><em>proxy_user</em>= ベーシック認証が必要な場合、プロキシサーバに接続するための認証されたユーザ。</p>
-</li>
-<li>
-<p><em>proxy_password</em> = 指定したユーザ名のパスワード。</p>
 </li>
 </ul>
 </div>
@@ -1169,12 +1115,12 @@
 <p>から手順 1~8 を実行します <a href="task-deploy-compliance-dark-site.html#deploy-data-sense-on-a-single-host-typical-configuration">"シングルホストインストール"</a> マネージャーノード。</p>
 </li>
 <li>
-<p>手順 9 で示すように、インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、最初のプロンプトでコマンド全体を入力します。</p>
+<p>手順 9 に示すように、インストーラからプロンプトが表示されたら、一連のプロンプトで必要な値を入力するか、必要なパラメータをコマンドライン引数としてインストーラに指定することができます。</p>
 <div class="paragraph">
 <p>シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n &lt;Node_IP&gt; * を使用してスキャナノードの IP アドレスを指定します。複数のノードの IP をカンマで区切って指定します。</p>
 </div>
 <div class="paragraph">
-<p>たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'UDO./ install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;token&gt; --host &lt;DS_host&gt;*-n &lt;Node_ip1&gt; 、 &lt;node-dark_ip2&gt; 、 &lt;node-dark3&gt;*-proxy-proxy-pproxy-pproxy-password&lt;/password&gt;</p>
+<p>たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'sudo ./install.sh -a &lt;account_id &gt; -c &lt;agent_id&gt; -t &lt;token&gt; --host &lt;DS_host&gt; --manager-host &lt;cm_host&gt; * -n &lt;node-ip1&gt; 、 &lt;node-ip2&gt; 、 &lt;node-dark3&gt;*-no-proxy-site</p>
 </div>
 </li>
 <li>
@@ -1208,7 +1154,7 @@
 <p>Cloud Data Sense インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 15 ～ 25 分かかる場合があります。</p>
 </div>
 <div class="paragraph">
-<p>設定ページからローカルを選択できます <a href="task-getting-started-compliance.html">"オンプレミスの ONTAP クラスタ"</a> および <a href="task-scanning-databases.html">"データベース"</a> をスキャンします。</p>
+<p>設定ページからローカルを選択できます <a href="task-getting-started-compliance.html">"オンプレミスの ONTAP クラスタ"</a> および local です <a href="task-scanning-databases.html">"データベース"</a> をスキャンします。</p>
 </div>
 <div class="paragraph">
 <p>また可能です <a href="task-licensing-datasense.html#use-a-cloud-data-sense-byol-license">"クラウドデータセンスを使用する BYOL ライセンスをセットアップする"</a> 現時点では、デジタルウォレットのページから入手できます。データ量が 1TB を超えるまでは料金は発生しません。</p>

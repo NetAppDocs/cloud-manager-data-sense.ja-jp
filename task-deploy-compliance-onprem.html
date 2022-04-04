@@ -695,7 +695,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-01 18:05:13 +0000">04/01/2022</time>
+    <time datetime="2022-04-04 20:32:19 +0000">04/04/2022</time>
     
   
 
@@ -902,24 +902,6 @@ Azure NetApp Files ボリュームのスキャンを計画している場合は�
 <dt class="hdlist1">Cloud Manager に必要な権限が割り当てられていることを確認します</dt>
 <dd>
 <p>Cloud Manager に、リソースを導入する権限と、 Cloud Data Sense インスタンス用のセキュリティグループを作成する権限があることを確認します。最新の Cloud Manager 権限は、で確認できます <a href="https://mysupport.netapp.com/site/info/cloud-manager-policies" target="_blank" rel="noopener">"ネットアップが提供するポリシー"</a>。</p>
-<div class="openblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>注： * Cloud Manager 3.9.10 以上を使用して GCP でコネクタを作成した場合、すべて設定されます。以前のバージョンを使用してコネクタを作成した場合、 Cloud Data Sense を GCP に展開するには、コネクタに関連付けられている GCP サービスアカウントに次の権限を追加する必要があります。</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-json" data-lang="json">compute.instances.addAccessConfig
-compute.subnetworks.use
-compute.subnetworks.useExternalIp</code></pre>
-</div>
-</div>
-</div>
-</div>
 </dd>
 <dt class="hdlist1">Cloud Manager Connector が Cloud Data Sense にアクセスできることを確認する</dt>
 <dd>
@@ -999,6 +981,9 @@ Cloud Data Sense は、ソフトウェアがオンプレミスにインストー
 <p>Linux システムに対する root 権限があることを確認してください。</p>
 </li>
 <li>
+<p>プロキシを使用していて、 TLS 代行受信を実行している場合は、 TLS CA 証明書が保存されている Data Sense Linux システム上のパスを確認する必要があります。</p>
+</li>
+<li>
 <p>オフライン環境が要件を満たしていることを確認します <a href="#Verify Cloud Manager and Data Sense prerequisites">権限と接続</a>。</p>
 </li>
 </ul>
@@ -1042,7 +1027,7 @@ Cloud Data Sense は、ソフトウェアがオンプレミスにインストー
 </div>
 </li>
 <li>
-<p>インストーラからプロンプトが表示されたら、一連のプロンプトで必要な値を入力するか、または最初のプロンプトでコマンド全体を入力できます。</p>
+<p>インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1072,7 +1057,7 @@ Cloud Data Sense は、ソフトウェアがオンプレミスにインストー
 </li>
 </ol>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">または、コマンド全体を事前に作成して、最初のプロンプトに「 sudo ./install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;token&gt; --host &lt;ds_host&gt;--cm-host&lt;proxy_host&gt;--proxy-host &lt;proxy_host&gt;--proxy-port-proxy-password&lt;/password&gt; 」と入力することもできます</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">また、必要なホストパラメータとプロキシパラメータを指定して、コマンド全体を事前に作成することもできます。 sudo ./install.sh -a &lt;account_id &gt; -c &lt;agent_id&gt; -t &lt;token&gt; -host &lt;ds_host&gt; --proxy-host &lt;cm_host&gt; --proxy-host &lt;proxy_host&gt; -proxy-port &lt;proxy-dir password&gt; -proxy-password-dir &lt;proxy-password&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -1110,6 +1095,9 @@ Cloud Data Sense は、ソフトウェアがオンプレミスにインストー
 </li>
 <li>
 <p><em>proxy_password</em> = 指定したユーザ名のパスワード。</p>
+</li>
+<li>
+<p><em>ca_cert_dir</em>= 追加の TLS CA 証明書バンドルを含む Data Sense Linux システム上のパス。プロキシが TLS 代行受信を実行している場合にのみ必要です。</p>
 </li>
 </ul>
 </div>
@@ -1213,12 +1201,12 @@ Cloud Data Sense は、ソフトウェアがオンプレミスにインストー
 <p>の手順 1~7 を実行します <a href="#Single-host installation for typical configurations">シングルホストインストール</a> マネージャーノード。</p>
 </li>
 <li>
-<p>手順 8 で示したように、インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、最初のプロンプトでコマンド全体を入力します。</p>
+<p>手順 8 で示したように、インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、必要なパラメータをコマンドライン引数としてインストーラに指定することができます。</p>
 <div class="paragraph">
 <p>シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n &lt;Node_IP&gt; * を使用してスキャナノードの IP アドレスを指定します。複数のスキャナノードの IP はカンマで区切って指定します。</p>
 </div>
 <div class="paragraph">
-<p>たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'UDO./ install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;token&gt; --host &lt;DS_host&gt;*-n &lt;node-ip1&gt; 、 &lt;Node_ip2&gt; 、 &lt;Node_ip3&gt;proxy-proxy-password-px&lt;proxy-proxy-password&lt;/password&gt;</p>
+<p>たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'sudo ./install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;token&gt; --host &lt;ds_host&gt; --manager-host &lt;cm_host&gt; * -n &lt;node-ip1&gt; 、 &lt;node-ip2&gt; 、 &lt;node-ip3&gt;*-proxy-proxy-proxy-host-pproxy-pxe-password&lt;/password&gt;</p>
 </div>
 </li>
 <li>

@@ -695,7 +695,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-01 18:05:13 +0000">04/01/2022</time>
+    <time datetime="2022-04-04 20:32:19 +0000">04/04/2022</time>
     
   
 
@@ -708,10 +708,10 @@
 <p>グローバル Active Directory をクラウドデータセンスと統合すると、ファイル所有者や、ファイルにアクセスできるユーザーやグループについてデータセンスがレポートする結果を高めることができます。</p>
 </div>
 <div class="paragraph">
-<p>一部のデータソース（以下に記載）を設定する場合、 CIFS ボリュームをスキャンするデータセンスを設定するためには、 Active Directory のクレデンシャルを入力する必要があります。この統合により、データセンスとファイル所有者、およびそれらのデータソースの権限の詳細が提供されます。これらのデータソースに対して入力した Active Directory は、ここで入力したグローバル Active Directory クレデンシャルと異なる場合があります。データセンスは、統合されたすべての Active Directory でユーザと権限の詳細を確認します。</p>
+<p>一部のデータソース（以下に記載）を設定する場合、 CIFS ボリュームをスキャンするデータセンスを設定するためには、 Active Directory のクレデンシャルを入力する必要があります。この統合により、データセンスとファイル所有者、およびそれらのデータソースに存在するデータの権限の詳細が提供されます。これらのデータソースに対して入力した Active Directory は、ここで入力したグローバル Active Directory クレデンシャルと異なる場合があります。データセンスは、統合されたすべての Active Directory でユーザと権限の詳細を確認します。</p>
 </div>
 <div class="paragraph">
-<p>これは、データの意味において次のような場所で役立ちます。</p>
+<p>この統合により、データセンスの良い場所で追加情報 を利用できるようになります。</p>
 </div>
 <div class="ulist">
 <ul>
@@ -774,7 +774,7 @@
 <h2 id="active-directory-サーバに接続しています">Active Directory サーバに接続しています</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>データセンスを導入し、データソースでスキャンを有効化したら、 Active Directory とデータセンスを統合できます。</p>
+<p>データセンスを導入し、データソースでスキャンを有効化したら、 Active Directory とデータセンスを統合できます。Active Directory には、 DNS サーバの IP アドレスまたは LDAP サーバの IP アドレスを使用してアクセスできます。</p>
 </div>
 <div class="paragraph">
 <p>Active Directory のクレデンシャルは読み取り専用ですが、管理者のクレデンシャルを指定することで、データセンスは昇格された権限を必要とするすべてのデータを読み取ることができます。クレデンシャルは Cloud Data Sense インスタンスに保存されます。</p>
@@ -791,9 +791,19 @@
 <ul>
 <li>
 <p>DNS サーバの IP アドレス、または複数の IP アドレス</p>
+<div class="paragraph">
+<p>または</p>
+</div>
 </li>
+</ul>
+</div>
+<div class="paragraph">
+<p>LDAP サーバの IP アドレス、または複数の IP アドレス</p>
+</div>
+<div class="ulist">
+<ul>
 <li>
-<p>サーバーのユーザー名とパスワード</p>
+<p>サーバーにアクセスするためのユーザー名とパスワード</p>
 </li>
 <li>
 <p>ドメイン名（ Active Directory 名）</p>
@@ -864,7 +874,10 @@
 </div>
 </li>
 <li>
-<p>Active Directory への接続ダイアログで、 Active Directory の詳細を入力し、 * 接続 * をクリックします。複数の IP アドレスを追加するには、エントリ間にカンマを追加します。</p>
+<p>Active Directory への接続ダイアログで、 Active Directory の詳細を入力し、 * 接続 * をクリックします。</p>
+<div class="paragraph">
+<p>必要に応じて、 * IP の追加 * をクリックすると、複数の IP アドレスを追加できます。</p>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_compliance_active_directory_dialog.png" alt="データセンスと統合する Active Directory を定義するダイアログのスクリーンショット。"></span></p>
 </div>
