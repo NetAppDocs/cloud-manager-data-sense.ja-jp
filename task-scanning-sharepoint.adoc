@@ -53,8 +53,6 @@ SharePoint アカウントでスキャンする SharePoint サイト URL のリ�
 
 Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
 
-データセンスは、の場合もあります link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスの場所に導入されている"^]。ただし、 SharePoint ファイルをスキャンするには、インターネット経由でいくつかの選択したエンドポイントにアクセスできるようにする必要があります。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["必要なエンドポイントのリストを参照してください"]。
-
 
 
 == SharePoint アカウントを追加しています

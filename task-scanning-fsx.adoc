@@ -22,13 +22,13 @@ summary: クラウドデータセンスを使用した Amazon FSX for ONTAP ボ�
 * データセンスを導入および管理するには、 AWS にアクティブなコネクタが必要です。
 * 作業環境の作成時に選択したセキュリティグループは、 Cloud Data Sense インスタンスからのトラフィックを許可する必要があります。関連付けられたセキュリティグループは、 FSX for ONTAP ファイルシステムに接続されている ENI を使用して検索し、 AWS 管理コンソールを使用して編集できます。
 +
-link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["Linux インスタンス用の AWS セキュリティグループ"]
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["Linux インスタンス用の AWS セキュリティグループ"^]
 
 +
-link:https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html["Windows インスタンス用の AWS セキュリティグループ"]
+https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html["Windows インスタンス用の AWS セキュリティグループ"^]
 
 +
-link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS Elastic Network Interface （ ENI ）"]
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS Elastic Network Interface （ ENI ）"^]
 
 
 

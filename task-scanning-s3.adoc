@@ -242,7 +242,7 @@ Cloud Data Sense インスタンスプロファイルアカウントが追加の
 
 . Amazon S3 Configuration * ページに移動し、新しい AWS アカウントが表示されます。Cloud Data Sense が新しいアカウントの作業環境を同期し、この情報を表示するまでに数分かかる場合があります。
 +
-image:screenshot_activate_and_select_buckets.png[""]
+image:screenshot_activate_and_select_buckets.png["データセンスをアクティブ化する方法を示すスクリーンショット。"]
 
 . [Activate Data Sense & Select Buckets] をクリックして、スキャンするバケットを選択します。
 

@@ -42,7 +42,7 @@ NOTE: 現時点では、データベース内でのデータの件名検索は�
 
 == データ主体の検索とレポートのダウンロード
 
-データ主体のフルネームまたは既知の識別子を検索し、ファイルリストレポートまたは dsar レポートをダウンロードします。で検索できます link:task-controlling-private-data.html#types-of-personal-data["個人情報の種類"^]。
+データ主体のフルネームまたは既知の識別子を検索し、ファイルリストレポートまたは dsar レポートをダウンロードします。で検索できます link:reference-private-data-categories.html#types-of-personal-data["個人情報の種類"^]。
 
 
 NOTE: 英語、ドイツ語、スペイン語は、データ主体の名前を検索する場合にサポートされています。言語のサポートは、あとで追加されます。

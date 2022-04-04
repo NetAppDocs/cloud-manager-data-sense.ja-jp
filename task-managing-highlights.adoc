@@ -153,7 +153,7 @@ TIP: データベース、 OneDrive アカウント、 SharePoint アカウン�
 * ファイルをコピーして同期するには、アカウント管理者またはワークスペース管理者の役割が必要です。
 * 選択したファイルはすべて、同じソースリポジトリ（ ONTAP ボリューム、 S3 バケット、 NFS 共有、 CIFS 共有など）にある必要があります。
 * 一度にコピーできるファイルの最大数は 20 、 000 です。
-* Cloud Sync サービスをアクティブ化し、少なくとも 1 つのデータブローカーを構成して、ソースシステムとターゲットシステム間でファイルを転送できるようにする必要があります。から、 Cloud Sync の要件を確認します link:https://docs.netapp.com/us-en/occm/task-sync-quick-start.html["Quick Start 概要 の略"^]。
+* Cloud Sync サービスをアクティブ化し、少なくとも 1 つのデータブローカーを構成して、ソースシステムとターゲットシステム間でファイルを転送できるようにする必要があります。から、 Cloud Sync の要件を確認します link:https://docs.netapp.com/us-en/cloud-manager-sync/task-sync-quick-start.html["Quick Start 概要 の略"^]。
 +
 Cloud Sync サービスでは同期関係のサービス料金が別途請求されるため、データブローカーをクラウドに導入するとリソース料金が発生することに注意してください。
 
@@ -182,7 +182,7 @@ Cloud Sync UI が Cloud Manager で開きます。
 +
 同期関係を定義するよう求められます。ソースシステムは、データセンスで選択したリポジトリとファイルに基づいてあらかじめ設定されています。
 
-. ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、 Cloud Sync の要件を確認します link:https://docs.netapp.com/us-en/occm/task-sync-quick-start.html["Quick Start 概要 の略"^]。
+. ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、 Cloud Sync の要件を確認します link:https://docs.netapp.com/us-en/cloud-manager-sync/task-sync-quick-start.html["Quick Start 概要 の略"^]。
 
 
 ファイルはターゲットシステムにコピーされ、定義したスケジュールに基づいて同期されます。1 回限りの同期を選択した場合、ファイルは 1 回だけコピーされ、同期されます。定期的な同期を選択した場合は、スケジュールに基づいてファイルが同期されます。フィルタを使用して作成したクエリに一致する新しいファイルがソースシステムによって追加されると、これらの _new_files がコピー先にコピーされ、後で同期されることに注意してください。

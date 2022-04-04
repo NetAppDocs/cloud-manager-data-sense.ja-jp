@@ -29,9 +29,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 * Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
 
-Cloud Manager を非常にセキュアにインストールする必要があるが、 OneDrive アカウントや SharePoint アカウントをスキャンする場合は、 Data Sense オフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <<SharePoint and OneDrive special requirements,SharePoint と OneDrive の特別な要件>> を参照してください。
-
-現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP の FSX 、または AWS S3 アカウントのスキャンはサポートされていません。
+現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP 用 FSX 、 AWS S3 、 OneDrive 、 SharePoint のアカウントをスキャンすることはできません。
 
 
 
@@ -42,7 +40,7 @@ Cloud Manager を非常にセキュアにインストールする必要がある
 * Microsoft Azure Information Protection （ AIP ）ラベルの管理
 * Cloud Manager からのソフトウェアの自動アップグレード
 +
-Cloud Manager Connector と Data Sense は、新しい機能を有効にするために、定期的な手動アップグレードを必要とします。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、ソフトウェアアップデートパッケージが利用可能になるタイミングを確認します。次に、の手順を実行します <<Upgrade Data Sense software,データセンスソフトウェアをアップグレードします>>。
+Cloud Manager Connector と Data Sense は、新しい機能を有効にするために、定期的な手動アップグレードを必要とします。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します <<Upgrade Data Sense software,データセンスソフトウェアをアップグレードします>>。
 
 
 
@@ -124,24 +122,6 @@ Cloud Manager でインストールの進捗状況を確認できるように、
 
 
 
-== SharePoint と OneDrive の特別な要件
-
-インターネットにアクセスできないサイトに Cloud Manager と Data Sense を導入している場合は、 SharePoint アカウントと OneDrive アカウントでファイルをスキャンできます。そのためには、選択したいくつかのエンドポイントにインターネットアクセスを提供しています。
-
-[cols="50,50"]
-|===
-| エンドポイント | 目的 
-
-
-| ¥ login.microsoft.com ¥ graph.microsoft.com | 選択したオンラインサービスにログインするための Microsoft サーバとの通信。 
-
-
-| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含む Cloud Manager サービスとの通信 
-|===
-_cloudmanager.cloud.netapp.com_ へのアクセスは、これらの外部サービスへの初期接続時にのみ必要です。
-
-
-
 == データセンスの導入
 
 一般的な構成では、ソフトウェアを 1 台のホストシステムにインストールします。 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["これらの手順を参照してください"]。
@@ -192,7 +172,7 @@ image:screenshot_cloud_compliance_deploy_darksite.png["クラウドデータセ�
 ----
 tar -xzf cc_onprem_installer_1.10.0.tar.gz
 ----
-. インストーラからプロンプトが表示されたら、一連のプロンプトで必要な値を入力するか、または最初のプロンプトでコマンド全体を入力できます。
+. インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。
 +
 [cols="50a,50"]
 |===
@@ -203,9 +183,8 @@ tar -xzf cc_onprem_installer_1.10.0.tar.gz
 .. 手順 7 からコピーした情報を貼り付けます。 'UDO./ install.sh -a <account_id> -c <agent_id> -t <token> --darksite
 .. コネクタインスタンスからアクセスできるように、 Data Sense ホストマシンの IP アドレスまたはホスト名を入力します。
 .. Cloud Manager Connector ホストマシンの IP アドレスまたはホスト名を入力して、 Data Sense インスタンスからアクセスできるようにします。
-.. プロンプトが表示されたら、プロキシの詳細を入力Cloud Manager ですでにプロキシが使用されている場合は、 Cloud Manager が使用するプロキシが Data Sense で自動的に使用されるため、ここでもう一度入力する必要はありません。
 
-| または、コマンド全体を事前に作成して、最初のプロンプトに「 sudo ./install.sh -a <account_id>-c <agent_id>-t <token> --host <ds_host>--cm-host<proxy_host>--proxy-host <proxy_host>--dark-proxy-proxy-password-pxe-password-proxy-px<proxy-password> 」と入力することもできます 
+| また、必要なホストパラメータとして、「 sudo ./install.sh -a <account_id > -c <agent_id > -t <token> --host <DS_host> --manager-host <cm_host> --no-proxy --darksite 」を事前に指定して、コマンド全体を作成することもできます 
 |===
 +
 変数値：
@@ -216,11 +195,6 @@ tar -xzf cc_onprem_installer_1.10.0.tar.gz
 ** _ctoken _ = JWT ユーザートークン
 ** _ds_host_ = Data Sense Linux システムの IP アドレスまたはホスト名
 ** _cm_host_= Cloud Manager Connector システムの IP アドレスまたはホスト名。
-** _proxy_host_ = ホストがプロキシサーバの背後にある場合は、プロキシサーバの IP 名またはホスト名。
-** _proxy_port_= プロキシサーバに接続するポート（デフォルトは 80 ）です。
-** _proxy_scheme_= 接続方式： https または http （デフォルト http ）。
-** _proxy_user_= ベーシック認証が必要な場合、プロキシサーバに接続するための認証されたユーザ。
-** _proxy_password_ = 指定したユーザ名のパスワード。
 
 
 
@@ -275,12 +249,12 @@ Data Sense インストーラは、パッケージをインストールし、イ
 
 .手順
 . から手順 1~8 を実行します link:task-deploy-compliance-dark-site.html#deploy-data-sense-on-a-single-host-typical-configuration["シングルホストインストール"] マネージャーノード。
-. 手順 9 で示すように、インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、最初のプロンプトでコマンド全体を入力します。
+. 手順 9 に示すように、インストーラからプロンプトが表示されたら、一連のプロンプトで必要な値を入力するか、必要なパラメータをコマンドライン引数としてインストーラに指定することができます。
 +
 シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n <Node_IP> * を使用してスキャナノードの IP アドレスを指定します。複数のノードの IP をカンマで区切って指定します。
 
 +
-たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'UDO./ install.sh -a <account_id>-c <agent_id>-t <token> --host <DS_host>*-n <Node_ip1> 、 <node-dark_ip2> 、 <node-dark3>*-proxy-proxy-pproxy-pproxy-password</password>
+たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'sudo ./install.sh -a <account_id > -c <agent_id> -t <token> --host <DS_host> --manager-host <cm_host> * -n <node-ip1> 、 <node-ip2> 、 <node-dark3>*-no-proxy-site
 
 . マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーし、テキストファイルに保存します。例：
 +
@@ -300,7 +274,7 @@ sudo ./node_install.sh -m 10.11.12.13-t ふぁいる EF-1u69m1-1s35212`
 
 Cloud Data Sense インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 15 ～ 25 分かかる場合があります。
 
-設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および link:task-scanning-databases.html["データベース"] をスキャンします。
+設定ページからローカルを選択できます link:task-getting-started-compliance.html["オンプレミスの ONTAP クラスタ"] および local です link:task-scanning-databases.html["データベース"] をスキャンします。
 
 また可能です link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["クラウドデータセンスを使用する BYOL ライセンスをセットアップする"] 現時点では、デジタルウォレットのページから入手できます。データ量が 1TB を超えるまでは料金は発生しません。
 

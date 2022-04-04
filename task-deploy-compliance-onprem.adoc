@@ -127,17 +127,6 @@ Cloud Data Sense からのアウトバウンドインターネットアクセス
 |===
 --
 Cloud Manager に必要な権限が割り当てられていることを確認します:: Cloud Manager に、リソースを導入する権限と、 Cloud Data Sense インスタンス用のセキュリティグループを作成する権限があることを確認します。最新の Cloud Manager 権限は、で確認できます https://mysupport.netapp.com/site/info/cloud-manager-policies["ネットアップが提供するポリシー"^]。
-+
---
-* 注： * Cloud Manager 3.9.10 以上を使用して GCP でコネクタを作成した場合、すべて設定されます。以前のバージョンを使用してコネクタを作成した場合、 Cloud Data Sense を GCP に展開するには、コネクタに関連付けられている GCP サービスアカウントに次の権限を追加する必要があります。
-
-[source, json]
-----
-compute.instances.addAccessConfig
-compute.subnetworks.use
-compute.subnetworks.useExternalIp
-----
---
 Cloud Manager Connector が Cloud Data Sense にアクセスできることを確認する:: コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。
 +
 --
@@ -180,6 +169,7 @@ NOTE: Cloud Data Sense は、ソフトウェアがオンプレミスにインス
 * Linux システムがを満たしていることを確認します <<Prepare the Linux host system,ホストの要件>>。
 * （オプション）システムに、前提条件となる 2 つのソフトウェアパッケージ（ Docker Engine と Python 3 ）がインストールされていることを確認します。このソフトウェアがシステムにインストールされていない場合は、インストーラによってインストールされます。
 * Linux システムに対する root 権限があることを確認してください。
+* プロキシを使用していて、 TLS 代行受信を実行している場合は、 TLS CA 証明書が保存されている Data Sense Linux システム上のパスを確認する必要があります。
 * オフライン環境が要件を満たしていることを確認します <<Verify Cloud Manager and Data Sense prerequisites,権限と接続>>。
 
 
@@ -205,7 +195,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["クラウドデータセン
 ----
 tar -xzf cc_onprem_installer_1.10.0.tar.gz
 ----
-. インストーラからプロンプトが表示されたら、一連のプロンプトで必要な値を入力するか、または最初のプロンプトでコマンド全体を入力できます。
+. インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。
 +
 [cols="50a,50"]
 |===
@@ -218,7 +208,7 @@ tar -xzf cc_onprem_installer_1.10.0.tar.gz
 .. Cloud Manager Connector ホストマシンの IP アドレスまたはホスト名を入力して、 Data Sense インスタンスからアクセスできるようにします。
 .. プロンプトが表示されたら、プロキシの詳細を入力Cloud Manager ですでにプロキシが使用されている場合は、 Cloud Manager が使用するプロキシが Data Sense で自動的に使用されるため、ここでもう一度入力する必要はありません。
 
-| または、コマンド全体を事前に作成して、最初のプロンプトに「 sudo ./install.sh -a <account_id>-c <agent_id>-t <token> --host <ds_host>--cm-host<proxy_host>--proxy-host <proxy_host>--proxy-port-proxy-password</password> 」と入力することもできます 
+| また、必要なホストパラメータとプロキシパラメータを指定して、コマンド全体を事前に作成することもできます。 sudo ./install.sh -a <account_id > -c <agent_id> -t <token> -host <ds_host> --proxy-host <cm_host> --proxy-host <proxy_host> -proxy-port <proxy-dir password> -proxy-password-dir <proxy-password> 
 |===
 +
 変数値：
@@ -234,6 +224,7 @@ tar -xzf cc_onprem_installer_1.10.0.tar.gz
 ** _proxy_scheme_= 接続方式： https または http （デフォルト http ）。
 ** _proxy_user_= ベーシック認証が必要な場合、プロキシサーバに接続するための認証されたユーザ。
 ** _proxy_password_ = 指定したユーザ名のパスワード。
+** _ca_cert_dir_= 追加の TLS CA 証明書バンドルを含む Data Sense Linux システム上のパス。プロキシが TLS 代行受信を実行している場合にのみ必要です。
 
 
 
@@ -288,12 +279,12 @@ Cloud Data Sense インストーラは、パッケージのインストール、
 
 .手順
 . の手順 1~7 を実行します <<Single-host installation for typical configurations,シングルホストインストール>> マネージャーノード。
-. 手順 8 で示したように、インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、最初のプロンプトでコマンド全体を入力します。
+. 手順 8 で示したように、インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、必要なパラメータをコマンドライン引数としてインストーラに指定することができます。
 +
 シングルホストのインストールで使用できる変数に加えて、新しいオプション * -n <Node_IP> * を使用してスキャナノードの IP アドレスを指定します。複数のスキャナノードの IP はカンマで区切って指定します。
 
 +
-たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'UDO./ install.sh -a <account_id>-c <agent_id>-t <token> --host <DS_host>*-n <node-ip1> 、 <Node_ip2> 、 <Node_ip3>proxy-proxy-password-px<proxy-proxy-password</password>
+たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'sudo ./install.sh -a <account_id>-c <agent_id>-t <token> --host <ds_host> --manager-host <cm_host> * -n <node-ip1> 、 <node-ip2> 、 <node-ip3>*-proxy-proxy-proxy-host-pproxy-pxe-password</password>
 
 . マネージャノードのインストールが完了する前に、スキャナノードに必要なインストールコマンドがダイアログに表示されます。コマンドをコピーし、テキストファイルに保存します。例：
 +

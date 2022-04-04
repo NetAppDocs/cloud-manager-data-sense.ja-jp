@@ -115,17 +115,6 @@ AWS 、 Azure 、 GCP のいずれに Cloud Data Sense を導入しているか�
 |===
 --
 Cloud Manager に必要な権限が割り当てられていることを確認します:: Cloud Manager に、リソースを導入する権限と、 Cloud Data Sense インスタンス用のセキュリティグループを作成する権限があることを確認します。最新の Cloud Manager 権限は、で確認できます https://mysupport.netapp.com/site/info/cloud-manager-policies["ネットアップが提供するポリシー"^]。
-+
---
-* 注： * Cloud Manager 3.9.10 以上を使用して GCP でコネクタを作成した場合、すべて設定されます。以前のバージョンを使用してコネクタを作成した場合、 Cloud Data Sense を GCP に展開するには、コネクタに関連付けられている GCP サービスアカウントに次の権限を追加する必要があります。
-
-[source, json]
-----
-compute.instances.addAccessConfig
-compute.subnetworks.use
-compute.subnetworks.useExternalIp
-----
---
 vCPU の制限を確認してください:: クラウドプロバイダの vCPU 制限によって、 16 コアのインスタンスの導入が許可されていることを確認してください。Cloud Manager が実行されているリージョン内の関連するインスタンスファミリーの vCPU 制限を確認する必要があります。 link:concept-cloud-compliance.html#the-cloud-data-sense-instance["必要なインスタンスタイプを参照してください"]。
 +
 --

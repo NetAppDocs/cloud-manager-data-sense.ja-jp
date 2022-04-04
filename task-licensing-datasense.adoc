@@ -83,7 +83,7 @@ video::video_subscribing_gcp.mp4[width=848,height=480]
 * Cloud Manager の右下にあるチャットアイコンをクリックして、ライセンスを申請してください。
 
 
-使用しない Cloud Volumes ONTAP 用の未割り当てのノードベースライセンスがある場合は、必要に応じて、ドル同等かつ同じ有効期限を持つ Cloud Data Sense ライセンスに変換できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
+使用しない Cloud Volumes ONTAP 用の未割り当てのノードベースライセンスがある場合は、必要に応じて、ドル同等かつ同じ有効期限を持つ Cloud Data Sense ライセンスに変換できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
 
 Cloud Manager の Digital Wallet ページを使用して、 Cloud Data Sense BYOL ライセンスを管理します。新しいライセンスを追加したり、既存のライセンスを更新したりできます。
 

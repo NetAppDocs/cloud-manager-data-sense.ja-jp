@@ -15,9 +15,9 @@ summary: グローバル Active Directory をクラウドデータセンスと�
 [role="lead"]
 グローバル Active Directory をクラウドデータセンスと統合すると、ファイル所有者や、ファイルにアクセスできるユーザーやグループについてデータセンスがレポートする結果を高めることができます。
 
-一部のデータソース（以下に記載）を設定する場合、 CIFS ボリュームをスキャンするデータセンスを設定するためには、 Active Directory のクレデンシャルを入力する必要があります。この統合により、データセンスとファイル所有者、およびそれらのデータソースの権限の詳細が提供されます。これらのデータソースに対して入力した Active Directory は、ここで入力したグローバル Active Directory クレデンシャルと異なる場合があります。データセンスは、統合されたすべての Active Directory でユーザと権限の詳細を確認します。
+一部のデータソース（以下に記載）を設定する場合、 CIFS ボリュームをスキャンするデータセンスを設定するためには、 Active Directory のクレデンシャルを入力する必要があります。この統合により、データセンスとファイル所有者、およびそれらのデータソースに存在するデータの権限の詳細が提供されます。これらのデータソースに対して入力した Active Directory は、ここで入力したグローバル Active Directory クレデンシャルと異なる場合があります。データセンスは、統合されたすべての Active Directory でユーザと権限の詳細を確認します。
 
-これは、データの意味において次のような場所で役立ちます。
+この統合により、データセンスの良い場所で追加情報 を利用できるようになります。
 
 * 「ファイル所有者」を使用できます。 link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["フィルタ"] [ 調査 ] ペインで、ファイルのメタデータの結果を確認できます。SID （セキュリティ ID ）を含むファイル所有者ではなく、実際のユーザ名が入力されます。
 * を参照してください link:task-controlling-private-data.html#viewing-permissions-for-files["フルファイル権限"] 各ファイルについて、 [ すべてのアクセス許可の表示 ] ボタンをクリックします。
@@ -46,7 +46,7 @@ Active Directory と Cloud Data Sense との統合により、次のデータソ
 
 == Active Directory サーバに接続しています
 
-データセンスを導入し、データソースでスキャンを有効化したら、 Active Directory とデータセンスを統合できます。
+データセンスを導入し、データソースでスキャンを有効化したら、 Active Directory とデータセンスを統合できます。Active Directory には、 DNS サーバの IP アドレスまたは LDAP サーバの IP アドレスを使用してアクセスできます。
 
 Active Directory のクレデンシャルは読み取り専用ですが、管理者のクレデンシャルを指定することで、データセンスは昇格された権限を必要とするすべてのデータを読み取ることができます。クレデンシャルは Cloud Data Sense インスタンスに保存されます。
 
@@ -55,7 +55,13 @@ Active Directory のクレデンシャルは読み取り専用ですが、管理
 * Active Directory の次の情報が必要です。
 +
 ** DNS サーバの IP アドレス、または複数の IP アドレス
-** サーバーのユーザー名とパスワード
++
+または
+
++
+LDAP サーバの IP アドレス、または複数の IP アドレス
+
+** サーバーにアクセスするためのユーザー名とパスワード
 ** ドメイン名（ Active Directory 名）
 ** セキュアな LDAP （ LDAPS ）を使用しているかどうか
 ** LDAP サーバポート（通常は LDAP では 389 、セキュア LDAP では 636 ）
@@ -86,7 +92,10 @@ Active Directory のクレデンシャルは読み取り専用ですが、管理
 +
 image:screenshot_compliance_integrate_active_directory.png["Active Directory サーバを Cloud Data Sense に追加するボタンをクリックすることを示すスクリーンショット。"]
 
-. Active Directory への接続ダイアログで、 Active Directory の詳細を入力し、 * 接続 * をクリックします。複数の IP アドレスを追加するには、エントリ間にカンマを追加します。
+. Active Directory への接続ダイアログで、 Active Directory の詳細を入力し、 * 接続 * をクリックします。
++
+必要に応じて、 * IP の追加 * をクリックすると、複数の IP アドレスを追加できます。
+
 +
 image:screenshot_compliance_active_directory_dialog.png["データセンスと統合する Active Directory を定義するダイアログのスクリーンショット。"]
 

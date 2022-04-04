@@ -17,6 +17,22 @@ Cloud Data Sense の新機能をご確認ください。
 
 
 
+== 2022 年 4 月 5 日
+
+
+
+=== オーストラリアの個人データは、データセンスで新たに 4 種類識別できます。
+
+データセンスでは、オーストラリア TFN ( 税ファイル番号 ) 、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["データで特定できるすべての種類の個人データを表示します"]。
+
+
+
+=== グローバル Active Directory サーバを LDAP サーバとして使用できるようになりました。
+
+Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["詳細については、こちらをご覧ください"]。
+
+
+
 == 2022 年 3 月 15 日
 
 
@@ -51,7 +67,7 @@ Cloud Data Sense の新機能をご確認ください。
 
 === Microsoft SharePoint オンラインアカウントのスキャンのサポートが追加されました。
 
-SharePoint サイトからドキュメントやファイルをスキャンするために、 SharePoint オンラインアカウントをデータセンスに追加できるようになりました。 link:task-scanning-sharepoint.html["SharePoint アカウントをスキャンする方法をご覧ください"]。
+SharePoint サイトからドキュメントやファイルをスキャンするために、 SharePoint オンラインアカウントをデータセンスに追加できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html["SharePoint アカウントをスキャンする方法をご覧ください"]。
 
 
 
@@ -59,7 +75,7 @@ SharePoint サイトからドキュメントやファイルをスキャンする
 
 これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します https://docs.netapp.com/us-en/cloud-manager-sync/concept_cloud_sync.html["NetApp Cloud Sync の略"^] データをソースからターゲットにコピーおよび同期する機能。
 
-link:task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["ファイルのコピーおよび同期方法を参照してください"]。
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["ファイルのコピーおよび同期方法を参照してください"]。
 
 
 
@@ -71,7 +87,7 @@ link:task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-t
 
 === 追加の 3 種類の個人データは、データセンスで識別できます。
 
-データセンスでは、ファイル内にフランス語のソーシャルセキュリティ番号、フランス語の ID 、フランス語のドライバーライセンス番号が表示されるようになりました。 link:reference-private-data-categories.html#types-of-personal-data["データがスキャンで識別するすべての個人データタイプのリストを表示します"]。
+データセンスでは、ファイル内にフランス語のソーシャルセキュリティ番号、フランス語の ID 、フランス語のドライバーライセンス番号が表示されるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["データがスキャンで識別するすべての個人データタイプのリストを表示します"]。
 
 
 
@@ -89,13 +105,13 @@ Cloud Manager Connector のセキュリティグループでは、セキュリ�
 
 グローバル Active Directory を Cloud Data Sense と統合することで、ファイル所有者や、ファイルにアクセスできるユーザーやグループについてデータセンスがレポートする結果を高めることができます。
 
-Data Sense で特定のデータソースから CIFS ボリュームをスキャンできるように入力する Active Directory クレデンシャルに加えて、この新しい統合によって他のユーザやシステムも統合されるようになります。データセンスは、統合されたすべての Active Directory でユーザと権限の詳細を確認します。 link:task-add-active-directory-datasense.html["グローバル Active Directory の設定方法を参照してください"]。
+Data Sense で特定のデータソースから CIFS ボリュームをスキャンできるように入力する Active Directory クレデンシャルに加えて、この新しい統合によって他のユーザやシステムも統合されるようになります。データセンスは、統合されたすべての Active Directory でユーザと権限の詳細を確認します。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["グローバル Active Directory の設定方法を参照してください"]。
 
 
 
 === データセンスの「ポリシー」を使用してファイルを削除できるようになりました。
 
-データセンスでは、ポリシーで定義したクエリに一致するファイルを自動的に削除できます。 link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["カスタムポリシーの作成方法については、を参照してください"]。
+データセンスでは、ポリシーで定義したクエリに一致するファイルを自動的に削除できます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#deleting-source-files-automatically-using-policies["カスタムポリシーの作成方法については、を参照してください"]。
 
 
 
@@ -125,7 +141,7 @@ link:task-managing-highlights.html#cloning-volume-data-to-a-new-volume["ボリ�
 
 === Cloud Manager の GCP Marketplace サブスクリプションでは、 Cloud Data Sense がサポートされるようになりました。
 
-。 link:https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Cloud Manager の GCP Marketplace サブスクリプション"^] クラウドデータセンスのサポートが追加されました。従量課金制（ PAYGO ）サブスクリプションを使用して、ネットアップのライセンスを使用するだけでなく、 Google Cloud ストレージに導入された Cloud Volumes ONTAP システムからデータをスキャンできるようになりました。
+。 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Cloud Manager の GCP Marketplace サブスクリプション"^] クラウドデータセンスのサポートが追加されました。従量課金制（ PAYGO ）サブスクリプションを使用して、ネットアップのライセンスを使用するだけでなく、 Google Cloud ストレージに導入された Cloud Volumes ONTAP システムからデータをスキャンできるようになりました。
 
 
 
@@ -341,7 +357,7 @@ CSV 形式で出力するレポートには、 [ ファイルサイズ ] 、 [ �
 
 === Azure Blob に保存されたデータをスキャンする機能。
 
-Azure Blob に格納されたデータのスキャンがサポートされるようになりました を使用する場合 https://min.io/["MinIO サービス"]。を参照してください link:task-scanning-object-storage.html["S3 プロトコルを使用するオブジェクトストレージをスキャンしています"] を参照してください。
+Azure Blob に格納されたデータのスキャンがサポートされるようになりました を使用する場合 https://min.io/["MinIO サービス"^]。を参照してください link:task-scanning-object-storage.html["S3 プロトコルを使用するオブジェクトストレージをスキャンしています"] を参照してください。
 
 
 

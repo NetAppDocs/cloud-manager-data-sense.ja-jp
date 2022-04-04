@@ -133,7 +133,7 @@ image:screenshot_compliance_file_details.png["[ データ調査 ] ページの�
 * ファイルを削除できます。を参照してください link:task-managing-highlights.html#deleting-source-files["ソースファイルを削除しています"] を参照してください。
 * ファイルに特定のステータスを割り当てることができます。を参照してください link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["タグの適用"] を参照してください。
 * ファイルに対して実行する必要があるフォローアップアクションを担当するファイルを Cloud Manager ユーザに割り当てることができます。を参照してください link:task-org-private-data.html#assigning-users-to-manage-certain-files["ファイルへのユーザの割り当て"] を参照してください。
-* AIP ラベルを Cloud Data Sense と統合している場合は、このファイルにラベルを割り当てるか、すでに存在する場合は別のラベルに変更できます。を参照してください link:task-org-private-data.html#assigning-aip-labels-manually["AIP ラベルを手動で割り当てる"^] を参照してください。
+* AIP ラベルを Cloud Data Sense と統合している場合は、このファイルにラベルを割り当てるか、すでに存在する場合は別のラベルに変更できます。を参照してください link:task-org-private-data.html#assigning-aip-labels-manually["AIP ラベルを手動で割り当てる"] を参照してください。
 
 
 
@@ -154,7 +154,7 @@ image:screenshot_compliance_permissions.png["詳細なファイル権限を示�
 
 重複ファイルがストレージシステムに保存されているかどうかを確認できます。これは、ストレージスペースを節約できる領域を特定する場合に便利です。また、特定の権限や機密情報を持つファイルが、ストレージシステム内で不必要に重複しないようにすることもできます。
 
-重複ファイルのリストをダウンロードし、ストレージ管理者に送信して、削除可能なファイルをユーザが判別できるようにします。または link:task-managing-highlights.html#deleting-source-files["ファイルを削除します"^] 特定のバージョンのファイルが不要であることが確信できる場合は、自分自身で実行します。
+重複ファイルのリストをダウンロードし、ストレージ管理者に送信して、削除可能なファイルをユーザが判別できるようにします。または link:task-managing-highlights.html#deleting-source-files["ファイルを削除します"] 特定のバージョンのファイルが不要であることが確信できる場合は、自分自身で実行します。
 
 
 

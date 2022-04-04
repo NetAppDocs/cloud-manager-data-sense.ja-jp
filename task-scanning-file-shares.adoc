@@ -57,7 +57,9 @@ Cloud Data Sense を有効にする前に、次の前提条件を確認し、サ
 
 導入済みのインスタンスがない場合は Cloud Data Sense を導入
 
-データセンスは、のいずれかです link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]。
+インターネット経由でアクセス可能な、ネットアップ以外の NFS または CIFS ファイル共有をスキャンする場合は、を実行します link:task-deploy-cloud-compliance.html["クラウドにクラウドデータセンスを導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセス可能なオンプレミスの場所にデータセンスを導入"^]。
+
+インターネットにアクセスできないダークサイトにインストールされているネットアップ以外の NFS または CIFS ファイル共有をスキャンする場合は、が必要です link:task-deploy-compliance-dark-site.html["クラウドデータセンスは、インターネットにアクセスできないオンプレミス環境に導入できます"^]。そのため、 Cloud Manager Connector をオンプレミスと同じ場所に導入する必要があります。
 
 Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
 
