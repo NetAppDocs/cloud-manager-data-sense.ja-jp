@@ -388,7 +388,7 @@ image:screenshot_compliance_save_as_highlight.png["フィルタされたクエ�
 . ポリシーに名前を付け、そのポリシーで実行できるその他のアクションを選択します。
 +
 .. 一意の名前と説明を入力します。
-.. 必要に応じて、このチェックボックスをオンにすると、ポリシーのパラメータに一致するファイルが自動的に削除されます。の詳細を確認してください link:task-managing-highlights.html#deleting-source-files["ポリシーを使用してソースファイルを削除しています"]。
+.. 必要に応じて、このチェックボックスをオンにすると、ポリシーのパラメータに一致するファイルが自動的に削除されます。の詳細を確認してください link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["ポリシーを使用してソースファイルを削除しています"]。
 .. 必要に応じて、 Cloud Manager ユーザに通知 E メールを送信する場合はチェックボックスをオンにし、 E メールの送信間隔を選択します。の詳細を確認してください link:task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["ポリシーの結果に基づいて E メールアラートを送信する"]。
 .. 必要に応じて、このチェックボックスをオンにすると、ポリシーパラメータに一致するファイルに AIP ラベルが自動的に割り当てられ、ラベルが選択されます。（ AIP ラベルがすでに統合されている場合のみ。の詳細を確認してください link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP ラベル"]. ）
 .. [ ポリシーの作成 *] をクリックします。

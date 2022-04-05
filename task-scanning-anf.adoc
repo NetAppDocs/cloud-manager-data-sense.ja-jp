@@ -22,7 +22,7 @@ Azure NetApp Files 向けクラウドデータセンスの導入を開始する�
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
 [role="quick-margin-para"]
-Azure NetApp Files ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["構成を検出するには、 Cloud Manager が設定されている必要があります"^]。
+Azure NetApp Files ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["構成を検出するには、 Cloud Manager が設定されている必要があります"^]。
 
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["Cloud Manager に Cloud Data Sense を導入"^] インスタンスが展開されていない場合。
@@ -56,7 +56,7 @@ Cloud Data Sense が有効になったので、すべてのボリュームにア
 
 スキャンする Azure NetApp Files システムがまだ作業環境として Cloud Manager にない場合は、この時点でキャンバスに追加できます。
 
-https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["Cloud Manager で Azure NetApp Files システムを検出する方法をご覧ください"^]。
+https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Cloud Manager で Azure NetApp Files システムを検出する方法をご覧ください"^]。
 
 
 

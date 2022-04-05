@@ -286,7 +286,7 @@ Cloud Data Sense インストーラがパッケージのインストールを完
 
 .作業を開始する前に
 * データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン 1.9.x がインストールされている場合は、 1.10.x にのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
-* オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrading-the-connector-on-prem-without-internet-access["コネクタのアップグレード手順を参照してください"^]。
+* オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["コネクタのアップグレード手順を参照してください"^]。
 
 
 .手順

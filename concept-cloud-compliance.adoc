@@ -106,12 +106,12 @@ image:diagram_cloud_compliance_instance.png["クラウドプロバイダで実�
 
 デフォルトのインスタンスについては、次の点に注意してください。
 
-* AWS では、 Cloud Data Sense はで実行されます link:https://aws.amazon.com/ec2/instance-types/m5/["m5.mc2[ インスタンス"] 500 GB の gp2 ディスクです。オペレーティングシステムイメージは Amazon Linux 2 （ Red Hat 7.3.1 ）です。
+* AWS では、 Cloud Data Sense はで実行されます link:https://aws.amazon.com/ec2/instance-types/m5/["m5.mc2[ インスタンス"^] 500 GB の gp2 ディスクです。オペレーティングシステムイメージは Amazon Linux 2 （ Red Hat 7.3.1 ）です。
 +
 m5.mcd を使用できない領域では、代わりに m4.mcd インスタンスに対してデータセンスを実行します。
 
-* Azure では、 Cloud Data Sense はで実行されます link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"] 512 GB ディスクオペレーティングシステムのイメージは CentOS 7.8 です。
-* GCP では、 Cloud Data Sense はで実行されます link:https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types["N2-standard-16 VM"] 512 GB の標準パーシステントディスクオペレーティングシステムイメージは CentOS 7.9 です。
+* Azure では、 Cloud Data Sense はで実行されます link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] 512 GB ディスクオペレーティングシステムのイメージは CentOS 7.8 です。
+* GCP では、 Cloud Data Sense はで実行されます link:https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types["N2-standard-16 VM"^] 512 GB の標準パーシステントディスクオペレーティングシステムイメージは CentOS 7.9 です。
 +
 n2-dstandard-16 を使用できない地域では、データセンスは n2D-standard-16 または n1-standard-16 VM で実行されます。
 
@@ -256,4 +256,4 @@ SaaS モードで Cloud Manager を使用する場合は、 Cloud Manager への
 * コンプライアンスビューア * の役割を持つユーザーは、アクセス権を持つシステムのコンプライアンス情報を表示し、レポートを生成することのみができます。これらのユーザは、ボリューム、バケット、またはデータベーススキーマのスキャンを有効または無効にすることはできません。これらのユーザーは、ファイルのコピー、移動、または削除もできません。
 
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["Cloud Manager のロールに関する詳細情報"^] そして方法 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-cloud-central-accounts.html#adding-users["特定のロールのユーザを追加します"^]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["Cloud Manager のロールに関する詳細情報"^] そして方法 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-netapp-accounts.html#adding-users["特定のロールのユーザを追加します"^]。

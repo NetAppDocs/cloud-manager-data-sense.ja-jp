@@ -73,7 +73,7 @@ SharePoint サイトからドキュメントやファイルをスキャンする
 
 === データセンスでは、データソースからターゲットの場所にファイルをコピーし、それらのファイルを同期できます。
 
-これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します https://docs.netapp.com/us-en/cloud-manager-sync/concept_cloud_sync.html["NetApp Cloud Sync の略"^] データをソースからターゲットにコピーおよび同期する機能。
+これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp Cloud Sync の略"^] データをソースからターゲットにコピーおよび同期する機能。
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["ファイルのコピーおよび同期方法を参照してください"]。
 

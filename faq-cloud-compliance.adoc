@@ -94,7 +94,7 @@ link:concept-cloud-compliance.html["Cloud Data Sense の仕組みの詳細はこ
 * GCP では、クラウドデータセンスは、 512 GB の標準永続ディスクを搭載した n2 標準の -16 VM で実行されます。
 
 
-データセンスソフトウェアは、ネットワーク内またはクラウド内でインターネットにアクセスできる Linux ホストにインストールできます。すべてが同じように機能し、 Cloud Manager を使用してスキャンの設定と結果を引き続き管理できます。を参照してください link:task-deploy-compliance-onprem.html["クラウドデータセンスをオンプレミスに導入"^] を参照してください。
+データセンスソフトウェアは、ネットワーク内またはクラウド内でインターネットにアクセスできる Linux ホストにインストールできます。すべてが同じように機能し、 Cloud Manager を使用してスキャンの設定と結果を引き続き管理できます。を参照してください link:task-deploy-compliance-onprem.html["クラウドデータセンスをオンプレミスに導入"] を参照してください。
 
 また、を使用することもできます link:task-deploy-compliance-dark-site.html["インターネットにアクセスできないオンプレミスサイトにデータセンスを導入する"] 完全にセキュアなサイトに。
 
@@ -108,7 +108,7 @@ link:concept-cloud-compliance.html["Cloud Data Sense の仕組みの詳細はこ
 
 データが頻繁に変更されるため、 Cloud Data Sense は、データに影響を与えることなくデータを継続的にスキャンします。データの初回スキャンには時間がかかる場合がありますが、その後のスキャンでは差分変更のみがスキャンされるため、システムのスキャン時間が短縮されます。
 
-link:concept-cloud-compliance.html#how-scans-work["スキャンの仕組みを説明します"^]。
+link:concept-cloud-compliance.html#how-scans-work["スキャンの仕組みを説明します"]。
 
 データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、低速スキャンを実行するようにデータセンスを設定できます。 link:task-managing-compliance.html#reducing-the-data-sense-scan-speed["スキャン速度を下げる方法を参照してください"]。
 
@@ -120,10 +120,10 @@ link:concept-cloud-compliance.html#how-scans-work["スキャンの仕組みを�
 
 Data Sense で使用できるレポートは次のとおりです。
 
-プライバシーリスクアセスメントレポート:: データからプライバシーに関する情報を収集し、プライバシーリスクスコアを取得します。 link:task-generating-compliance-reports.html["詳細はこちら。"^]。
+プライバシーリスクアセスメントレポート:: データからプライバシーに関する情報を収集し、プライバシーリスクスコアを取得します。 link:task-generating-compliance-reports.html#privacy-risk-assessment-report["詳細はこちら。"^]。
 Data Subject Access Request レポート:: データサブジェクトの特定の名前または個人 ID に関する情報を含むすべてのファイルのレポートを抽出できます。 link:task-responding-to-dsar.html["詳細はこちら。"^]。
-PCI DSS レポート:: クレジットカード情報のファイルへの配布を識別するのに役立ちます。 link:task-generating-compliance-reports.html["詳細はこちら。"^]。
-HIPAA レポート:: 健常性情報がファイルにどのように分散されているかを確認できます。 link:task-generating-compliance-reports.html["詳細はこちら。"^]。
+PCI DSS レポート:: クレジットカード情報のファイルへの配布を識別するのに役立ちます。 link:task-generating-compliance-reports.html#pci-dss-report["詳細はこちら。"^]。
+HIPAA レポート:: 健常性情報がファイルにどのように分散されているかを確認できます。 link:task-generating-compliance-reports.html#hipaa-report["詳細はこちら。"^]。
 データマッピングレポート:: 作業環境内のファイルのサイズと数について説明します。これには、使用容量、データの経過時間、データのサイズ、ファイルタイプが含まれます。 link:task-generating-compliance-reports.html#data-mapping-report["詳細はこちら。"^]。
 特定の情報タイプに関するレポート:: 個人データや機密性の高い個人データを含む、特定されたファイルの詳細を含むレポートを利用できます。カテゴリおよびファイルタイプ別に分類されたファイルを表示することもできます。 link:task-controlling-private-data.html["詳細はこちら。"^]。
 

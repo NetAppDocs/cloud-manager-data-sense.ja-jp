@@ -100,12 +100,9 @@
   <block id="ec2fdf451a076c9a5261db42e270c873" category="paragraph"><block ref="ec2fdf451a076c9a5261db42e270c873" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0fcbb838b28fe6620124c2e3523d9aec" category="paragraph">デフォルトのインスタンスについては、次の点に注意してください。</block>
   <block id="80d772d8784b88bad9910cdc30032f74" category="inline-link-macro">m5.mc2[ インスタンス</block>
-  <block id="d0b7332fb2b9d1a1566947667e85f87a" category="list-text">AWS では、 Cloud Data Sense はで実行されます <block ref="857f496d40c940038ea910668f73bd92" category="inline-link-macro-rx"></block> 500 GB の gp2 ディスクです。オペレーティングシステムイメージは Amazon Linux 2 （ Red Hat 7.3.1 ）です。</block>
   <block id="7f434e51611909e5eb5af33f1a0f0292" category="paragraph">m5.mcd を使用できない領域では、代わりに m4.mcd インスタンスに対してデータセンスを実行します。</block>
   <block id="d4167e5918d44a2511d9c29b74d9811f" category="inline-link-macro">Standard_D16s_v3 VM</block>
-  <block id="4b0ca891c27bda85a0a700467f3eb291" category="list-text">Azure では、 Cloud Data Sense はで実行されます <block ref="58e0f4e7d5db4c1e88f8706f6eac3013" category="inline-link-macro-rx"></block> 512 GB ディスクオペレーティングシステムのイメージは CentOS 7.8 です。</block>
   <block id="f62345014eb3b94916730d5fa4eb623f" category="inline-link-macro">N2-standard-16 VM</block>
-  <block id="faf52d85ee533113bb7ce1368ca80459" category="list-text">GCP では、 Cloud Data Sense はで実行されます <block ref="f1e076f96c57b3cac033f200375e76f3" category="inline-link-macro-rx"></block> 512 GB の標準パーシステントディスクオペレーティングシステムイメージは CentOS 7.9 です。</block>
   <block id="6c5ebc6dfed433f5cfd2cbc9f155a4d4" category="paragraph">n2-dstandard-16 を使用できない地域では、データセンスは n2D-standard-16 または n1-standard-16 VM で実行されます。</block>
   <block id="3fad8aded3d84039416c1bf00afe09d2" category="list-text">コネクタごとに展開されるデータセンスインスタンスは 1 つだけです。</block>
   <block id="96087d5776ba4bf8ffcadbc67f69905c" category="list-text">データセンスソフトウェアのアップグレードは、インスタンスがインターネットにアクセスできるかぎり自動化されます。</block>
@@ -196,7 +193,6 @@
   <block id="e84e463a5d50d51ba24671ea703ccd3a" category="list-text">コンプライアンスビューア * の役割を持つユーザーは、アクセス権を持つシステムのコンプライアンス情報を表示し、レポートを生成することのみができます。これらのユーザは、ボリューム、バケット、またはデータベーススキーマのスキャンを有効または無効にすることはできません。これらのユーザーは、ファイルのコピー、移動、または削除もできません。</block>
   <block id="7001fd90c77b65d22e1a21481db3ddca" category="inline-link">Cloud Manager のロールに関する詳細情報</block>
   <block id="2d4684d2aec68a0b0d987ac449846c38" category="inline-link">特定のロールのユーザを追加します</block>
-  <block id="ecf5d2b85aef681bae490794fba26c1d" category="paragraph"><block ref="066d72c458fd9d3478c3d6481ae1f63a" category="inline-link-rx"></block> そして方法<block ref="19346f4bb440914931e4e2e3993b2cdc" category="inline-link-rx"></block>。</block>
   <block id="2aec26a935db620d45a2b36968d20c71" category="summary">Cloud Data Sense を使用して、 SharePoint アカウント内のファイルのスキャンを開始するには、いくつかの手順を実行します。</block>
   <block id="2ef77a3845de73c82db787233e991d0c" category="doc">SharePoint アカウントをスキャンしています</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">クイックスタート</block>
@@ -513,7 +509,6 @@
   <block id="9728950e84ccd6542f6769c5939d2ca1" category="inline-image-macro">サービスパネルからクラウドデータセンスサービスを有効にするスクリーンショット</block>
   <block id="72964bc33c91e31da04a6d4db666303d" category="paragraph"><block ref="72964bc33c91e31da04a6d4db666303d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a6100ac4fa5cb7bbb1c49e95165b96b2" category="inline-xref">必要な権限</block>
-  <block id="49759721612016fc7ff10fae23a2ef91" category="list-text">プロンプトが表示されたら、を持つ Cloud Data Sense インスタンスに IAM ロールを割り当てます <block ref="82919c19497f3c3f743a1af90a83424d" category="inline-xref-macro-rx"></block>。</block>
   <block id="a14eadef9fed4334ae62e1b07a91b3d1" category="inline-image-macro">クラウドデータセンス用の AWS IAM ロールを入力するスクリーンショット</block>
   <block id="17ca8b6da2574412974f28f85e8bc202" category="paragraph"><block ref="17ca8b6da2574412974f28f85e8bc202" category="inline-image-macro-rx" type="image"></block></block>
   <block id="909d8cdc7c100d1834d4de10094f43ca" category="list-text">[*Enable*] をクリックします。</block>
@@ -554,7 +549,6 @@
   <block id="cd7afa87e9e8523b4b9129d2a8cc9511" category="doc">Azure NetApp Files 向けクラウドデータセンスの導入を開始する方法をご確認ください</block>
   <block id="01535c40d93547d31c8b2009475a404e" category="paragraph">Azure NetApp Files 向けクラウドデータセンスの導入を開始するには、いくつかの手順を実行します。</block>
   <block id="d607f9e6aaac708d38d597659d0724c2" category="inline-link">構成を検出するには、 Cloud Manager が設定されている必要があります</block>
-  <block id="9bc8c60e7f3f0df9b0162422d881c2f1" category="paragraph">Azure NetApp Files ボリュームをスキャンする前に、<block ref="4d0340f290034a21f4d812c5e82095d7" category="inline-link-rx"></block>。</block>
   <block id="8e6b2e179301ba8e4086645fd738ff9d" category="paragraph">コンプライアンス * をクリックし、 * 構成 * タブを選択して、特定の作業環境でボリュームのコンプライアンススキャンを有効にします。</block>
   <block id="f4ba7433beb86f84a14030cc66dde4a3" category="paragraph">Cloud Data Sense が有効になったので、すべてのボリュームにアクセスできることを確認します。</block>
   <block id="584babae1f09a7e3114d20ba1edb8d20" category="list-text">クラウドデータセンスインスタンスには、各 Azure NetApp Files サブネットへのネットワーク接続が必要です。</block>
@@ -568,7 +562,6 @@
   <block id="2e9f6b00a7a0f1c26bc47bb134eae6d9" category="section-title">スキャンする Azure NetApp Files システムを検出しています</block>
   <block id="530f81326d5fcab4507cc0ed3e9f68be" category="paragraph">スキャンする Azure NetApp Files システムがまだ作業環境として Cloud Manager にない場合は、この時点でキャンバスに追加できます。</block>
   <block id="d8ebd9fdfe93e9987d7e9211f2c75df2" category="inline-link">Cloud Manager で Azure NetApp Files システムを検出する方法をご覧ください</block>
-  <block id="eac0cba2d45469011ba82c4236f5e47d" category="paragraph"><block ref="b2218c04a64dd1b44f364c0c1bf87d2d" category="inline-link-rx"></block>。</block>
   <block id="ce9519e259bd067380fa9c2f56c45243" category="paragraph">Azure NetApp Files ボリュームをスキャンするときは、データセンスをクラウドに導入する必要があります。また、スキャンするボリュームと同じリージョンに導入する必要があります。</block>
   <block id="2b37397498157ed616fd415901df0835" category="paragraph">* 注： * オンプレミスの場所にクラウドデータセンスを導入することは、 Azure NetApp Files ボリュームのスキャンでは現在サポートされていません。</block>
   <block id="f77e8a45486f483464f5f52dca10d70c" category="section-title">作業環境でクラウドデータを有効に活用</block>
@@ -630,7 +623,6 @@
   <block id="7ffe245546d3b7b3225d3db681da37ae" category="inline-link-macro">AWS Elastic Network Interface （ ENI ）</block>
   <block id="360c11bcd9a9bfedb1aa5353935d21cd" category="paragraph">以下の手順を実行してすぐに作業を開始するか、下にスクロールして詳細を確認してください。</block>
   <block id="d0e7ae8581484b514e52b4bee068c4f2" category="inline-link">ボリュームが設定された FSX 作業環境が必要です</block>
-  <block id="3894827bb26f487a20f94e2dc30a524f" category="paragraph">FSX で ONTAP ボリュームをスキャンする前に、<block ref="4e0193706fbf8341d488aaec90d1333c" category="inline-link-rx"></block>。</block>
   <block id="e96ef91ae378f34374e3442da910bc6a" category="paragraph">[ * データセンス * ] をクリックし、 [ * 構成 * ] タブを選択して、特定の作業環境でボリュームのコンプライアンススキャンを有効にします。</block>
   <block id="1740d0344a9decf8901a0c409491f527" category="list-text">クラウドデータセンスインスタンスには、 ONTAP サブネットの各 FSX へのネットワーク接続が必要です。</block>
   <block id="48f6fc291f98aa05d42d051f4c68b873" category="list-text">次のポートがデータセンスインスタンスに対して開いていることを確認します。</block>
@@ -639,7 +631,6 @@
   <block id="bdcd2e9d167fc54f49913257386095c4" category="section-title">スキャンする ONTAP ファイルシステムの FSX を検出します</block>
   <block id="f7f860e98d745b71478891e167ef79d6" category="paragraph">スキャンする FSX for ONTAP ファイルシステムが作業環境としてまだ Cloud Manager にない場合は、この時点でキャンバスに追加できます。</block>
   <block id="2022a42fdc5a9b72d87c2b667be14012" category="inline-link">Cloud Manager で ONTAP ファイルシステムの FSX を検出または作成する方法については、を参照してください</block>
-  <block id="98ac2f9568b63fbebe64a3fe58a6b0a6" category="paragraph"><block ref="2e00e9f5a8098349b6ca11c65a31bba1" category="inline-link-rx"></block>。</block>
   <block id="b74c83b3d1021f67435c584267c41056" category="paragraph">Connector for AWS とスキャン対象の FSX ボリュームと同じ AWS ネットワークに Data Sense を導入する必要があります。</block>
   <block id="e1069df757a31d652ec754c6cbb4304c" category="paragraph">* 注： * オンプレミスの場所にクラウドデータセンスを導入することは、現在 FSX ボリュームのスキャンではサポートされていません。</block>
   <block id="33502566bba570165badc9d5bf6fd90f" category="paragraph">ONTAP ボリュームの FSX に対してクラウドデータセンスを有効にすることができます。</block>
@@ -687,7 +678,6 @@
   <block id="0d7a2e2094cbd9f065543ad864c58f56" category="inline-link-macro">SharePoint アカウントをスキャンする方法をご覧ください</block>
   <block id="0016e2969988059d89617a5a19121b57" category="section-title">データセンスでは、データソースからターゲットの場所にファイルをコピーし、それらのファイルを同期できます。</block>
   <block id="dc188738e6cc2e9f8314e1b95f18ebfd" category="inline-link">NetApp Cloud Sync の略</block>
-  <block id="8430e6caa7f48c3b67a1d4bee15cdf08" category="paragraph">これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します<block ref="443242953ea2d033cafe32d6d6514a8c" category="inline-link-rx"></block> データをソースからターゲットにコピーおよび同期する機能。</block>
   <block id="48a274f4830d58bf94182b778830c862" category="inline-link-macro">ファイルのコピーおよび同期方法を参照してください</block>
   <block id="2344a9fc4e2f0117285de6fbb8ccfc92" category="section-title">dsar レポートの新しい言語サポート。</block>
   <block id="b7be70b4ae08b5c8540e95fbe14dcfa6" category="paragraph">データ主体の名前を検索して Data Subject Access Request （ dsar ）レポートを作成するときに、ドイツ語とスペイン語がサポートされるようになりました。このレポートは、企業が GDPR または同様のデータプライバシー法を遵守する必要がある場合に役立つように作成されています。</block>
@@ -809,7 +799,6 @@
   <block id="5fb27f475a6e9a151878bcedcee62656" category="admonition">その他の国の ID 番号や医療機関の ID など、プライベートデータの種類を識別するためにクラウドデータセンスが必要な場合は、 ng-contact-data-sense@netapp.com にリクエストを送信してください。</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">個人データの種類</block>
   <block id="664f12aee95db5001901ada82a66a117" category="inline-link-macro">近接性検証</block>
-  <block id="c7107bfe51c2322429b5249430df98f1" category="paragraph">ファイルに含まれる個人データは、一般的な個人データまたは国 ID です。3 番目の列は、 Cloud Data Sense で使用されているかどうかを示します <block ref="06ee0951f0f2416bdf90e29966eed53e" category="inline-link-macro-rx"></block> 識別子の調査結果を検証します。</block>
   <block id="9ad88770f453f002d943e75f7bc6c007" category="paragraph">このカテゴリの項目は、どの言語でも認識できます。</block>
   <block id="8060d07e3adbf13c278991613997a8b6" category="inline-link-macro">Data Fusion を使用して個人データ識別子を追加する</block>
   <block id="6ea5e530965ed45d43a0385246e6a51b" category="paragraph">データベースサーバーをスキャンする場合は、ファイル内にある個人データのリストに追加できます。Data Fusion 機能を使用すると、データベーステーブルの列を選択して、クラウドデータ検出でスキャンで検索する追加の識別子を選択できます。を参照してください <block ref="e5fd618a95839b26abd9eb3c166b6d5a" category="inline-link-macro-rx"></block> を参照してください。</block>
@@ -998,7 +987,6 @@
   <block id="c50ed3e22a4bfeee9406b38e0c990d7d" category="list-text">Azure では、 Cloud Data Sense は、 512 GB のディスクを搭載した Standard_D16s_v3 VM で実行されます。</block>
   <block id="0dcadc6850a080e0aaf098b94efc849b" category="list-text">GCP では、クラウドデータセンスは、 512 GB の標準永続ディスクを搭載した n2 標準の -16 VM で実行されます。</block>
   <block id="316f1a7bec809a19ab21b47d40188af1" category="inline-link-macro">クラウドデータセンスをオンプレミスに導入</block>
-  <block id="b65f64eadd9e7c0e8110a6ed35d757b9" category="paragraph">データセンスソフトウェアは、ネットワーク内またはクラウド内でインターネットにアクセスできる Linux ホストにインストールできます。すべてが同じように機能し、 Cloud Manager を使用してスキャンの設定と結果を引き続き管理できます。を参照してください <block ref="fb0cd096af939547f0757cf9efa79122" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="cefd0b228a5747e3f0cab5061078bb59" category="inline-link-macro">インターネットにアクセスできないオンプレミスサイトにデータセンスを導入する</block>
   <block id="859d2ccf50c642ee73b6b7ed0293c06c" category="paragraph">また、を使用することもできます <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全にセキュアなサイトに。</block>
   <block id="7e3d41c2a56c6d626cd7bcbb65667f41" category="paragraph">CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> を参照してください。</block>
@@ -1010,13 +998,10 @@
   <block id="f3af98e0d715f65a774e8b5ce1e41f08" category="paragraph">はい。Cloud Data Sense が提供する情報は、組織内の他の関係者にも関係があるため、レポートを作成して分析情報を共有することができます。</block>
   <block id="59c664c61ebab86476ef97b4388a4e15" category="paragraph">Data Sense で使用できるレポートは次のとおりです。</block>
   <block id="1243186ecf08fa3beb624fdea23033c7" category="list-text">プライバシーリスクアセスメントレポート</block>
-  <block id="3c3e878482ba36a48485862cdc493285" category="list-text">データからプライバシーに関する情報を収集し、プライバシーリスクスコアを取得します。 <block ref="7f7a3d0f16b4b0301ae5584f195dfc08" category="inline-link-macro-rx"></block>。</block>
   <block id="3a3337f232548d40f54052862077499b" category="list-text">Data Subject Access Request レポート</block>
   <block id="eeec57ad13401b39337794c5e3d5ffa6" category="list-text">データサブジェクトの特定の名前または個人 ID に関する情報を含むすべてのファイルのレポートを抽出できます。 <block ref="ce887aadf58ec6a0a140db57b924eac0" category="inline-link-macro-rx"></block>。</block>
   <block id="14167b2f4f95b7ebdb671b9dc719f2b4" category="list-text">PCI DSS レポート</block>
-  <block id="5718564eb09616d2a98dff7920da87f1" category="list-text">クレジットカード情報のファイルへの配布を識別するのに役立ちます。 <block ref="7f7a3d0f16b4b0301ae5584f195dfc08" category="inline-link-macro-rx"></block>。</block>
   <block id="0fbc5c9a0ab1eecf4064d4ae4ef04fe5" category="list-text">HIPAA レポート</block>
-  <block id="396ba88199463d6bb43b8d1e915b5780" category="list-text">健常性情報がファイルにどのように分散されているかを確認できます。 <block ref="7f7a3d0f16b4b0301ae5584f195dfc08" category="inline-link-macro-rx"></block>。</block>
   <block id="635c52fbdbf0d6a3157b2c713b42bb73" category="list-text">データマッピングレポート</block>
   <block id="1a33baaa8cfc7a132b1adf82bf7467e3" category="list-text">作業環境内のファイルのサイズと数について説明します。これには、使用容量、データの経過時間、データのサイズ、ファイルタイプが含まれます。 <block ref="4e2147bce585eddc4aaf42309a51ae46" category="inline-link-macro-rx"></block>。</block>
   <block id="b36f22b2f3dccf0f8bda7f8488bb8823" category="list-text">特定の情報タイプに関するレポート</block>
@@ -1237,7 +1222,6 @@
   <block id="c53a1efde8ce6901614a5eb746fd4dc0" category="list-text">ポリシーに名前を付け、そのポリシーで実行できるその他のアクションを選択します。</block>
   <block id="f3102e7bc4ead5e39dec820b8144d2f9" category="list-text">一意の名前と説明を入力します。</block>
   <block id="69afb208b3f73c16d486210229cfd874" category="inline-link-macro">ポリシーを使用してソースファイルを削除しています</block>
-  <block id="d209439fac78c3bd370fcb9c5ff82506" category="list-text">必要に応じて、このチェックボックスをオンにすると、ポリシーのパラメータに一致するファイルが自動的に削除されます。の詳細を確認してください <block ref="afa0bdbe1a4a493af57fd87eeba2d98c" category="inline-link-macro-rx"></block>。</block>
   <block id="ed0c49068f9d7e929a30f26c6d8c4a8b" category="inline-link-macro">ポリシーの結果に基づいて E メールアラートを送信する</block>
   <block id="c7be5c7db4f54e5626cfe78583febbb1" category="list-text">必要に応じて、 Cloud Manager ユーザに通知 E メールを送信する場合はチェックボックスをオンにし、 E メールの送信間隔を選択します。の詳細を確認してください <block ref="aa3b63c453483f75d4311c7c0137128e" category="inline-link-macro-rx"></block>。</block>
   <block id="9d85612840e00794629f6dce90aa22fa" category="inline-link-macro">AIP ラベル</block>
@@ -1532,7 +1516,6 @@
   <block id="871c824f9ea91b20e876e2d652878ef1" category="paragraph">ソースボリュームが存在する作業環境で Data Sense を有効にしたときに、最初に「すべてのボリュームをマップ」または「すべてのボリュームをマップして分類」を選択した場合は、新しいクローンボリュームが自動的にスキャンされます。最初にこれらのいずれかを使用しなかった場合は、この新しいボリュームをスキャンする必要があります <block ref="b0c3d20fcc917b1060451bc04147a024" category="inline-link-macro-rx"></block>。</block>
   <block id="61d5073996ba69d9a5b4108c7295351d" category="section-title">ソース・ファイルをターゲット・システムにコピーして同期する</block>
   <block id="0d2f0ae9ce240a63bc35b3c547d00fb2" category="inline-link">Cloud Sync でサポートされるターゲットの場所</block>
-  <block id="a1487996ec20a1ae4130cc24210fd4f7" category="paragraph">データがスキャンしているソースファイルを、サポートされていない非構造化データソースから特定のターゲットの場所にあるディレクトリにコピーできます <block ref="a54ed7c9f4b25f05cd2f690b5223f798" category="inline-link-rx"></block>）。最初のコピー後、ファイル内で変更されたデータは、設定したスケジュールに基づいて同期されます。</block>
   <block id="8b943d5fdad51949a65da83d15de41c9" category="paragraph">これは、あるソースシステムから別のシステムにデータを移行する場合に便利です。このアクションではを使用します<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> データをソースからターゲットにコピーおよび同期する機能。</block>
   <block id="59a46e0ea7e3441d068ab93e14650d6e" category="admonition">データベース、 OneDrive アカウント、 SharePoint アカウントにあるファイルはコピーおよび同期できません。</block>
   <block id="fa00f0feeabd281b23e8571faacaf649" category="list-text">ファイルをコピーして同期するには、アカウント管理者またはワークスペース管理者の役割が必要です。</block>
@@ -1748,7 +1731,6 @@
   <block id="c840103d2ed2c5f7278ba8cf28f45f9a" category="paragraph">データセンスソフトウェアは定期的に新しい機能で更新されるため、定期的に新しいバージョンをチェックして最新のソフトウェアや機能を使用していることを確認する必要があります。自動的にアップグレードを実行するためのインターネット接続がないため、 Data Sense ソフトウェアを手動でアップグレードする必要があります。</block>
   <block id="fa37bb19179b71af06bce755af1b96d1" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン 1.9.x がインストールされている場合は、 1.10.x にのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
   <block id="6ecb62a68c1483e5e7f2d6eb6088821e" category="inline-link">コネクタのアップグレード手順を参照してください</block>
-  <block id="33932597ddce1b5de5eaed473c624d8a" category="list-text">オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。<block ref="34ed6c84dce4811fd1d84e1d45dcc3e5" category="inline-link-rx"></block>。</block>
   <block id="f3f3a447ad50dc92c9c962b1bd43a5df" category="list-text">ダークサイトにデータセンスをインストールした Linux ホストにソフトウェアバンドルをコピーします。</block>
   <block id="58ac2a8543e710f81085aa9e92e7cd0c" category="list-text">ホストマシンでソフトウェアバンドルを解凍します。次に例を示します。</block>
   <block id="cdc2b03f6ffa90a892ff07e03233975d" category="paragraph">これにより、アップグレードスクリプト * START_ダーク site_upgrade.sh * および必要なサードパーティ製ソフトウェアが抽出されます。</block>
@@ -1775,7 +1757,6 @@
   <block id="af3ebdfa0de82f4ebf264444127ceba9" category="list-text">* 重複ファイル * - スキャンしているデータソース内の他の場所に複製されているファイル。 <block ref="aed0fa6f561bb8f0cefd5cb21d93e1cf" category="inline-link-macro-rx"></block>。</block>
   <block id="2b4d8a4ffe486173d89394fc3d6ccdb3" category="section-title">検索結果が最も多いポリシーです</block>
   <block id="a7a23c7ed8e3b4d314ee2c49d88b93c6" category="paragraph">_Policy_area でポリシーの名前をクリックすると、その結果が [ 調査 ] ページに表示されます。[ すべて表示 *] をクリックして、使用可能なすべてのポリシーのリストを表示します。</block>
-  <block id="3a3ac99db59f7f02e327a61da26f0836" category="paragraph">をクリックします <block ref="ad4e8796ce6294cda73275b22433ca2b" category="inline-link-macro-rx"></block> ポリシーの詳細については、を参照してください。</block>
   <block id="b70528883a2d1dce278c3b16e0f8c608" category="section-title">データの概要</block>
   <block id="0a9145dde57003fa4c977f908ffbd528" category="paragraph">スキャンされているすべてのデータの概要。ボタンをクリックして、すべての作業環境とデータソースの使用容量、データの使用年数、データのサイズ、ファイルタイプを含む完全なデータマッピングレポートをダウンロードします。を参照してください <block ref="5efa252e20225abbecfacf56f2ab906a" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="5054e48efbd7d7a23b39d5c48f13943f" category="section-title">データの機密性に基づいて上位のデータリポジトリが表示されます</block>
@@ -1799,7 +1780,6 @@
   <block id="adb18f5fb34b742716a832a865f1d8e2" category="section-title">最も識別されているデータ分類</block>
   <block id="65da47b6ef0adda3d4c4ed54dfde4494" category="inline-link-macro">ファイルの種類</block>
   <block id="02ac28e6aac96ae29edd75daf4e929ad" category="inline-link-macro">AIP ラベル</block>
-  <block id="33c36f3f987073d2e11470a933352fca" category="paragraph">_Classification_area には ' 最も識別されたリストが表示されます <block ref="b823fa31d5dec268aaa19a8828bf34fe" category="inline-link-macro-rx"></block>、 <block ref="336d27c782a82199a3380deae5570591" category="inline-link-macro-rx"></block>および <block ref="c72f9147a1c5a2e6a1c06be7af3fe539" category="inline-link-macro-rx"></block> をスキャンしたデータに保存します。</block>
   <block id="439fa70484344162e488c2f6e8d7f52c" category="paragraph">カテゴリを使用すると、保有している情報の種類を表示して、データの状況を把握することができます。たとえば、「履歴書」や「従業員契約書」などのカテゴリには機密データを含めることができます。結果を調査すると、従業員契約が安全でない場所に保存されていることがわかります。その後、その問題を修正できます。</block>
   <block id="659056cf2678e420a1509bbcc731edcf" category="paragraph">を参照してください <block ref="21094466ac939ca1953a7d6cc6a49a1d" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="cb45e879b815142e4e2cd0d22e5c6dd9" category="paragraph">ファイルタイプを確認すると、特定のファイルタイプが正しく保存されない可能性があるため、機密データを制御するのに役立ちます。</block>
@@ -2262,8 +2242,6 @@
   <block id="bba082dd43baad5296b00863b2fd871e" category="cell">オーストラリアパスポート番号</block>
   <block id="17dca5bf3d125aa4d0f3309727923bc6" category="list-text">AIP ラベルを Cloud Data Sense と統合している場合は、このファイルにラベルを割り当てるか、すでに存在する場合は別のラベルに変更できます。を参照してください <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="d65636c48d5eaaa2a0f018e8b2c9b456" category="paragraph">重複ファイルのリストをダウンロードし、ストレージ管理者に送信して、削除可能なファイルをユーザが判別できるようにします。または <block ref="e6aba68fcf17e4e39481e0dfc445e973" category="inline-link-macro-rx"></block> 特定のバージョンのファイルが不要であることが確信できる場合は、自分自身で実行します。</block>
-  <block id="b234f0588eeee2419f3feb6bc553a0f4" category="list-text">Cloud Sync サービスをアクティブ化し、少なくとも 1 つのデータブローカーを構成して、ソースシステムとターゲットシステム間でファイルを転送できるようにする必要があります。から、 Cloud Sync の要件を確認します <block ref="9b05f1e30d7d93d40aa2e8405fae61e6" category="inline-link-macro-rx"></block>。</block>
-  <block id="66223991fcb4b86b580aedc49132a8de" category="list-text">ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、 Cloud Sync の要件を確認します <block ref="9b05f1e30d7d93d40aa2e8405fae61e6" category="inline-link-macro-rx"></block>。</block>
   <block id="c9711148e577d21dac573fe377ceadc1" category="paragraph">現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP 用 FSX 、 AWS S3 、 OneDrive 、 SharePoint のアカウントをスキャンすることはできません。</block>
   <block id="c784be7cd9fc5595c7c63534bdda46c4" category="paragraph">Cloud Manager Connector と Data Sense は、新しい機能を有効にするために、定期的な手動アップグレードを必要とします。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="5a07c55d314714fa3a36d7f6231d91b2" category="paragraph">Data Sense をインストールする前に、次のソフトウェアをホストにインストールする必要があります。</block>
@@ -2291,4 +2269,27 @@
   <block id="0a6dc77d8aa2ba619cb18a788482f78a" category="list-text">_ca_cert_dir_= 追加の TLS CA 証明書バンドルを含む Data Sense Linux システム上のパス。プロキシが TLS 代行受信を実行している場合にのみ必要です。</block>
   <block id="48e1e343989571ace6bf404a680635d8" category="list-text">手順 8 で示したように、インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、必要なパラメータをコマンドライン引数としてインストーラに指定することができます。</block>
   <block id="6b356fe759d450cad6ec9f478a17a524" category="paragraph">たとえば、次のコマンドは 3 つのスキャナノードを追加します。 'sudo ./install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;token&gt; --host &lt;ds_host&gt; --manager-host &lt;cm_host&gt; * -n &lt;node-ip1&gt; 、 &lt;node-ip2&gt; 、 &lt;node-ip3&gt;*-proxy-proxy-proxy-host-pproxy-pxe-password&lt;/password&gt;</block>
+  <block id="8622d1cd96d6ec0930cec4d27426b259" category="list-text">AWS では、 Cloud Data Sense はで実行されます <block ref="862a215d1ef85127ef00037fb3b30ed4" category="inline-link-macro-rx"></block> 500 GB の gp2 ディスクです。オペレーティングシステムイメージは Amazon Linux 2 （ Red Hat 7.3.1 ）です。</block>
+  <block id="8031d67afa3b05713e70ceb139df71f1" category="list-text">Azure では、 Cloud Data Sense はで実行されます <block ref="258fa0e906df18ccf945022280cc0721" category="inline-link-macro-rx"></block> 512 GB ディスクオペレーティングシステムのイメージは CentOS 7.8 です。</block>
+  <block id="3cdcaf097c9b8ea42f0deb57a3418969" category="list-text">GCP では、 Cloud Data Sense はで実行されます <block ref="a90d99a5d867795ab41880f273d24bc2" category="inline-link-macro-rx"></block> 512 GB の標準パーシステントディスクオペレーティングシステムイメージは CentOS 7.9 です。</block>
+  <block id="ae7855bd2b684616d5a335e76d4c7a52" category="paragraph"><block ref="066d72c458fd9d3478c3d6481ae1f63a" category="inline-link-rx"></block> そして方法<block ref="3a3e2df7b0eee6c6295e44064611bba2" category="inline-link-rx"></block>。</block>
+  <block id="74e5e01600beec43894e96e22ac9f5eb" category="list-text">プロンプトが表示されたら、を持つ Cloud Data Sense インスタンスに IAM ロールを割り当てます <block ref="27b52f38738d689881a76b49c98ec7ec" category="inline-xref-macro-rx"></block>。</block>
+  <block id="80fad04c772c7886f247261a7f3b0b9d" category="paragraph">Azure NetApp Files ボリュームをスキャンする前に、<block ref="ee91d9235d9df90afdbc72611f257591" category="inline-link-rx"></block>。</block>
+  <block id="d3b14e96d547f4080c13aedeed574a3c" category="paragraph"><block ref="d17ff08160e60a4685cc3798682e05d4" category="inline-link-rx"></block>。</block>
+  <block id="b7f2b0e45c51391324aebf221531b036" category="paragraph">FSX で ONTAP ボリュームをスキャンする前に、<block ref="68e9cbaf33b2641a589dc87867e4bfec" category="inline-link-rx"></block>。</block>
+  <block id="9c45693a901d2c7711d6d2732c0b2043" category="paragraph"><block ref="84bbc470556e48f1d54b5a12390987e2" category="inline-link-rx"></block>。</block>
+  <block id="f72dc999895eb17e77093f9ecff4180c" category="paragraph">これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> データをソースからターゲットにコピーおよび同期する機能。</block>
+  <block id="f380f59dbabc3f03bd073f2248216ea2" category="paragraph">ファイルに含まれる個人データは、一般的な個人データまたは国 ID です。3 番目の列は、 Cloud Data Sense で使用されているかどうかを示します <block ref="a9db31e17b18ff2d62fd6f2133dfbfce" category="inline-link-macro-rx"></block> 識別子の調査結果を検証します。</block>
+  <block id="66b2fe919777c8106abe9e4f030123fd" category="paragraph">データセンスソフトウェアは、ネットワーク内またはクラウド内でインターネットにアクセスできる Linux ホストにインストールできます。すべてが同じように機能し、 Cloud Manager を使用してスキャンの設定と結果を引き続き管理できます。を参照してください <block ref="a7e82d64861a5e64770734ee02976112" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="bbd1b36ab0dbd0c17e60ec752bb02a55" category="paragraph"><block ref="b1e4fd148d344599f4a25922d8155dd9" category="inline-link-macro-rx"></block>。</block>
+  <block id="91aef07a29d8068140e7dca06bec6d9d" category="list-text">データからプライバシーに関する情報を収集し、プライバシーリスクスコアを取得します。 <block ref="890a798f73fe571345d1ff7c58a08844" category="inline-link-macro-rx"></block>。</block>
+  <block id="39630dece802514e5f7336bcbbf0ac6f" category="list-text">クレジットカード情報のファイルへの配布を識別するのに役立ちます。 <block ref="ef3bace538be6eee30a3e48516637cf7" category="inline-link-macro-rx"></block>。</block>
+  <block id="be27a8dc9dfba1897217ecee5823bd4e" category="list-text">健常性情報がファイルにどのように分散されているかを確認できます。 <block ref="1ce675538fc85bf3b1ef6fa4ab26346c" category="inline-link-macro-rx"></block>。</block>
+  <block id="e6d68873555c37c43798e1e7f7b8513e" category="list-text">必要に応じて、このチェックボックスをオンにすると、ポリシーのパラメータに一致するファイルが自動的に削除されます。の詳細を確認してください <block ref="30e6ed97d290e57f0e75d9e6322eb503" category="inline-link-macro-rx"></block>。</block>
+  <block id="58293f799492274c3df075305508ade4" category="paragraph">データがスキャンしているソースファイルを、サポートされていない非構造化データソースから特定のターゲットの場所にあるディレクトリにコピーできます <block ref="ebb58758e77d05976efcc1ccd5134262" category="inline-link-rx"></block>）。最初のコピー後、ファイル内で変更されたデータは、設定したスケジュールに基づいて同期されます。</block>
+  <block id="77129c83b2501b2eb47ff0a1fa67f801" category="list-text">Cloud Sync サービスをアクティブ化し、少なくとも 1 つのデータブローカーを構成して、ソースシステムとターゲットシステム間でファイルを転送できるようにする必要があります。から、 Cloud Sync の要件を確認します <block ref="b962387ad67b92b5132f148579512908" category="inline-link-macro-rx"></block>。</block>
+  <block id="82ad1ea6a2070297147f61890ad6c8ae" category="list-text">ターゲットシステムを選択し、使用するデータブローカーを選択（または作成）する必要があります。から、 Cloud Sync の要件を確認します <block ref="5abefb1df304535da49e476c753377a4" category="inline-link-macro-rx"></block>。</block>
+  <block id="1512503c318779a183367c2326a24f21" category="list-text">オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。<block ref="ce22b55d293a0e07097135e6515924b6" category="inline-link-rx"></block>。</block>
+  <block id="f49cd49d999d1390260fa896a1a3ceec" category="paragraph">をクリックします <block ref="4860dd37562d5a245a69a17be60d42e2" category="inline-link-macro-rx"></block> ポリシーの詳細については、を参照してください。</block>
+  <block id="f887e54f519cc35b4741120230ac9d1a" category="paragraph">_Classification_area には ' 最も識別されたリストが表示されます <block ref="b823fa31d5dec268aaa19a8828bf34fe" category="inline-link-macro-rx"></block>、 <block ref="336d27c782a82199a3380deae5570591" category="inline-link-macro-rx"></block>および <block ref="8376771def5b60bb1cfdd0dc180ae5cc" category="inline-link-macro-rx"></block> をスキャンしたデータに保存します。</block>
 </blocks>

@@ -22,7 +22,7 @@ TIP: その他の国の ID 番号や医療機関の ID など、プライベー�
 
 == 個人データの種類
 
-ファイルに含まれる個人データは、一般的な個人データまたは国 ID です。3 番目の列は、 Cloud Data Sense で使用されているかどうかを示します link:task-controlling-private-data.html#personal-data["近接性検証"^] 識別子の調査結果を検証します。
+ファイルに含まれる個人データは、一般的な個人データまたは国 ID です。3 番目の列は、 Cloud Data Sense で使用されているかどうかを示します link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["近接性検証"^] 識別子の調査結果を検証します。
 
 このカテゴリの項目は、どの言語でも認識できます。
 

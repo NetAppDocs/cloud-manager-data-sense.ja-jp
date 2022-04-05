@@ -116,7 +116,7 @@ image:screenshot_s3_we.gif["Amazon S3 作業環境アイコンのスクリーン
 +
 image:screenshot_s3_enable_compliance.gif["サービスパネルからクラウドデータセンスサービスを有効にするスクリーンショット"]
 
-. プロンプトが表示されたら、を持つ Cloud Data Sense インスタンスに IAM ロールを割り当てます <<Requirements specific to S3,必要な権限>>。
+. プロンプトが表示されたら、を持つ Cloud Data Sense インスタンスに IAM ロールを割り当てます <<Reviewing S3 prerequisites,必要な権限>>。
 +
 image:screenshot_s3_compliance_iam_role.gif["クラウドデータセンス用の AWS IAM ロールを入力するスクリーンショット"]
 

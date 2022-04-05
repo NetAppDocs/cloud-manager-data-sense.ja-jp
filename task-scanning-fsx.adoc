@@ -39,7 +39,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS Elastic 
 以下の手順を実行してすぐに作業を開始するか、下にスクロールして詳細を確認してください。
 
 [role="quick-margin-para"]
-FSX で ONTAP ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/concept-fsx-aws.html["ボリュームが設定された FSX 作業環境が必要です"^]。
+FSX で ONTAP ボリュームをスキャンする前に、 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["ボリュームが設定された FSX 作業環境が必要です"^]。
 
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["Cloud Manager に Cloud Data Sense を導入"^] インスタンスが展開されていない場合。
@@ -70,7 +70,7 @@ Cloud Data Sense が有効になったので、すべてのボリュームにア
 
 スキャンする FSX for ONTAP ファイルシステムが作業環境としてまだ Cloud Manager にない場合は、この時点でキャンバスに追加できます。
 
-https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/task-creating-fsx-working-environment.html["Cloud Manager で ONTAP ファイルシステムの FSX を検出または作成する方法については、を参照してください"^]。
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["Cloud Manager で ONTAP ファイルシステムの FSX を検出または作成する方法については、を参照してください"^]。
 
 
 
