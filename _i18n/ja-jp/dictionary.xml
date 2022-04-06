@@ -2293,4 +2293,16 @@
   <block id="a991dfa1931f18e122d99da7c642e9fe" category="section-title">追加の個人データの種類は、データセンスで識別できます</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。</block>
   <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">/tmp 上で 5 GiB</block>
+  <block id="7d3786abf2ebb473a5ba70b680734525" category="section-title">BYOL ライセンスに関する考慮事項</block>
+  <block id="ea788b146da4003e2a945bfac897d653" category="paragraph">Cloud Data Sense BYOL ライセンスを使用している場合、スキャンするすべてのデータのサイズが容量の上限に近づいている場合やライセンスの有効期限に近づいている場合、 Cloud Manager はユーザインターフェイスに警告を表示します。次の警告が表示されます。</block>
+  <block id="e95058755e821bf6cb439e37f1f068d7" category="list-text">スキャンするデータ量がライセンスで許可された容量の 80% に達したとき、および制限に達したときに再度スキャンします</block>
+  <block id="d8ea74d0bc0e6f3c5be22312a953d7fb" category="list-text">ライセンスの有効期限が切れる 30 日前と、ライセンスの有効期限が切れたあとに再度有効になります</block>
+  <block id="e8c240ac70f9e6acaa6b979acb3be469" category="paragraph">Cloud Manager インターフェイスの右下にあるチャットアイコンを使用して、警告が表示されたときにライセンスを更新してください。</block>
+  <block id="788e4ff805005ba0a3c88a392b87f9a6" category="paragraph">ライセンスの有効期限が切れると、次の 2 つのことが起こります。</block>
+  <block id="4682818c4f814fd62499f53422b70f33" category="list-text">使用しているアカウントにマーケットプレイスサブスクリプションがある場合、データセンスは引き続き実行されますが、 PAYGO ライセンスモデルに移行します。スキャンするデータの量に基づいて料金が発生します。</block>
+  <block id="2ed7f1db5e75685e121a0c29a15e4247" category="list-text">使用しているアカウントに Marketplace サブスクリプションがない場合、 Data Sense は継続的に実行されますが、引き続き警告が表示されます。</block>
+  <block id="c438a45ba498e9cee6eb5d6bb573e3dc" category="inline-xref">Cloud Data Sense ライセンスを更新する方法</block>
+  <block id="dcbd0c81108f8a84d6e28aa71bb57afa" category="paragraph">BYOL サブスクリプションを更新すると、 Cloud Manager によってライセンスが自動的に更新されます。Cloud Manager がセキュアなインターネット接続経由でライセンスファイルにアクセスできない場合（ダークサイトにインストールされている場合など）は、手動でファイルを入手して Cloud Manager にアップロードできます。手順については、を参照してください <block ref="1f87c6b55e7e67883f99839aa3c20209" category="inline-xref-macro-rx"></block>。</block>
+  <block id="9d21e20ef25e8b74361e9e64a818de8b" category="paragraph">PAYGO ライセンスに切り替えられたシステムは、自動的に BYOL ライセンスに戻されます。また、ライセンスなしで実行されていたシステムでは警告が表示されなくなり、ライセンスの有効期限が切れている間に発生したアクティビティに課金されます。</block>
+  <block id="6724e02efab0bd3c780354de786a5a3f" category="paragraph">これにより、インストールファイル * cc_onpm_installer_&lt; バージョン &gt;.tar.gz * が抽出されます。</block>
 </blocks>

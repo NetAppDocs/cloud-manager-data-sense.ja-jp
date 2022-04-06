@@ -300,6 +300,15 @@ Cloud Data Sense インストーラがパッケージのインストールを完
 tar -xvf DataSense-offline-bundle-v1.10.0.tar.gz
 ----
 +
+これにより、インストールファイル * cc_onpm_installer_< バージョン >.tar.gz * が抽出されます。
+
+. ホストマシンでインストールファイルを解凍します。次に例を示します。
++
+[source, cli]
+----
+tar -xzf cc_onprem_installer_1.10.0.tar.gz
+----
++
 これにより、アップグレードスクリプト * START_ダーク site_upgrade.sh * および必要なサードパーティ製ソフトウェアが抽出されます。
 
 . ホストマシンでアップグレードスクリプトを実行します。次に例を示します。
