@@ -695,7 +695,7 @@
         </li>
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/ja-jp/cloud/">Cloud Docs</a>
+          <a href="https://docs.netapp.com/us-en/cloud/">Cloud Docs</a>
         </li>
         
 
@@ -733,7 +733,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-06 14:29:46 +0000">04/06/2022</time>
+    <time datetime="2022-04-11 14:45:14 +0000">04/11/2022</time>
     
   
 
@@ -773,7 +773,10 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP 用 FSX 、 AWS S3 、 OneDrive 、 SharePoint のアカウントをスキャンすることはできません。</p>
+<p>Cloud Manager を非常にセキュアにインストールする必要があるが、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンする場合は、 Data Sense オフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <a href="#SharePoint and OneDrive special requirements">SharePoint と OneDrive の特別な要件</a> を参照してください。</p>
+</div>
+<div class="paragraph">
+<p>現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP の FSX 、または AWS S3 アカウントのスキャンはサポートされていません。</p>
 </div>
 </div>
 </div>
@@ -787,6 +790,18 @@
 <ul>
 <li>
 <p>Microsoft Azure Information Protection （ AIP ）ラベルの管理</p>
+</li>
+<li>
+<p>特定の重大ポリシーが結果を返すときに Cloud Manager ユーザに E メールアラートを送信する</p>
+</li>
+<li>
+<p>さまざまなユーザに対する Cloud Manager ロールの設定（ Account Admin や Compliance Viewer など）</p>
+</li>
+<li>
+<p>Cloud Sync を使用したソースファイルのコピーと同期</p>
+</li>
+<li>
+<p>ユーザからのフィードバックを受け取る</p>
 </li>
 <li>
 <p>Cloud Manager からのソフトウェアの自動アップグレード</p>
@@ -919,6 +934,39 @@
 </div>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sharepoint-と-onedrive-の特別な要件">SharePoint と OneDrive の特別な要件</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Manager と Data Sense がインターネットにアクセスできないサイトに導入されている場合は、 SharePoint アカウントと OneDrive アカウントでローカルファイルをスキャンできます。そのためには、選択したいくつかのエンドポイントへのインターネットアクセスが提供されています。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">エンドポイント</th>
+<th class="tableblock halign-left valign-top">目的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">¥ login.microsoft.com ¥ graph.microsoft.com</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選択したオンラインサービスにログインするための Microsoft サーバとの通信。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\ <a href="https://cloudmanager.cloud.netapp.com" class="bare">https://cloudmanager.cloud.netapp.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ネットアップアカウントを含む Cloud Manager サービスとの通信</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><em>cloudmanager.cloud.netapp.com</em> へのアクセスは、これらの外部サービスへの初期接続時にのみ必要です。</p>
 </div>
 </div>
 </div>
