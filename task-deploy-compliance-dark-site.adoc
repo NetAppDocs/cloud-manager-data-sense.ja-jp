@@ -29,7 +29,9 @@ summary: インターネットにアクセスできないオンプレミスサ�
 * Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ
 
 
-現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP 用 FSX 、 AWS S3 、 OneDrive 、 SharePoint のアカウントをスキャンすることはできません。
+Cloud Manager を非常にセキュアにインストールする必要があるが、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンする場合は、 Data Sense オフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <<SharePoint and OneDrive special requirements,SharePoint と OneDrive の特別な要件>> を参照してください。
+
+現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP の FSX 、または AWS S3 アカウントのスキャンはサポートされていません。
 
 
 
@@ -38,6 +40,10 @@ summary: インターネットにアクセスできないオンプレミスサ�
 ほとんどのデータセンス機能は、インターネットにアクセスできないサイトに導入されている場合に機能します。ただし、インターネットアクセスを必要とする特定の機能はサポートされていません。たとえば、次のような機能があります。
 
 * Microsoft Azure Information Protection （ AIP ）ラベルの管理
+* 特定の重大ポリシーが結果を返すときに Cloud Manager ユーザに E メールアラートを送信する
+* さまざまなユーザに対する Cloud Manager ロールの設定（ Account Admin や Compliance Viewer など）
+* Cloud Sync を使用したソースファイルのコピーと同期
+* ユーザからのフィードバックを受け取る
 * Cloud Manager からのソフトウェアの自動アップグレード
 +
 Cloud Manager Connector と Data Sense は、新しい機能を有効にするために、定期的な手動アップグレードを必要とします。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します link:whats-new.html["Cloud Data Sense リリースノート"] 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します <<Upgrade Data Sense software,データセンスソフトウェアをアップグレードします>>。
@@ -120,6 +126,24 @@ Cloud Manager でインストールの進捗状況を確認できるように、
 データセンスインスタンスは、プライベート IP アドレスを使用して、インデックス付きデータが他のユーザーにアクセスできないようにします。そのため、 Cloud Manager へのアクセスに使用する Web ブラウザは、そのプライベート IP アドレスに接続する必要があります。この接続は、データセンスインスタンスと同じネットワーク内にあるホストから確立できます。
 
 
+
+
+
+== SharePoint と OneDrive の特別な要件
+
+Cloud Manager と Data Sense がインターネットにアクセスできないサイトに導入されている場合は、 SharePoint アカウントと OneDrive アカウントでローカルファイルをスキャンできます。そのためには、選択したいくつかのエンドポイントへのインターネットアクセスが提供されています。
+
+[cols="50,50"]
+|===
+| エンドポイント | 目的 
+
+
+| ¥ login.microsoft.com ¥ graph.microsoft.com | 選択したオンラインサービスにログインするための Microsoft サーバとの通信。 
+
+
+| \ https://cloudmanager.cloud.netapp.com | ネットアップアカウントを含む Cloud Manager サービスとの通信 
+|===
+_cloudmanager.cloud.netapp.com_ へのアクセスは、これらの外部サービスへの初期接続時にのみ必要です。
 
 
 

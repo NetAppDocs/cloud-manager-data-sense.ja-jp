@@ -2192,7 +2192,6 @@
   <block id="bba082dd43baad5296b00863b2fd871e" category="cell">オーストラリアパスポート番号</block>
   <block id="17dca5bf3d125aa4d0f3309727923bc6" category="list-text">AIP ラベルを Cloud Data Sense と統合している場合は、このファイルにラベルを割り当てるか、すでに存在する場合は別のラベルに変更できます。を参照してください <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="d65636c48d5eaaa2a0f018e8b2c9b456" category="paragraph">重複ファイルのリストをダウンロードし、ストレージ管理者に送信して、削除可能なファイルをユーザが判別できるようにします。または <block ref="e6aba68fcf17e4e39481e0dfc445e973" category="inline-link-macro-rx"></block> 特定のバージョンのファイルが不要であることが確信できる場合は、自分自身で実行します。</block>
-  <block id="c9711148e577d21dac573fe377ceadc1" category="paragraph">現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP 用 FSX 、 AWS S3 、 OneDrive 、 SharePoint のアカウントをスキャンすることはできません。</block>
   <block id="c784be7cd9fc5595c7c63534bdda46c4" category="paragraph">Cloud Manager Connector と Data Sense は、新しい機能を有効にするために、定期的な手動アップグレードを必要とします。Data Sense バージョンは、 Data Sense UI ページの下部に表示されます。を確認します <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 各リリースの新機能と、それらの機能が必要かどうかを確認できます。次に、の手順を実行します <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="5a07c55d314714fa3a36d7f6231d91b2" category="paragraph">Data Sense をインストールする前に、次のソフトウェアをホストにインストールする必要があります。</block>
   <block id="44913217828f63e33072c448b10eb218" category="list-text">インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。</block>
@@ -2306,4 +2305,22 @@
   <block id="6724e02efab0bd3c780354de786a5a3f" category="paragraph">これにより、インストールファイル * cc_onpm_installer_&lt; バージョン &gt;.tar.gz * が抽出されます。</block>
   <block id="06087ea3885ed7ac53f2f14132359adc" category="paragraph">データセンスでは、ハッシュテクノロジを使用して重複ファイルを特定します。ハッシュコードが別のファイルと同じファイルがある場合、ファイル名が異なる場合でも、ファイルが完全に重複していることを 100% 確認できます。</block>
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">このページで指定されている「ファイルハッシュ」値を使用して、 ［ 調査 ］ ページに直接入力すると、特定の重複ファイルをいつでも検索できます。また、ポリシーで使用することもできます。</block>
+  <block id="7d48333086004a7939c29f033e1bfad5" category="section-title">ダークサイトに導入した場合、 OneDrive と SharePoint のデータをスキャンできます</block>
+  <block id="5d1023de4743a538d723b0eea67b9c49" category="inline-link">次のエンドポイントへのアクセスを許可する必要があります。</block>
+  <block id="db6cb8c8f4488e129ed6809bb11b1ac6" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。<block ref="f6e82e062f347b1008c89c76ae485574" category="inline-link-rx"></block></block>
+  <block id="143cbb5198b43152fc02c7822c0a4df1" category="inline-xref">SharePoint と OneDrive の特別な要件</block>
+  <block id="26c2bd17725502dd41a7ea99643a8a29" category="paragraph">Cloud Manager を非常にセキュアにインストールする必要があるが、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンする場合は、 Data Sense オフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> を参照してください。</block>
+  <block id="79e0848d1bc2a8a6b4a0f1371a93e4b3" category="paragraph">現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP の FSX 、または AWS S3 アカウントのスキャンはサポートされていません。</block>
+  <block id="83925eb41f224ab078a6ede41fce2ce8" category="list-text">特定の重大ポリシーが結果を返すときに Cloud Manager ユーザに E メールアラートを送信する</block>
+  <block id="65097bbc12ec4bd1b84a583f86720dbc" category="list-text">さまざまなユーザに対する Cloud Manager ロールの設定（ Account Admin や Compliance Viewer など）</block>
+  <block id="03ab5a445b96670c4d6471f1e0ae786c" category="list-text">Cloud Sync を使用したソースファイルのコピーと同期</block>
+  <block id="21d99d41f7aa56147e5b8e2f64a15458" category="list-text">ユーザからのフィードバックを受け取る</block>
+  <block id="d988b54f3b64e974362e6cbf74785f60" category="paragraph">Cloud Manager と Data Sense がインターネットにアクセスできないサイトに導入されている場合は、 SharePoint アカウントと OneDrive アカウントでローカルファイルをスキャンできます。そのためには、選択したいくつかのエンドポイントへのインターネットアクセスが提供されています。</block>
+  <block id="ca31f5af8410452f51d81153fffb5c54" category="cell">¥ login.microsoft.com ¥ graph.microsoft.com</block>
+  <block id="bea203a1b40a7cbfe57a7032625d4eed" category="cell">選択したオンラインサービスにログインするための Microsoft サーバとの通信。</block>
+  <block id="665921fa8f2b4f0c994ec8d226f8544f" category="paragraph">_cloudmanager.cloud.netapp.com_ へのアクセスは、これらの外部サービスへの初期接続時にのみ必要です。</block>
+  <block id="1b602d3afff4393bd19938efb7312da3" category="inline-link-macro">インターネットにアクセスできないオンプレミスの場所に導入されている</block>
+  <block id="72be220d746bd2e14365d0ceeea52365" category="inline-link-macro">必要なエンドポイントのリストを参照してください</block>
+  <block id="99428c3925d465acb3903496e22efe4c" category="paragraph">データセンスは、の場合もあります <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。ただし、ローカルの SharePoint ファイルをスキャンするには、いくつかの選択したエンドポイントへのインターネットアクセスを提供する必要があります。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
+  <block id="e9b6d5f264bba809d5461558e8379d9e" category="paragraph">データセンスは、の場合もあります <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。ただし、ローカルの OneDrive ファイルをスキャンするには、いくつかの一部のエンドポイントへのインターネットアクセスを提供する必要があります。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
 </blocks>

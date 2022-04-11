@@ -57,6 +57,12 @@ Data Sense と統合するグローバル Active Directory サーバは、以前
 
 
 
+=== ダークサイトに導入した場合、 OneDrive と SharePoint のデータをスキャンできます
+
+インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements["次のエンドポイントへのアクセスを許可する必要があります。"]
+
+
+
 === Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました
 
 
