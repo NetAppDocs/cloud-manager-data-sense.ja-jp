@@ -6,6 +6,7 @@ summary: Cloud Data Sense で、オブジェクトストレージ内のデータ
 ---
 = S3 プロトコルを使用するオブジェクトストレージをスキャンしています
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

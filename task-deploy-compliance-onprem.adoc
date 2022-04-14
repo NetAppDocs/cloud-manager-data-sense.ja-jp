@@ -6,6 +6,7 @@ summary: ネットワーク内またはクラウド内でインターネット�
 ---
 = インターネットにアクセス可能な Linux ホストに Cloud Data Sense を導入する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

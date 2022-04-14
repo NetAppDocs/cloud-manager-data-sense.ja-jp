@@ -6,6 +6,7 @@ summary: Azure NetApp Files 向けクラウドデータセンスの導入を開�
 ---
 = Azure NetApp Files 向けクラウドデータセンスの導入を開始する方法をご確認ください
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

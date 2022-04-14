@@ -6,6 +6,7 @@ summary: Cloud Data Sense は、社内のオンプレミスデータソースや
 ---
 = クラウドデータの意味をご確認ください
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -86,7 +87,7 @@ link:task-licensing-datasense.html["Cloud Data Sense のライセンスを取得
 
 === データ転送コスト
 
-データ転送のコストは設定によって異なります。Cloud Data Sense インスタンスとデータソースが同じアベイラビリティゾーンとリージョンにある場合は、データ転送コストは発生しない。ただし、 Cloud Volumes ONTAP クラスタや S3 バケットなどのデータソースが _different _Availability Zone またはリージョンにある場合は、クラウドプロバイダにデータ転送コストが請求されます。詳細については、次のリンクを参照してください。
+データ転送のコストは設定によって異なります。Cloud Data Sense インスタンスとデータソースが同じアベイラビリティゾーンとリージョンにある場合は、データ転送コストは発生しない。ただし、 Cloud Volumes ONTAP システムや S3 バケットなどのデータソースが _different _Availability Zone またはリージョンにある場合は、クラウドプロバイダにデータ転送コストが請求されます。詳細については、次のリンクを参照してください。
 
 * https://aws.amazon.com/ec2/pricing/on-demand/["AWS ： Amazon EC2 価格設定"^]
 * https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure ： Bandwidth Pricing Details 』"^]

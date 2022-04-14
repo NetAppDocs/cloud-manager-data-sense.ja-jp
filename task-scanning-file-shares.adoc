@@ -6,6 +6,7 @@ summary: NetApp 以外の NFS または CIFS ファイル共有を Cloud Data Se
 ---
 = ファイル共有をスキャンしています
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

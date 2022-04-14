@@ -6,6 +6,7 @@ summary: Cloud Data Sense を使用して、 Cloud Volumes ONTAP とオンプレ
 ---
 = Cloud Volumes ONTAP とオンプレミス ONTAP 向けのクラウドデータサービスの導入を開始する方法をご紹介します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

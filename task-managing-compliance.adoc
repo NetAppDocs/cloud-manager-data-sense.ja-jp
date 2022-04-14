@@ -6,6 +6,7 @@ summary: 必要に応じて、 Cloud Data Sense を停止することで、 1 �
 ---
 = Cloud Data Sense からのデータソースの削除
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

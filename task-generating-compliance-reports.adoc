@@ -6,6 +6,7 @@ summary: Cloud Data Sense は、組織のデータプライバシープログラ
 ---
 = コンプライアンスレポートの表示
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

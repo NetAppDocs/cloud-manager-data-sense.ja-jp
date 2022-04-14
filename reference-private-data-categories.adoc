@@ -6,6 +6,7 @@ summary: Cloud Data Sense がボリューム、 Amazon S3 バケット、デー�
 ---
 = プライベートデータのカテゴリ
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

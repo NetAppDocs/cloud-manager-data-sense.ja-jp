@@ -6,6 +6,7 @@ summary: Cloud Data Sense でデータベーススキーマのスキャンを開
 ---
 = データベーススキーマをスキャンしています
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

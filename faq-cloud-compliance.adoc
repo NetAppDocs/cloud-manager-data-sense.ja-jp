@@ -6,6 +6,7 @@ summary: この FAQ は、質問に対する簡単な回答を探している場
 ---
 = クラウドデータの意味についてよく寄せられる質問
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

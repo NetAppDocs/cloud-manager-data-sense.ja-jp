@@ -6,6 +6,7 @@ summary: 「 Data Fusion 」と呼ばれる機能を使用すると、組織の�
 ---
 = Data Fusion を使用して個人データ識別子を追加する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

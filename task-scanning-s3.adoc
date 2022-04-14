@@ -6,6 +6,7 @@ summary: Cloud Data Sense は、 Amazon S3 バケットをスキャンして、 
 ---
 = Amazon S3 向けのクラウドデータセンスの導入
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

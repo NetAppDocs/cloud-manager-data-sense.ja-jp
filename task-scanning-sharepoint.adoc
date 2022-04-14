@@ -6,6 +6,7 @@ summary: Cloud Data Sense を使用して、 SharePoint アカウント内のフ
 ---
 = SharePoint アカウントをスキャンしています
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

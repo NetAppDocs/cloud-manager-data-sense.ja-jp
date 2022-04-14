@@ -6,6 +6,7 @@ summary: クラウドデータセンスを使用した Amazon FSX for ONTAP ボ�
 ---
 = Amazon FSX for ONTAP のクラウドデータセンスを今すぐ始めましょう
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

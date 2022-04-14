@@ -6,6 +6,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 ---
 = クラウドデータをオンプレミスに導入しても、インターネットアクセスは不要
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

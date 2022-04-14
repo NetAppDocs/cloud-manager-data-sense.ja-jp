@@ -6,6 +6,7 @@ summary: 組織のストレージリソース上のデータに関連するコ�
 ---
 = 組織に保存されているデータに関するガバナンスの詳細を表示する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

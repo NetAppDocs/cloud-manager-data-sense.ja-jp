@@ -6,6 +6,7 @@ summary: 組織内の個人データと機密性の高い個人データに関�
 ---
 = 組織に保存されているデータのコンプライアンスの詳細を表示する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

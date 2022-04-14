@@ -6,6 +6,7 @@ summary: Cloud Data Sense は、プライベートデータを管理、整理す
 ---
 = プライベートデータを整理する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

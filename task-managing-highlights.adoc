@@ -6,6 +6,7 @@ summary: Cloud Data Sense は、プライベートデータを管理するため
 ---
 = プライベートデータの管理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
