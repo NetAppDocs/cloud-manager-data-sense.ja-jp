@@ -733,7 +733,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-06 14:29:46 +0000">04/06/2022</time>
+    <time datetime="2022-04-14 13:31:12 +0000">04/14/2022</time>
     
   
 
@@ -949,13 +949,13 @@ Your browser does not support the video tag.
 <p><span class="image"><img src="./media/screenshot_services_license_expire_cc1.png" alt="Cloud Data Sense ページで期限切れになるライセンスを示すスクリーンショット。"></span></p>
 </div>
 <div class="paragraph">
-<p>このステータスは、 [ デジタルウォレット ] ページにも表示されます。</p>
+<p>このステータスは、デジタルウォレットにも表示されます。</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_services_license_expire_cc2.png" alt="Digital Wallet ページに期限切れになるライセンスを示すスクリーンショット。"></span></p>
 </div>
 <div class="paragraph">
-<p>Cloud Data Sense ライセンスは、期限が切れる前に更新できるため、データのスキャンが中断されることはありません。</p>
+<p>Cloud Data Sense ライセンスは、期限が切れる前に更新できるため、スキャンしたデータへのアクセスが中断されることはありません。</p>
 </div>
 <div class="olist arabic">
 <div class="title">手順</div>
@@ -994,7 +994,7 @@ Your browser does not support the video tag.
 <div class="sect2">
 <h3 id="byol-ライセンスに関する考慮事項">BYOL ライセンスに関する考慮事項</h3>
 <div class="paragraph">
-<p>Cloud Data Sense BYOL ライセンスを使用している場合、スキャンするすべてのデータのサイズが容量の上限に近づいている場合やライセンスの有効期限に近づいている場合、 Cloud Manager はユーザインターフェイスに警告を表示します。次の警告が表示されます。</p>
+<p>クラウドデータセンス BYOL ライセンスを使用している場合、スキャンするすべてのデータのサイズが容量の上限に近づいているかライセンスの有効期限に近づいているときに、 Cloud Manager のデータセンス UI およびデジタルウォレット UI に警告が表示されます。次の警告が表示されます。</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1010,23 +1010,22 @@ Your browser does not support the video tag.
 <p>Cloud Manager インターフェイスの右下にあるチャットアイコンを使用して、警告が表示されたときにライセンスを更新してください。</p>
 </div>
 <div class="paragraph">
-<p>ライセンスの有効期限が切れると、次の 2 つのことが起こります。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>使用しているアカウントにマーケットプレイスサブスクリプションがある場合、データセンスは引き続き実行されますが、 PAYGO ライセンスモデルに移行します。スキャンするデータの量に基づいて料金が発生します。</p>
-</li>
-<li>
-<p>使用しているアカウントに Marketplace サブスクリプションがない場合、 Data Sense は継続的に実行されますが、引き続き警告が表示されます。</p>
-</li>
-</ul>
+<p>ライセンスの有効期限が切れてもデータセンスは実行されますが、ダッシュボードへのアクセスはブロックされるため、スキャンしたデータに関する情報を表示できません。スキャンするボリューム数を減らして容量の使用量をライセンスの上限までにする場合は、 _Configuration_page だけを使用できます。</p>
 </div>
 <div class="paragraph">
-<p>BYOL サブスクリプションを更新すると、 Cloud Manager によってライセンスが自動的に更新されます。Cloud Manager がセキュアなインターネット接続経由でライセンスファイルにアクセスできない場合（ダークサイトにインストールされている場合など）は、手動でファイルを入手して Cloud Manager にアップロードできます。手順については、を参照してください <a href="#Update a Cloud Data Sense BYOL license">Cloud Data Sense ライセンスを更新する方法</a>。</p>
+<p>BYOL ライセンスを更新すると、 Cloud Manager はデジタルウォレットのライセンスを自動的に更新し、すべてのダッシュボードにフルアクセスできるようになります。Cloud Manager がセキュアなインターネット接続経由でライセンスファイルにアクセスできない場合（ダークサイトにインストールされている場合など）は、手動でファイルを入手して Cloud Manager にアップロードできます。手順については、を参照してください <a href="#Update a Cloud Data Sense BYOL license">Cloud Data Sense ライセンスを更新する方法</a>。</p>
 </div>
-<div class="paragraph">
-<p>PAYGO ライセンスに切り替えられたシステムは、自動的に BYOL ライセンスに戻されます。また、ライセンスなしで実行されていたシステムでは警告が表示されなくなり、ライセンスの有効期限が切れている間に発生したアクティビティに課金されます。</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-data-sense/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+使用しているアカウントに BYOL ライセンスと PAYGO の両方のサブスクリプションがある場合、 BYOL ライセンスの期限が切れたときに Data Sense _ が PAYGO サブスクリプションに移行することはありません。BYOL ライセンスを更新する必要があります。
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
