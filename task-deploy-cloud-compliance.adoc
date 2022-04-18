@@ -130,10 +130,12 @@ CPU 数と RAM 容量が少ないシステムには Data Sense を導入でき�
 
 
 --
-Cloud Manager Connector が Cloud Data Sense にアクセスできることを確認する:: コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。この接続により、データセンスインスタンスの展開が可能になり、 [ コンプライアンス（ Compliance ） ] タブと [ ガバナンス（ Governance ） ] タブで情報を表示できます。
+Cloud Manager Connector が Cloud Data Sense にアクセスできることを確認する:: コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。この接続により、データセンスインスタンスの展開が可能になり、 [ コンプライアンス（ Compliance ） ] タブと [ ガバナンス（ Governance ） ] タブで情報を表示できます。Cloud Data Sense は、 AWS や Azure の政府機関でサポートされています。
 +
 --
-Cloud Data Sense は、 AWS や Azure の政府機関でサポートされています。AWS と AWS GovCloud を導入する場合は、追加のインバウンドおよびアウトバウンドのルールが必要です。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#rules-for-the-connector-in-aws["AWS のコネクタのルール"^] を参照してください。
+AWS と AWS GovCloud を導入する場合は、追加のインバウンドおよびアウトバウンドのルールが必要です。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#rules-for-the-connector-in-aws["AWS のコネクタのルール"^] を参照してください。
+
+Azure と Azure Government の環境には、追加のインバウンドルールとアウトバウンドルールが必要です。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#rules-for-the-connector-in-azure["Azure のコネクタのルール"^] を参照してください。
 
 --
 クラウドデータを常に運用しておく必要があります:: データを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。

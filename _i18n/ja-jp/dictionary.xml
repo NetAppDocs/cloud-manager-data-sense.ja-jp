@@ -1824,9 +1824,7 @@
   <block id="679c6b026096af4912243f7d0fe0c56a" category="inline-link">Google Cloud のドキュメント：リソースクォータ</block>
   <block id="e0c1891bead6f9e2f86ecf6043345b62" category="list-text"><block ref="e0c1891bead6f9e2f86ecf6043345b62" category="inline-link-rx"></block></block>
   <block id="d7a48de9510bd2b767d3d5fc0a2c7716" category="list-text">Cloud Manager Connector が Cloud Data Sense にアクセスできることを確認する</block>
-  <block id="7a1ca71e0bd803afb25df05b1d1dd052" category="list-text">コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。この接続により、データセンスインスタンスの展開が可能になり、 [ コンプライアンス（ Compliance ） ] タブと [ ガバナンス（ Governance ） ] タブで情報を表示できます。</block>
   <block id="fd1958e5e74317f89c6c16bbca7d1446" category="inline-link">AWS のコネクタのルール</block>
-  <block id="bb607285829b82b3d72af8d273125f48" category="paragraph">Cloud Data Sense は、 AWS や Azure の政府機関でサポートされています。AWS と AWS GovCloud を導入する場合は、追加のインバウンドおよびアウトバウンドのルールが必要です。を参照してください<block ref="174b2d5101f3b2591340f8b1c4108c15" category="inline-link-rx"></block> を参照してください。</block>
   <block id="71a1162233b51bce893571d72cd943d1" category="list-text">クラウドデータを常に運用しておく必要があります</block>
   <block id="8412fae8dddba4e0747379264d31e177" category="list-text">データを継続的にスキャンするには、 Cloud Data Sense インスタンスがオンのままになっている必要があります。</block>
   <block id="ed5df84ba8d573f10f9a94f52964d60b" category="list-text">Web ブラウザから Cloud Data Sense への接続を確認する</block>
@@ -2367,4 +2365,8 @@
   <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">[ * お問い合わせ * ] をクリックして、ネットアップ・テクニカル・サポートの電話番号を検索してください。</block>
   <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">[ * 問題 を開く * ] をクリックし、いずれかのオプションを選択して、 [ * 送信 * ] をクリックします。</block>
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">ネットアップの担当者がケースを確認し、すぐに対応を開始します。</block>
+  <block id="eee50fc2c4ac06219bb486e05b8250f7" category="list-text">コネクタと Cloud Data Sense インスタンス間の接続を確認します。コネクタのセキュリティグループは、 Data Sense インスタンスとの間でポート 443 経由のインバウンドおよびアウトバウンドトラフィックを許可する必要があります。この接続により、データセンスインスタンスの展開が可能になり、 [ コンプライアンス（ Compliance ） ] タブと [ ガバナンス（ Governance ） ] タブで情報を表示できます。Cloud Data Sense は、 AWS や Azure の政府機関でサポートされています。</block>
+  <block id="0b3c77caf569c338dc81a3ae8eb753d5" category="paragraph">AWS と AWS GovCloud を導入する場合は、追加のインバウンドおよびアウトバウンドのルールが必要です。を参照してください<block ref="174b2d5101f3b2591340f8b1c4108c15" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="b445de53411a165e9c56da6430c38d59" category="inline-link">Azure のコネクタのルール</block>
+  <block id="e271f92bb6a2f886e00883b1a5f3fe51" category="paragraph">Azure と Azure Government の環境には、追加のインバウンドルールとアウトバウンドルールが必要です。を参照してください<block ref="c90240cb0e2cbfac2997cad831e58ce0" category="inline-link-rx"></block> を参照してください。</block>
 </blocks>
