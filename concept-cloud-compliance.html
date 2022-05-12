@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Data Sense は、社内のオンプレミスデータソースやクラウドデータソース、作業環境をスキャンしてデータをマッピング、分類し、プライベート情報を特定する、 Cloud Manager のデータガバナンスサービスです。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減...">
-  <meta name="keywords" content=" artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, on-prem ontap, file shares, object storage, aip labels, governance, data sense"><!-- Icons -->
+  <meta name="keywords" content=" artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, google drive, on-prem ontap, file shares, object storage, aip labels, governance, data sense"><!-- Icons -->
   <link rel="icon" href="/ja-jp/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ja-jp/cloud-manager-data-sense/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -459,6 +459,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive アカウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint アカウント
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Googleドライブアカウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-file-shares.html">
         ファイル共有
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:31:12 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:11:20 +0000">05/12/2022</time>
     
   
 
@@ -848,6 +852,9 @@
 <li>
 <p>SharePoint アカウント</p>
 </li>
+<li>
+<p>Googleドライブアカウント</p>
+</li>
 </ul>
 </div>
 <div class="paragraph">
@@ -870,7 +877,7 @@
 <p>クラウドにクラウドデータセンスをインストールするには、クラウドインスタンスを導入する必要があります。その場合、クラウドインスタンスが導入されているクラウドプロバイダから料金が発生します。を参照してください <a href="#The Cloud Data Sense instance">各クラウドに導入されるインスタンスのタイプ プロバイダ</a>。データセンスをオンプレミスシステムにインストールしても、コストはかかりません。</p>
 </li>
 <li>
-<p>Cloud Data Sense を使用するには、コネクタを導入しておく必要があります。多くの場合、 Cloud Manager で他のストレージとサービスを使用しているため、すでにコネクタが用意されています。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html" target="_blank" rel="noopener">"クラウドプロバイダごとに導入されるインスタンスのタイプ"</a>。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。</p>
+<p>Cloud Data Senseを使用するには、Cloud Manager Connectorを導入しておく必要があります。多くの場合、 Cloud Manager で他のストレージとサービスを使用しているため、すでにコネクタが用意されています。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html" target="_blank" rel="noopener">"クラウドプロバイダごとに導入されるインスタンスのタイプ"</a>。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。</p>
 </li>
 </ul>
 </div>
@@ -1052,7 +1059,7 @@ Cloud Data Sense がデータを継続的にスキャンするため、インス
 <p>Cloud Data Sense を使用すると、選択した作業環境やデータソースに対して、一般的な「マッピング」スキャンを実行できます。マッピングではデータの概要のみが示され、分類ではデータの詳細なスキャンが提供されます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。</p>
 </div>
 <div class="paragraph">
-<p>多くのユーザは、この機能を気に入っています。たとえば、より多くの調査が必要なデータソースをすばやくスキャンして特定したうえで、それらのデータソースまたはボリュームに対してのみ分類スキャンを有効にする必要があるためです。</p>
+<p>多くのユーザは、この機能を気に入っています。たとえば、より多くの調査が必要なデータソースをすばやくスキャンして特定したうえで、必要なデータソースやボリュームに対してのみ分類スキャンを有効にする必要があるからです。</p>
 </div>
 <div class="paragraph">
 <p>次の表に、いくつかの相違点を示します。</p>

@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="組織内の個人データと機密性の高い個人データに関する詳細を表示することで、個人データを管理できます。また、クラウドデータで見つかったカテゴリやファイルタイプを確認することで、データを可視化することもできます。">
-  <meta name="keywords" content=" personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, highlights, policies"><!-- Icons -->
+  <meta name="keywords" content=" personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies"><!-- Icons -->
   <link rel="icon" href="/ja-jp/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ja-jp/cloud-manager-data-sense/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive アカウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint アカウント
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Googleドライブアカウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-file-shares.html">
         ファイル共有
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:31:12 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:11:20 +0000">05/12/2022</time>
     
   
 
@@ -806,7 +810,7 @@
 <li>
 <p>特定のファイルの検索、ソート、詳細の展開、 * 調査結果 * をクリックしてマスクされた情報を表示、またはファイルリストをダウンロードして、データを調査します。</p>
 <div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_compliance_investigation_page.gif" alt="調査結果をクリックした後の詳細情報のスクリーンショット。"></span></p>
+<p><span class="image"><img src="./media/screenshot_compliance_investigation_page.png" alt="調査結果をクリックした後の詳細情報のスクリーンショット。"></span></p>
 </div>
 </li>
 </ol>
@@ -976,13 +980,16 @@
 <p>ファイルへのアクセス権を持つすべてのユーザーまたはグループのリストと、そのファイルに含まれるアクセス権の種類を表示するには、 * すべてのアクセス権を表示 * をクリックします。このボタンは、 CIFS 共有、 SharePoint 、 OneDrive 内のファイルに対してのみ使用できます。</p>
 </div>
 <div class="paragraph">
+<p>ユーザ名とグループ名ではなく SID （セキュリティ識別子）が表示される場合は、 Active Directory をデータセンスに統合する必要があります。 <a href="task-add-active-directory-datasense.html">"詳細については、「方法」を参照してください"</a>。</p>
+</div>
+<div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_compliance_permissions.png" alt="詳細なファイル権限を示すスクリーンショット。"></span></p>
 </div>
 <div class="paragraph">
 <p>ユーザまたはグループの名前をクリックすると、 [ 調査 ] ページにそのユーザまたはグループの名前が [ ユーザ / グループの権限 ] フィルタに表示され、そのユーザまたはグループがアクセスできるすべてのファイルが表示されます。</p>
 </div>
 <div class="paragraph">
-<p>ユーザ名とグループ名ではなく SID （セキュリティ識別子）が表示される場合は、 Active Directory をデータセンスに統合する必要があります。 <a href="task-add-active-directory-datasense.html">"詳細については、「方法」を参照してください"</a>。</p>
+<p>また、をクリックすることもできます <span class="image"><img src="./media/button_down_caret.png" alt="下キャレット"></span> をクリックすると、グループの一部であるユーザのリストが表示されます。</p>
 </div>
 </div>
 </div>
@@ -1059,7 +1066,10 @@
 <h2 id="データ調査-ページでデータをフィルタリングします">[ データ調査 ] ページでデータをフィルタリングします</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>調査ページの内容をフィルタリングして、表示する結果のみを表示できます。CSV バージョンのコンテンツをリファインした後でレポートとして保存する場合は、をクリックします <span class="image"><img src="./media/button_download.png" alt="&quot;[ ダウンロード"></span> ボタン"] ボタンを押します。</p>
+<p>調査ページの内容をフィルタリングして、表示する結果のみを表示できます。これは非常に強力な機能です。データをリファインした後、ページ上部のボタンバーを使用して、ファイルのコピー、ファイルの移動、ファイルへのタグまたはAIPラベルの追加など、さまざまなアクションを実行できます。</p>
+</div>
+<div class="paragraph">
+<p>ページをリファインした後で、そのページの内容をレポートとしてダウンロードする場合は、をクリックします <span class="image"><img src="./media/button_download.png" alt="&quot;[ ダウンロード"></span> ボタン"] ボタンをクリックして.csvファイルを保存します。</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_compliance_investigation_filtered.png" alt="調査ページで結果を絞り込むときに使用できるフィルタのスクリーンショット。"></span></p>
@@ -1067,7 +1077,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>トップレベルのタブでは、ファイル（非構造化データ）またはデータベース（構造化データ）のデータを表示できます。</p>
+<p>トップレベルのタブでは、ファイル（非構造化データ）、ディレクトリ（非構造化データ）、またはデータベース（構造化データ）のデータを表示できます。</p>
 </li>
 <li>
 <p>各列の上部にあるコントロールを使用して、結果を数値またはアルファベット順にソートできます。</p>
@@ -1088,7 +1098,7 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ポリシー</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ポリシーを選択します。実行します <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"こちらをご覧ください"</a> をクリックして、既存のポリシーのリストを表示し、独自のポリシーを作成します。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ポリシーを選択します。実行します <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"こちらをご覧ください"</a> をクリックして、既存のポリシーのリストを表示し、独自のカスタムポリシーを作成します。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[ アクセス許可 ] を開きます</p></td>
@@ -1096,7 +1106,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ユーザ / グループの権限</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ユーザ名、グループ名、または名前の一部を入力します</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力してください</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ファイルの所有者</p></td>
@@ -1104,11 +1114,11 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ラベル</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AIP ラベルを選択します</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選択するオプション <a href="task-org-private-data.html#categorizing-your-data-using-aip-labels">"AIP ラベル"</a> ファイルに割り当てられます</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">作業環境タイプ（ Working Environment Type ）</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">作業環境のタイプを選択します。OneDrive と SharePoint は、「クラウドアプリ」に分類されています。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">作業環境のタイプを選択します。OneDrive、SharePoint、Google Driveは、「クラウドアプリ」に分類されています。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">作業環境名</p></td>
@@ -1141,6 +1151,10 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">データの件名</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">データ主体のフルネームまたは既知の識別子を入力します</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ディレクトリタイプ（Directory Type）</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ディレクトリタイプを選択します。「共有」または「フォルダ」のいずれかを選択します。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ファイルタイプ</p></td>
@@ -1176,7 +1190,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">タグ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">タグを選択します</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選択するオプション <a href="task-org-private-data.html#applying-tags-to-manage-your-scanned-files">"タグ"</a> ファイルに割り当てられます</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">割り当て先</p></td>
@@ -1184,109 +1198,6 @@
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>[ フィルタ ] ペインの上部にある _Policies_filter には、保存されたデータベースクエリや [ お気に入り ] リストなど、よく要求されるフィルタの組み合わせを提供するカスタムフィルタがリストされます。実行します <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"こちらをご覧ください"</a> 事前定義されたポリシーのリストを表示し、独自のカスタムポリシーを作成する方法を確認できます。</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="各ファイルリストレポート-csv-ファイルに含まれる内容">各ファイルリストレポート（ CSV ファイル）に含まれる内容</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>各 [ 調査 ] ページで、をクリックできます <span class="image"><img src="./media/button_download.png" alt="&quot;[ ダウンロード"></span> ボタン"] ボタンをクリックして、特定されたファイルの詳細を含むファイルリスト（ CSV 形式）をダウンロードします。データ検出で、構造化データ（データベーステーブル）と非構造化データ（ファイル）の両方がスキャンされている場合は、ダウンロードした ZIP ファイルに 2 つのレポートが含まれています。</p>
-</div>
-<div class="paragraph">
-<p>10 、 000 件を超える結果がある場合は、上位 10 、 000 件のみがリストに表示されます。</p>
-</div>
-<div class="paragraph">
-<p>非構造化データ・レポート * には、次の情報が含まれています。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>ファイル名</p>
-</li>
-<li>
-<p>場所のタイプ</p>
-</li>
-<li>
-<p>作業環境の名前</p>
-</li>
-<li>
-<p>ストレージリポジトリ（ボリューム、バケット、共有など）</p>
-</li>
-<li>
-<p>作業環境のタイプ</p>
-</li>
-<li>
-<p>ファイルパス</p>
-</li>
-<li>
-<p>ファイルタイプ</p>
-</li>
-<li>
-<p>ファイルサイズ</p>
-</li>
-<li>
-<p>時刻を作成しました</p>
-</li>
-<li>
-<p>最終更新日</p>
-</li>
-<li>
-<p>最後にアクセスした</p>
-</li>
-<li>
-<p>ファイルの所有者</p>
-</li>
-<li>
-<p>カテゴリ</p>
-</li>
-<li>
-<p>個人情報</p>
-</li>
-<li>
-<p>機密性の高い個人情報</p>
-</li>
-<li>
-<p>削除の検出日</p>
-<div class="paragraph">
-<p>削除の検出日は、ファイルが削除または移動された日付を示します。これにより、機密ファイルがいつ移動されたかを識別できます。削除されたファイルは、ダッシュボードまたは [ 調査 ] ページに表示されるファイル番号カウントの一部ではありません。ファイルは CSV レポートにのみ表示されます。</p>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>構造化データレポート * には、次の情報が含まれています。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>DB テーブル名</p>
-</li>
-<li>
-<p>場所のタイプ</p>
-</li>
-<li>
-<p>作業環境の名前</p>
-</li>
-<li>
-<p>ストレージリポジトリ（スキーマなど）</p>
-</li>
-<li>
-<p>列数</p>
-</li>
-<li>
-<p>行数</p>
-</li>
-<li>
-<p>個人情報</p>
-</li>
-<li>
-<p>機密性の高い個人情報</p>
 </li>
 </ul>
 </div>

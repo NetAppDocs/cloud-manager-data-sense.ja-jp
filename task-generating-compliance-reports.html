@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Data Sense は、組織のデータプライバシープログラムの状況をよりよく把握するために使用できるレポートを提供します。">
-  <meta name="keywords" content=" report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa"><!-- Icons -->
+  <meta name="keywords" content=" report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file"><!-- Icons -->
   <link rel="icon" href="/ja-jp/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ja-jp/cloud-manager-data-sense/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive アカウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint アカウント
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Googleドライブアカウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-file-shares.html">
         ファイル共有
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:31:12 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:11:20 +0000">05/12/2022</time>
     
   
 
@@ -748,7 +752,7 @@
 <p>Cloud Data Sense は、組織のデータプライバシープログラムの状況をよりよく把握するために使用できるレポートを提供します。</p>
 </div>
 <div class="paragraph">
-<p>デフォルトでは、 Cloud Data Sense ダッシュボードには、すべての作業環境およびデータベースのコンプライアンスデータとガバナンスデータが表示されます。一部の作業環境のデータのみを含むレポートを表示する場合は、 <a href="#Selecting the working environments for reports">それらの作業環境を選択します</a>。</p>
+<p>デフォルトでは、Cloud Data Senseダッシュボードには、すべての作業環境、データベース、およびデータソースのコンプライアンスデータとガバナンスデータが表示されます。一部の作業環境のデータのみを含むレポートを表示する場合は、 <a href="#Selecting the working environments for reports">それらの作業環境を選択します</a>。</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -757,19 +761,16 @@
 <img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="注記">
 </td>
 <td class="content">
-このセクションで説明するレポートは、データソースに対して完全な分類スキャンを実行することを選択した場合にのみ使用できます。マッピング専用スキャンを実行したデータソースでは、データマッピングレポートのみが生成されます。
-</td>
-</tr>
-</table>
+<div class="ulist">
+<ul>
+<li>
+<p>このセクションで説明するレポートは、データソースに対して完全な分類スキャンを実行することを選択した場合にのみ使用できます。マッピング専用スキャンを実行したデータソースでは、データマッピングレポートのみが生成されます。</p>
+</li>
+<li>
+<p>ネットアップでは、 Cloud Data Sense が特定した個人データと機密性の高い個人データの正確性を 100% 保証することはできません。必ずデータを確認して情報を検証してください。</p>
+</li>
+</ul>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="注記">
-</td>
-<td class="content">
-ネットアップでは、 Cloud Data Sense が特定した個人データと機密性の高い個人データの正確性を 100% 保証することはできません。必ずデータを確認して情報を検証してください。
 </td>
 </tr>
 </table>
@@ -1085,6 +1086,126 @@
 </div>
 <div class="paragraph">
 <p>Cloud Data Sense は、必要に応じて他のグループにレビューして送信できる PDF レポートを生成します。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="データ調査レポート">データ調査レポート</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Data Investigation Reportは、Data Investigationページの内容をダウンロードしたものです。 <a href="task-controlling-private-data.html#filtering-data-in-the-data-investigation-page">"Data Investigationページの詳細については、こちらをご覧ください"</a>。</p>
+</div>
+<div class="paragraph">
+<p>レポートは、ローカルマシンに.csvファイルとして保存できます。このファイルには最大5、000行のデータを含めることができます。データ検出でデータベーステーブル（構造化データ）とファイル（非構造化データ）をスキャンする場合、ダウンロードできる.csvレポートは最大2つです。</p>
+</div>
+<div class="sect2">
+<h3 id="データ調査レポートの生成">データ調査レポートの生成</h3>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[データ調査]ページで、をクリックします <span class="image"><img src="./media/button_download.png" alt="&quot;[ ダウンロード"></span> ボタン"] ボタンをクリックします。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>レポートをダウンロード中であることを示すメッセージがダイアログに表示されます。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="各データ調査レポートに含まれる情報">各データ調査レポートに含まれる情報</h3>
+<div class="paragraph">
+<p>非構造化ファイルデータレポート*には、ファイルに関する次の情報が含まれています。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ファイル名</p>
+</li>
+<li>
+<p>場所のタイプ</p>
+</li>
+<li>
+<p>作業環境の名前</p>
+</li>
+<li>
+<p>ストレージリポジトリ（ボリューム、バケット、共有など）</p>
+</li>
+<li>
+<p>作業環境のタイプ</p>
+</li>
+<li>
+<p>ファイルパス</p>
+</li>
+<li>
+<p>ファイルタイプ</p>
+</li>
+<li>
+<p>ファイルサイズ</p>
+</li>
+<li>
+<p>時刻を作成しました</p>
+</li>
+<li>
+<p>最終更新日</p>
+</li>
+<li>
+<p>最後にアクセスした</p>
+</li>
+<li>
+<p>ファイルの所有者</p>
+</li>
+<li>
+<p>カテゴリ</p>
+</li>
+<li>
+<p>個人情報</p>
+</li>
+<li>
+<p>機密性の高い個人情報</p>
+</li>
+<li>
+<p>削除の検出日</p>
+<div class="paragraph">
+<p>削除の検出日は、ファイルが削除または移動された日付を示します。これにより、機密ファイルがいつ移動されたかを識別できます。削除されたファイルは、ダッシュボードまたは [ 調査 ] ページに表示されるファイル番号カウントの一部ではありません。ファイルは CSV レポートにのみ表示されます。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>構造化データレポート*には、データベーステーブルに関する次の情報が含まれています。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>DB テーブル名</p>
+</li>
+<li>
+<p>場所のタイプ</p>
+</li>
+<li>
+<p>作業環境の名前</p>
+</li>
+<li>
+<p>ストレージリポジトリ（スキーマなど）</p>
+</li>
+<li>
+<p>列数</p>
+</li>
+<li>
+<p>行数</p>
+</li>
+<li>
+<p>個人情報</p>
+</li>
+<li>
+<p>機密性の高い個人情報</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>*注意：*フォルダに関する情報は現在レポートでは利用できません。</p>
 </div>
 </div>
 </div>

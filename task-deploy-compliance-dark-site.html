@@ -459,6 +459,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive アカウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint アカウント
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Googleドライブアカウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-file-shares.html">
         ファイル共有
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:31:12 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:11:20 +0000">05/12/2022</time>
     
   
 
@@ -778,7 +782,7 @@
 <p>Cloud Manager を非常にセキュアにインストールする必要があるが、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンする場合は、 Data Sense オフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <a href="#SharePoint and OneDrive special requirements">SharePoint と OneDrive の特別な要件</a> を参照してください。</p>
 </div>
 <div class="paragraph">
-<p>現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP の FSX 、または AWS S3 アカウントのスキャンはサポートされていません。</p>
+<p>現在、データセンスがダークサイトに導入されている場合、Cloud Volumes ONTAP 、Azure NetApp Files 、ONTAP 用FSX、AWS S3、またはGoogleドライブのアカウントのスキャンはサポートされません。</p>
 </div>
 </div>
 </div>
@@ -855,9 +859,6 @@
 <p>オペレーティングシステム： Red Hat Enterprise Linux または CentOS バージョン 8.0 または 8.1</p>
 <div class="ulist">
 <ul>
-<li>
-<p>バージョン 7.8 を使用できますが、 Linux カーネルのバージョンは 4.14 以降である必要があります</p>
-</li>
 <li>
 <p>OS が Docker Engine をインストールできる必要があります（必要に応じて、 _firewalld_service を無効にするなど）。</p>
 </li>

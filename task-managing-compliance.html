@@ -9,14 +9,14 @@
   <meta property="og:title" content="Cloud Data Sense からのデータソースの削除 | NetApp Documentation" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloud-manager-data-sense/task-managing-compliance.html" />
-	<meta property="og:description" content="必要に応じて、 Cloud Data Sense を停止することで、 1 つ以上の作業環境、データベース、ファイル共有グループ、 OneDrive アカウント、 SharePoint アカウントをスキャンできます。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタ..." />
+	<meta property="og:description" content="必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/cloud-manager-data-sense/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="必要に応じて、 Cloud Data Sense を停止することで、 1 つ以上の作業環境、データベース、ファイル共有グループ、 OneDrive アカウント、 SharePoint アカウントをスキャンできます。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタ...">
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。">
   <meta name="keywords" content=" remove, delete, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, delete cloud compliance, terminate, deactivate, deactivating cloud compliance, data sense"><!-- Icons -->
   <link rel="icon" href="/ja-jp/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive アカウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint アカウント
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Googleドライブアカウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-file-shares.html">
         ファイル共有
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:31:12 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:11:20 +0000">05/12/2022</time>
     
   
 
@@ -745,7 +749,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>必要に応じて、 Cloud Data Sense を停止することで、 1 つ以上の作業環境、データベース、ファイル共有グループ、 OneDrive アカウント、 SharePoint アカウントをスキャンできます。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。</p>
+<p>必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。</p>
 </div>
 </div>
 </div>
@@ -798,16 +802,16 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="cloud-data-sense-から-onedrive-または-sharepoint-アカウントを削除する">Cloud Data Sense から OneDrive または SharePoint アカウントを削除する</h2>
+<h2 id="cloud-data-senseからonedrivesharepointgoogle-driveのアカウントを削除する方法について説明します">Cloud Data SenseからOneDrive、SharePoint、Google Driveのアカウントを削除する方法について説明します</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>特定の OneDrive アカウントまたは特定の SharePoint アカウントからユーザーファイルをスキャンする必要がなくなった場合は、クラウドデータセンスインターフェイスからアカウントを削除して、すべてのスキャンを停止できます。</p>
+<p>特定のOneDriveアカウント、特定のSharePointアカウント、またはGoogle Driveアカウントからユーザーファイルをスキャンする必要がなくなった場合は、Cloud Data Senseインターフェイスからアカウントを削除して、すべてのスキャンを停止できます。</p>
 </div>
 <div class="olist arabic">
 <div class="title">手順</div>
 <ol class="arabic">
 <li>
-<p>[<em>Configuration</em>] ページで、をクリックします <span class="image"><img src="./media/screenshot_gallery_options.gif" alt="&quot;[ 詳細"></span> ボタン"] OneDrive または SharePoint アカウントの行にあるボタンをクリックし、 [* OneDrive アカウントの削除 * ] または [* SharePoint アカウントの削除 * ] をクリックします。</p>
+<p>[<em>Configuration</em>] ページで、をクリックします <span class="image"><img src="./media/screenshot_gallery_options.gif" alt="&quot;[ 詳細"></span> ボタン"] OneDrive、SharePoint、Google Driveアカウントの行にあるボタンをクリックし、* OneDriveアカウントの削除*、* SharePointアカウントの削除*、または* Googleドライブアカウントの削除*をクリックします。</p>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_compliance_remove_onedrive.png" alt="&quot;[ スキャン構成"></span> ページから [OneDrive を削除 ] ボタンのスクリーンショット。"]</p>
 </div>

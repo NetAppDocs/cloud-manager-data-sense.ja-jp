@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive アカウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint アカウント
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Googleドライブアカウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-file-shares.html">
         ファイル共有
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:31:12 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:11:20 +0000">05/12/2022</time>
     
   
 
@@ -750,19 +754,22 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="クラウドデータの意味">クラウドデータの意味</h2>
+<h2 id="cloud-data-senseサービス">Cloud Data Senseサービス</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>クラウドデータセンスは、人工知能（ AI ）ベースのテクノロジを使用して、組織がデータコンテキストを理解し、ストレージシステム全体で機密データを識別できるようにするクラウドサービスです。システムには、 Azure NetApp Files 構成、 Amazon FSX for ONTAP 、 Cloud Volumes ONTAP システム（ AWS 、 Azure 、または GCP でホスト）、 Amazon S3 バケット、オンプレミス ONTAP システムがあります。 ネットアップ以外のファイル共有、汎用の S3 オブジェクトストレージ、データベース、 OneDrive アカウント、 SharePoint アカウント。</p>
+<p>以下の質問は、クラウドデータの意味についての一般的な理解を示しています。</p>
+</div>
+<div class="sect2">
+<h3 id="クラウドデータの意味">クラウドデータの意味</h3>
+<div class="paragraph">
+<p>クラウドデータセンスは、人工知能（AI）ベースのテクノロジを使用して、データの状況を把握し、ストレージシステム全体で機密データを特定するクラウドサービスです。システムは、Cloud Manager Canvasに追加した作業環境や、データが意味するさまざまな種類のデータソースからネットワーク経由でアクセスできる環境にすることができます。 <a href="#What sources of data can be scanned with Data Sense">以下の一覧を参照してください</a>。</p>
 </div>
 <div class="paragraph">
 <p>Cloud Data Sense は、事前定義されたパラメータ（機密情報の種類やカテゴリなど）を提供し、 GDPR 、 CCPA 、 HIPAA などのデータプライバシーと機密性に関する新しいデータコンプライアンス規制に対応します。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="クラウドデータが適している理由">クラウドデータが適している理由</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="クラウドデータが適している理由">クラウドデータが適している理由</h3>
 <div class="paragraph">
 <p>Cloud Data Sense は、データを活用して以下のことを支援します。</p>
 </div>
@@ -770,6 +777,9 @@
 <ul>
 <li>
 <p>データコンプライアンスやプライバシーの規制に準拠</p>
+</li>
+<li>
+<p>従来型システムからクラウドへデータを移行</p>
 </li>
 <li>
 <p>データ保持ポリシーに準拠</p>
@@ -780,10 +790,8 @@
 </ul>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="クラウドデータの意味でよく使用されるユースケースはどれですか">クラウドデータの意味でよく使用されるユースケースはどれですか？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="クラウドデータの意味でよく使用されるユースケースはどれですか">クラウドデータの意味でよく使用されるユースケースはどれですか？</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -801,95 +809,17 @@
 <p><a href="https://cloud.netapp.com/cloud-compliance" target="_blank" rel="noopener">"Cloud Data Sense のユースケースについて詳しくは、こちらをご覧ください"</a>。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="cloud-data-sense-でスキャンできるデータの種類はどれですか">Cloud Data Sense でスキャンできるデータの種類はどれですか？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="クラウドデータはどのように動作するのでしょうか">クラウドデータはどのように動作するのでしょうか。</h3>
 <div class="paragraph">
-<p>クラウドデータセンスでは、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、オンプレミス ONTAP システム、およびネットアップ以外のファイル共有で管理されている NFS プロトコルと CIFS プロトコルを介した非構造化データのスキャンがサポートされます。Data Sense は、 NFS バージョン 3.x 、 4.0 、 4.1 、および CIFS バージョン 1.x 、 2.0 、 2.1 、 3.0 をサポートしています。</p>
-</div>
-<div class="paragraph">
-<p>また、 Amazon S3 バケットや汎用の S3 オブジェクトストレージに格納されたデータもスキャンできます。</p>
-</div>
-<div class="paragraph">
-<p>さらに、データセンスでは、任意の場所にあるデータベースやユーザファイルを OneDrive アカウントと SharePoint アカウントからスキャンできます。</p>
-</div>
-<div class="paragraph">
-<p><a href="concept-cloud-compliance.html#how-scans-work" target="_blank" rel="noopener">"スキャンの仕組みを説明します"</a>。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="サポートされているクラウドプロバイダを教えてください">サポートされているクラウドプロバイダを教えてください。</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Cloud Data Sense は Cloud Manager の一部として機能し、 AWS 、 Azure 、 GCP をサポートします。これにより、異なるクラウドプロバイダ間で統一されたプライバシー可視性を実現できます。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="cloud-data-sense-へのアクセス方法">Cloud Data Sense へのアクセス方法</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Cloud Data Sense は、 Cloud Manager を通じて運用、管理されます。Data Sense 機能には、 Cloud Manager の * Data Sense * タブからアクセスできます。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="クラウドデータはどのように動作するのでしょうか">クラウドデータはどのように動作するのでしょうか。</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Cloud Data Sense は、 Cloud Manager システムやストレージシステムと並行して、もう 1 つの人工知能レイヤを導入します。次に、ボリューム、バケット、データベース、 OneDrive アカウントのデータをスキャンして、見つかったデータ分析のインデックスを作成します。</p>
+<p>Cloud Data Sense は、 Cloud Manager システムやストレージシステムと並行して、もう 1 つの人工知能レイヤを導入します。次に、ボリューム、バケット、データベース、その他のストレージアカウントのデータをスキャンして、見つかったデータ分析のインデックスを作成します。データセンスは、正規表現やパターンマッチングを中心に構築される代替ソリューションとは対照的に、人工知能と自然言語処理の両方を活用します。Cloud Data Senseは、AIを使用してデータをコンテキストに基づいて把握し、正確な検出と分類を行います。AIは、最新のデータタイプと拡張性を考慮して設計されているため、この目的はAIによって推進されます。また、データコンテキストを理解して、強力で正確な検出と分類を提供します。</p>
 </div>
 <div class="paragraph">
 <p><a href="concept-cloud-compliance.html" target="_blank" rel="noopener">"Cloud Data Sense の仕組みの詳細はこちらをご覧ください"</a>。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="クラウドデータのコストはどれくらいですか">クラウドデータのコストはどれくらいですか？</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>クラウドデータセンスの使用コストは、スキャンするデータの量によって異なります。データをスキャンする、 Cloud Manager ワークスペース内の最初の 1TB のデータは無料です。この時点以降もデータのスキャンを続行するには、 AWS 、 Azure 、 GCP Marketplace 、またはネットアップの BYOL ライセンスのサブスクリプションが必要です。を参照してください <a href="https://cloud.netapp.com/netapp-cloud-data-sense#Pricing" target="_blank" rel="noopener">"価格設定"</a> を参照してください。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="クラウドデータセンスにはどのようなタイプのインスタンスまたは-vm-が必要ですか">クラウドデータセンスにはどのようなタイプのインスタンスまたは VM が必要ですか。</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>いつ <a href="task-deploy-cloud-compliance.html">"クラウドに導入"</a>：</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>AWS では、 Cloud Data Sense は、 500 GB の gp2 ディスクを使用する m5.-m構築 インスタンスで実行されます。</p>
-</li>
-<li>
-<p>Azure では、 Cloud Data Sense は、 512 GB のディスクを搭載した Standard_D16s_v3 VM で実行されます。</p>
-</li>
-<li>
-<p>GCP では、クラウドデータセンスは、 512 GB の標準永続ディスクを搭載した n2 標準の -16 VM で実行されます。</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>データセンスソフトウェアは、ネットワーク内またはクラウド内でインターネットにアクセスできる Linux ホストにインストールできます。すべてが同じように機能し、 Cloud Manager を使用してスキャンの設定と結果を引き続き管理できます。を参照してください <a href="task-deploy-compliance-onprem.html">"クラウドデータセンスをオンプレミスに導入"</a> を参照してください。</p>
-</div>
-<div class="paragraph">
-<p>また、を使用することもできます <a href="task-deploy-compliance-dark-site.html">"インターネットにアクセスできないオンプレミスサイトにデータセンスを導入する"</a> 完全にセキュアなサイトに。</p>
-</div>
-<div class="paragraph">
-<p>CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください <a href="concept-cloud-compliance.html#using-a-smaller-instance-type">"小さいインスタンスタイプを使用しています"</a> を参照してください。</p>
-</div>
-<div class="paragraph">
-<p><a href="concept-cloud-compliance.html" target="_blank" rel="noopener">"Cloud Data Sense の仕組みの詳細はこちらをご覧ください"</a>。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="cloud-data-sense-はどのくらいの頻度でデータをスキャンしますか">Cloud Data Sense はどのくらいの頻度でデータをスキャンしますか？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="cloud-data-sense-はどのくらいの頻度でデータをスキャンしますか">Cloud Data Sense はどのくらいの頻度でデータをスキャンしますか？</h3>
 <div class="paragraph">
 <p>データが頻繁に変更されるため、 Cloud Data Sense は、データに影響を与えることなくデータを継続的にスキャンします。データの初回スキャンには時間がかかる場合がありますが、その後のスキャンでは差分変更のみがスキャンされるため、システムのスキャン時間が短縮されます。</p>
 </div>
@@ -900,15 +830,22 @@
 <p>データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、低速スキャンを実行するようにデータセンスを設定できます。 <a href="task-managing-compliance.html#reducing-the-data-sense-scan-speed">"スキャン速度を下げる方法を参照してください"</a>。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="cloud-data-sense-はレポートを提供していますか">Cloud Data Sense はレポートを提供していますか？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="cloud-data-senseがサポートしている導入モデルを教えてください">Cloud Data Senseがサポートしている導入モデルを教えてください。</h3>
 <div class="paragraph">
-<p>はい。Cloud Data Sense が提供する情報は、組織内の他の関係者にも関係があるため、レポートを作成して分析情報を共有することができます。</p>
+<p>通常、Cloud Data SenseはSaaSモデルを使用して導入されます。このモデルでは、Cloud Managerのインターフェイスからサービスが有効になります。Cloud Data Senseを導入すると、オンプレミス、クラウド、ハイブリッド環境など、ほぼすべての場所にあるシステムをスキャンしてレポートを作成できます。セキュアなインストールの場合、Cloud ManagerとCloud Data Senseは「ダークサイト」モデルで導入できます。ダークサイトは、オンプレミスのパッケージとしてインストールされ、外部ネットワーク接続は必要ありません。</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="ブラウザとデータセンスの間で送信されたプライベートデータに誰でもアクセスできますか">ブラウザとデータセンスの間で送信されたプライベートデータに誰でもアクセスできますか。</h3>
 <div class="paragraph">
-<p>Data Sense で使用できるレポートは次のとおりです。</p>
+<p>いいえブラウザとデータセンスインスタンスの間で送信されるプライベートデータはエンドツーエンドの暗号化によって保護されるため、ネットアップとサードパーティが読み取ることはできません。データセンスは、アクセスをリクエストして承認しない限り、データや結果をネットアップと共有しません。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="cloud-data-sense-はレポートを提供していますか">Cloud Data Sense はレポートを提供していますか？</h3>
+<div class="paragraph">
+<p>はい。Cloud Data Sense が提供する情報は、組織内の他の関係者にも関係があるため、レポートを作成して分析情報を共有することができます。Data Sense で使用できるレポートは次のとおりです。</p>
 </div>
 <div class="dlist">
 <dl>
@@ -939,10 +876,8 @@
 </dl>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="スキャンのパフォーマンスは変化しますか">スキャンのパフォーマンスは変化しますか？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="スキャンのパフォーマンスは変化しますか">スキャンのパフォーマンスは変化しますか？</h3>
 <div class="paragraph">
 <p>スキャンのパフォーマンスは、環境内のネットワーク帯域幅と平均ファイルサイズによって異なります。また、（クラウドまたはオンプレミスの）ホストシステムのサイズ特性にも左右されます。を参照してください <a href="concept-cloud-compliance.html#the-cloud-data-sense-instance">"Cloud Data Sense インスタンス"</a> および <a href="task-deploy-cloud-compliance.html">"Cloud Data Sense の導入"</a> を参照してください。</p>
 </div>
@@ -950,23 +885,10 @@
 <p>新しいデータソースを最初に追加するときに、「分類」のフルスキャンではなく「マッピング」スキャンのみを実行するように選択することもできます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。 <a href="concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans">"マッピングスキャンと分類スキャンの違いを参照してください。"</a></p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="サポートされているファイルタイプはどれですか">サポートされているファイルタイプはどれですか。</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="クラウドデータセンスを有効にする方法">クラウドデータセンスを有効にする方法</h3>
 <div class="paragraph">
-<p>Cloud Data Sense は、すべてのファイルをスキャンしてカテゴリやメタデータに関する分析情報を検索し、ダッシュボードのファイルタイプセクションにすべてのファイルタイプを表示します。</p>
-</div>
-<div class="paragraph">
-<p>データセンスが個人識別情報（ PII ）を検出した場合、または dsar 検索を実行した場合、サポートされるファイル形式は .csv 、 .dcm 、 .dcm 、 .dom 、 .DOC 、 .DOCX のみです。 .json 、 .pdf 、 .PPTX 、 .rtf 、 .TXT 、 .XLS 、 .xlsx のいずれかです。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="クラウドデータセンスを有効にする方法">クラウドデータセンスを有効にする方法</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>まず、 Cloud Manager に Cloud Data Sense のインスタンスを導入する必要があります。インスタンスの実行が完了したら、 * Data Sense * タブまたは特定の作業環境を選択して、既存の作業環境およびデータベースでサービスを有効にすることができます。</p>
+<p>まず、 Cloud Manager に Cloud Data Sense のインスタンスを導入する必要があります。インスタンスの実行が完了したら、既存の作業環境、データベース、およびその他のデータソースに対して、* Data Sense *タブからサービスを有効にするか、特定の作業環境を選択してサービスを有効にすることができます。</p>
 </div>
 <div class="paragraph">
 <p><a href="task-getting-started-compliance.html" target="_blank" rel="noopener">"開始方法をご確認ください"</a>。</p>
@@ -978,16 +900,14 @@
 <img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="注記">
 </td>
 <td class="content">
-Cloud Data Sense をアクティブにすると、すぐに初期スキャンが実行されます。スキャン結果はすぐ後に表示されます。
+データソースでCloud Data Senseをアクティブにすると、すぐに初期スキャンが実行されます。スキャン結果はすぐ後に表示されます。
 </td>
 </tr>
 </table>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="クラウドデータセンスを無効にする方法">クラウドデータセンスを無効にする方法</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="クラウドデータセンスを無効にする方法">クラウドデータセンスを無効にする方法</h3>
 <div class="paragraph">
 <p>データセンス構成ページでは、個々の作業環境、データベース、ファイル共有グループ、 OneDrive アカウント、 SharePoint アカウントをスキャンできないようにすることができます。</p>
 </div>
@@ -1007,10 +927,8 @@ Cloud Data Sense をアクティブにすると、すぐに初期スキャンが
 </table>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="ontap-ボリュームでデータ階層化が有効になっている場合どうなりますか">ONTAP ボリュームでデータ階層化が有効になっている場合、どうなりますか？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="ontap-ボリュームでデータ階層化が有効になっている場合どうなりますか">ONTAP ボリュームでデータ階層化が有効になっている場合、どうなりますか？</h3>
 <div class="paragraph">
 <p>コールドデータをオブジェクトストレージに階層化する ONTAP システムでは、クラウドデータの意味を有効にすることができます。データ階層化が有効になっている場合、データセンスは、ディスクにあるすべてのデータと、オブジェクトストレージに階層化されたコールドデータをスキャンします。</p>
 </div>
@@ -1018,18 +936,8 @@ Cloud Data Sense をアクティブにすると、すぐに初期スキャンが
 <p>コンプライアンススキャンはコールドデータを加熱しません&#8201;&#8212;&#8201;コールドデータを保存し ' オブジェクトストレージに階層化します</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="クラウドデータセンスを使用してオンプレミスの-ontap-ストレージをスキャンできますか">クラウドデータセンスを使用してオンプレミスの ONTAP ストレージをスキャンできますか。</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>はい。オンプレミスの ONTAP クラスタを Cloud Manager で作業環境として検出しているかぎり、ボリュームデータをスキャンできます。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="cloud-data-sense-は自分の組織に通知を送信できますか">Cloud Data Sense は、自分の組織に通知を送信できますか？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="cloud-data-sense-は自分の組織に通知を送信できますか">Cloud Data Sense は、自分の組織に通知を送信できますか？</h3>
 <div class="paragraph">
 <p>はい。ポリシー機能と一緒に、ポリシーの結果が返されたときに Cloud Manager のユーザ（日単位、週単位、または月単位）に E メールアラートを送信して、データを保護するための通知を受け取ることができます。の詳細を確認してください <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"ポリシー"</a>。</p>
 </div>
@@ -1037,10 +945,8 @@ Cloud Data Sense をアクティブにすると、すぐに初期スキャンが
 <p>また、 [ ガバナンス ] ページと [ 調査 ] ページからステータスレポートをダウンロードして、組織内で共有することもできます。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="組織のニーズに合わせてサービスをカスタマイズできますか">組織のニーズに合わせてサービスをカスタマイズできますか。</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="組織のニーズに合わせてサービスをカスタマイズできますか">組織のニーズに合わせてサービスをカスタマイズできますか。</h3>
 <div class="paragraph">
 <p>Cloud Data Sense は、すぐに使用できる分析情報をデータに提供します。これらの分析情報を抽出して、組織のニーズに活用できます。</p>
 </div>
@@ -1051,10 +957,8 @@ Cloud Data Sense をアクティブにすると、すぐに初期スキャンが
 <p><a href="task-managing-data-fusion.html#creating-custom-personal-data-identifiers-from-your-databases" target="_blank" rel="noopener">"詳細はこちら。"</a>。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="ファイルに埋め込まれた-aip-ラベルを使用して-cloud-data-sense-を実行できますか">ファイルに埋め込まれた AIP ラベルを使用して Cloud Data Sense を実行できますか。</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="ファイルに埋め込まれた-aip-ラベルを使用して-cloud-data-sense-を実行できますか">ファイルに埋め込まれた AIP ラベルを使用して Cloud Data Sense を実行できますか。</h3>
 <div class="paragraph">
 <p>はい。加入している場合、 Cloud Data Sense がスキャンしているファイルで AIP ラベルを管理できます <a href="https://azure.microsoft.com/en-us/services/information-protection/" target="_blank" rel="noopener">"Azure 情報保護（ AIP ）"</a>。既にファイルに割り当てられているラベルを表示したり、ファイルにラベルを追加したり、既存のラベルを変更したりできます。</p>
 </div>
@@ -1062,10 +966,8 @@ Cloud Data Sense をアクティブにすると、すぐに初期スキャンが
 <p><a href="task-org-private-data.html#categorizing-your-data-using-aip-labels" target="_blank" rel="noopener">"詳細はこちら。"</a>。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="クラウドデータの意味に関する情報を特定のユーザに制限できますか">クラウドデータの意味に関する情報を特定のユーザに制限できますか。</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="クラウドデータの意味に関する情報を特定のユーザに制限できますか">クラウドデータの意味に関する情報を特定のユーザに制限できますか。</h3>
 <div class="paragraph">
 <p>はい。 Cloud Data Sense は Cloud Manager と完全に統合されています。Cloud Manager ユーザは、ワークスペースの権限に基づいて表示可能な作業環境の情報のみを表示できます。</p>
 </div>
@@ -1074,6 +976,261 @@ Cloud Data Sense をアクティブにすると、すぐに初期スキャンが
 </div>
 <div class="paragraph">
 <p><a href="concept-cloud-compliance.html#user-access-to-compliance-information" target="_blank" rel="noopener">"詳細はこちら。"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="サポートされているクラウドプロバイダを教えてください">サポートされているクラウドプロバイダを教えてください。</h3>
+<div class="paragraph">
+<p>Cloud Data Sense は Cloud Manager の一部として機能し、 AWS 、 Azure 、 GCP をサポートします。これにより、異なるクラウドプロバイダ間で統一されたプライバシー可視性を実現できます。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ソースシステムとデータタイプのタイプ">ソースシステムとデータタイプのタイプ</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>スキャン可能なストレージのタイプ、およびスキャンするデータのタイプに関連する情報を次に示します。</p>
+</div>
+<div class="sect2">
+<h3 id="データセンスでスキャンできるデータソースを教えてください">データセンスでスキャンできるデータソースを教えてください。</h3>
+<div class="paragraph">
+<p>Cloud Data Senseでは、Cloud Manager Canvasに追加した作業環境や、データがネットワーク経由でアクセスできるさまざまな種類のデータソースからデータをスキャンできます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>作業環境： *</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP （ AWS 、 Azure 、 GCP に導入）</p>
+</li>
+<li>
+<p>オンプレミスの ONTAP クラスタ</p>
+</li>
+<li>
+<p>Azure NetApp Files の特長</p>
+</li>
+<li>
+<p>ONTAP 対応の Amazon FSX</p>
+</li>
+<li>
+<p>Amazon S3</p>
+</li>
+<li>
+<p>データソース： *</p>
+</li>
+<li>
+<p>ネットアップ以外のファイル共有</p>
+</li>
+<li>
+<p>オブジェクトストレージ（ S3 プロトコルを使用）</p>
+</li>
+<li>
+<p>データベース（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Serverなど）</p>
+</li>
+<li>
+<p>OneDrive アカウント</p>
+</li>
+<li>
+<p>SharePoint アカウント</p>
+</li>
+<li>
+<p>Googleドライブアカウント</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Data Sense は、 NFS バージョン 3.x 、 4.0 、 4.1 、および CIFS バージョン 1.x 、 2.0 、 2.1 、 3.0 をサポートしています。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="インターネットにアクセスできないサイトにデータセンスをインストールするとどのデータソースをスキャンできますか">インターネットにアクセスできないサイトにデータセンスをインストールすると、どのデータソースをスキャンできますか。</h3>
+<div class="paragraph">
+<p>データセンスでスキャンできるのは、ローカルのデータソースからオンプレミスのサイトへのデータのみです。現時点では、「ダーク」サイトで次のローカルデータソースをスキャンできます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>オンプレミスの ONTAP システム</p>
+</li>
+<li>
+<p>データベーススキーマ</p>
+</li>
+<li>
+<p>ネットアップ以外の NFS または CIFS ファイル共有</p>
+</li>
+<li>
+<p>Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージ</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="サポートされているファイルタイプはどれですか">サポートされているファイルタイプはどれですか。</h3>
+<div class="paragraph">
+<p>Cloud Data Senseは、すべてのファイルをスキャンしてカテゴリやメタデータに関する分析情報を検索し、ダッシュボードのファイルタイプセクションにすべてのファイルタイプを表示します。</p>
+</div>
+<div class="paragraph">
+<p>データセンスが個人識別情報（PII）を検出した場合、またはdsar検索を実行した場合、次のファイル形式のみがサポートされます。</p>
+</div>
+<div class="paragraph">
+<p>「+.csv」、「.dcm」、「.dom」、「.DOC」、「.DOCX」、 .json、.pdf、.PPTX、.rtf、.TXT、 .XLS、.xlsx、Docs、Sheets、Slides +`</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="cloud-dataではどのような種類のデータやメタデータをキャプチャできますか">Cloud Dataでは、どのような種類のデータやメタデータをキャプチャできますか？</h3>
+<div class="paragraph">
+<p>Cloud Data Senseを使用すると、データソースに対して全般的な「マッピング」スキャンまたは完全な「分類」スキャンを実行できます。マッピングではデータの概要のみが示され、分類ではデータの詳細なスキャンが提供されます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>データマッピングスキャン：</p>
+<div class="paragraph">
+<p>データセンスはメタデータのみをスキャンします。これは、全体的なデータ管理とガバナンス、プロジェクトの迅速な範囲設定、非常に大規模な環境、優先順位付けに役立ちます。データマッピングはメタデータに基づいており、*高速*スキャンとみなされます。</p>
+</div>
+<div class="paragraph">
+<p>高速スキャンの後、データマッピングレポートを生成できます。このレポートは、企業データソースに保存されているデータの概要を示しており、リソースの使用率、移行、バックアップ、セキュリティ、コンプライアンスの各プロセスに関する決定に役立ちます。</p>
+</div>
+</li>
+<li>
+<p>データ分類（ディープ）スキャン。</p>
+<div class="paragraph">
+<p>お客様の環境全体で、標準プロトコルと読み取り専用アクセス権を使用してデータセンススキャンを実行します。一部のファイルは、ビジネスに関連する機密データ、プライベート情報、ランサムウェアに関連する問題の有無をチェックして開きます。</p>
+</div>
+<div class="paragraph">
+<p>フルスキャンの後にデータに適用できるデータ検出機能が多数あります。たとえば、[データ調査]ページでのデータの表示とリファイン、ファイル内での名前の検索、ソースファイルのコピー、移動、削除などです。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ライセンスとコスト">ライセンスとコスト</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Data Senseを使用するためのライセンスとコストに関する質問を次に示します。</p>
+</div>
+<div class="sect2">
+<h3 id="クラウドデータのコストはどれくらいですか">クラウドデータのコストはどれくらいですか？</h3>
+<div class="paragraph">
+<p>クラウドデータセンスの使用コストは、スキャンするデータの量によって異なります。データをスキャンする、 Cloud Manager ワークスペース内の最初の 1TB のデータは無料です。この制限に達すると、1TBを超えるデータのスキャンを続行するために次のいずれかが必要になります。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>クラウドプロバイダまたはからCloud Manager Marketplaceに登録するためのサブスクリプション</p>
+</li>
+<li>
+<p>ネットアップが提供するお客様所有のライセンス（BYOL）</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>を参照してください <a href="https://cloud.netapp.com/netapp-cloud-data-sense#Pricing" target="_blank" rel="noopener">"価格設定"</a> を参照してください。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="byolの容量制限に達した場合はどうなりますか">BYOLの容量制限に達した場合はどうなりますか？</h3>
+<div class="paragraph">
+<p>BYOLの容量制限に達すると、データセンスは引き続き実行されますが、ダッシュボードへのアクセスはブロックされるため、スキャンしたデータに関する情報を表示することはできません。スキャンするボリューム数を減らして容量の使用率をライセンスの上限まで下げる場合は、設定ページのみが表示されます。データセンスへのフルアクセスを回復するには、BYOLライセンスを更新する必要があります。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="コネクタの展開">コネクタの展開</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Manager Connectorに関連する質問を次に示します。</p>
+</div>
+<div class="sect2">
+<h3 id="コネクタは何ですか">コネクタは何ですか？</h3>
+<div class="paragraph">
+<p>Connectorは、クラウドアカウント内またはオンプレミスでコンピューティングインスタンス上で実行されるソフトウェアで、Cloud Managerによるクラウドリソースのセキュアな管理を可能にします。クラウドデータセンスを使用するには、コネクタを導入する必要があります。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="コネクタはどこに取り付ける必要がありますか">コネクタはどこに取り付ける必要がありますか？</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>AWS 、 Amazon FSX for ONTAP 、または AWS S3 バケット内の Cloud Volumes ONTAP のデータをスキャンするときは、 AWS のコネクタを使用します。</p>
+</li>
+<li>
+<p>Azure または Azure NetApp Files で Cloud Volumes ONTAP 内のデータをスキャンする場合は、 Azure のコネクタを使用します。</p>
+</li>
+<li>
+<p>GCP の Cloud Volumes ONTAP でデータをスキャンする場合は、 GCP のコネクタを使用します。</p>
+</li>
+<li>
+<p>オンプレミスのONTAP システム、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Google Driveアカウント内のデータをスキャンする場合、これらのクラウド環境ではコネクタを使用できます。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>そのため、これらの場所の多くにデータがある場合は、を使用する必要があります <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors">"複数のコネクタ"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="コネクタを自分のホストに導入できますか">コネクタを自分のホストに導入できますか。</h3>
+<div class="paragraph">
+<p>はい。可能です <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html" target="_blank" rel="noopener">"コネクタをオンプレミスに導入"</a> 自社ネットワーク内またはクラウド内の Linux ホストオンプレミスにデータセンスを導入する場合は、オンプレミスにもコネクタをインストールできますが、必須ではありません。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="インターネットにアクセスできないセキュアなサイトはどうでしょうか">インターネットにアクセスできないセキュアなサイトはどうでしょうか。</h3>
+<div class="paragraph">
+<p>はい、サポートされています。可能です <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html">"インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します"</a>。その上で、オンプレミスのONTAP クラスタやその他のローカルデータソースを検出し、データセンスを使用してデータをスキャンすることができます。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="データセンスの導入">データセンスの導入</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>以下の質問は、個別のData Senseインスタンスに関連しています。</p>
+</div>
+<div class="sect2">
+<h3 id="クラウドデータセンスにはどのようなタイプのインスタンスまたは-vm-が必要ですか">クラウドデータセンスにはどのようなタイプのインスタンスまたは VM が必要ですか。</h3>
+<div class="paragraph">
+<p>いつ <a href="task-deploy-cloud-compliance.html">"クラウドに導入"</a>：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>AWS では、 Cloud Data Sense は、 500 GB の gp2 ディスクを使用する m5.-m構築 インスタンスで実行されます。</p>
+</li>
+<li>
+<p>Azure では、 Cloud Data Sense は、 512 GB のディスクを搭載した Standard_D16s_v3 VM で実行されます。</p>
+</li>
+<li>
+<p>GCP では、クラウドデータセンスは、 512 GB の標準永続ディスクを搭載した n2 標準の -16 VM で実行されます。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください <a href="concept-cloud-compliance.html#using-a-smaller-instance-type">"小さいインスタンスタイプを使用しています"</a> を参照してください。</p>
+</div>
+<div class="paragraph">
+<p><a href="concept-cloud-compliance.html" target="_blank" rel="noopener">"Cloud Data Sense の仕組みの詳細はこちらをご覧ください"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="データセンスを自分のホストに導入できますか">データセンスを自分のホストに導入できますか。</h3>
+<div class="paragraph">
+<p>はい。データセンスソフトウェアは、ネットワーク内またはクラウド内でインターネットにアクセスできる Linux ホストにインストールできます。すべてが同じように機能し、 Cloud Manager を使用してスキャンの設定と結果を引き続き管理できます。を参照してください <a href="task-deploy-compliance-onprem.html">"クラウドデータセンスをオンプレミスに導入"</a> を参照してください。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="インターネットにアクセスできないセキュアなサイトはどうでしょうか-2">インターネットにアクセスできないセキュアなサイトはどうでしょうか。</h3>
+<div class="paragraph">
+<p>はい、サポートされています。可能です <a href="task-deploy-compliance-dark-site.html">"インターネットにアクセスできないオンプレミスサイトにデータセンスを導入する"</a> 完全にセキュアなサイトに。</p>
+</div>
 </div>
 </div>
 </div>
