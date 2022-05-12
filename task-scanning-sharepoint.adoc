@@ -130,3 +130,5 @@ Cloud Data Sense によって、追加した SharePoint サイトのファイル
 今後 SharePoint サイトを削除する場合や、 SharePoint サイト内のファイルをスキャンしない場合は、個々の SharePoint サイトのファイルがいつでもスキャンされないようにすることができます。[ 構成 ] ページで [SharePoint サイトの削除 ] をクリックします。
 
 image:screenshot_compliance_sharepoint_remove_site.png["単一の SharePoint サイトを削除してファイルをスキャンする方法を示すスクリーンショット。"]
+
+できることに注意してください link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["SharePointアカウント全体をデータセンスから削除します"] SharePointアカウントからユーザーデータをスキャンする必要がなくなった場合。

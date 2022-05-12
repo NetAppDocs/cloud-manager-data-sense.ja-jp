@@ -44,6 +44,8 @@ sidebar:
         url: "/task-scanning-onedrive.html"
       - title: SharePoint アカウント
         url: "/task-scanning-sharepoint.html"
+      - title: Googleドライブアカウント
+        url: "/task-scanning-google-drive.html"
       - title: ファイル共有
         url: "/task-scanning-file-shares.html"
       - title: オブジェクトストレージ
@@ -100,7 +102,7 @@ homepage:
       url: task-add-active-directory-datasense.html
     - title: ライセンスをセットアップする
       url: task-licensing-datasense.html
-  - title: データソースでスキャンをアクティブ化します
+  - title: 作業環境をスキャンします
     links:
     - title: Cloud Volumes ONTAP ボリューム
       url: task-getting-started-compliance.html
@@ -112,6 +114,8 @@ homepage:
       url: task-scanning-fsx.html
     - title: Amazon S3 バケット
       url: task-scanning-s3.html
+  - title: 他のデータソースをスキャンします
+    links:
     - title: 汎用の S3 バケット
       url: task-scanning-object-storage.html
     - title: ネットアップ以外のファイル共有
@@ -122,34 +126,40 @@ homepage:
       url: task-scanning-onedrive.html
     - title: SharePoint アカウント
       url: task-scanning-sharepoint.html
-  - title: プライベートデータを管理します
+    - title: Googleドライブアカウント
+      url: task-scanning-google-drive.html
+  - title: データの詳細を表示します
     links:
-    - title: AIP ラベルを使用してデータを分類します
-      url: task-org-private-data.html#categorizing-your-data-using-aip-labels
-    - title: 準拠していないデータが見つかった場合にアラートを E メールで送信
-      url: task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found
-    - title: 独自のカスタム個人データ識別子を追加します
-      url: task-managing-data-fusion.html
+    - title: プライベート情報を含むファイルを表示します
+      url: task-controlling-private-data.html
+    - title: ストレージに複製されているファイルを表示します
+      url: task-controlling-private-data.html#checking-for-duplicate-files-in-your-storage-systems
+    - title: データをフィルタして、特定のファイルを表示します
+      url: task-controlling-private-data.html#filtering-data-in-the-data-investigation-page
+    - title: 上位検索を表示するポリシーを作成します
+      url: task-org-private-data.html#controlling-your-data-using-policies
+    - title: コンプライアンスレポートを生成します
+      url: task-generating-compliance-reports.html
+  - title: プライベートデータを整理します
+    links:
     - title: 注意が必要なファイルにタグと所有者を適用します
       url: task-org-private-data.html#applying-tags-to-manage-your-scanned-files
-    - title: データサブジェクトのアクセス要求に応答します
-      url: task-responding-to-dsar.html
+    - title: AIP ラベルを使用してデータを分類します
+      url: task-org-private-data.html#categorizing-your-data-using-aip-labels
+    - title: 独自のカスタム個人データ識別子を追加します
+      url: task-managing-data-fusion.html
+  - title: プライベートデータを管理
+    links:
     - title: ソースファイルをコピーします
       url: task-managing-highlights.html#copying-source-files
     - title: ソースファイルを移動します
       url: task-managing-highlights.html#moving-source-files-to-an-nfs-share
     - title: ソースファイルを削除します
       url: task-managing-highlights.html#deleting-source-files
-  - title: データの詳細を表示します
-    links:
-    - title: 上位検索を表示するポリシーを作成します
-      url: task-org-private-data.html#controlling-your-data-using-policies
-    - title: プライベート情報を含むファイルを表示します
-      url: task-controlling-private-data.html
-    - title: ストレージに複製されているファイルを表示します
-      url: task-controlling-private-data.html#checking-for-duplicate-files-in-your-storage-systems
-    - title: コンプライアンスレポートを生成します
-      url: task-generating-compliance-reports.html
+    - title: 準拠していないデータが見つかった場合にアラートを E メールで送信
+      url: task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found
+    - title: データサブジェクトのアクセス要求に応答します
+      url: task-responding-to-dsar.html
   - title: ブログコミュニティ
     links:
     - title: ネットアップコミュニティ

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="b9d7f2c52667928f57e7870c3d7dfcff" category="summary">必要に応じて、 Cloud Data Sense を停止することで、 1 つ以上の作業環境、データベース、ファイル共有グループ、 OneDrive アカウント、 SharePoint アカウントをスキャンできます。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。</block>
   <block id="f1e1cd7c712964c306723b5d8a7b0615" category="doc">Cloud Data Sense からのデータソースの削除</block>
   <block id="8f34757b26c51100dd5a08a099969517" category="section-title">作業環境のコンプライアンススキャンを非アクティブにします</block>
   <block id="10ddf41b6229b35fd788349ce9ca2dc2" category="paragraph">スキャンを非アクティブ化すると、 Cloud Data Sense は作業環境上のデータをスキャンしなくなり、データセンスインスタンスからインデックス付きのコンプライアンスインサイトを削除します（作業環境自体のデータは削除されません）。</block>
@@ -14,10 +13,7 @@
   <block id="c129bc0408ce8224fad586d944537ce4" category="list-text">[_Configuration_] ページで、をクリックします <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> ボタンをクリックし、 * DB サーバの削除 * をクリックします。</block>
   <block id="3d04e82ecfc4b95e7eb8eaf404dffadc" category="inline-image-macro">Scan Configuration ページの Remove DB Server ボタンのスクリーンショット。</block>
   <block id="b695958db24ae26377f1c2e3a62b14eb" category="paragraph"><block ref="b695958db24ae26377f1c2e3a62b14eb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2a1159b67ca1645cb2ca1e5ed40754d0" category="section-title">Cloud Data Sense から OneDrive または SharePoint アカウントを削除する</block>
-  <block id="684b435f7254b27e6af61d13cecb0736" category="paragraph">特定の OneDrive アカウントまたは特定の SharePoint アカウントからユーザーファイルをスキャンする必要がなくなった場合は、クラウドデータセンスインターフェイスからアカウントを削除して、すべてのスキャンを停止できます。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
-  <block id="f87a3387188c705cce37b4f9a29c7a9f" category="list-text">[_Configuration_] ページで、をクリックします <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> OneDrive または SharePoint アカウントの行にあるボタンをクリックし、 [* OneDrive アカウントの削除 * ] または [* SharePoint アカウントの削除 * ] をクリックします。</block>
   <block id="9a7ec6e6b57682d3f33ce7ea4bef0f5a" category="inline-image-macro">[ スキャン構成 ] ページから [OneDrive を削除 ] ボタンのスクリーンショット。</block>
   <block id="1bd56f7fb7715259e9afebe5fa03e87f" category="paragraph"><block ref="1bd56f7fb7715259e9afebe5fa03e87f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94c6852fcc39c16d9167a10bb916b459" category="list-text">確認ダイアログで * アカウントの削除 * をクリックします。</block>
@@ -83,7 +79,6 @@
   <block id="73e82d6326f541ace82886b5c0cd44eb" category="inline-xref">各クラウドに導入されるインスタンスのタイプ プロバイダ</block>
   <block id="92e07e6381d83aef31f2714b015ef6df" category="list-text">クラウドにクラウドデータセンスをインストールするには、クラウドインスタンスを導入する必要があります。その場合、クラウドインスタンスが導入されているクラウドプロバイダから料金が発生します。を参照してください <block ref="ff92646c6b674f4f14795f72b3d7a155" category="inline-xref-macro-rx"></block>。データセンスをオンプレミスシステムにインストールしても、コストはかかりません。</block>
   <block id="e1229dd3741de325a7a26a00931944cd" category="inline-link">クラウドプロバイダごとに導入されるインスタンスのタイプ</block>
-  <block id="452acc708bda26e157f53750f7abfdf4" category="list-text">Cloud Data Sense を使用するには、コネクタを導入しておく必要があります。多くの場合、 Cloud Manager で他のストレージとサービスを使用しているため、すでにコネクタが用意されています。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください<block ref="afb51f96ab234eaf32dde49b48eed419" category="inline-link-rx"></block>。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。</block>
   <block id="17dc12e433367516ebb888f04d0428a7" category="section-title">データ転送コスト</block>
   <block id="9dfcb55e7b0aaa04660a96ede4a3458f" category="inline-link">AWS ： Amazon EC2 価格設定</block>
   <block id="865fef30627e082f6460395b15ac714b" category="list-text"><block ref="865fef30627e082f6460395b15ac714b" category="inline-link-rx"></block></block>
@@ -138,7 +133,6 @@
   <block id="3a7d96d307a8facb682992a53315a953" category="paragraph">スキャンは、ボリュームレベル、バケットレベル、データベーススキーマレベル、 OneDrive ユーザレベル、 SharePoint サイトレベルで有効または無効にできます。</block>
   <block id="07319052a199a3efec9e35f531ee2368" category="section-title">マッピングスキャンと分類スキャンの違いは何ですか</block>
   <block id="983e489afa45ba4e28274c8e167697df" category="paragraph">Cloud Data Sense を使用すると、選択した作業環境やデータソースに対して、一般的な「マッピング」スキャンを実行できます。マッピングではデータの概要のみが示され、分類ではデータの詳細なスキャンが提供されます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。</block>
-  <block id="061b37bde927a0263d25cb3af54f51f6" category="paragraph">多くのユーザは、この機能を気に入っています。たとえば、より多くの調査が必要なデータソースをすばやくスキャンして特定したうえで、それらのデータソースまたはボリュームに対してのみ分類スキャンを有効にする必要があるためです。</block>
   <block id="a6555d8888ac95f7925f179ea7e8d4a8" category="paragraph">次の表に、いくつかの相違点を示します。</block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">フィーチャー（ Feature ）</block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="cell">分類</block>
@@ -333,7 +327,6 @@
   <block id="00c8262a1f25b11a02833b07a8236234" category="summary">Cloud Data Sense は、組織のデータプライバシープログラムの状況をよりよく把握するために使用できるレポートを提供します。</block>
   <block id="59da637a5daa4fdc3901cb939fca6c7e" category="doc">コンプライアンスレポートの表示</block>
   <block id="012baeb8540b8dedd6d71e5dd0f531d0" category="inline-xref">それらの作業環境を選択します</block>
-  <block id="e5e9c2aa07bcb333c74a2cbbebc5e1bf" category="paragraph">デフォルトでは、 Cloud Data Sense ダッシュボードには、すべての作業環境およびデータベースのコンプライアンスデータとガバナンスデータが表示されます。一部の作業環境のデータのみを含むレポートを表示する場合は、 <block ref="68584290e1051ffc6ccba308e6db06b0" category="inline-xref-macro-rx"></block>。</block>
   <block id="16a978df0c48afdfbda069f5d1b195fc" category="admonition">このセクションで説明するレポートは、データソースに対して完全な分類スキャンを実行することを選択した場合にのみ使用できます。マッピング専用スキャンを実行したデータソースでは、データマッピングレポートのみが生成されます。</block>
   <block id="aa9a765405eb0c3365783f2b0b90debd" category="admonition">ネットアップでは、 Cloud Data Sense が特定した個人データと機密性の高い個人データの正確性を 100% 保証することはできません。必ずデータを確認して情報を検証してください。</block>
   <block id="216b4fc24b6fa4197a8fc2d1066a4de4" category="section-title">プライバシーリスク評価レポート</block>
@@ -440,8 +433,6 @@
   <block id="6a0c37bc5c98bec1f8cf3b1552d3d9fe" category="paragraph">スキャンするユーザのリストを OneDrive アカウントから追加し、スキャンのタイプを選択します。一度に最大 100 人のユーザを追加できます。</block>
   <block id="338e56fa931ac748f865fb417e3f80cf" category="section-title">OneDrive の要件を確認する</block>
   <block id="d61cbf246bbdb9203d808a976fe515dc" category="paragraph">Cloud Data Sense を有効にする前に、次の前提条件を確認し、サポートされている構成であることを確認します。</block>
-  <block id="6401be6f38d9325e9401705ef39197e8" category="list-text">すべてのユーザファイルに読み取りアクセスを提供する OneDrive for Business アカウントの管理者ログインクレデンシャルが必要です。</block>
-  <block id="316ac43c3476515e2672d78b5f7e054e" category="list-text">OneDrive フォルダをスキャンするすべてのユーザーに対して、電子メールアドレスの行区切りリストが必要です。</block>
   <block id="ff916f8aafd3dd060eaa015e5b21c9c7" category="section-title">OneDrive アカウントを追加します</block>
   <block id="7a461f87d3978d33f6acd8b612c58b19" category="paragraph">ユーザファイルが存在する OneDrive アカウントを追加します。</block>
   <block id="bef19ab5e14392fb5d2ee72ab0458c4b" category="list-text">[ 作業環境の構成 ] ページで、 [ * データソースの追加 *&gt;] 、 [* OneDrive アカウントの追加 *] の順にクリックします。</block>
@@ -662,7 +653,6 @@
   <block id="9ef6e09ad71e21ce8a2bf770f33d9a48" category="summary">Cloud Data Sense の新機能をご確認ください。</block>
   <block id="5eb06296e8f3d6ac67a2567f14c49b55" category="doc">Cloud Data Sense の新機能</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022 年 3 月 15 日</block>
-  <block id="fe920a28be2287e9ad7ef2d02458c36f" category="paragraph">「ユーザ / グループの権限」という新しいフィルタが追加され、特定のユーザまたはグループの読み取り / 書き込み権限を持つファイルを一覧表示できるようになりました。ユーザ名またはグループ名の一部または一部を指定できます。この機能は、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、およびファイル共有のボリュームで使用できます。</block>
   <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">データセンスでは、 OneDrive アカウントと SharePoint アカウントでスキャン中のファイルに存在するアクセス許可を読み取ることができます。この情報は、ファイルの [ 調査 ] ペインの詳細、およびガバナンスダッシュボードの [ アクセス許可を開く ] 領域に表示されます。</block>
   <block id="d431283363f0e868742391138a4ffbd0" category="list-text">フランスの INSEE - INSEE コードは、フランス国立統計経済研究所（ INSEE ）がさまざまなエンティティを識別するために使用する数値コードです。</block>
   <block id="7457180e95a424d146842587474ec483" category="list-text">パスワード - この情報は、英数字の文字列の横にある「 password 」という単語を検索して、近接性検証を使用して識別されます。見つかったアイテムの数は、コンプライアンスダッシュボードの [ 個人の結果 ] の下に表示されます。［ 調査 ］ ペインでパスワードを含むファイルを検索するには、 ［ フィルタ * 個人データ ］ &gt; ［ パスワード * ］ を使用します。</block>
@@ -745,7 +735,6 @@
   <block id="74585f658544c691c6f6afb583a9dc61" category="inline-link-macro">S3 プロトコルを使用するオブジェクトストレージをスキャンしています</block>
   <block id="6988ee4ea30eb643c68d53327c6b1220" category="inline-link">MinIO サービス</block>
   <block id="2195e52cb889f9b1ac4706eeeea03f1d" category="paragraph">クラウドデータセンスで、オーストリアの SSN をファイルで検索できるようになりました。</block>
-  <block id="59690da7c148890212e0b4711de94b97" category="summary">Cloud Data Sense がボリューム、 Amazon S3 バケット、データベース、 OneDrive フォルダ、 SharePoint アカウントで識別できるプライベートデータには、さまざまな種類があります。以下のカテゴリを参照してください。</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="doc">プライベートデータのカテゴリ</block>
   <block id="5fb27f475a6e9a151878bcedcee62656" category="admonition">その他の国の ID 番号や医療機関の ID など、プライベートデータの種類を識別するためにクラウドデータセンスが必要な場合は、 ng-contact-data-sense@netapp.com にリクエストを送信してください。</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">個人データの種類</block>
@@ -883,7 +872,6 @@
   <block id="ba2688508d4961c3340fa3a979e0a164" category="section-title">ファイルのタイプ</block>
   <block id="a6d39edac7ad8808a1149d2de26446f1" category="paragraph">Cloud Data Sense は、すべてのファイルをスキャンしてカテゴリやメタデータに関する分析情報を検索し、ダッシュボードのファイルタイプセクションにすべてのファイルタイプを表示します。</block>
   <block id="855ab7337551d041e32c86c7471a82ca" category="paragraph">しかし、データセンスが個人識別情報（ PII ）を検出した場合、または dsar 検索を実行した場合、次のファイル形式のみがサポートされます。</block>
-  <block id="161eee98e9862ba9c60339f657e01941" category="paragraph">「 +.csv 」、「 .dcm 」、「 .dom 」、「 .DOC 」、「 .DOCX 」、 .json 、 .pdf 、 .PPTX 、 .rtf 、 .TXT 、 .XLS 、 .xlsx 、 .+`</block>
   <block id="80890af19007fc709ba59342ca8b0385" category="section-title">見つかった情報の正確性</block>
   <block id="66cbc8e381ee6ef1aaa69ea500386a6b" category="paragraph">以下の表は、テストに基づいて、データ検出によって検出された情報の正確さを示しています。精度 _ と _ リコール _ で分解します。</block>
   <block id="be5edab59de4ea30531374e506b03822" category="list-text">精度（ Precision ）</block>
@@ -903,7 +891,6 @@
   <block id="a0d932b5085e493a71dbcdcc11a705b4" category="summary">この FAQ は、質問に対する簡単な回答を探している場合に役立ちます。</block>
   <block id="eab720ff04548794ffc2cbbd9f06daf4" category="doc">クラウドデータの意味についてよく寄せられる質問</block>
   <block id="64a21279fa6b558777872e8b5865a2ab" category="section-title">クラウドデータの意味</block>
-  <block id="78cd4073686a357a1a0009c73f9c928f" category="paragraph">クラウドデータセンスは、人工知能（ AI ）ベースのテクノロジを使用して、組織がデータコンテキストを理解し、ストレージシステム全体で機密データを識別できるようにするクラウドサービスです。システムには、 Azure NetApp Files 構成、 Amazon FSX for ONTAP 、 Cloud Volumes ONTAP システム（ AWS 、 Azure 、または GCP でホスト）、 Amazon S3 バケット、オンプレミス ONTAP システムがあります。 ネットアップ以外のファイル共有、汎用の S3 オブジェクトストレージ、データベース、 OneDrive アカウント、 SharePoint アカウント。</block>
   <block id="71f9b1308ab675e9dd6df174e1a60f18" category="paragraph">Cloud Data Sense は、事前定義されたパラメータ（機密情報の種類やカテゴリなど）を提供し、 GDPR 、 CCPA 、 HIPAA などのデータプライバシーと機密性に関する新しいデータコンプライアンス規制に対応します。</block>
   <block id="d6a75f271c34ca45be980272b9847d51" category="section-title">クラウドデータが適している理由</block>
   <block id="f8ae17057d50237f6762d4039f49a6e3" category="paragraph">Cloud Data Sense は、データを活用して以下のことを支援します。</block>
@@ -916,22 +903,13 @@
   <block id="75561c13a7f1550c1d376b995ed2e83f" category="list-text">データプライバシーに関する新しい規制や今後の規制に対応できます。</block>
   <block id="f352cd4e6c6b4737822722679f9fb9eb" category="inline-link">Cloud Data Sense のユースケースについて詳しくは、こちらをご覧ください</block>
   <block id="d824a36535436f47cdb45562372579a9" category="paragraph"><block ref="a3797b949ad4ca122a2891cd0995ed6e" category="inline-link-rx"></block>。</block>
-  <block id="bf3527d322233a78048212ed974c2a90" category="section-title">Cloud Data Sense でスキャンできるデータの種類はどれですか？</block>
-  <block id="444099feeb332311f4c8a8a6f54a5d2b" category="paragraph">クラウドデータセンスでは、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、オンプレミス ONTAP システム、およびネットアップ以外のファイル共有で管理されている NFS プロトコルと CIFS プロトコルを介した非構造化データのスキャンがサポートされます。Data Sense は、 NFS バージョン 3.x 、 4.0 、 4.1 、および CIFS バージョン 1.x 、 2.0 、 2.1 、 3.0 をサポートしています。</block>
-  <block id="e5eab1ca43d62b305089ca2cba946ffe" category="paragraph">また、 Amazon S3 バケットや汎用の S3 オブジェクトストレージに格納されたデータもスキャンできます。</block>
-  <block id="e754ec91642ab661318605944bba61da" category="paragraph">さらに、データセンスでは、任意の場所にあるデータベースやユーザファイルを OneDrive アカウントと SharePoint アカウントからスキャンできます。</block>
   <block id="cb1df3001d7e0d737bf8af8bf621fee0" category="inline-link-macro">スキャンの仕組みを説明します</block>
-  <block id="d4eeb3467c18664e9f2f1757aa90f43f" category="paragraph"><block ref="19d4d0096ea9aedeade81d64b9d08457" category="inline-link-macro-rx"></block>。</block>
   <block id="37f3de5c9ae041a1644d4b78c54dcf40" category="section-title">サポートされているクラウドプロバイダを教えてください。</block>
   <block id="3244b6ac61b9c2142eb1bf1aac45735f" category="paragraph">Cloud Data Sense は Cloud Manager の一部として機能し、 AWS 、 Azure 、 GCP をサポートします。これにより、異なるクラウドプロバイダ間で統一されたプライバシー可視性を実現できます。</block>
-  <block id="fd73cf01f5ade494e6d01c222c55793d" category="section-title">Cloud Data Sense へのアクセス方法</block>
-  <block id="2b58b3b62ad70f13cc43625e6ea919ba" category="paragraph">Cloud Data Sense は、 Cloud Manager を通じて運用、管理されます。Data Sense 機能には、 Cloud Manager の * Data Sense * タブからアクセスできます。</block>
   <block id="0139d044fd0b961e3b07aa66f52b5e57" category="section-title">クラウドデータはどのように動作するのでしょうか。</block>
-  <block id="a792efa7fa28f8e416e2d3d8ef1471d6" category="paragraph">Cloud Data Sense は、 Cloud Manager システムやストレージシステムと並行して、もう 1 つの人工知能レイヤを導入します。次に、ボリューム、バケット、データベース、 OneDrive アカウントのデータをスキャンして、見つかったデータ分析のインデックスを作成します。</block>
   <block id="197b9359d5eb91a4bad52b6e13342baf" category="inline-link-macro">Cloud Data Sense の仕組みの詳細はこちらをご覧ください</block>
   <block id="428c1d3f0ce473e653a96441ff156c7f" category="paragraph"><block ref="6aa08568cbc533e43d34ee014a159a69" category="inline-link-macro-rx"></block>。</block>
   <block id="507eddf0133d6696604714a129b07a0a" category="section-title">クラウドデータのコストはどれくらいですか？</block>
-  <block id="f57b7b015c57f640c21f8b45d58eb9c8" category="paragraph">クラウドデータセンスの使用コストは、スキャンするデータの量によって異なります。データをスキャンする、 Cloud Manager ワークスペース内の最初の 1TB のデータは無料です。この時点以降もデータのスキャンを続行するには、 AWS 、 Azure 、 GCP Marketplace 、またはネットアップの BYOL ライセンスのサブスクリプションが必要です。を参照してください<block ref="6bbe1a830896033f3d42bc42c545c572" category="inline-link-rx"></block> を参照してください。</block>
   <block id="96e962ef0775cfff1c6fd6a71c485c8e" category="section-title">クラウドデータセンスにはどのようなタイプのインスタンスまたは VM が必要ですか。</block>
   <block id="3cf31c18e1b66993cf63511a5ea327f3" category="paragraph">いつ <block ref="63b25124667f9a48140e6efc7dc1fd70" category="inline-link-macro-rx"></block>：</block>
   <block id="ef56cc072a6aac56c9a359e54f9bf51e" category="list-text">AWS では、 Cloud Data Sense は、 500 GB の gp2 ディスクを使用する m5.-m構築 インスタンスで実行されます。</block>
@@ -939,15 +917,12 @@
   <block id="0dcadc6850a080e0aaf098b94efc849b" category="list-text">GCP では、クラウドデータセンスは、 512 GB の標準永続ディスクを搭載した n2 標準の -16 VM で実行されます。</block>
   <block id="316f1a7bec809a19ab21b47d40188af1" category="inline-link-macro">クラウドデータセンスをオンプレミスに導入</block>
   <block id="cefd0b228a5747e3f0cab5061078bb59" category="inline-link-macro">インターネットにアクセスできないオンプレミスサイトにデータセンスを導入する</block>
-  <block id="859d2ccf50c642ee73b6b7ed0293c06c" category="paragraph">また、を使用することもできます <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全にセキュアなサイトに。</block>
   <block id="7e3d41c2a56c6d626cd7bcbb65667f41" category="paragraph">CPU 数と RAM 容量が少ないシステムには Data Sense を導入できますが、これらのシステムの使用には制限があります。を参照してください <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="9504bf4697695cdeb232f8ceb18c09c6" category="section-title">Cloud Data Sense はどのくらいの頻度でデータをスキャンしますか？</block>
   <block id="681be99f122d2951a2c8370626fa6637" category="paragraph">データが頻繁に変更されるため、 Cloud Data Sense は、データに影響を与えることなくデータを継続的にスキャンします。データの初回スキャンには時間がかかる場合がありますが、その後のスキャンでは差分変更のみがスキャンされるため、システムのスキャン時間が短縮されます。</block>
   <block id="a577dc74a01118296df38bec260c945a" category="inline-link-macro">スキャン速度を下げる方法を参照してください</block>
   <block id="48e4169c479861f2d03d44869de5a342" category="paragraph">データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、低速スキャンを実行するようにデータセンスを設定できます。 <block ref="5557fc40765f42f5191ab2e5a0e219b3" category="inline-link-macro-rx"></block>。</block>
   <block id="c28a9031bf06c99071258d18b345a7d4" category="section-title">Cloud Data Sense はレポートを提供していますか？</block>
-  <block id="f3af98e0d715f65a774e8b5ce1e41f08" category="paragraph">はい。Cloud Data Sense が提供する情報は、組織内の他の関係者にも関係があるため、レポートを作成して分析情報を共有することができます。</block>
-  <block id="59c664c61ebab86476ef97b4388a4e15" category="paragraph">Data Sense で使用できるレポートは次のとおりです。</block>
   <block id="1243186ecf08fa3beb624fdea23033c7" category="list-text">プライバシーリスクアセスメントレポート</block>
   <block id="3a3337f232548d40f54052862077499b" category="list-text">Data Subject Access Request レポート</block>
   <block id="eeec57ad13401b39337794c5e3d5ffa6" category="list-text">データサブジェクトの特定の名前または個人 ID に関する情報を含むすべてのファイルのレポートを抽出できます。 <block ref="ce887aadf58ec6a0a140db57b924eac0" category="inline-link-macro-rx"></block>。</block>
@@ -963,12 +938,9 @@
   <block id="8c1896ebd0bea05ef3c8e18467a9ca07" category="inline-link-macro">マッピングスキャンと分類スキャンの違いを参照してください。</block>
   <block id="fa07ec52541c98901015394277e86a73" category="paragraph">新しいデータソースを最初に追加するときに、「分類」のフルスキャンではなく「マッピング」スキャンのみを実行するように選択することもできます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。 <block ref="7dda8a42e8b908f8c520b46d25b02f04" category="inline-link-macro-rx"></block></block>
   <block id="5f4ceba489dc56da6edff02213d6e21c" category="section-title">サポートされているファイルタイプはどれですか。</block>
-  <block id="ba85068bc4ee4bbb36417fb582bc90f4" category="paragraph">データセンスが個人識別情報（ PII ）を検出した場合、または dsar 検索を実行した場合、サポートされるファイル形式は .csv 、 .dcm 、 .dcm 、 .dom 、 .DOC 、 .DOCX のみです。 .json 、 .pdf 、 .PPTX 、 .rtf 、 .TXT 、 .XLS 、 .xlsx のいずれかです。</block>
   <block id="a3b503a46334e3fb2ab7ae78049e483b" category="section-title">クラウドデータセンスを有効にする方法</block>
-  <block id="87da9ab19a5ad3680d2f0b950ff98123" category="paragraph">まず、 Cloud Manager に Cloud Data Sense のインスタンスを導入する必要があります。インスタンスの実行が完了したら、 * Data Sense * タブまたは特定の作業環境を選択して、既存の作業環境およびデータベースでサービスを有効にすることができます。</block>
   <block id="7d782479a41a3941b57cc7c2b60d318a" category="inline-link-macro">開始方法をご確認ください</block>
   <block id="4971e76b33cd221cbe44ae11708dcf1a" category="paragraph"><block ref="63c04392b8948e626a251971bdfb13c0" category="inline-link-macro-rx"></block>。</block>
-  <block id="56cccd0fb390060a75639f67b90006aa" category="admonition">Cloud Data Sense をアクティブにすると、すぐに初期スキャンが実行されます。スキャン結果はすぐ後に表示されます。</block>
   <block id="a6c3d6913f02e92798d0e42e2ff92b62" category="section-title">クラウドデータセンスを無効にする方法</block>
   <block id="4c0a2c9670f1474a8413f5c72bb8acfc" category="paragraph">データセンス構成ページでは、個々の作業環境、データベース、ファイル共有グループ、 OneDrive アカウント、 SharePoint アカウントをスキャンできないようにすることができます。</block>
   <block id="7a833d41d59abd430a8a21760722d14a" category="paragraph"><block ref="57d1ac548ab885ff197c8b0634f5bdfc" category="inline-link-macro-rx"></block>。</block>
@@ -976,8 +948,6 @@
   <block id="ae64bece015f15eb39e95575c833f8d3" category="section-title">ONTAP ボリュームでデータ階層化が有効になっている場合、どうなりますか？</block>
   <block id="2de4e78513aa5bfeb890fe4ddc3ec775" category="paragraph">コールドデータをオブジェクトストレージに階層化する ONTAP システムでは、クラウドデータの意味を有効にすることができます。データ階層化が有効になっている場合、データセンスは、ディスクにあるすべてのデータと、オブジェクトストレージに階層化されたコールドデータをスキャンします。</block>
   <block id="7245782d4f1eb0db394d9f1f8ae02b2c" category="paragraph">コンプライアンススキャンはコールドデータを加熱しません -- コールドデータを保存し ' オブジェクトストレージに階層化します</block>
-  <block id="62d5057db793bb8f5e79fc52d6bf1900" category="section-title">クラウドデータセンスを使用してオンプレミスの ONTAP ストレージをスキャンできますか。</block>
-  <block id="7beb9e9f8f168f5ef88971dd5be87973" category="paragraph">はい。オンプレミスの ONTAP クラスタを Cloud Manager で作業環境として検出しているかぎり、ボリュームデータをスキャンできます。</block>
   <block id="a7865b20d9097d32d555ae9b2251ef31" category="section-title">Cloud Data Sense は、自分の組織に通知を送信できますか？</block>
   <block id="a1f9ef921821eddddbc2db0a418bf2f3" category="paragraph">はい。ポリシー機能と一緒に、ポリシーの結果が返されたときに Cloud Manager のユーザ（日単位、週単位、または月単位）に E メールアラートを送信して、データを保護するための通知を受け取ることができます。の詳細を確認してください <block ref="0a2fc0f403ef4a50a3606f593b466bde" category="inline-link-macro-rx"></block>。</block>
   <block id="0a351d661588dd9301518a85a687c4dc" category="paragraph">また、 [ ガバナンス ] ページと [ 調査 ] ページからステータスレポートをダウンロードして、組織内で共有することもできます。</block>
@@ -1017,7 +987,6 @@
   <block id="2b275eaee13cb00a92bf6cca3d87498e" category="section-title">AIP ラベルを使用してデータを分類する</block>
   <block id="297d1b6c4f0dca560e7de55a7695e6b4" category="paragraph">加入している場合、 Cloud Data Sense がスキャンしているファイルで AIP ラベルを管理できます <block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block>。AIP を使用すると、コンテンツにラベルを適用することで、ドキュメントやファイルを分類して保護できます。データセンスを使用すると、既にファイルに割り当てられているラベルを表示したり、ファイルにラベルを追加したり、ラベルが既に存在する場合にラベルを変更したりできます。</block>
   <block id="2473b4a68e8fb944fa5afe552e508d00" category="paragraph">クラウドデータセンスは、 .DOC 、 .DOCX 、 .pdf 、 .PPTX 、 .XLS 、 .xlsx 。</block>
-  <block id="94e370427e602a43807ec3f64f30ed98" category="list-text">現在、 30MB を超えるファイルのラベルは変更できません。OneDrive アカウントと SharePoint アカウントの場合、最大ファイルサイズは 4MB です。</block>
   <block id="80b4732b42c9c04d16bcddade3a9f773" category="list-text">AIP に存在しないラベルがファイルにある場合、 Cloud Data Sense はラベルのないファイルと見なします。</block>
   <block id="96f521b8aea6752795f47a3b35a11055" category="list-text">インターネットにアクセスできないオンプレミスの場所（ダークサイトとも呼ばれます）にデータセンスインスタンスを配置した場合、 AIP ラベル機能は使用できません。</block>
   <block id="96238d4f93a120c69c563c428e826a69" category="section-title">ワークスペースへの AIP ラベルの統合</block>
@@ -1256,7 +1225,6 @@
   <block id="a08520118359e571f24b420e7729b107" category="paragraph"><block ref="a08520118359e571f24b420e7729b107" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bec06ffefcc7ab6b7882b310c3c7790a" category="list-text">特定のファイルの検索、ソート、詳細の展開、 * 調査結果 * をクリックしてマスクされた情報を表示、またはファイルリストをダウンロードして、データを調査します。</block>
   <block id="7cdf7364a52ab6af797f1b1dcae76247" category="inline-image-macro">調査結果をクリックした後の詳細情報のスクリーンショット。</block>
-  <block id="f15ac2c837cbe49b31996c52ce5c37a0" category="paragraph"><block ref="f15ac2c837cbe49b31996c52ce5c37a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="14e7cee2f25241a9d6084f5ac31f54b0" category="section-title">機密性の高い個人データを含むファイルを表示する</block>
   <block id="8677494d8f5c3e6a2c69e93e5254639f" category="inline-link">GDPR の第 9 、 10 記事</block>
   <block id="9c0bd6a9f0ddda0f88659e943db1d4cd" category="paragraph">クラウドデータセンスは、などのプライバシー規制によって定義された、特別な種類の機密情報を自動的に識別します<block ref="413dcff8641b851bffd5ca7e45c359a4" category="inline-link-rx"></block>。たとえば、人の健康、民族の起源、性的指向に関する情報などです。 <block ref="6507e706b290d038d0deb8cb0d263511" category="inline-link-macro-rx"></block>。</block>
@@ -1324,26 +1292,20 @@
   <block id="47b574d50f0f0cc7ac6ae3ba6d39951f" category="inline-image-macro">特定の作業環境で調査結果をフィルタリングする方法を示すスクリーンショット。</block>
   <block id="7675f7474f9e9ad03c6a7bb35d2d9fad" category="paragraph"><block ref="7675f7474f9e9ad03c6a7bb35d2d9fad" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0c99fdc0d05bf34d6834c6ef3cd92bb3" category="inline-image-macro">[ ダウンロード ] ボタン</block>
-  <block id="e84736b559c4ef7f3b483914bae557de" category="paragraph">調査ページの内容をフィルタリングして、表示する結果のみを表示できます。CSV バージョンのコンテンツをリファインした後でレポートとして保存する場合は、をクリックします <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> ボタンを押します。</block>
   <block id="d3720958611294d50237fe72870e0c02" category="inline-image-macro">調査ページで結果を絞り込むときに使用できるフィルタのスクリーンショット。</block>
   <block id="3fd10935177bff66373986bc384c0307" category="paragraph"><block ref="3fd10935177bff66373986bc384c0307" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="74993bbafe4b984432b5e67863ee7f44" category="list-text">トップレベルのタブでは、ファイル（非構造化データ）またはデータベース（構造化データ）のデータを表示できます。</block>
   <block id="812ce4d3a07734d12cdaa3ed2010e22f" category="list-text">各列の上部にあるコントロールを使用して、結果を数値またはアルファベット順にソートできます。</block>
   <block id="5818e7b5278ce95470fc0dac0a45bdab" category="list-text">左側のペインフィルタを使用すると、次の属性を選択して結果を絞り込むことができます。</block>
   <block id="d7778d0c64b6ba21494c97f77a66885a" category="cell">フィルタ</block>
   <block id="3ec365dd533ddb7ef3d1c111186ce872" category="cell">詳細</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">こちらをご覧ください</block>
-  <block id="7adb9b231b12815dedfc107fcb40b5c0" category="cell">ポリシーを選択します。実行します <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> をクリックして、既存のポリシーのリストを表示し、独自のポリシーを作成します。</block>
   <block id="ce7a0235b268c4eaa207fb036462b6a0" category="cell">[ アクセス許可 ] を開きます</block>
   <block id="2aff327e20fff98134c5877bf3331ccd" category="cell">権限のタイプを選択します</block>
   <block id="11103ebc3d212c95261e2603bcb74624" category="cell">ユーザ / グループの権限</block>
-  <block id="f9a449cccae7f4d38f9fc63747b1825c" category="cell">ユーザ名、グループ名、または名前の一部を入力します</block>
   <block id="7593aaae27016a1a6e673834742f688c" category="cell">ファイルの所有者</block>
   <block id="041e6d70f8356e275da0ead58dccdf88" category="cell">ファイル所有者名を入力します</block>
   <block id="b021df6aac4654c454f46c77646e745f" category="cell">ラベル</block>
-  <block id="bc73c235250705df5ea511cf347930d9" category="cell">AIP ラベルを選択します</block>
   <block id="d9104233b7c0bd37d4c7d710debdd552" category="cell">作業環境タイプ（ Working Environment Type ）</block>
-  <block id="0714c3638ff113c3bead5ccfc27618c6" category="cell">作業環境のタイプを選択します。OneDrive と SharePoint は、「クラウドアプリ」に分類されています。</block>
   <block id="424c7d928317581f5f55ac74c144b45a" category="cell">作業環境名</block>
   <block id="e9a13f10d7b028f52966f59cde41518f" category="cell">特定の作業環境を選択します</block>
   <block id="5da8b466834d55ddcdf18f51655016b9" category="cell">ストレージリポジトリ</block>
@@ -1379,14 +1341,8 @@
   <block id="ee3ae9516151c6012c7652565dfd0088" category="cell">リポジトリ内でファイルを複製するかどうかを選択します</block>
   <block id="116279f96a5a5a07b36a9ed5e3b30ae8" category="cell">ファイル・ハッシュ</block>
   <block id="eb173689f884b625c2ebc512044eaa1f" category="cell">ファイルのハッシュを入力し、名前が異なる場合でも特定のファイルを検索します</block>
-  <block id="d05d49a7556b8fdfb215a2510d35768b" category="cell">タグを選択します</block>
   <block id="0056a7841e032922f086add6ff46bdf7" category="cell">割り当て先</block>
   <block id="91b1c67fd436922743b5db9b97cac01a" category="cell">ファイルが割り当てられているユーザーの名前を選択します</block>
-  <block id="8686a90c9592c1b4cd699631b64bc27d" category="list-text">[ フィルタ ] ペインの上部にある _Policies_filter には、保存されたデータベースクエリや [ お気に入り ] リストなど、よく要求されるフィルタの組み合わせを提供するカスタムフィルタがリストされます。実行します <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 事前定義されたポリシーのリストを表示し、独自のカスタムポリシーを作成する方法を確認できます。</block>
-  <block id="b6b354a759e6ea4d86bdf3ac9228dc29" category="section-title">各ファイルリストレポート（ CSV ファイル）に含まれる内容</block>
-  <block id="d4858e45de10e73646f9756a49830578" category="paragraph">各 [ 調査 ] ページで、をクリックできます <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> ボタンをクリックして、特定されたファイルの詳細を含むファイルリスト（ CSV 形式）をダウンロードします。データ検出で、構造化データ（データベーステーブル）と非構造化データ（ファイル）の両方がスキャンされている場合は、ダウンロードした ZIP ファイルに 2 つのレポートが含まれています。</block>
-  <block id="c609c6add6a1a754e843133f9f7268b4" category="paragraph">10 、 000 件を超える結果がある場合は、上位 10 、 000 件のみがリストに表示されます。</block>
-  <block id="1a1a3b68acbf686586fd8c4d47f4f62f" category="paragraph">非構造化データ・レポート * には、次の情報が含まれています。</block>
   <block id="34082694d21dbdcfc31e6e32d9fb2b9f" category="list-text">ファイル名</block>
   <block id="8c16f0464e311229da94de789324309e" category="list-text">場所のタイプ</block>
   <block id="e39236d23fb63bab78a9ca2abc0cc5e9" category="list-text">作業環境の名前</block>
@@ -1403,7 +1359,6 @@
   <block id="e434b22cf42d4154041547acb051334e" category="list-text">機密性の高い個人情報</block>
   <block id="a73443e5b5980c135e04b4b123ccd99f" category="list-text">削除の検出日</block>
   <block id="e81282c4a2e1620d17b120b1420664da" category="paragraph">削除の検出日は、ファイルが削除または移動された日付を示します。これにより、機密ファイルがいつ移動されたかを識別できます。削除されたファイルは、ダッシュボードまたは [ 調査 ] ページに表示されるファイル番号カウントの一部ではありません。ファイルは CSV レポートにのみ表示されます。</block>
-  <block id="2fbc3b8876555d0879990e55a37ce09c" category="paragraph">構造化データレポート * には、次の情報が含まれています。</block>
   <block id="613fa33e083d96576cb50cbe059fc43e" category="list-text">DB テーブル名</block>
   <block id="24588d9873aeb10a7d918f9f39a921ad" category="list-text">ストレージリポジトリ（スキーマなど）</block>
   <block id="ab8a843d390e68d7263eb4d3758cbb94" category="list-text">列数</block>
@@ -1470,7 +1425,6 @@
   <block id="59a46e0ea7e3441d068ab93e14650d6e" category="admonition">データベース、 OneDrive アカウント、 SharePoint アカウントにあるファイルはコピーおよび同期できません。</block>
   <block id="fa00f0feeabd281b23e8571faacaf649" category="list-text">ファイルをコピーして同期するには、アカウント管理者またはワークスペース管理者の役割が必要です。</block>
   <block id="2e5ce55dec2ff1c76b2eb8662089db85" category="list-text">選択したファイルはすべて、同じソースリポジトリ（ ONTAP ボリューム、 S3 バケット、 NFS 共有、 CIFS 共有など）にある必要があります。</block>
-  <block id="7b3543922066dce10c949a9abf066434" category="list-text">一度にコピーできるファイルの最大数は 20 、 000 です。</block>
   <block id="5698905e8d060e455d19636040ff425c" category="inline-link-macro">Quick Start 概要 の略</block>
   <block id="627bf959aabe96a1a08aad7eaf1ab97a" category="paragraph">Cloud Sync サービスでは同期関係のサービス料金が別途請求されるため、データブローカーをクラウドに導入するとリソース料金が発生することに注意してください。</block>
   <block id="ff0485cd041399c074cb840a8d93eafb" category="list-text">[ データの調査 ] ペインで、 1 つの * 作業環境 * と 1 つの * ストレージリポジトリ * を選択してフィルタを作成し、すべてのファイルが同じリポジトリにあることを確認します。</block>
@@ -1569,7 +1523,6 @@
   <block id="0b15d216816045a641af8ad6ef57304d" category="paragraph">オフラインのオンプレミスサイトに Cloud Manager Connector がインストールされていない場合は、<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> オフラインサイトの Linux ホスト</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">Linux ホストシステムを準備</block>
   <block id="0bd5d4f7389518a30e9e80093dacb333" category="list-text">オペレーティングシステム： Red Hat Enterprise Linux または CentOS バージョン 8.0 または 8.1</block>
-  <block id="46123563d68443141506bf3d78c3f494" category="list-text">バージョン 7.8 を使用できますが、 Linux カーネルのバージョンは 4.14 以降である必要があります</block>
   <block id="1a266a5587d22f934ba784d02d2d2b1f" category="list-text">OS が Docker Engine をインストールできる必要があります（必要に応じて、 _firewalld_service を無効にするなど）。</block>
   <block id="e73aeaebf87fd2ee4bfa7ec0d8dd7e26" category="list-text">Disk ： 500GiB の SSD を / 、またはで使用できます</block>
   <block id="feb0221200046a709566079a3cbc3e5f" category="list-text">100 GiB は /opt で利用できます</block>
@@ -1787,7 +1740,6 @@
   <block id="bd36c37245d1af16de2a713e0208a229" category="list-text">AWS 、 Amazon FSX for ONTAP 、または AWS S3 バケット内の Cloud Volumes ONTAP のデータをスキャンするときは、 AWS のコネクタを使用します。</block>
   <block id="f19eaef4d9d109ffcf1717f49dd5d48b" category="list-text">Azure または Azure NetApp Files で Cloud Volumes ONTAP 内のデータをスキャンする場合は、 Azure のコネクタを使用します。</block>
   <block id="51604d985a41a8e2115db8de3eb4b40f" category="list-text">GCP の Cloud Volumes ONTAP でデータをスキャンする場合は、 GCP のコネクタを使用します。</block>
-  <block id="54de3b41ee409b9df73f596156a37b7e" category="paragraph">オンプレミスの ONTAP システムでは、ネットアップ以外のファイル共有、汎用の S3 オブジェクトストレージ、データベース、 OneDrive フォルダ、 SharePoint アカウントを、これらのクラウドコネクタのいずれかを使用してスキャンできます。</block>
   <block id="7ccfda55457e583d1d8c584d8a9ed7f6" category="paragraph">また、次のことも可能です<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 自社ネットワーク内またはクラウド内の Linux ホストデータセンスをオンプレミスにインストールする予定のユーザによっては、 Connector をオンプレミスにインストールすることもできます。</block>
   <block id="267b476717c1665614f57e91725c67ff" category="inline-link">複数のコネクタ</block>
   <block id="8e952431e2e27533e34593f63c959513" category="paragraph">ご覧のように、を使用する必要がある状況もあります<block ref="61272ee1a17c9c174cf490124a0940a3" category="inline-link-rx"></block>。</block>
@@ -1886,7 +1838,6 @@
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="list-text">FSX for ONTAP の略</block>
   <block id="e43e62e4bd2ef2b0d4d1e421a22a0be2" category="list-text">他社の CIFS ファイル共有（ NFS ファイル共有ではない）</block>
-  <block id="b73af05fa76cf73f03025fa51eb8655a" category="paragraph">データベーススキーマ、 OneDrive アカウント、 SharePoint アカウント、 Amazon S3 アカウント、 Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージから、ユーザおよび権限の情報を識別することはできません。</block>
   <block id="cd77c160f6007bd570b07762f3b9388f" category="section-title">Active Directory サーバに接続しています</block>
   <block id="fb4850605d162a3c4b4728471f852d3a" category="paragraph">Active Directory のクレデンシャルは読み取り専用ですが、管理者のクレデンシャルを指定することで、データセンスは昇格された権限を必要とするすべてのデータを読み取ることができます。クレデンシャルは Cloud Data Sense インスタンスに保存されます。</block>
   <block id="f116dfc235147909ef3b37492dd58497" category="list-text">社内のユーザに対して Active Directory がすでに設定されている必要があります。</block>
@@ -2070,7 +2021,6 @@
   <block id="c77d213688bea929060b009132bd92bb" category="paragraph">ネットアップサポートサイトから Cloud Data Sense ソフトウェアをダウンロードし、使用する Linux ホストにインストーラファイルをコピーします。次に、インストールウィザードを起動し、プロンプトに従って Data Sense インスタンスを展開します。</block>
   <block id="acea4bac0de5cdb68692b9a3de1cdb56" category="paragraph">Cloud Data Sense によってスキャンされる最初の 1TB のデータは、 Cloud Manager に無料で保存されています。そのあともデータのスキャンを続行するには、クラウドプロバイダ Marketplace またはネットアップの BYOL ライセンスのサブスクリプションが必要です。</block>
   <block id="da7bf2e7dc8499e5ac0775b3710a0ae4" category="list-text">GCP の Cloud Volumes ONTAP でデータをスキャンする場合は、 GCP のコネクタを使用します。</block>
-  <block id="b4cf84575c9343350447cd475e3708be" category="paragraph">オンプレミスの ONTAP システムでは、ネットアップ以外のファイル共有、汎用の S3 オブジェクトストレージ、データベース、 OneDrive フォルダ、 SharePoint アカウントを、これらのクラウドコネクタを使用してスキャンできます。</block>
   <block id="6eca1a824e059bf4f2eb266bd39b58c5" category="list-text">OS が Docker エンジンをインストールできる必要があります（必要に応じて、 _firewalld_service を無効にするなど）。</block>
   <block id="99d2310654d20771b9bddf3c5bbb5573" category="list-text">Red Hat Enterprise Linux システムは、 Red Hat サブスクリプション管理に登録する必要があります。登録されていないと、インストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。</block>
   <block id="5225652eff69d3e0f7880ed73e7fa226" category="list-text">次のソフトウェアがホストにインストールされている必要があります。ホストにソフトウェアがまだ存在しない場合は、インストーラによってソフトウェアがインストールされます。</block>
@@ -2141,7 +2091,6 @@
   <block id="c7596ffa8d20a8a14d1f631c94185f72" category="sidebar">Azure NetApp Files ボリューム</block>
   <block id="fd2fd9101d9dde8ab7090da05f8117ff" category="sidebar">ONTAP ボリュームの Amazon FSX</block>
   <block id="1dc03133d25c1924f8604133a6fa7f0a" category="sidebar">汎用の S3 バケット</block>
-  <block id="68fb1cee0137c1f6fc37e8a457f262f5" category="sidebar">プライベートデータを管理します</block>
   <block id="7644f60fe7823935bde3cbe9f9e82bf8" category="sidebar">AIP ラベルを使用してデータを分類します</block>
   <block id="40af1406afc061038f5851961a636714" category="sidebar">準拠していないデータが見つかった場合にアラートを E メールで送信</block>
   <block id="b33a306cb7abd3790ba4311eb102a667" category="sidebar">独自のカスタム個人データ識別子を追加します</block>
@@ -2170,11 +2119,6 @@
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
   <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">データセンスでは、オーストラリア TFN ( 税ファイル番号 ) 、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
-  <block id="592c8c1b273df763193797348c862319" category="paragraph">SharePoint サイトからドキュメントやファイルをスキャンするために、 SharePoint オンラインアカウントをデータセンスに追加できるようになりました。<block ref="fb0503eda5504503140f919428a17c9c" category="inline-link-rx"></block>。</block>
-  <block id="660cff517370f72d72102d4ff2998c40" category="paragraph"><block ref="c0e6847180e8e936303f149ed2e169b8" category="inline-link-rx"></block>。</block>
-  <block id="0f774c5b2a7839e95c43788f441f3dd3" category="paragraph">データセンスでは、ファイル内にフランス語のソーシャルセキュリティ番号、フランス語の ID 、フランス語のドライバーライセンス番号が表示されるようになりました。<block ref="388ce18cfcb7cb3d159655ecca4c4330" category="inline-link-rx"></block>。</block>
-  <block id="129f0bf953b701155233395846412fc3" category="paragraph">Data Sense で特定のデータソースから CIFS ボリュームをスキャンできるように入力する Active Directory クレデンシャルに加えて、この新しい統合によって他のユーザやシステムも統合されるようになります。データセンスは、統合されたすべての Active Directory でユーザと権限の詳細を確認します。<block ref="158a238f28caf554b0fac060cc222c85" category="inline-link-rx"></block>。</block>
-  <block id="0a42fac75db1d1ad5a957d27f1b0093d" category="paragraph">データセンスでは、ポリシーで定義したクエリに一致するファイルを自動的に削除できます。<block ref="fa669ca41a532c138aee3aeaad4c4f3f" category="inline-link-rx"></block>。</block>
   <block id="6fef68839fa6cc086be3d7d7abb69cad" category="paragraph">。<block ref="d5f59196a7b849b257c625be10a1d93c" category="inline-link-rx"></block> クラウドデータセンスのサポートが追加されました。従量課金制（ PAYGO ）サブスクリプションを使用して、ネットアップのライセンスを使用するだけでなく、 Google Cloud ストレージに導入された Cloud Volumes ONTAP システムからデータをスキャンできるようになりました。</block>
   <block id="454fdd43498530d6ceef83652c11b91c" category="paragraph">Azure Blob に格納されたデータのスキャンがサポートされるようになりました を使用する場合<block ref="af0f5559fdeef481a290adb52cf012ec" category="inline-link-rx"></block>。を参照してください <block ref="53ed5724ec3c5650162def279afa5e15" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="9ffceb20e382df6e4587add0d24af321" category="cell">オーストラリア TFN ( 税ファイル番号 )</block>
@@ -2220,7 +2164,6 @@
   <block id="9c45693a901d2c7711d6d2732c0b2043" category="paragraph"><block ref="84bbc470556e48f1d54b5a12390987e2" category="inline-link-rx"></block>。</block>
   <block id="f72dc999895eb17e77093f9ecff4180c" category="paragraph">これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> データをソースからターゲットにコピーおよび同期する機能。</block>
   <block id="f380f59dbabc3f03bd073f2248216ea2" category="paragraph">ファイルに含まれる個人データは、一般的な個人データまたは国 ID です。3 番目の列は、 Cloud Data Sense で使用されているかどうかを示します <block ref="a9db31e17b18ff2d62fd6f2133dfbfce" category="inline-link-macro-rx"></block> 識別子の調査結果を検証します。</block>
-  <block id="66b2fe919777c8106abe9e4f030123fd" category="paragraph">データセンスソフトウェアは、ネットワーク内またはクラウド内でインターネットにアクセスできる Linux ホストにインストールできます。すべてが同じように機能し、 Cloud Manager を使用してスキャンの設定と結果を引き続き管理できます。を参照してください <block ref="a7e82d64861a5e64770734ee02976112" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="bbd1b36ab0dbd0c17e60ec752bb02a55" category="paragraph"><block ref="b1e4fd148d344599f4a25922d8155dd9" category="inline-link-macro-rx"></block>。</block>
   <block id="91aef07a29d8068140e7dca06bec6d9d" category="list-text">データからプライバシーに関する情報を収集し、プライバシーリスクスコアを取得します。 <block ref="890a798f73fe571345d1ff7c58a08844" category="inline-link-macro-rx"></block>。</block>
   <block id="39630dece802514e5f7336bcbbf0ac6f" category="list-text">クレジットカード情報のファイルへの配布を識別するのに役立ちます。 <block ref="ef3bace538be6eee30a3e48516637cf7" category="inline-link-macro-rx"></block>。</block>
@@ -2295,7 +2238,6 @@
   <block id="db6cb8c8f4488e129ed6809bb11b1ac6" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。<block ref="f6e82e062f347b1008c89c76ae485574" category="inline-link-rx"></block></block>
   <block id="143cbb5198b43152fc02c7822c0a4df1" category="inline-xref">SharePoint と OneDrive の特別な要件</block>
   <block id="26c2bd17725502dd41a7ea99643a8a29" category="paragraph">Cloud Manager を非常にセキュアにインストールする必要があるが、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンする場合は、 Data Sense オフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> を参照してください。</block>
-  <block id="79e0848d1bc2a8a6b4a0f1371a93e4b3" category="paragraph">現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP の FSX 、または AWS S3 アカウントのスキャンはサポートされていません。</block>
   <block id="83925eb41f224ab078a6ede41fce2ce8" category="list-text">特定の重大ポリシーが結果を返すときに Cloud Manager ユーザに E メールアラートを送信する</block>
   <block id="65097bbc12ec4bd1b84a583f86720dbc" category="list-text">さまざまなユーザに対する Cloud Manager ロールの設定（ Account Admin や Compliance Viewer など）</block>
   <block id="03ab5a445b96670c4d6471f1e0ae786c" category="list-text">Cloud Sync を使用したソースファイルのコピーと同期</block>
@@ -2369,4 +2311,164 @@
   <block id="0b3c77caf569c338dc81a3ae8eb753d5" category="paragraph">AWS と AWS GovCloud を導入する場合は、追加のインバウンドおよびアウトバウンドのルールが必要です。を参照してください<block ref="174b2d5101f3b2591340f8b1c4108c15" category="inline-link-rx"></block> を参照してください。</block>
   <block id="b445de53411a165e9c56da6430c38d59" category="inline-link">Azure のコネクタのルール</block>
   <block id="e271f92bb6a2f886e00883b1a5f3fe51" category="paragraph">Azure と Azure Government の環境には、追加のインバウンドルールとアウトバウンドルールが必要です。を参照してください<block ref="c90240cb0e2cbfac2997cad831e58ce0" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="c6bcf4a88b4c531d404128df1f1ad3a8" category="list-text">Googleドライブアカウント</block>
+  <block id="c09551e40902e02251ee901bd86a597a" category="list-text">Cloud Data Senseを使用するには、Cloud Manager Connectorを導入しておく必要があります。多くの場合、 Cloud Manager で他のストレージとサービスを使用しているため、すでにコネクタが用意されています。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください<block ref="afb51f96ab234eaf32dde49b48eed419" category="inline-link-rx"></block>。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。</block>
+  <block id="dc3d679737d761f6e72564d962617ffa" category="paragraph">多くのユーザは、この機能を気に入っています。たとえば、より多くの調査が必要なデータソースをすばやくスキャンして特定したうえで、必要なデータソースやボリュームに対してのみ分類スキャンを有効にする必要があるからです。</block>
+  <block id="16e954ea4b2a186e8af05353fc80e766" category="section-title">Cloud Data Senseサービス</block>
+  <block id="a2f50def832b70c62c50463d59218053" category="paragraph">以下の質問は、クラウドデータの意味についての一般的な理解を示しています。</block>
+  <block id="a29f21b4143f28dd101eaaa1fe82fd69" category="inline-xref">以下の一覧を参照してください</block>
+  <block id="c7cb2708717b7d786836e068c85a1040" category="paragraph">クラウドデータセンスは、人工知能（AI）ベースのテクノロジを使用して、データの状況を把握し、ストレージシステム全体で機密データを特定するクラウドサービスです。システムは、Cloud Manager Canvasに追加した作業環境や、データが意味するさまざまな種類のデータソースからネットワーク経由でアクセスできる環境にすることができます。 <block ref="baabd945a4a07a6a42dc21a2d03105c4" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ddc3aba4eccf7778417b3605919f552e" category="list-text">従来型システムからクラウドへデータを移行</block>
+  <block id="929a567aeb50b6bfed31d080645db9d2" category="paragraph">Cloud Data Sense は、 Cloud Manager システムやストレージシステムと並行して、もう 1 つの人工知能レイヤを導入します。次に、ボリューム、バケット、データベース、その他のストレージアカウントのデータをスキャンして、見つかったデータ分析のインデックスを作成します。データセンスは、正規表現やパターンマッチングを中心に構築される代替ソリューションとは対照的に、人工知能と自然言語処理の両方を活用します。Cloud Data Senseは、AIを使用してデータをコンテキストに基づいて把握し、正確な検出と分類を行います。AIは、最新のデータタイプと拡張性を考慮して設計されているため、この目的はAIによって推進されます。また、データコンテキストを理解して、強力で正確な検出と分類を提供します。</block>
+  <block id="d7f674bb407247f888d30ade7b86a73a" category="section-title">Cloud Data Senseがサポートしている導入モデルを教えてください。</block>
+  <block id="bf804f144530d65026fe3d0982584bc2" category="paragraph">通常、Cloud Data SenseはSaaSモデルを使用して導入されます。このモデルでは、Cloud Managerのインターフェイスからサービスが有効になります。Cloud Data Senseを導入すると、オンプレミス、クラウド、ハイブリッド環境など、ほぼすべての場所にあるシステムをスキャンしてレポートを作成できます。セキュアなインストールの場合、Cloud ManagerとCloud Data Senseは「ダークサイト」モデルで導入できます。ダークサイトは、オンプレミスのパッケージとしてインストールされ、外部ネットワーク接続は必要ありません。</block>
+  <block id="c0f907bdf9a6cc93e97081efb1ad0ba0" category="section-title">ブラウザとデータセンスの間で送信されたプライベートデータに誰でもアクセスできますか。</block>
+  <block id="90ecb8f144bb75027d2645db76b9c80e" category="paragraph">いいえブラウザとデータセンスインスタンスの間で送信されるプライベートデータはエンドツーエンドの暗号化によって保護されるため、ネットアップとサードパーティが読み取ることはできません。データセンスは、アクセスをリクエストして承認しない限り、データや結果をネットアップと共有しません。</block>
+  <block id="9184420bd7268b81521fe2c0fb829c50" category="paragraph">はい。Cloud Data Sense が提供する情報は、組織内の他の関係者にも関係があるため、レポートを作成して分析情報を共有することができます。Data Sense で使用できるレポートは次のとおりです。</block>
+  <block id="a39a4df8314a27ad3dd4677975511322" category="paragraph">まず、 Cloud Manager に Cloud Data Sense のインスタンスを導入する必要があります。インスタンスの実行が完了したら、既存の作業環境、データベース、およびその他のデータソースに対して、* Data Sense *タブからサービスを有効にするか、特定の作業環境を選択してサービスを有効にすることができます。</block>
+  <block id="d998d7b40ffedd2d0b6c4e2cd0e738fb" category="admonition">データソースでCloud Data Senseをアクティブにすると、すぐに初期スキャンが実行されます。スキャン結果はすぐ後に表示されます。</block>
+  <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">ソースシステムとデータタイプのタイプ</block>
+  <block id="9648ab08d5b3fccc9c9ca3160e445cda" category="paragraph">スキャン可能なストレージのタイプ、およびスキャンするデータのタイプに関連する情報を次に示します。</block>
+  <block id="53603d1a728f100ed9ec53da6f3de981" category="section-title">データセンスでスキャンできるデータソースを教えてください。</block>
+  <block id="08ece2b3a533d5b9f3fb6a576d49dcd8" category="paragraph">Cloud Data Senseでは、Cloud Manager Canvasに追加した作業環境や、データがネットワーク経由でアクセスできるさまざまな種類のデータソースからデータをスキャンできます。</block>
+  <block id="bdcce4158cfc2b8c6a2ccd87f6c5170b" category="list-text">データベース（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Serverなど）</block>
+  <block id="3ea2a425923f5c3bd5e4de2e3212bca6" category="section-title">インターネットにアクセスできないサイトにデータセンスをインストールすると、どのデータソースをスキャンできますか。</block>
+  <block id="d6340d13b9b8fa586b95920b3d4151c7" category="paragraph">データセンスでスキャンできるのは、ローカルのデータソースからオンプレミスのサイトへのデータのみです。現時点では、「ダーク」サイトで次のローカルデータソースをスキャンできます。</block>
+  <block id="5d2a6ac41e016a1ed1f3c36703a62b05" category="paragraph">Cloud Data Senseは、すべてのファイルをスキャンしてカテゴリやメタデータに関する分析情報を検索し、ダッシュボードのファイルタイプセクションにすべてのファイルタイプを表示します。</block>
+  <block id="0d983a3293d47707e149486248cfeb13" category="paragraph">データセンスが個人識別情報（PII）を検出した場合、またはdsar検索を実行した場合、次のファイル形式のみがサポートされます。</block>
+  <block id="0adefa52dc5e774fb8bd1c62fec82b84" category="paragraph">「+.csv」、「.dcm」、「.dom」、「.DOC」、「.DOCX」、 .json、.pdf、.PPTX、.rtf、.TXT、 .XLS、.xlsx、Docs、Sheets、Slides +`</block>
+  <block id="a4b574ec2aae043304e74de4dda53997" category="section-title">Cloud Dataでは、どのような種類のデータやメタデータをキャプチャできますか？</block>
+  <block id="8c7161d49db0382c6961b311eef905a5" category="paragraph">Cloud Data Senseを使用すると、データソースに対して全般的な「マッピング」スキャンまたは完全な「分類」スキャンを実行できます。マッピングではデータの概要のみが示され、分類ではデータの詳細なスキャンが提供されます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。</block>
+  <block id="720afdfb61af450cb24ecd2ff70d9559" category="list-text">データマッピングスキャン：</block>
+  <block id="f115a278ea0212572398753377dc2287" category="paragraph">データセンスはメタデータのみをスキャンします。これは、全体的なデータ管理とガバナンス、プロジェクトの迅速な範囲設定、非常に大規模な環境、優先順位付けに役立ちます。データマッピングはメタデータに基づいており、*高速*スキャンとみなされます。</block>
+  <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">高速スキャンの後、データマッピングレポートを生成できます。このレポートは、企業データソースに保存されているデータの概要を示しており、リソースの使用率、移行、バックアップ、セキュリティ、コンプライアンスの各プロセスに関する決定に役立ちます。</block>
+  <block id="201f7350fba7bb40edd7973d2df21f7d" category="list-text">データ分類（ディープ）スキャン。</block>
+  <block id="c9e62ad150311eaae555d82e1b8e2076" category="paragraph">お客様の環境全体で、標準プロトコルと読み取り専用アクセス権を使用してデータセンススキャンを実行します。一部のファイルは、ビジネスに関連する機密データ、プライベート情報、ランサムウェアに関連する問題の有無をチェックして開きます。</block>
+  <block id="e6955249e6953613536ae08a88475a81" category="paragraph">フルスキャンの後にデータに適用できるデータ検出機能が多数あります。たとえば、[データ調査]ページでのデータの表示とリファイン、ファイル内での名前の検索、ソースファイルのコピー、移動、削除などです。</block>
+  <block id="1a068d00fba0764fe495dfcb9428ba33" category="section-title">ライセンスとコスト</block>
+  <block id="efd4a405d0fc94dd44dd46314145b533" category="paragraph">Cloud Data Senseを使用するためのライセンスとコストに関する質問を次に示します。</block>
+  <block id="40b83084f1cee71ca9bea0f92f648ca3" category="paragraph">クラウドデータセンスの使用コストは、スキャンするデータの量によって異なります。データをスキャンする、 Cloud Manager ワークスペース内の最初の 1TB のデータは無料です。この制限に達すると、1TBを超えるデータのスキャンを続行するために次のいずれかが必要になります。</block>
+  <block id="d28d4f6cb9334067ba763d5205ef3408" category="list-text">クラウドプロバイダまたはからCloud Manager Marketplaceに登録するためのサブスクリプション</block>
+  <block id="4aaa082eb5a6a6d38594fed7ac9dfc5c" category="list-text">ネットアップが提供するお客様所有のライセンス（BYOL）</block>
+  <block id="d593d438e7fbece83184e3d6d94b77d8" category="paragraph">を参照してください<block ref="6bbe1a830896033f3d42bc42c545c572" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="df633ebdc2836fc65b2b5c8df3071fad" category="section-title">BYOLの容量制限に達した場合はどうなりますか？</block>
+  <block id="58455ce9c1fb7906220e35f5849d83c1" category="paragraph">BYOLの容量制限に達すると、データセンスは引き続き実行されますが、ダッシュボードへのアクセスはブロックされるため、スキャンしたデータに関する情報を表示することはできません。スキャンするボリューム数を減らして容量の使用率をライセンスの上限まで下げる場合は、設定ページのみが表示されます。データセンスへのフルアクセスを回復するには、BYOLライセンスを更新する必要があります。</block>
+  <block id="f56912566696fa3cc8524bcac5febbeb" category="section-title">コネクタの展開</block>
+  <block id="0c5d4e7461b4c75d3988c9aa8d81ab4f" category="paragraph">Cloud Manager Connectorに関連する質問を次に示します。</block>
+  <block id="c6dbaaf1bef168a38de37623edb997f7" category="section-title">コネクタは何ですか？</block>
+  <block id="99231b2fc9795c596b5574283dc8bb5c" category="paragraph">Connectorは、クラウドアカウント内またはオンプレミスでコンピューティングインスタンス上で実行されるソフトウェアで、Cloud Managerによるクラウドリソースのセキュアな管理を可能にします。クラウドデータセンスを使用するには、コネクタを導入する必要があります。</block>
+  <block id="417cf0f3678f81efde443c4a85c2acb8" category="section-title">コネクタはどこに取り付ける必要がありますか？</block>
+  <block id="f4fb039a49b8c7eb94cbf1c2e74a625f" category="list-text">オンプレミスのONTAP システム、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Google Driveアカウント内のデータをスキャンする場合、これらのクラウド環境ではコネクタを使用できます。</block>
+  <block id="47b38df4edf7a31520897ce7498de0a0" category="paragraph">そのため、これらの場所の多くにデータがある場合は、を使用する必要があります<block ref="61272ee1a17c9c174cf490124a0940a3" category="inline-link-rx"></block>。</block>
+  <block id="0908d2929b9ac231d6e9a69ca517b2e3" category="section-title">コネクタを自分のホストに導入できますか。</block>
+  <block id="45c9d2d43a741ab63e518aa05e11fa70" category="paragraph">はい。可能です<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 自社ネットワーク内またはクラウド内の Linux ホストオンプレミスにデータセンスを導入する場合は、オンプレミスにもコネクタをインストールできますが、必須ではありません。</block>
+  <block id="729ba1cfab33ecb7cda6d642c21b247d" category="section-title">インターネットにアクセスできないセキュアなサイトはどうでしょうか。</block>
+  <block id="7521d190d3b7edc316bb592221196fcf" category="inline-link">インターネットにアクセスできないオンプレミスのLinuxホストにコネクタを導入します</block>
+  <block id="7b0dda74db6ec7e3e5eb3ca096c115c2" category="paragraph">はい、サポートされています。可能です<block ref="4fae73c4748f58a56669baba6ceab594" category="inline-link-rx"></block>。その上で、オンプレミスのONTAP クラスタやその他のローカルデータソースを検出し、データセンスを使用してデータをスキャンすることができます。</block>
+  <block id="20ddf180d77766369cf9eb26a7165489" category="section-title">データセンスの導入</block>
+  <block id="5bab44a31f81eef054e5895c9d068607" category="paragraph">以下の質問は、個別のData Senseインスタンスに関連しています。</block>
+  <block id="794e12ef176fc9da8e4f9c105c9930df" category="section-title">データセンスを自分のホストに導入できますか。</block>
+  <block id="3e9b0b67019f2d0b48a4828209573441" category="paragraph">はい。データセンスソフトウェアは、ネットワーク内またはクラウド内でインターネットにアクセスできる Linux ホストにインストールできます。すべてが同じように機能し、 Cloud Manager を使用してスキャンの設定と結果を引き続き管理できます。を参照してください <block ref="a7e82d64861a5e64770734ee02976112" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="64f5cbf64bda7d75632e3c56632689f8" category="paragraph">はい、サポートされています。可能です <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全にセキュアなサイトに。</block>
+  <block id="24ef8c726486795460d31edd12ab8ed9" category="paragraph">デフォルトでは、Cloud Data Senseダッシュボードには、すべての作業環境、データベース、およびデータソースのコンプライアンスデータとガバナンスデータが表示されます。一部の作業環境のデータのみを含むレポートを表示する場合は、 <block ref="68584290e1051ffc6ccba308e6db06b0" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">データ調査レポート</block>
+  <block id="f6ba29512f0eaabde0c49365c8ab9bd2" category="inline-link-macro">Data Investigationページの詳細については、こちらをご覧ください</block>
+  <block id="517748e2f135f076ee74e5741d804b66" category="paragraph">Data Investigation Reportは、Data Investigationページの内容をダウンロードしたものです。 <block ref="777485da66bf4538c99c96042630b627" category="inline-link-macro-rx"></block>。</block>
+  <block id="b5d621c6c64f465c6c100d14976a8e1e" category="paragraph">レポートは、ローカルマシンに.csvファイルとして保存できます。このファイルには最大5、000行のデータを含めることができます。データ検出でデータベーステーブル（構造化データ）とファイル（非構造化データ）をスキャンする場合、ダウンロードできる.csvレポートは最大2つです。</block>
+  <block id="44ef9b305f89e2a0007a9f26dc30474e" category="section-title">データ調査レポートの生成</block>
+  <block id="0f259b55b58f019c0dd1cc33fbe10199" category="list-text">[データ調査]ページで、をクリックします <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> ボタンをクリックします。</block>
+  <block id="8d31baf0bada1d29024ba5af3df0159a" category="paragraph">レポートをダウンロード中であることを示すメッセージがダイアログに表示されます。</block>
+  <block id="02fa34d7d96f4d3bb7e17ee4a2fc93a7" category="section-title">各データ調査レポートに含まれる情報</block>
+  <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">非構造化ファイルデータレポート*には、ファイルに関する次の情報が含まれています。</block>
+  <block id="f7a21d48814a155d5e8e39ddbf0827ae" category="paragraph">構造化データレポート*には、データベーステーブルに関する次の情報が含まれています。</block>
+  <block id="f84071b5266f40a8c168762081f3a7eb" category="paragraph">*注意：*フォルダに関する情報は現在レポートでは利用できません。</block>
+  <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
+  <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">Google Driveアカウントでのデータスキャンのサポートが追加されました</block>
+  <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">Googleドライブアカウントをスキャンする方法をご覧ください</block>
+  <block id="b3393b07bc5334485489796939a3c1ac" category="paragraph">Googleドライブアカウントからドキュメントやファイルをスキャンするために、Googleドライブアカウントをデータセンスに追加できるようになりました。<block ref="a42326c5e8654fdf4afea98988689f56" category="inline-link-rx"></block>。</block>
+  <block id="1c569820a2d89c87007e78d8b99f545d" category="inline-link">既存のファイルタイプ</block>
+  <block id="d166e1f4f240d3915c676102b853aab5" category="paragraph">データセンスは、に加えて、Googleドキュメントスイート（ドキュメント、シート、スライド）からGoogleファイルタイプ内の個人識別情報（PII）を識別できます<block ref="c10736ee2c8542c954ba18655a2447a7" category="inline-link-rx"></block>。</block>
+  <block id="2f8d7f7b2a9f475f94e961eea0214b6f" category="section-title">[データ調査]ページに追加されたディレクトリレベルビュー</block>
+  <block id="a1e4ba958a7013f98fdbb1a883102e86" category="inline-link">スキャンしたデータのディレクトリビューを選択する方法を参照してください</block>
+  <block id="a5d473c55c66a556abf96b71579ff1bf" category="paragraph">すべてのファイルおよびデータベースのデータを表示およびフィルタリングするだけでなく、[データ調査]ページのフォルダおよび共有内のすべてのデータに基づいてデータを表示およびフィルタリングできるようになりました。これで、ディレクトリレベルでデータを管理できるようになりました。<block ref="9e53e59afd29cea3c43eb27dc0a3476a" category="inline-link-rx"></block>。</block>
+  <block id="fc923fa1acb929379421a26667fff392" category="section-title">グループを展開して、ファイルにアクセスする権限を持つユーザー/メンバーを表示します</block>
+  <block id="87dc185d970f7684d5d731eebbf8d195" category="inline-link">ファイルに対する読み取り権限または書き込み権限を持つユーザーおよびグループを表示する方法を参照してください</block>
+  <block id="3fedcf7612eed43efc90d19f42d43f9a" category="paragraph">データセンス権限機能の一部として、ファイルにアクセスできるユーザとグループのリストを表示できるようになりました。各グループを展開すると、グループ内のユーザのリストが表示されます。<block ref="978ddb309e10f2b48cc0f4a959fbca42" category="inline-link-rx"></block>。</block>
+  <block id="96ab93ed4512cdb4dd07828ed738b502" category="section-title">2つの新しいフィルタが[データ調査]ページに追加されました</block>
+  <block id="9e4e3d73f23809aabccd30c3abe0f99f" category="list-text">「ディレクトリタイプ」フィルタを使用すると、フォルダまたは共有のみを表示するようにデータを絞り込むことができます。結果は新しい*ディレクトリ*タブに表示されます。</block>
+  <block id="7613f02556e4a651db53f06b87b1b460" category="list-text">「ユーザ/グループの権限」フィルタを使用すると、特定のユーザまたはグループに対する読み取り/書き込み権限があるファイル、フォルダ、および共有を表示できます。複数のユーザまたはグループの名前を選択するか、名前の一部を入力できます。t</block>
+  <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">データの調査に使用できるすべてのフィルタのリストを確認します</block>
+  <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
+  <block id="fca7f51b54fee8b38e01607def214d88" category="paragraph">「ユーザ / グループの権限」という新しいフィルタが追加され、特定のユーザまたはグループの読み取り / 書き込み権限を持つファイルを一覧表示できるようになりました。1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力できます。この機能は、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、およびファイル共有のボリュームで使用できます。</block>
+  <block id="659d1ffa40af561d84c53558562c1ec0" category="paragraph">SharePoint サイトからドキュメントやファイルをスキャンするために、 SharePoint オンラインアカウントをデータセンスに追加できるようになりました。 <block ref="7eefe10c1c468dca4cd0e6b3eed1adc0" category="inline-link-macro-rx"></block>。</block>
+  <block id="77a75568e8846a1bf685d1ee50c690cf" category="paragraph"><block ref="6cdda3320a1281c9d4957b83cba366de" category="inline-link-macro-rx"></block>。</block>
+  <block id="d55b3233b82d41486408c8252b8ebafb" category="paragraph">データセンスでは、ファイル内にフランス語のソーシャルセキュリティ番号、フランス語の ID 、フランス語のドライバーライセンス番号が表示されるようになりました。 <block ref="685a6d4b5536628189414cd84011e60e" category="inline-link-macro-rx"></block>。</block>
+  <block id="eed42314c8425f21a986d3b70cb05658" category="paragraph">Data Sense で特定のデータソースから CIFS ボリュームをスキャンできるように入力する Active Directory クレデンシャルに加えて、この新しい統合によって他のユーザやシステムも統合されるようになります。データセンスは、統合されたすべての Active Directory でユーザと権限の詳細を確認します。 <block ref="64cba81c60533194508987e16994b8d7" category="inline-link-macro-rx"></block>。</block>
+  <block id="aa46c786779de0fbd3280d592901e64f" category="paragraph">データセンスでは、ポリシーで定義したクエリに一致するファイルを自動的に削除できます。 <block ref="68f7176f15fa3737e845d858e7820489" category="inline-link-macro-rx"></block>。</block>
+  <block id="9f2913099fea83e0f323c9eaa2647551" category="inline-link-macro">SharePointアカウント全体をデータセンスから削除します</block>
+  <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">できることに注意してください <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> SharePointアカウントからユーザーデータをスキャンする必要がなくなった場合。</block>
+  <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">現在、 30MB を超えるファイルのラベルは変更できません。OneDrive、SharePoint、Google Driveアカウントの場合、最大ファイルサイズは4 MBです。</block>
+  <block id="ccff7c05ce1ff2ff0bafe406c61338f6" category="paragraph"><block ref="ccff7c05ce1ff2ff0bafe406c61338f6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="27aec93c5860a4d3afd02f9391f5d2fb" category="paragraph">また、をクリックすることもできます <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> をクリックすると、グループの一部であるユーザのリストが表示されます。</block>
+  <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">調査ページの内容をフィルタリングして、表示する結果のみを表示できます。これは非常に強力な機能です。データをリファインした後、ページ上部のボタンバーを使用して、ファイルのコピー、ファイルの移動、ファイルへのタグまたはAIPラベルの追加など、さまざまなアクションを実行できます。</block>
+  <block id="1fab049254ef848d8968883ce41a2b77" category="paragraph">ページをリファインした後で、そのページの内容をレポートとしてダウンロードする場合は、をクリックします <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> ボタンをクリックして.csvファイルを保存します。</block>
+  <block id="96b029b0702cef79f31ac1b4c933b4aa" category="list-text">トップレベルのタブでは、ファイル（非構造化データ）、ディレクトリ（非構造化データ）、またはデータベース（構造化データ）のデータを表示できます。</block>
+  <block id="fe340da6c921cdc51f04bc690aa53387" category="cell">ポリシーを選択します。実行します <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> をクリックして、既存のポリシーのリストを表示し、独自のカスタムポリシーを作成します。</block>
+  <block id="1a81671798e285bd46fa9b2aa3c86d00" category="cell">1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力してください</block>
+  <block id="c9b82f90ba4459b8fcdadccfbe372539" category="cell">選択するオプション <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> ファイルに割り当てられます</block>
+  <block id="910acb975ea7aecd9808b83a0cb3e7eb" category="cell">作業環境のタイプを選択します。OneDrive、SharePoint、Google Driveは、「クラウドアプリ」に分類されています。</block>
+  <block id="c3a9830be43f6515257f3979e66816fd" category="cell">ディレクトリタイプ（Directory Type）</block>
+  <block id="9091f9c1f743dae16df2f0455ff3be56" category="cell">ディレクトリタイプを選択します。「共有」または「フォルダ」のいずれかを選択します。</block>
+  <block id="f8a85ed4966ec4306b4e58f3bd439410" category="inline-link-macro">タグ</block>
+  <block id="2ee519be0f1e6f6176e28f4d0dc72a02" category="cell">選択するオプション <block ref="d459f7b3039eb26458088e9c5f84d9e6" category="inline-link-macro-rx"></block> ファイルに割り当てられます</block>
+  <block id="ce2e33acff157139d73902f7ac835d64" category="summary">Cloud Data Senseを使用して、Google Driveアカウントのユーザーファイルのスキャンを開始するには、いくつかの手順を実行します。</block>
+  <block id="7516ed4bcabc82b8b67177aff48fb5b0" category="doc">Googleドライブアカウントをスキャンしています</block>
+  <block id="df1a99e8a5c605960dde068efb83d492" category="paragraph">Googleドライブアカウントにログインするための管理者資格情報があることを確認します。</block>
+  <block id="50dd69878a50e70f6bb6373a9455f375" category="paragraph">Adminユーザのクレデンシャルを使用して、アクセスするGoogle Driveアカウントにログインし、新しいデータソースとして追加します。</block>
+  <block id="89cbb1641d10ee36768bbc7c8550c80e" category="paragraph">ユーザファイルで実行するスキャンのタイプ（マッピングまたはマッピングおよび分類）を選択します。</block>
+  <block id="f182163b3c8517a6b2c89393d611b9c7" category="section-title">Googleドライブの要件を確認する</block>
+  <block id="583b2e69e538cb6ec3d52256a2a1d68c" category="paragraph">以下の前提条件を確認して、Google DriveアカウントでCloud Data Senseを有効にする準備ができていることを確認します。</block>
+  <block id="9754d2a3b65dd0a94f6afdf2886da746" category="list-text">ユーザのファイルへの読み取りアクセスを提供するGoogle Driveアカウントの管理者ログインクレデンシャルが必要です</block>
+  <block id="64a474279b0cea9f7d694f643cf24619" category="section-title">現在の制限</block>
+  <block id="f1ad1986e292e89eed7397b2f9c4deb6" category="paragraph">次のデータセンス機能は、Googleドライブファイルでは現在サポートされていません。</block>
+  <block id="6f160c921b781e470120401e467b3f23" category="list-text">[データ調査]ページでファイルを表示している場合、ボタンバーのアクションはアクティブになりません。ファイルのコピー、移動、削除などはできません。</block>
+  <block id="b02253f9f4afea389fd44267fbb346ef" category="list-text">Googleドライブ内のファイル内で権限を識別できないため、［調査］ページに権限情報は表示されません。</block>
+  <block id="d8c999fced9dd06cb3a7dd1ce8fde9ba" category="section-title">Google Driveアカウントを追加しています</block>
+  <block id="40fd3e316325ce10b9d94e4ee27e6cda" category="paragraph">ユーザーファイルが存在するGoogleドライブアカウントを追加します。</block>
+  <block id="57732082df4aef62ed29defc2be4d0b6" category="list-text">[作業環境の構成]ページで、[*データソースの追加*&gt;* Googleドライブアカウントの追加*]をクリックします。</block>
+  <block id="a06a12818860c5a02fc6cda08aebdef0" category="inline-image-macro">Googleドライブの追加ボタンをクリックできるスキャン設定ページのスクリーンショット。</block>
+  <block id="62eceb063c8e8fa286bd62cfff1eaf9e" category="paragraph"><block ref="62eceb063c8e8fa286bd62cfff1eaf9e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41afcc0fca08d9d2c28748fc229f8f3d" category="list-text">[Googleドライブアカウントの追加]ダイアログで、[Googleドライブへのサインイン*]をクリックします。</block>
+  <block id="56022f71b96722f998fe80c000c22d53" category="list-text">表示されたGoogleページで、Googleドライブアカウントを選択し、必要な管理者ユーザーとパスワードを入力してから、* Accept *をクリックしてCloud Data Senseがこのアカウントからデータを読み取ることを許可します。</block>
+  <block id="b409ed344f8e93255d57fc76a98be428" category="paragraph">Googleドライブアカウントが作業環境のリストに追加されます。</block>
+  <block id="c814529a7363747226b548d419cbf345" category="section-title">ユーザデータのスキャンタイプを選択しています</block>
+  <block id="da41c773de3c79cd8895af4c1aa8a60d" category="paragraph">ユーザデータに対してCloud Data Senseが実行するスキャンのタイプを選択します。</block>
+  <block id="00d7735cfe1be11b0d6c0c162ce477f6" category="list-text">_Configuration_pageで、Google Driveアカウントの* Configuration *ボタンをクリックします。</block>
+  <block id="0dc1656c50d90854618395b6a5005845" category="inline-image-macro">Configuration（設定）ボタンを選択できるConfiguration（設定）ページのスクリーンショット。</block>
+  <block id="9d94963dd1bda0d610b26873050a7b25" category="paragraph"><block ref="9d94963dd1bda0d610b26873050a7b25" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a546beb16c321b4c611cf0b9c297e9de" category="list-text">Google Driveアカウントのファイルに対して、マッピング専用スキャンまたはマッピングおよび分類スキャンを有効にします。</block>
+  <block id="85bccfa752b05b9d9a207e10ae71c262" category="inline-image-macro">Googleドライブデータで実行するスキャンデータセンスのタイプの選択方法を示すスクリーンショット。</block>
+  <block id="70f5d64b57fcacd567844bffa2a38f18" category="paragraph"><block ref="70f5d64b57fcacd567844bffa2a38f18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f0ec15674b4552f07754843b033c4f0" category="paragraph">Cloud Data Senseは、追加したGoogle Driveアカウントのファイルのスキャンを開始し、その結果がダッシュボードやその他の場所に表示されます。</block>
+  <block id="3d61ecb24967db6bd93775c965d8571f" category="section-title">Googleドライブアカウントをコンプライアンススキャンから削除しています</block>
+  <block id="9a1e694b1bf5a642eacf71ea21eede63" category="inline-link-macro">データセンスからGoogleドライブアカウントを削除します</block>
+  <block id="e6fef5621a9e0deea941bde5d1ac51eb" category="paragraph">1人のユーザーのGoogleドライブファイルのみが1つのGoogleドライブアカウントの一部であるため、ユーザーのGoogleドライブアカウントからのファイルのスキャンを停止する場合は、次の手順を実行します <block ref="50340a10fcfa586f2410201e1b5bd674" category="inline-link-macro-rx"></block>。</block>
+  <block id="c4022fe65a9bea007e119f4d38ca5b82" category="paragraph">データベーススキーマ、OneDriveアカウント、SharePointアカウント、Googleドライブアカウント、Amazon S3アカウント、 または、Simple Storage Service（S3）プロトコルを使用するObject Storageの略。</block>
+  <block id="1b40edca75269e2cab8c610622d15344" category="summary">必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。</block>
+  <block id="6bd1beae17e48797805a36af79f55549" category="section-title">Cloud Data SenseからOneDrive、SharePoint、Google Driveのアカウントを削除する方法について説明します</block>
+  <block id="1b0b7f0671ee5b3c52423f0719388b6e" category="paragraph">特定のOneDriveアカウント、特定のSharePointアカウント、またはGoogle Driveアカウントからユーザーファイルをスキャンする必要がなくなった場合は、Cloud Data Senseインターフェイスからアカウントを削除して、すべてのスキャンを停止できます。</block>
+  <block id="9d1c29dc777962e9fef8dd6f8f0fd186" category="list-text">[_Configuration_] ページで、をクリックします <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> OneDrive、SharePoint、Google Driveアカウントの行にあるボタンをクリックし、* OneDriveアカウントの削除*、* SharePointアカウントの削除*、または* Googleドライブアカウントの削除*をクリックします。</block>
+  <block id="9cb5e9a98a61d795839d8b1d8ba8bef7" category="list-text">ユーザのファイルに読み取りアクセスを提供するOneDrive for Businessアカウントの管理者ログインクレデンシャルが必要です。</block>
+  <block id="eafb114471abfcc072e27d19a53393bf" category="list-text">OneDriveフォルダをスキャンするすべてのユーザーに対して、電子メールアドレスの行区切りリストが必要です。</block>
+  <block id="ac08b5403a9f3f6f1bc720265a802bb3" category="inline-link-macro">データセンスからOneDriveアカウント全体を削除します</block>
+  <block id="af156dc3600ff1945f980accc524de2d" category="paragraph">できることに注意してください <block ref="bf09e8e84132fcb4a54426c7be95b7c9" category="inline-link-macro-rx"></block> OneDriveアカウントからユーザーデータをスキャンする必要がなくなった場合。</block>
+  <block id="37c9303e988a90a91e5799c6d881439b" category="paragraph">オンプレミスのONTAP システムでは、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Googleドライブアカウントを、これらのクラウドコネクタのいずれかを使用してスキャンできます。</block>
+  <block id="2cadc69c210f0e599ec0b30a0874e883" category="summary">Cloud Data Senseがボリューム、Amazon S3バケット、データベース、OneDriveフォルダ、SharePointアカウント、 およびGoogle Driveアカウント。</block>
+  <block id="857f40e1f9389fce6087fb43466bb998" category="paragraph">Cloud Data Senseがボリューム、Amazon S3バケット、データベース、OneDriveフォルダ、SharePointアカウント、 およびGoogle Driveアカウント。以下のカテゴリを参照してください。</block>
+  <block id="f0fa14b0913829093cd6b4aeaa24b34d" category="paragraph">現在、データセンスがダークサイトに導入されている場合、Cloud Volumes ONTAP 、Azure NetApp Files 、ONTAP 用FSX、AWS S3、またはGoogleドライブのアカウントのスキャンはサポートされません。</block>
+  <block id="68c4a78a67d74510c65b916751c96b07" category="list-text">Google Driveアカウントのデータでは、現時点でこれらの機能を使用することはできません。</block>
+  <block id="9c471504c4f66f275b7d110c46622118" category="paragraph">オンプレミスのONTAP システム、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Googleドライブアカウントは、これらのクラウドコネクタのいずれかを使用している場合にスキャンできます。</block>
+  <block id="1692b32d79b99cfb5a1277f8c49a23af" category="sidebar">作業環境をスキャンします</block>
+  <block id="0dcbed0ed443cc2be8b28a4bd6ea0b84" category="sidebar">他のデータソースをスキャンします</block>
+  <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">データをフィルタして、特定のファイルを表示します</block>
 </blocks>

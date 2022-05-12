@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-generating-compliance-reports.html 
-keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa 
+keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file 
 summary: Cloud Data Sense は、組織のデータプライバシープログラムの状況をよりよく把握するために使用できるレポートを提供します。 
 ---
 = コンプライアンスレポートの表示
@@ -16,14 +16,15 @@ summary: Cloud Data Sense は、組織のデータプライバシープログラ
 [role="lead"]
 Cloud Data Sense は、組織のデータプライバシープログラムの状況をよりよく把握するために使用できるレポートを提供します。
 
-デフォルトでは、 Cloud Data Sense ダッシュボードには、すべての作業環境およびデータベースのコンプライアンスデータとガバナンスデータが表示されます。一部の作業環境のデータのみを含むレポートを表示する場合は、 <<Selecting the working environments for reports,それらの作業環境を選択します>>。
+デフォルトでは、Cloud Data Senseダッシュボードには、すべての作業環境、データベース、およびデータソースのコンプライアンスデータとガバナンスデータが表示されます。一部の作業環境のデータのみを含むレポートを表示する場合は、 <<Selecting the working environments for reports,それらの作業環境を選択します>>。
+
+[NOTE]
+====
+* このセクションで説明するレポートは、データソースに対して完全な分類スキャンを実行することを選択した場合にのみ使用できます。マッピング専用スキャンを実行したデータソースでは、データマッピングレポートのみが生成されます。
+* ネットアップでは、 Cloud Data Sense が特定した個人データと機密性の高い個人データの正確性を 100% 保証することはできません。必ずデータを確認して情報を検証してください。
 
 
-NOTE: このセクションで説明するレポートは、データソースに対して完全な分類スキャンを実行することを選択した場合にのみ使用できます。マッピング専用スキャンを実行したデータソースでは、データマッピングレポートのみが生成されます。
-
-
-NOTE: ネットアップでは、 Cloud Data Sense が特定した個人データと機密性の高い個人データの正確性を 100% 保証することはできません。必ずデータを確認して情報を検証してください。
-
+====
 
 
 == プライバシーリスク評価レポート
@@ -197,6 +198,65 @@ image:screenshot_compliance_data_mapping_report_button.png["データマッピ�
 
 
 Cloud Data Sense は、必要に応じて他のグループにレビューして送信できる PDF レポートを生成します。
+
+
+
+== データ調査レポート
+
+Data Investigation Reportは、Data Investigationページの内容をダウンロードしたものです。 link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Data Investigationページの詳細については、こちらをご覧ください"]。
+
+レポートは、ローカルマシンに.csvファイルとして保存できます。このファイルには最大5、000行のデータを含めることができます。データ検出でデータベーステーブル（構造化データ）とファイル（非構造化データ）をスキャンする場合、ダウンロードできる.csvレポートは最大2つです。
+
+
+
+=== データ調査レポートの生成
+
+.手順
+. [データ調査]ページで、をクリックします image:button_download.png["[ ダウンロード ] ボタン"] ボタンをクリックします。
+
+
+レポートをダウンロード中であることを示すメッセージがダイアログに表示されます。
+
+
+
+=== 各データ調査レポートに含まれる情報
+
+非構造化ファイルデータレポート*には、ファイルに関する次の情報が含まれています。
+
+* ファイル名
+* 場所のタイプ
+* 作業環境の名前
+* ストレージリポジトリ（ボリューム、バケット、共有など）
+* 作業環境のタイプ
+* ファイルパス
+* ファイルタイプ
+* ファイルサイズ
+* 時刻を作成しました
+* 最終更新日
+* 最後にアクセスした
+* ファイルの所有者
+* カテゴリ
+* 個人情報
+* 機密性の高い個人情報
+* 削除の検出日
++
+削除の検出日は、ファイルが削除または移動された日付を示します。これにより、機密ファイルがいつ移動されたかを識別できます。削除されたファイルは、ダッシュボードまたは [ 調査 ] ページに表示されるファイル番号カウントの一部ではありません。ファイルは CSV レポートにのみ表示されます。
+
+
+
+構造化データレポート*には、データベーステーブルに関する次の情報が含まれています。
+
+* DB テーブル名
+* 場所のタイプ
+* 作業環境の名前
+* ストレージリポジトリ（スキーマなど）
+* 列数
+* 行数
+* 個人情報
+* 機密性の高い個人情報
+
+
+*注意：*フォルダに関する情報は現在レポートでは利用できません。
 
 
 

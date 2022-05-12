@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-compliance.html 
 keywords: remove, delete, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, delete cloud compliance, terminate, deactivate, deactivating cloud compliance, data sense 
-summary: 必要に応じて、 Cloud Data Sense を停止することで、 1 つ以上の作業環境、データベース、ファイル共有グループ、 OneDrive アカウント、 SharePoint アカウントをスキャンできます。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。 
+summary: 必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。 
 ---
 = Cloud Data Sense からのデータソースの削除
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 必要に応じて、 Cloud Data Sense を停止することで、 1 �
 
 
 [role="lead"]
-必要に応じて、 Cloud Data Sense を停止することで、 1 つ以上の作業環境、データベース、ファイル共有グループ、 OneDrive アカウント、 SharePoint アカウントをスキャンできます。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。
+必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。
 
 
 
@@ -43,12 +43,12 @@ image:screenshot_compliance_remove_db.png["Scan Configuration ページの Remov
 
 
 
-== Cloud Data Sense から OneDrive または SharePoint アカウントを削除する
+== Cloud Data SenseからOneDrive、SharePoint、Google Driveのアカウントを削除する方法について説明します
 
-特定の OneDrive アカウントまたは特定の SharePoint アカウントからユーザーファイルをスキャンする必要がなくなった場合は、クラウドデータセンスインターフェイスからアカウントを削除して、すべてのスキャンを停止できます。
+特定のOneDriveアカウント、特定のSharePointアカウント、またはGoogle Driveアカウントからユーザーファイルをスキャンする必要がなくなった場合は、Cloud Data Senseインターフェイスからアカウントを削除して、すべてのスキャンを停止できます。
 
 .手順
-. [_Configuration_] ページで、をクリックします image:screenshot_gallery_options.gif["[ 詳細 ] ボタン"] OneDrive または SharePoint アカウントの行にあるボタンをクリックし、 [* OneDrive アカウントの削除 * ] または [* SharePoint アカウントの削除 * ] をクリックします。
+. [_Configuration_] ページで、をクリックします image:screenshot_gallery_options.gif["[ 詳細 ] ボタン"] OneDrive、SharePoint、Google Driveアカウントの行にあるボタンをクリックし、* OneDriveアカウントの削除*、* SharePointアカウントの削除*、または* Googleドライブアカウントの削除*をクリックします。
 +
 image:screenshot_compliance_remove_onedrive.png["[ スキャン構成 ] ページから [OneDrive を削除 ] ボタンのスクリーンショット。"]
 

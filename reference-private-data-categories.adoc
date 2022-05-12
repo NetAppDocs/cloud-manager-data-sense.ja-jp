@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-private-data-categories.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, categories, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, sex, criminal, compliance, privacy, 
-summary: Cloud Data Sense がボリューム、 Amazon S3 バケット、データベース、 OneDrive フォルダ、 SharePoint アカウントで識別できるプライベートデータには、さまざまな種類があります。以下のカテゴリを参照してください。 
+summary: Cloud Data Senseがボリューム、Amazon S3バケット、データベース、OneDriveフォルダ、SharePointアカウント、 およびGoogle Driveアカウント。 
 ---
 = プライベートデータのカテゴリ
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Data Sense がボリューム、 Amazon S3 バケット、デー�
 
 
 [role="lead"]
-Cloud Data Sense がボリューム、 Amazon S3 バケット、データベース、 OneDrive フォルダ、 SharePoint アカウントで識別できるプライベートデータには、さまざまな種類があります。以下のカテゴリを参照してください。
+Cloud Data Senseがボリューム、Amazon S3バケット、データベース、OneDriveフォルダ、SharePointアカウント、 およびGoogle Driveアカウント。以下のカテゴリを参照してください。
 
 
 TIP: その他の国の ID 番号や医療機関の ID など、プライベートデータの種類を識別するためにクラウドデータセンスが必要な場合は、 ng-contact-data-sense@netapp.com にリクエストを送信してください。
@@ -299,7 +299,7 @@ Cloud Data Sense は、すべてのファイルをスキャンしてカテゴリ
 
 しかし、データセンスが個人識別情報（ PII ）を検出した場合、または dsar 検索を実行した場合、次のファイル形式のみがサポートされます。
 
-「 +.csv 」、「 .dcm 」、「 .dom 」、「 .DOC 」、「 .DOCX 」、 .json 、 .pdf 、 .PPTX 、 .rtf 、 .TXT 、 .XLS 、 .xlsx 、 .+`
+「+.csv」、「.dcm」、「.dom」、「.DOC」、「.DOCX」、 .json、.pdf、.PPTX、.rtf、.TXT、 .XLS、.xlsx、Docs、Sheets、Slides +`
 
 
 

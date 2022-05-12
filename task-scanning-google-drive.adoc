@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-google-drive.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, google drive, data sense 
+summary: Cloud Data Senseを使用して、Google Driveアカウントのユーザーファイルのスキャンを開始するには、いくつかの手順を実行します。 
+---
+= Googleドライブアカウントをスキャンしています
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Data Senseを使用して、Google Driveアカウントのユーザーファイルのスキャンを開始するには、いくつかの手順を実行します。
+
+
+
+== クイックスタート
+
+これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
+
+[role="quick-margin-para"]
+Googleドライブアカウントにログインするための管理者資格情報があることを確認します。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["クラウドデータの導入センス"^] インスタンスが展開されていない場合。
+
+[role="quick-margin-para"]
+Adminユーザのクレデンシャルを使用して、アクセスするGoogle Driveアカウントにログインし、新しいデータソースとして追加します。
+
+[role="quick-margin-para"]
+ユーザファイルで実行するスキャンのタイプ（マッピングまたはマッピングおよび分類）を選択します。
+
+
+
+== Googleドライブの要件を確認する
+
+以下の前提条件を確認して、Google DriveアカウントでCloud Data Senseを有効にする準備ができていることを確認します。
+
+* ユーザのファイルへの読み取りアクセスを提供するGoogle Driveアカウントの管理者ログインクレデンシャルが必要です
+
+
+
+
+=== 現在の制限
+
+次のデータセンス機能は、Googleドライブファイルでは現在サポートされていません。
+
+* [データ調査]ページでファイルを表示している場合、ボタンバーのアクションはアクティブになりません。ファイルのコピー、移動、削除などはできません。
+* Googleドライブ内のファイル内で権限を識別できないため、［調査］ページに権限情報は表示されません。
+
+
+
+
+== Cloud Data Sense の導入
+
+導入済みのインスタンスがない場合は Cloud Data Sense を導入
+
+データセンスは、のいずれかです link:task-deploy-cloud-compliance.html["クラウドに導入"^] または link:task-deploy-compliance-onprem.html["インターネットにアクセスできるオンプレミスの場所"^]。
+
+Data Sense ソフトウェアへのアップグレードは、インスタンスがインターネットに接続されている限り自動化されます。
+
+
+
+== Google Driveアカウントを追加しています
+
+ユーザーファイルが存在するGoogleドライブアカウントを追加します。
+
+.手順
+. [作業環境の構成]ページで、[*データソースの追加*>* Googleドライブアカウントの追加*]をクリックします。
++
+image:screenshot_compliance_add_google_drive_button.png["Googleドライブの追加ボタンをクリックできるスキャン設定ページのスクリーンショット。"]
+
+. [Googleドライブアカウントの追加]ダイアログで、[Googleドライブへのサインイン*]をクリックします。
+. 表示されたGoogleページで、Googleドライブアカウントを選択し、必要な管理者ユーザーとパスワードを入力してから、* Accept *をクリックしてCloud Data Senseがこのアカウントからデータを読み取ることを許可します。
+
+
+Googleドライブアカウントが作業環境のリストに追加されます。
+
+
+
+== ユーザデータのスキャンタイプを選択しています
+
+ユーザデータに対してCloud Data Senseが実行するスキャンのタイプを選択します。
+
+.手順
+. _Configuration_pageで、Google Driveアカウントの* Configuration *ボタンをクリックします。
++
+image:screenshot_compliance_google_drive_add_sites.png["Configuration（設定）ボタンを選択できるConfiguration（設定）ページのスクリーンショット。"]
+
+. Google Driveアカウントのファイルに対して、マッピング専用スキャンまたはマッピングおよび分類スキャンを有効にします。
++
+image:screenshot_compliance_google_drive_select_scan.png["Googleドライブデータで実行するスキャンデータセンスのタイプの選択方法を示すスクリーンショット。"]
+
++
+[cols="45,45"]
+|===
+| 終了： | 手順： 
+
+
+| ファイルのマッピングのみのスキャンを有効にします | [* マップ * ] をクリックします 
+
+
+| ファイルのフルスキャンを有効にします | [ マップと分類 *] をクリックします 
+
+
+| ファイルのスキャンを無効にします | [ * Off * ] をクリックします 
+|===
+
+
+Cloud Data Senseは、追加したGoogle Driveアカウントのファイルのスキャンを開始し、その結果がダッシュボードやその他の場所に表示されます。
+
+
+
+== Googleドライブアカウントをコンプライアンススキャンから削除しています
+
+1人のユーザーのGoogleドライブファイルのみが1つのGoogleドライブアカウントの一部であるため、ユーザーのGoogleドライブアカウントからのファイルのスキャンを停止する場合は、次の手順を実行します link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["データセンスからGoogleドライブアカウントを削除します"]。

@@ -55,7 +55,7 @@ Cloud Data Sense によってスキャンされる最初の 1TB のデータは�
 * GCP の Cloud Volumes ONTAP でデータをスキャンする場合は、 GCP のコネクタを使用します。
 
 
-オンプレミスの ONTAP システムでは、ネットアップ以外のファイル共有、汎用の S3 オブジェクトストレージ、データベース、 OneDrive フォルダ、 SharePoint アカウントを、これらのクラウドコネクタのいずれかを使用してスキャンできます。
+オンプレミスのONTAP システム、ネットアップ以外のファイル共有、汎用のS3オブジェクトストレージ、データベース、OneDriveフォルダ、SharePointアカウント、Googleドライブアカウントは、これらのクラウドコネクタのいずれかを使用している場合にスキャンできます。
 
 また、次のことも可能です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタをオンプレミスに導入"^] 自社ネットワーク内またはクラウド内の Linux ホストデータセンスをオンプレミスにインストールする予定のユーザによっては、 Connector をオンプレミスにインストールすることもできます。
 

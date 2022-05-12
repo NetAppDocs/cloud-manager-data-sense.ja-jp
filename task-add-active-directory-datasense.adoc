@@ -41,7 +41,7 @@ Active Directory と Cloud Data Sense との統合により、次のデータソ
 * 他社の CIFS ファイル共有（ NFS ファイル共有ではない）
 
 
-データベーススキーマ、 OneDrive アカウント、 SharePoint アカウント、 Amazon S3 アカウント、 Simple Storage Service （ S3 ）プロトコルを使用するオブジェクトストレージから、ユーザおよび権限の情報を識別することはできません。
+データベーススキーマ、OneDriveアカウント、SharePointアカウント、Googleドライブアカウント、Amazon S3アカウント、 または、Simple Storage Service（S3）プロトコルを使用するObject Storageの略。
 
 
 

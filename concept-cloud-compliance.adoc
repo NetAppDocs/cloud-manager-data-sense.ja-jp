@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, on-prem ontap, file shares, object storage, aip labels, governance, data sense 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, google drive, on-prem ontap, file shares, object storage, aip labels, governance, data sense 
 summary: Cloud Data Sense は、社内のオンプレミスデータソースやクラウドデータソース、作業環境をスキャンしてデータをマッピング、分類し、プライベート情報を特定する、 Cloud Manager のデータガバナンスサービスです。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。 
 ---
 = クラウドデータの意味をご確認ください
@@ -67,6 +67,7 @@ Cloud Data Sense では、次のような作業環境やデータソースから
 * データベース
 * OneDrive アカウント
 * SharePoint アカウント
+* Googleドライブアカウント
 
 
 Data Sense は、 NFS バージョン 3.x 、 4.0 、 4.1 、および CIFS バージョン 1.x 、 2.0 、 2.1 、 3.0 をサポートしています。
@@ -80,7 +81,7 @@ Data Sense は、 NFS バージョン 3.x 、 4.0 、 4.1 、および CIFS バ�
 link:task-licensing-datasense.html["Cloud Data Sense のライセンスを取得する方法について説明します"^]。
 
 * クラウドにクラウドデータセンスをインストールするには、クラウドインスタンスを導入する必要があります。その場合、クラウドインスタンスが導入されているクラウドプロバイダから料金が発生します。を参照してください <<The Cloud Data Sense instance,各クラウドに導入されるインスタンスのタイプ プロバイダ>>。データセンスをオンプレミスシステムにインストールしても、コストはかかりません。
-* Cloud Data Sense を使用するには、コネクタを導入しておく必要があります。多くの場合、 Cloud Manager で他のストレージとサービスを使用しているため、すでにコネクタが用意されています。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["クラウドプロバイダごとに導入されるインスタンスのタイプ"^]。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。
+* Cloud Data Senseを使用するには、Cloud Manager Connectorを導入しておく必要があります。多くの場合、 Cloud Manager で他のストレージとサービスを使用しているため、すでにコネクタが用意されています。Connector インスタンスを使用すると、導入先のクラウドプロバイダから料金が発生します。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["クラウドプロバイダごとに導入されるインスタンスのタイプ"^]。コネクタをオンプレミスシステムにインストールしても、コストはかかりません。
 
 
 
@@ -179,7 +180,7 @@ image:diagram_cloud_compliance_scan.png["クラウドプロバイダで実行さ
 
 Cloud Data Sense を使用すると、選択した作業環境やデータソースに対して、一般的な「マッピング」スキャンを実行できます。マッピングではデータの概要のみが示され、分類ではデータの詳細なスキャンが提供されます。データソースでは、ファイルにアクセスしてデータを参照できないため、マッピングは短時間で完了します。
 
-多くのユーザは、この機能を気に入っています。たとえば、より多くの調査が必要なデータソースをすばやくスキャンして特定したうえで、それらのデータソースまたはボリュームに対してのみ分類スキャンを有効にする必要があるためです。
+多くのユーザは、この機能を気に入っています。たとえば、より多くの調査が必要なデータソースをすばやくスキャンして特定したうえで、必要なデータソースやボリュームに対してのみ分類スキャンを有効にする必要があるからです。
 
 次の表に、いくつかの相違点を示します。
 

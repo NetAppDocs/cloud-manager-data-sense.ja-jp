@@ -32,7 +32,7 @@ summary: インターネットにアクセスできないオンプレミスサ�
 
 Cloud Manager を非常にセキュアにインストールする必要があるが、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンする場合は、 Data Sense オフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <<SharePoint and OneDrive special requirements,SharePoint と OneDrive の特別な要件>> を参照してください。
 
-現在、 Cloud Volumes ONTAP 、 Azure NetApp Files 、 ONTAP の FSX 、または AWS S3 アカウントのスキャンはサポートされていません。
+現在、データセンスがダークサイトに導入されている場合、Cloud Volumes ONTAP 、Azure NetApp Files 、ONTAP 用FSX、AWS S3、またはGoogleドライブのアカウントのスキャンはサポートされません。
 
 
 
@@ -83,7 +83,6 @@ Cloud Data Sense によってスキャンされる最初の 1TB のデータは�
 
 * オペレーティングシステム： Red Hat Enterprise Linux または CentOS バージョン 8.0 または 8.1
 +
-** バージョン 7.8 を使用できますが、 Linux カーネルのバージョンは 4.14 以降である必要があります
 ** OS が Docker Engine をインストールできる必要があります（必要に応じて、 _firewalld_service を無効にするなど）。
 
 
