@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-compliance.html 
-keywords: remove, delete, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, delete cloud compliance, terminate, deactivate, deactivating cloud compliance, data sense 
-summary: 必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。 
+keywords: remove, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, deactivate, deactivating cloud compliance, data sense 
+summary: 必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。 
 ---
 = Cloud Data Sense からのデータソースの削除
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 必要に応じて、1つ以上の作業環境、データベース、�
 
 
 [role="lead"]
-必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。
+必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。
 
 
 
@@ -67,39 +67,4 @@ image:screenshot_compliance_remove_onedrive.png["[ スキャン構成 ] ペー�
 image:screenshot_compliance_remove_fileshare_group.png["スキャン設定ページからファイル共有グループを削除ボタンのスクリーンショット。"]
 
 . 確認ダイアログで * 共有のグループを削除 * をクリックします。
-
-
-
-
-== データセンススキャンの速度を下げる
-
-データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、低速スキャンを実行するようにデータセンスを設定できます。有効にすると、すべてのデータソースで低速スキャンが使用されます。 1 つの作業環境またはデータソースで低速スキャンを設定することはできません。
-
-
-TIP: データベースのスキャン中は、スキャン速度を下げることはできません。
-
-.手順
-. _Configuration_page の下部から、スライダを右に動かして低速スキャンを有効にします。
-+
-image:screenshot_slow_scan_enable.png["低速な準拠スキャンを有効にする方法を示すスクリーンショット。"]
-
-+
-設定ページの上部には、低速スキャンが有効になっていることが示されます。
-
-+
-image:screenshot_slow_scan_disable.png["低速な準拠スキャンを有効にする方法を示すスクリーンショット。"]
-
-. このメッセージの * 無効 * をクリックすると、低速スキャンを無効にできます。
-
-
-
-
-== クラウドデータセンスインスタンスを削除しています
-
-データセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除できます。インスタンスを削除すると、インデックス付きデータが存在する関連ディスクも削除されます。
-
-. クラウドプロバイダのコンソールに移動して、 Cloud Data Sense インスタンスを削除します。
-+
-インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_
-
 

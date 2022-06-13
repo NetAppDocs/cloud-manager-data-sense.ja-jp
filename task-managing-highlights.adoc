@@ -86,7 +86,7 @@ image:screenshot_compliance_copy_files_dialog.png["選択したすべてのフ�
 
 
 
-コピー処理の進捗状況はで確認できます <<Viewing the status of your compliance actions,[ アクションステータス（ Actions Status ） ] パネル>>。
+コピー処理の進捗状況はで確認できます link:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
 
 ファイルのメタデータの詳細を表示するときに、個々のファイルをコピーすることもできます。[ ファイルのコピー ] をクリックします。
 
@@ -139,7 +139,7 @@ image:screenshot_compliance_clone_files_dialog.png["ソースボリュームか�
 
 新しいクローンボリュームは、ソースボリュームと同じアグリゲート内に作成されます。
 
-クローニング処理の進捗状況はで確認できます <<Viewing the status of your compliance actions,[ アクションステータス（ Actions Status ） ] パネル>>。
+クローニング処理の進捗状況はで確認できます link:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
 
 ソースボリュームが存在する作業環境で Data Sense を有効にしたときに、最初に「すべてのボリュームをマップ」または「すべてのボリュームをマップして分類」を選択した場合は、新しいクローンボリュームが自動的にスキャンされます。最初にこれらのいずれかを使用しなかった場合は、この新しいボリュームをスキャンする必要があります link:task-getting-started-compliance.html#enabling-and-disabling-compliance-scans-on-volumes["ボリュームのスキャンを手動で有効にします"]。
 
@@ -273,7 +273,7 @@ image:screenshot_compliance_delete_multi_files.png["削除するファイルを�
 . 削除操作は永続的であるため ' 後続の _Delete File_Dialog に「 * permanently delete * 」と入力し ' * ファイルの削除 * をクリックする必要があります
 
 
-削除処理の進捗状況はで確認できます <<Viewing the status of your compliance actions,[ アクションステータス（ Actions Status ） ] パネル>>。
+削除処理の進捗状況はで確認できます link:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。
 
 ファイルのメタデータの詳細を表示するときに、個々のファイルを削除することもできます。[ ファイルの削除 ] をクリックします。
 
@@ -307,31 +307,4 @@ image:screenshot_compliance_delete_files_using_policies.png["ポリシーを設�
 
 [ ポリシー ] タブに新しいポリシーが表示されます。ポリシーに一致するファイルは、ポリシーの実行時に 1 日に 1 回削除されます。
 
-で削除されたファイルのリストを確認できます <<Viewing the status of your compliance actions,[ アクションステータス（ Actions Status ） ] パネル>>。
-
-
-
-== コンプライアンスアクションのステータスを表示します
-
-たとえば、 100 個のファイルを削除するなど、多くのファイルで ［ 調査結果 ］ ペインからアクションを実行すると、プロセスに時間がかかることがあります。これらの非同期アクションのステータスは、 _Action Status_Pane で監視できるので、すべてのファイルにいつ適用されたかを知ることができます。これにより、正常に完了した操作、現在実行中の操作、および失敗した操作を確認できるため、問題を診断して修正できます。
-
-ステータスは次のいずれかになります。
-
-* 完了しました
-* 実行中です
-* キューに登録され
-* キャンセルされました
-* 失敗しました
-
-
-ステータスが「 Queued 」または「 In Progress 」のアクションはすべてキャンセルできます。
-
-.手順
-. データセンス UI の右下には、 * アクションステータス * ボタンが表示されます image:button_actions_status.png[""]。
-. このボタンをクリックすると、最新の 20 件のアクションが表示されます。
-+
-image:screenshot_compliance_action_status.png["設定ページに表示される最後の 20 個の操作とそのステータスを示すスクリーンショット。"]
-
-
-
-アクションの名前をクリックすると、その操作に対応する詳細を表示できます。
+で削除されたファイルのリストを確認できます link:task-view-compliance-actions.html["[ アクションステータス（ Actions Status ） ] パネル"]。

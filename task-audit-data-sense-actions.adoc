@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: task-audit-data-sense-actions.html 
+keywords: compliance, actions, view progress 
+summary: データセンスは、データをスキャンするすべての作業環境およびデータソースのファイルに対して実行された管理アクティビティを記録します。データセンス監査ログファイルの内容を表示したり、ファイルの変更内容をダウンロードしたりできます。 
+---
+= データセンスアクションの履歴を監査します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+データセンスは、データをスキャンするすべての作業環境およびデータソースのファイルに対して実行された管理アクティビティを記録します。データセンス監査ログファイルの内容を表示したり、ファイルの変更内容をダウンロードしたりできます。
+
+たとえば、発行された要求、要求の時刻、ファイルが削除された場合のソースの場所、ファイルが移動された場合のソースとデスティネーションの場所などの詳細を確認できます。
+
+
+
+== ログファイルの内容
+
+監査ログの各行には、次の形式で情報が表示されます。
+
+`<full date>|<status>| datasense_audit_logger |<module>| 0 | 0 | File <full file path> deleted from device <device path>-<result>
+
+* 日付と時刻–イベントの完全なタイムスタンプ
+* Status -情報、警告
+* アクションタイプ（削除、コピー、移動、ポリシーの作成、ポリシーの更新、 JSONレポートなどをダウンロード可能）
+* ファイル名（ファイルに関連するアクションの場合）
+* アクションの詳細–何が行われたか：アクションによって異なります
++
+** ポリシー名
+** 移動元と移動先のデータ用
+** コピー元およびコピー先の場合
+** タグの場合：タグ名
+** をクリックします
+** Eメールアラートの場合–Eメールアドレス/アカウント
+
+
+
+
+たとえば、ログファイルの次の行は、コピー処理が成功し、コピー処理が失敗した場合を示しています。
+
+....
+2022-06-06 15:23:08,910 | INFO | datasense_audit_logger | es_scanned_file | 237 | 49 | Copy file /idanCIFS_share/data/dop1/random_positives.tsv from device 172.31.133.183 (type: SMB_SHARE) to device 172.31.130.133:/export_reports (NFS_SHARE) – SUCCESS
+2022-06-06 15:23:08,968 | WARNING | datasense_audit_logger | es_scanned_file | 239 | 153 | Copy file /idanCIFS_share/data/compliance-netapp.tar.gz from device 172.31.133.183 (type: SMB_SHARE) to device 172.31.130.133:/export_reports (NFS_SHARE) - FAILURE
+....
+
+
+== ログファイルへのアクセス
+
+監査ログは、Data Senseマシンの「/opt/NetApp/audit_logs/<date>/DataSense _audit_log_<date>_<process_name>.log」に保存されています
+
+オンプレミス環境の場合は、ログファイルに直接移動できます。
+
+データセンスをクラウドに導入した場合、データセンスインスタンスにSSHで接続できます。システムにSSHを実行するには、ユーザとパスワードを入力するか、Cloud Manager Connectorのインストール時に指定したSSHキーを使用します。SSHコマンドは次のとおりです。
+
+ ssh -i <path to the ssh key> <machine user>@<datasense ip>
+* <path to the ssh key>= ssh認証キーの場所
+* <マシンユーザー>：
++
+** AWSの場合=<ec2-user>を使用します
+** Azureの場合：Cloud Managerインスタンス用に作成したユーザを使用します
+** GCPの場合：Cloud Managerインスタンス用に作成されたユーザを使用します
+
+
+* <data sense IP>は仮想マシンインスタンスのIPアドレスです
+
+
+システムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#ports-and-security-groups["ポートおよびセキュリティグループ"^] を参照してください。

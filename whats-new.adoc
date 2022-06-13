@@ -18,6 +18,44 @@ Cloud Data Sense の新機能をご確認ください。
 
 
 
+== 2022年6月12日
+
+
+
+=== Data Investigationページから結果を.jsonレポートとしてダウンロードできるようになりました
+
+[データ調査]ページでデータをフィルタリングした後、データを.jsonファイルに保存してNFS共有にエクスポートできます。これにより、ローカルシステム上の.csvファイルにデータを保存することができます。データセンスにエクスポートアクセスのための正しい権限があることを確認します。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-generating-compliance-reports.html#data-investigation-report["Data Investigationページからレポートを作成する方法を参照してください"]。
+
+
+
+=== データセンスUIからデータセンスをアンインストールする機能
+
+Data Senseをアンインストールして、ソフトウェアをホストから完全に削除することができます。クラウドの導入の場合は、Data Senseが導入されていた仮想マシン/インスタンスを削除します。インスタンスを削除すると、データセンスがスキャンしたインデックス情報がすべて完全に削除されます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-uninstall-data-sense.html["方法を参照してください"]。
+
+
+
+=== 監査ログを使用して、データ検出によって実行されたアクションの履歴を追跡できるようになりました
+
+監査ログは、データがスキャンしているすべての作業環境およびデータソースから、ファイルに対してデータが実行した管理アクティビティを追跡します。アクティビティには、ユーザが生成するアクティビティ（ファイルの削除、ポリシーの作成など）と生成されるポリシー（ファイルにラベルを自動的に追加するアクティビティ、ファイルを自動的に削除するアクティビティなど）があります。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-audit-data-sense-actions.html["監査ログの詳細を確認してください"]。
+
+
+
+=== [データ調査]ページの重要な識別子の数に対する新しいフィルタ
+
+「Number of identifiers（識別子の数）」フィルタを使用すると、個人データと機密性の高い個人データの両方を含む、一定数の機密識別子を持つファイルをリストできます。1-10や501-1000などの範囲を選択すると、その数の機密識別子を含むファイルのみを表示できます。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"]。
+
+
+
+=== これで、作成した既存のポリシーを編集できるようになります
+
+以前に作成したカスタムポリシーに変更を加える必要がある場合は、新しいポリシーを作成する代わりにポリシーを編集できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies["ポリシーの編集方法については、を参照してください"]。
+
+
+
 == 2022年5月11日
 
 
@@ -94,7 +132,7 @@ Data Sense と統合するグローバル Active Directory サーバは、以前
 
 === ダークサイトに導入した場合、 OneDrive と SharePoint のデータをスキャンできます
 
-インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements["次のエンドポイントへのアクセスを許可する必要があります。"]
+インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。 link:task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements["次のエンドポイントへのアクセスを許可する必要があります。"]
 
 
 
@@ -389,19 +427,3 @@ Data Investigation ページの新しいフィルタを使用すると、スト�
 === データセンスは、ファイルの追加属性を追跡するようになりました
 
 CSV 形式で出力するレポートには、 [ ファイルサイズ ] 、 [ 作成日 ] 、および [ 最終変更日 ] の値が追加されています。作成日は、調査ページの検索結果を絞り込むために使用できる新しいフィルタでもあります。
-
-
-
-== 2021 年 5 月 5 日
-
-
-
-=== Azure Blob に保存されたデータをスキャンする機能
-
-Azure Blob に格納されたデータのスキャンがサポートされるようになりました を使用する場合 https://min.io/["MinIO サービス"^]。を参照してください link:task-scanning-object-storage.html["S3 プロトコルを使用するオブジェクトストレージをスキャンしています"] を参照してください。
-
-
-
-=== 追加の個人データの種類は、データセンスで識別できます
-
-クラウドデータセンスで、オーストリアの SSN をファイルで検索できるようになりました。

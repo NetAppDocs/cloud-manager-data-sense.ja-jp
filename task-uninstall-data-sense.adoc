@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall-data-sense.html 
+keywords: remove, delete, stop, stop scans, stop scanning, cloud data sense, delete cloud data sense, terminate, deactivate, data sense 
+summary: Data Senseソフトウェアをアンインストールして、問題のトラブルシューティングを行ったり、ソフトウェアをホストから完全に削除したりできます。インスタンスを削除すると、インデックス付きデータが存在する関連ディスクも削除されます。データセンスがスキャンされたすべての情報は完全に削除されます。 
+---
+= Cloud Data Senseをアンインストールしています
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Data Senseソフトウェアをアンインストールして、問題のトラブルシューティングを行ったり、ソフトウェアをホストから完全に削除したりできます。インスタンスを削除すると、インデックス付きデータが存在する関連ディスクも削除されます。データセンスがスキャンされたすべての情報は完全に削除されます。
+
+使用する必要がある手順は、データをクラウドに導入したかオンプレミスホストに導入したかによって異なります。
+
+
+
+== クラウド環境からData Senseをアンインストールする
+
+データセンスを使用する必要がなくなった場合は、クラウドプロバイダからCloud Data Senseインスタンスをアンインストールして削除できます。
+
+. [データセンス]ページの上部で、をクリックします image:screenshot_gallery_options.gif["[ 詳細 ] ボタン"] ボタンをクリックし、[データセンスのアンインストール]をクリックします。
++
+image:screenshot_compliance_uninstall.png["Data Senseソフトウェアをアンインストールするボタンのスクリーンショット。"]
+
+. [データの削除]センスダイアログで、「*uninstall*」と入力して、インスタンスと関連するすべてのデータを削除することを確認し、[アンインストール*]をクリックします。
+
+
+クラウドプロバイダのコンソールに移動し、クラウドデータセンスインスタンスもそこから削除できます。インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_
+
+
+
+== オンプレミス環境からData Senseをアンインストールする
+
+データセンスを使用しない場合や再インストールが必要な問題 がある場合は、ホストからデータセンスをアンインストールできます。
+
+. [データセンス]ページの上部で、をクリックします image:screenshot_gallery_options.gif["[ 詳細 ] ボタン"] ボタンをクリックし、[データセンスのアンインストール]をクリックします。
++
+image:screenshot_compliance_uninstall.png["Data Senseソフトウェアをアンインストールするボタンのスクリーンショット。"]
+
+. [Uninstall Data sense dialog]に「*uninstall*」と入力して、すべての設定情報をクリアしてから、「Uninstall *」をクリックします。
+. ホストからのアンインストールを完了するには、次のように、ホストマシンでアンインストールスクリプトを実行します。
++
+[source, cli]
+----
+uninstall.sh
+----
+

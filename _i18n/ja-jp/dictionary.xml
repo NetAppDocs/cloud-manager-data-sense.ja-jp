@@ -24,7 +24,6 @@
   <block id="23785f6732c3c514916bbd8928a06972" category="paragraph"><block ref="23785f6732c3c514916bbd8928a06972" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4eeea4d2c00cd83e33db552c5d9445b2" category="list-text">確認ダイアログで * 共有のグループを削除 * をクリックします。</block>
   <block id="ffd152fc5917f52ef3b83a2479d7e43a" category="section-title">データセンススキャンの速度を下げる</block>
-  <block id="7a68da847fdc7dec71b9f001ce567774" category="paragraph">データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、低速スキャンを実行するようにデータセンスを設定できます。有効にすると、すべてのデータソースで低速スキャンが使用されます。 1 つの作業環境またはデータソースで低速スキャンを設定することはできません。</block>
   <block id="83e4655bb04cddd049332fa141876018" category="admonition">データベースのスキャン中は、スキャン速度を下げることはできません。</block>
   <block id="534fda8c6840073b9aad1d6a07eb75ee" category="list-text">_Configuration_page の下部から、スライダを右に動かして低速スキャンを有効にします。</block>
   <block id="9b896829aaf5dfc57d627f09890833f8" category="inline-image-macro">低速な準拠スキャンを有効にする方法を示すスクリーンショット。</block>
@@ -32,9 +31,6 @@
   <block id="35f6be59ab1f3be265059cbd3545a2c5" category="paragraph">設定ページの上部には、低速スキャンが有効になっていることが示されます。</block>
   <block id="5b9fb0ae0b4de0994505f2df03117498" category="paragraph"><block ref="5b9fb0ae0b4de0994505f2df03117498" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8afeb311b4ff23155bae9b80ec79273f" category="list-text">このメッセージの * 無効 * をクリックすると、低速スキャンを無効にできます。</block>
-  <block id="5ee0f63f04b6fd8ec079b0d478106fe2" category="section-title">クラウドデータセンスインスタンスを削除しています</block>
-  <block id="602c0f168f5130e35b0d30a889274cc5" category="paragraph">データセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除できます。インスタンスを削除すると、インデックス付きデータが存在する関連ディスクも削除されます。</block>
-  <block id="a427a619de4af09b97757f735c05ecd9" category="list-text">クラウドプロバイダのコンソールに移動して、 Cloud Data Sense インスタンスを削除します。</block>
   <block id="005b996ef864c5e5d692c055b435643b" category="paragraph">インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_</block>
   <block id="78c9db74003389abce5c88a2d5a79350" category="summary">Cloud Data Sense は、社内のオンプレミスデータソースやクラウドデータソース、作業環境をスキャンしてデータをマッピング、分類し、プライベート情報を特定する、 Cloud Manager のデータガバナンスサービスです。これにより、セキュリティとコンプライアンスのリスクを軽減し、ストレージコストを削減し、データ移行プロジェクトを支援できます。</block>
   <block id="8bfe6344cf4da234d6389ef571fd8648" category="doc">クラウドデータの意味をご確認ください</block>
@@ -731,10 +727,8 @@
   <block id="6e30bf5f27ef24f35407940f36e6664a" category="paragraph">[ 調査 ] ページの新しいフィルタを使用すると、タグが割り当てられているすべてのファイルを簡単に表示できます。</block>
   <block id="34872f144eacfe5c837131480f6e243a" category="paragraph">クラウドデータセンスは、 .dcm と .dicom の 2 種類の追加ファイルで個人識別情報（ PII ）をスキャンできます。</block>
   <block id="fc15edce938be94b7835bbbb16d686b4" category="paragraph">CSV 形式で出力するレポートには、 [ ファイルサイズ ] 、 [ 作成日 ] 、および [ 最終変更日 ] の値が追加されています。作成日は、調査ページの検索結果を絞り込むために使用できる新しいフィルタでもあります。</block>
-  <block id="5057fdb214d9f3773bc386ba2aa1fcb0" category="section-title">2021 年 5 月 5 日</block>
   <block id="74585f658544c691c6f6afb583a9dc61" category="inline-link-macro">S3 プロトコルを使用するオブジェクトストレージをスキャンしています</block>
   <block id="6988ee4ea30eb643c68d53327c6b1220" category="inline-link">MinIO サービス</block>
-  <block id="2195e52cb889f9b1ac4706eeeea03f1d" category="paragraph">クラウドデータセンスで、オーストリアの SSN をファイルで検索できるようになりました。</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="doc">プライベートデータのカテゴリ</block>
   <block id="5fb27f475a6e9a151878bcedcee62656" category="admonition">その他の国の ID 番号や医療機関の ID など、プライベートデータの種類を識別するためにクラウドデータセンスが必要な場合は、 ng-contact-data-sense@netapp.com にリクエストを送信してください。</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">個人データの種類</block>
@@ -1162,11 +1156,6 @@
   <block id="03edddfdd703f81e66c3ec945cdf1ae4" category="list-text">［ * ポリシーの保存 * ］ をクリックすると、電子メールの送信間隔が ［ ポリシー概要 ］ に表示されます。</block>
   <block id="adae64945c95a64a4e7460741eaad566" category="paragraph">最初の電子メールは、ポリシーからの結果がある場合に送信されます。ただし、ポリシーの条件を満たすファイルがある場合に限ります。通知メールに個人情報は送信されません。E メールには、ポリシーの条件に一致するファイルがあり、ポリシーの結果へのリンクが記載されています。</block>
   <block id="e3aca2a1f52769c86959db59de5c8e57" category="section-title">ポリシーの編集</block>
-  <block id="748ced29e31022654db753839aedd2f2" category="paragraph">ポリシーのタイプに応じて、ポリシーの特定の部分を変更できます。</block>
-  <block id="b680e735a9062785f9b3ea50ac1112fb" category="list-text">カスタムポリシー - _ 名前 _ 、 _ 概要 _ 、電子メール通知の送信の有無、および ラベルの追加の有無を変更できます。</block>
-  <block id="86eee73ea0e272c0cd3f90d8203c6a0d" category="list-text">定義済みポリシー - 電子メール通知が送信されるかどうか、および AIP ラベルが追加されるかどうかだけを変更できます。</block>
-  <block id="97ffdfbf5e9deac597be1e5d4153f954" category="admonition">カスタムポリシーのフィルタパラメータを変更する必要がある場合は、必要なパラメータを含む新しいポリシーを作成してから、古いポリシーを削除する必要があります。</block>
-  <block id="b2c89d2794787a68bd6e7c963e8c9025" category="paragraph">ポリシーを変更するには、 [ 編集 *] ボタンをクリックし、 _Edit Policy_page に変更を入力して、 [ ポリシーの保存 *] をクリックします。</block>
   <block id="8a5b49145936e154af1faea833484a85" category="section-title">ポリシーの削除</block>
   <block id="725f2bee980781415fd1a5062a4c3e0c" category="paragraph">作成したカスタムポリシーが不要になった場合は削除できます。事前定義されたポリシーは削除できません。</block>
   <block id="4f414b6a5ed633d6213d3e02617aa919" category="paragraph">ポリシーを削除するには、をクリックします <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> ボタンをクリックして特定のポリシーを削除し、確認ダイアログでもう一度 ［ * ポリシーの削除 * ］ をクリックします。</block>
@@ -1270,10 +1259,8 @@
   <block id="826ff42fce3b59aaac99a39a16e48c77" category="inline-link-macro">ファイルへのユーザの割り当て</block>
   <block id="7f3e4f2b8ecea86e2f1c636c83d0be8a" category="list-text">ファイルに対して実行する必要があるフォローアップアクションを担当するファイルを Cloud Manager ユーザに割り当てることができます。を参照してください <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="3f35cf889c11310542bc8d10e634400d" category="section-title">ファイルの権限を表示しています</block>
-  <block id="e3231cf2e2415bcd0249cbb511e9a32b" category="paragraph">ファイルへのアクセス権を持つすべてのユーザーまたはグループのリストと、そのファイルに含まれるアクセス権の種類を表示するには、 * すべてのアクセス権を表示 * をクリックします。このボタンは、 CIFS 共有、 SharePoint 、 OneDrive 内のファイルに対してのみ使用できます。</block>
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">詳細なファイル権限を示すスクリーンショット。</block>
   <block id="33b3bef30743bda1b0909a4417b45583" category="paragraph"><block ref="33b3bef30743bda1b0909a4417b45583" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4347b685b5c16d885cd8c8be71e60ada" category="paragraph">ユーザまたはグループの名前をクリックすると、 [ 調査 ] ページにそのユーザまたはグループの名前が [ ユーザ / グループの権限 ] フィルタに表示され、そのユーザまたはグループがアクセスできるすべてのファイルが表示されます。</block>
   <block id="70762168244eed6d4b30ab53961acada" category="inline-link-macro">詳細については、「方法」を参照してください</block>
   <block id="776e05731889ae28ba97961b420d577f" category="paragraph">ユーザ名とグループ名ではなく SID （セキュリティ識別子）が表示される場合は、 Active Directory をデータセンスに統合する必要があります。 <block ref="a543108cc451095d486457d9ff215fd0" category="inline-link-macro-rx"></block>。</block>
   <block id="c928af120c06b9565d871ba33db1c7f5" category="section-title">ストレージシステム内に重複ファイルがないかどうかを確認しています</block>
@@ -1393,7 +1380,6 @@
   <block id="51c2d4938751d6c3f51457f19cc10961" category="list-text">選択したすべてのファイルをコピーする NFS 共有の名前を「 &lt;host_name&gt; ： /&lt;share_path&gt;` 」の形式で入力し、「 * Copy * 」をクリックします。</block>
   <block id="99177e3b96a67622c04b51dfdd5fec8f" category="paragraph">コピー処理のステータスを示すダイアログが表示されます。</block>
   <block id="cc75424be9093c04dbea9cfae5ba1d31" category="inline-xref">[ アクションステータス（ Actions Status ） ] パネル</block>
-  <block id="d52fbf3ceb54a191d6979856ec4a2aab" category="paragraph">コピー処理の進捗状況はで確認できます <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="577f7e077dfc06e3803431bf95bd8d3b" category="paragraph">ファイルのメタデータの詳細を表示するときに、個々のファイルをコピーすることもできます。[ ファイルのコピー ] をクリックします。</block>
   <block id="0847b25e23803d73ff0a2e412a366eef" category="inline-image-macro">[ データ調査 ] ページのファイルのメタデータ詳細から [ ファイルのコピー ] ボタンを選択したことを示すスクリーンショット。</block>
   <block id="fb1ff7732bccd8da11bd09f898a27956" category="paragraph"><block ref="fb1ff7732bccd8da11bd09f898a27956" category="inline-image-macro-rx" type="image"></block></block>
@@ -1415,7 +1401,6 @@
   <block id="a35070ddc55ef50caa6aec72156a840e" category="list-text">新しいボリュームの名前を入力し、 * FlexClone * をクリックします。</block>
   <block id="34f7fc61a9c74f5c37e24b622428b631" category="paragraph">クローン処理のステータスを示すダイアログが表示されます。</block>
   <block id="2fe40b402eb4dc28515dfbbf411e5e9e" category="paragraph">新しいクローンボリュームは、ソースボリュームと同じアグリゲート内に作成されます。</block>
-  <block id="b87a1e127824b80403e07e9d8a5a84d8" category="paragraph">クローニング処理の進捗状況はで確認できます <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="d25aba80994e98cacd011b113628101b" category="inline-link-macro">ボリュームのスキャンを手動で有効にします</block>
   <block id="871c824f9ea91b20e876e2d652878ef1" category="paragraph">ソースボリュームが存在する作業環境で Data Sense を有効にしたときに、最初に「すべてのボリュームをマップ」または「すべてのボリュームをマップして分類」を選択した場合は、新しいクローンボリュームが自動的にスキャンされます。最初にこれらのいずれかを使用しなかった場合は、この新しいボリュームをスキャンする必要があります <block ref="b0c3d20fcc917b1060451bc04147a024" category="inline-link-macro-rx"></block>。</block>
   <block id="61d5073996ba69d9a5b4108c7295351d" category="section-title">ソース・ファイルをターゲット・システムにコピーして同期する</block>
@@ -1470,7 +1455,6 @@
   <block id="fa916febf7aa4a958c6501999c66524c" category="paragraph"><block ref="fa916febf7aa4a958c6501999c66524c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="174a6c8e755b5a7f6259938ded9d4651" category="list-text">ボタンバーで、 * 削除 * をクリックします。</block>
   <block id="1db5d13f843879dd255fa015b1199eb9" category="list-text">削除操作は永続的であるため ' 後続の _Delete File_Dialog に「 * permanently delete * 」と入力し ' * ファイルの削除 * をクリックする必要があります</block>
-  <block id="043c72eeeca657a7a4144bcc32c8b64d" category="paragraph">削除処理の進捗状況はで確認できます <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="73b79920d299fa15b37932692eeed2d3" category="paragraph">ファイルのメタデータの詳細を表示するときに、個々のファイルを削除することもできます。[ ファイルの削除 ] をクリックします。</block>
   <block id="78933a7726c13f608f7d7da25c47d184" category="inline-image-macro">[ データ調査 ] ページのファイルのメタデータ詳細から [ ファイルの削除 ] ボタンを選択したことを示すスクリーンショット。</block>
   <block id="1ae48305acc0dd19cfd8f7461fcc887a" category="paragraph"><block ref="1ae48305acc0dd19cfd8f7461fcc887a" category="inline-image-macro-rx" type="image"></block></block>
@@ -1481,9 +1465,7 @@
   <block id="31d61da3269b125b8a056a011eb7348b" category="list-text">このポリシーに一致するファイルを自動的に削除する ] チェックボックスをオンにし、「 * permanently delete * 」と入力して、このポリシーによってファイルが完全に削除されることを確認します。</block>
   <block id="b18b5ed7ee8041b5b3352b045b657ed7" category="paragraph"><block ref="b18b5ed7ee8041b5b3352b045b657ed7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b7f492f36c4defa8b0e4d929c63c51cc" category="paragraph">[ ポリシー ] タブに新しいポリシーが表示されます。ポリシーに一致するファイルは、ポリシーの実行時に 1 日に 1 回削除されます。</block>
-  <block id="6c22d0031e430efa4ca5b58a96c9aaec" category="paragraph">で削除されたファイルのリストを確認できます <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="43ed2558da29e111d7b394e516d927d4" category="section-title">コンプライアンスアクションのステータスを表示します</block>
-  <block id="a62dfb18de7f3ea157530c125ea78d5f" category="paragraph">たとえば、 100 個のファイルを削除するなど、多くのファイルで ［ 調査結果 ］ ペインからアクションを実行すると、プロセスに時間がかかることがあります。これらの非同期アクションのステータスは、 _Action Status_Pane で監視できるので、すべてのファイルにいつ適用されたかを知ることができます。これにより、正常に完了した操作、現在実行中の操作、および失敗した操作を確認できるため、問題を診断して修正できます。</block>
   <block id="402bab7d605cd8ea629df214c4351f69" category="paragraph">ステータスは次のいずれかになります。</block>
   <block id="8f3d10eb21bd36347c258679eba9e92b" category="list-text">完了しました</block>
   <block id="c9413dd7682a45da9ecc9efa8cea47d7" category="list-text">実行中です</block>
@@ -1521,7 +1503,6 @@
   <block id="3c6a08ac87f0c74657dbe6a08d65a90c" category="section-title">Cloud Manager Connector をインストール</block>
   <block id="0b15d216816045a641af8ad6ef57304d" category="paragraph">オフラインのオンプレミスサイトに Cloud Manager Connector がインストールされていない場合は、<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> オフラインサイトの Linux ホスト</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">Linux ホストシステムを準備</block>
-  <block id="0bd5d4f7389518a30e9e80093dacb333" category="list-text">オペレーティングシステム： Red Hat Enterprise Linux または CentOS バージョン 8.0 または 8.1</block>
   <block id="1a266a5587d22f934ba784d02d2d2b1f" category="list-text">OS が Docker Engine をインストールできる必要があります（必要に応じて、 _firewalld_service を無効にするなど）。</block>
   <block id="e73aeaebf87fd2ee4bfa7ec0d8dd7e26" category="list-text">Disk ： 500GiB の SSD を / 、またはで使用できます</block>
   <block id="feb0221200046a709566079a3cbc3e5f" category="list-text">100 GiB は /opt で利用できます</block>
@@ -2057,7 +2038,6 @@
   <block id="338bab1be2b874ad2e6906e8c71283d5" category="paragraph">Cloud Data Sense インストーラがパッケージ、 Docker のインストールを完了し、インストールを登録します。インストールには 10~20 分かかります。</block>
   <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">ネットアップテクニカルサポートでサポートケースをオープンするには、事前に Cloud Manager にネットアップサポートサイトのアカウントを追加し、サポートに登録しておく必要があります。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">サポートに登録します</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Cloud Manager のすべてのドキュメント</block>
   <block id="1a3dd42e7f140871b4724418e36e52fb" category="sidebar">Cloud Data Sense ドキュメント</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
@@ -2119,7 +2099,6 @@
   <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">データセンスでは、オーストラリア TFN ( 税ファイル番号 ) 、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
   <block id="6fef68839fa6cc086be3d7d7abb69cad" category="paragraph">。<block ref="d5f59196a7b849b257c625be10a1d93c" category="inline-link-rx"></block> クラウドデータセンスのサポートが追加されました。従量課金制（ PAYGO ）サブスクリプションを使用して、ネットアップのライセンスを使用するだけでなく、 Google Cloud ストレージに導入された Cloud Volumes ONTAP システムからデータをスキャンできるようになりました。</block>
-  <block id="454fdd43498530d6ceef83652c11b91c" category="paragraph">Azure Blob に格納されたデータのスキャンがサポートされるようになりました を使用する場合<block ref="af0f5559fdeef481a290adb52cf012ec" category="inline-link-rx"></block>。を参照してください <block ref="53ed5724ec3c5650162def279afa5e15" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="9ffceb20e382df6e4587add0d24af321" category="cell">オーストラリア TFN ( 税ファイル番号 )</block>
   <block id="e1ae59ed032376d2ab05147c6442f610" category="cell">オーストラリア運転免許証番号</block>
   <block id="67863eec6ed398cda366fe555c1746bd" category="cell">オーストラリアのメディケア番号</block>
@@ -2220,8 +2199,6 @@
   <block id="8152326061d8b3d329ba2607a09b0fa1" category="section-title">データセンスは、組織のファイルにカスタムタグを追加できます</block>
   <block id="c832a419d50a23d5a24e8b88cb7b1f44" category="section-title">.dcm および .dicom ファイルのスキャン機能</block>
   <block id="831cb0c03277fa9f02db351f7b681988" category="section-title">データセンスは、ファイルの追加属性を追跡するようになりました</block>
-  <block id="a201b1b21bb34cfc3cf0328307173ba5" category="section-title">Azure Blob に保存されたデータをスキャンする機能</block>
-  <block id="a991dfa1931f18e122d99da7c642e9fe" category="section-title">追加の個人データの種類は、データセンスで識別できます</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">データセンスソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ソフトウェア要件などを満たすホストで実行する必要があります。データセンスは、他のアプリケーションと共有されるホストではサポートされません。ホストは専用のホストである必要があります。</block>
   <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">/tmp 上で 5 GiB</block>
   <block id="7d3786abf2ebb473a5ba70b680734525" category="section-title">BYOL ライセンスに関する考慮事項</block>
@@ -2234,7 +2211,6 @@
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">このページで指定されている「ファイルハッシュ」値を使用して、 ［ 調査 ］ ページに直接入力すると、特定の重複ファイルをいつでも検索できます。また、ポリシーで使用することもできます。</block>
   <block id="7d48333086004a7939c29f033e1bfad5" category="section-title">ダークサイトに導入した場合、 OneDrive と SharePoint のデータをスキャンできます</block>
   <block id="5d1023de4743a538d723b0eea67b9c49" category="inline-link">次のエンドポイントへのアクセスを許可する必要があります。</block>
-  <block id="db6cb8c8f4488e129ed6809bb11b1ac6" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。<block ref="f6e82e062f347b1008c89c76ae485574" category="inline-link-rx"></block></block>
   <block id="143cbb5198b43152fc02c7822c0a4df1" category="inline-xref">SharePoint と OneDrive の特別な要件</block>
   <block id="26c2bd17725502dd41a7ea99643a8a29" category="paragraph">Cloud Manager を非常にセキュアにインストールする必要があるが、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンする場合は、 Data Sense オフラインインストーラを使用して、選択したいくつかのエンドポイントへのインターネットアクセスを提供できます。を参照してください <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> を参照してください。</block>
   <block id="83925eb41f224ab078a6ede41fce2ce8" category="list-text">特定の重大ポリシーが結果を返すときに Cloud Manager ユーザに E メールアラートを送信する</block>
@@ -2373,14 +2349,11 @@
   <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">データ調査レポート</block>
   <block id="f6ba29512f0eaabde0c49365c8ab9bd2" category="inline-link-macro">Data Investigationページの詳細については、こちらをご覧ください</block>
   <block id="517748e2f135f076ee74e5741d804b66" category="paragraph">Data Investigation Reportは、Data Investigationページの内容をダウンロードしたものです。 <block ref="777485da66bf4538c99c96042630b627" category="inline-link-macro-rx"></block>。</block>
-  <block id="b5d621c6c64f465c6c100d14976a8e1e" category="paragraph">レポートは、ローカルマシンに.csvファイルとして保存できます。このファイルには最大5、000行のデータを含めることができます。データ検出でデータベーステーブル（構造化データ）とファイル（非構造化データ）をスキャンする場合、ダウンロードできる.csvレポートは最大2つです。</block>
   <block id="44ef9b305f89e2a0007a9f26dc30474e" category="section-title">データ調査レポートの生成</block>
   <block id="0f259b55b58f019c0dd1cc33fbe10199" category="list-text">[データ調査]ページで、をクリックします <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> ボタンをクリックします。</block>
-  <block id="8d31baf0bada1d29024ba5af3df0159a" category="paragraph">レポートをダウンロード中であることを示すメッセージがダイアログに表示されます。</block>
   <block id="02fa34d7d96f4d3bb7e17ee4a2fc93a7" category="section-title">各データ調査レポートに含まれる情報</block>
   <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">非構造化ファイルデータレポート*には、ファイルに関する次の情報が含まれています。</block>
   <block id="f7a21d48814a155d5e8e39ddbf0827ae" category="paragraph">構造化データレポート*には、データベーステーブルに関する次の情報が含まれています。</block>
-  <block id="f84071b5266f40a8c168762081f3a7eb" category="paragraph">*注意：*フォルダに関する情報は現在レポートでは利用できません。</block>
   <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
   <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">Google Driveアカウントでのデータスキャンのサポートが追加されました</block>
   <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">Googleドライブアカウントをスキャンする方法をご覧ください</block>
@@ -2407,9 +2380,7 @@
   <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">できることに注意してください <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> SharePointアカウントからユーザーデータをスキャンする必要がなくなった場合。</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">現在、 30MB を超えるファイルのラベルは変更できません。OneDrive、SharePoint、Google Driveアカウントの場合、最大ファイルサイズは4 MBです。</block>
   <block id="ccff7c05ce1ff2ff0bafe406c61338f6" category="paragraph"><block ref="ccff7c05ce1ff2ff0bafe406c61338f6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="27aec93c5860a4d3afd02f9391f5d2fb" category="paragraph">また、をクリックすることもできます <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> をクリックすると、グループの一部であるユーザのリストが表示されます。</block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">調査ページの内容をフィルタリングして、表示する結果のみを表示できます。これは非常に強力な機能です。データをリファインした後、ページ上部のボタンバーを使用して、ファイルのコピー、ファイルの移動、ファイルへのタグまたはAIPラベルの追加など、さまざまなアクションを実行できます。</block>
-  <block id="1fab049254ef848d8968883ce41a2b77" category="paragraph">ページをリファインした後で、そのページの内容をレポートとしてダウンロードする場合は、をクリックします <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> ボタンをクリックして.csvファイルを保存します。</block>
   <block id="fe340da6c921cdc51f04bc690aa53387" category="cell">ポリシーを選択します。実行します <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> をクリックして、既存のポリシーのリストを表示し、独自のカスタムポリシーを作成します。</block>
   <block id="1a81671798e285bd46fa9b2aa3c86d00" category="cell">1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力してください</block>
   <block id="c9b82f90ba4459b8fcdadccfbe372539" category="cell">選択するオプション <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> ファイルに割り当てられます</block>
@@ -2450,7 +2421,6 @@
   <block id="9a1e694b1bf5a642eacf71ea21eede63" category="inline-link-macro">データセンスからGoogleドライブアカウントを削除します</block>
   <block id="e6fef5621a9e0deea941bde5d1ac51eb" category="paragraph">1人のユーザーのGoogleドライブファイルのみが1つのGoogleドライブアカウントの一部であるため、ユーザーのGoogleドライブアカウントからのファイルのスキャンを停止する場合は、次の手順を実行します <block ref="50340a10fcfa586f2410201e1b5bd674" category="inline-link-macro-rx"></block>。</block>
   <block id="c4022fe65a9bea007e119f4d38ca5b82" category="paragraph">データベーススキーマ、OneDriveアカウント、SharePointアカウント、Googleドライブアカウント、Amazon S3アカウント、 または、Simple Storage Service（S3）プロトコルを使用するObject Storageの略。</block>
-  <block id="1b40edca75269e2cab8c610622d15344" category="summary">必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。作業環境でデータセンスを使用する必要がなくなった場合は、 Cloud Data Sense インスタンスを削除することもできます。</block>
   <block id="6bd1beae17e48797805a36af79f55549" category="section-title">Cloud Data SenseからOneDrive、SharePoint、Google Driveのアカウントを削除する方法について説明します</block>
   <block id="1b0b7f0671ee5b3c52423f0719388b6e" category="paragraph">特定のOneDriveアカウント、特定のSharePointアカウント、またはGoogle Driveアカウントからユーザーファイルをスキャンする必要がなくなった場合は、Cloud Data Senseインターフェイスからアカウントを削除して、すべてのスキャンを停止できます。</block>
   <block id="9d1c29dc777962e9fef8dd6f8f0fd186" category="list-text">[_Configuration_] ページで、をクリックします <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> OneDrive、SharePoint、Google Driveアカウントの行にあるボタンをクリックし、* OneDriveアカウントの削除*、* SharePointアカウントの削除*、または* Googleドライブアカウントの削除*をクリックします。</block>
@@ -2472,4 +2442,114 @@
   <block id="234e430c736f07d10569c360fb740db6" category="cell">データ内およびフォルダ/共有内の権限のタイプを選択します</block>
   <block id="24f81a8dd0e927be2bf9fb46e2588281" category="paragraph">ボタンバーとポリシーで使用できるアクションは、現在、「ディレクトリ」レベルではサポートされていません。</block>
   <block id="d5ef18883c38c2dd1dffc30e93610cde" category="paragraph">ユーザーファイルが存在するGoogleドライブアカウントを追加します。複数のユーザーからファイルをスキャンする場合は、ユーザーごとにこの手順を実行する必要があります。</block>
+  <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
+  <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">Data Investigationページから結果を.jsonレポートとしてダウンロードできるようになりました</block>
+  <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">Data Investigationページからレポートを作成する方法を参照してください</block>
+  <block id="6cb5a0e32d140f3770c280b471c48cd9" category="paragraph">[データ調査]ページでデータをフィルタリングした後、データを.jsonファイルに保存してNFS共有にエクスポートできます。これにより、ローカルシステム上の.csvファイルにデータを保存することができます。データセンスにエクスポートアクセスのための正しい権限があることを確認します。<block ref="0ee382d3ff8086e5d12287af8220734f" category="inline-link-rx"></block>。</block>
+  <block id="bef8207d9128cb7b1a5dc68939fc3d45" category="section-title">データセンスUIからデータセンスをアンインストールする機能</block>
+  <block id="4aa7333b6753545c6a6c04dfb41b9866" category="paragraph">Data Senseをアンインストールして、ソフトウェアをホストから完全に削除することができます。クラウドの導入の場合は、Data Senseが導入されていた仮想マシン/インスタンスを削除します。インスタンスを削除すると、データセンスがスキャンしたインデックス情報がすべて完全に削除されます。<block ref="3da12a48df084f38bafa988bc8e77bd7" category="inline-link-rx"></block>。</block>
+  <block id="d96d07db10c050adfb5fed7e3d885b82" category="section-title">監査ログを使用して、データ検出によって実行されたアクションの履歴を追跡できるようになりました</block>
+  <block id="1ce49760bcdac502d41fb1e9e547086b" category="paragraph">監査ログは、データがスキャンしているすべての作業環境およびデータソースから、ファイルに対してデータが実行した管理アクティビティを追跡します。アクティビティには、ユーザが生成するアクティビティ（ファイルの削除、ポリシーの作成など）と生成されるポリシー（ファイルにラベルを自動的に追加するアクティビティ、ファイルを自動的に削除するアクティビティなど）があります。</block>
+  <block id="f5678b0269d5a9952a36966b56ab8f2e" category="inline-link">監査ログの詳細を確認してください</block>
+  <block id="d96e8ae6f880fe9b4d4de06b59a2128b" category="paragraph"><block ref="a09465601260c6db487e05cfd3d2ec87" category="inline-link-rx"></block>。</block>
+  <block id="a74d72e2c5ed113941ee600287aaa999" category="section-title">[データ調査]ページの重要な識別子の数に対する新しいフィルタ</block>
+  <block id="3c5d93e6c38bd86146cef63658df62d2" category="paragraph">「Number of identifiers（識別子の数）」フィルタを使用すると、個人データと機密性の高い個人データの両方を含む、一定数の機密識別子を持つファイルをリストできます。1-10や501-1000などの範囲を選択すると、その数の機密識別子を含むファイルのみを表示できます。</block>
+  <block id="a630192bda7a95f4930b54f41701fc66" category="section-title">これで、作成した既存のポリシーを編集できるようになります</block>
+  <block id="61e409921fe798c5667689af4656a112" category="inline-link">ポリシーの編集方法については、を参照してください</block>
+  <block id="dccade93a4eb5827c9c662378d30957d" category="paragraph">以前に作成したカスタムポリシーに変更を加える必要がある場合は、新しいポリシーを作成する代わりにポリシーを編集できるようになりました。<block ref="9b2d4d6793839e9e21c2eaa1cfc45637" category="inline-link-rx"></block>。</block>
+  <block id="1f50cc006f0a9aa5fa08f3f58b10bf1d" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。 <block ref="8c0c83431a0c54e3e158fb0a6b366a6d" category="inline-link-macro-rx"></block></block>
+  <block id="a26fd963c8509a271edf19a08fc0d3ae" category="list-text">オペレーティングシステム：Red Hat Enterprise LinuxまたはCentOSバージョン8.0、8.1、8.4</block>
+  <block id="fbbd4044d95d7d79fb98ebd8d7daf546" category="summary">必要に応じて、1つ以上の作業環境、データベース、ファイル共有グループ、OneDriveアカウント、Google Driveアカウント、 またはSharePointアカウント。</block>
+  <block id="a80767bb4322f81d8b7bd0b15673f6ab" category="summary">Data Senseソフトウェアをアンインストールして、問題のトラブルシューティングを行ったり、ソフトウェアをホストから完全に削除したりできます。インスタンスを削除すると、インデックス付きデータが存在する関連ディスクも削除されます。データセンスがスキャンされたすべての情報は完全に削除されます。</block>
+  <block id="9cd2794f7afcdacb42a1ab6334e60324" category="doc">Cloud Data Senseをアンインストールしています</block>
+  <block id="6775b9f23287b6402bc8411ab5b11d92" category="paragraph">使用する必要がある手順は、データをクラウドに導入したかオンプレミスホストに導入したかによって異なります。</block>
+  <block id="3325b8b31e1f0276d3f3c68710c053ca" category="section-title">クラウド環境からData Senseをアンインストールする</block>
+  <block id="117243dba6c9c06c6c248291c96b2528" category="paragraph">データセンスを使用する必要がなくなった場合は、クラウドプロバイダからCloud Data Senseインスタンスをアンインストールして削除できます。</block>
+  <block id="b8e5adfb411b3f965688d14300f72fe8" category="list-text">[データセンス]ページの上部で、をクリックします <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> ボタンをクリックし、[データセンスのアンインストール]をクリックします。</block>
+  <block id="d05a8f1c218a9404fb6bc0b36df7780d" category="inline-image-macro">Data Senseソフトウェアをアンインストールするボタンのスクリーンショット。</block>
+  <block id="a6baf0432e96f26b75d936e4d60a595e" category="paragraph"><block ref="a6baf0432e96f26b75d936e4d60a595e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b6d077046b2cf0c110fa9676e30656f1" category="list-text">[データの削除]センスダイアログで、「*uninstall*」と入力して、インスタンスと関連するすべてのデータを削除することを確認し、[アンインストール*]をクリックします。</block>
+  <block id="8a129f2a844adcda53d83e0efbb2042c" category="paragraph">クラウドプロバイダのコンソールに移動し、クラウドデータセンスインスタンスもそこから削除できます。インスタンスの名前は _CloudCompliancy_with で、生成されたハッシュ（ UUID ）を連結しています。例： _CloudCompliion-16bb6564-38ad-40802-9a92-36f5fd2f71c7_</block>
+  <block id="ab908ccd0c2e8ea5774ac96a839d9ca4" category="section-title">オンプレミス環境からData Senseをアンインストールする</block>
+  <block id="14d42ec9da514e9d5a8e667c07121542" category="paragraph">データセンスを使用しない場合や再インストールが必要な問題 がある場合は、ホストからデータセンスをアンインストールできます。</block>
+  <block id="9fa93379f19a53edba45b6ad3485c2ec" category="list-text">[Uninstall Data sense dialog]に「*uninstall*」と入力して、すべての設定情報をクリアしてから、「Uninstall *」をクリックします。</block>
+  <block id="f5778aefaac6fff25d1b42554bc3eb10" category="list-text">ホストからのアンインストールを完了するには、次のように、ホストマシンでアンインストールスクリプトを実行します。</block>
+  <block id="7698c6686eb8c7fbf683f3a1e915967f" category="paragraph">ファイルへのアクセス権を持つすべてのユーザーまたはグループのリストと、そのファイルに含まれるアクセス権の種類を表示するには、 * すべてのアクセス権を表示 * をクリックします。このボタンは、CIFS共有、SharePoint、OneDriveのデータに対してのみ使用できます。</block>
+  <block id="ba7710e66e983f5d109ee54ee938f343" category="paragraph">をクリックできます <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> をクリックすると、グループの一部であるユーザのリストが表示されます。</block>
+  <block id="0e7d2f821010d49ba7fdedf5b66839be" category="paragraph">また、ユーザまたはグループの名前をクリックすると、[調査]ページにそのユーザまたはグループの名前が表示され、[ユーザ/グループの権限]フィルタに入力されます。これにより、そのユーザまたはグループがアクセスできるすべてのファイルを表示できます。</block>
+  <block id="0dde885c45d0ef5ba59d628be1651196" category="inline-link-macro">データ調査レポートの詳細については、こちらをご覧ください</block>
+  <block id="d0db8780768b860617a4252d66600fdb" category="paragraph">ページをリファインした後で、そのページの内容をレポートとしてダウンロードする場合は、をクリックします <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> ボタンを押します。レポートは、.csvファイル（最大5、000行のデータを含めることができます）または、NFS共有にエクスポートする.jsonファイル（無制限の行数を含めることができます）として保存できます。 <block ref="94b4ac215f06d804e337d419fce0c8e4" category="inline-link-macro-rx"></block>。</block>
+  <block id="26ec7ebe8b7297e79affc05b3e89352b" category="cell">IDの数</block>
+  <block id="5eea9611e0978b939581b9bb18ff1a29" category="cell">検出された機密識別子のファイルごとの範囲を選択します。個人データと機密性の高い個人データが含まれます。</block>
+  <block id="9774801e5b642078494706b6a4b33bd0" category="paragraph">コピー処理の進捗状況はで確認できます <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="a0f66640fa5131ddb32f4ddcbd1d9281" category="paragraph">クローニング処理の進捗状況はで確認できます <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="1fdb52ff740ba099a079361368705733" category="paragraph">削除処理の進捗状況はで確認できます <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="91411654c19db8fe1770ccfce29af494" category="paragraph">で削除されたファイルのリストを確認できます <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="ac8bfe24ca06e9a43f31e7975b6980a8" category="paragraph">前の手順で作成した既存のポリシーの条件を変更できます。これは、特定のパラメータを追加または削除するためにクエリ（フィルタを使用して定義した項目）を変更する場合に特に便利です。</block>
+  <block id="06e09be9c5d10de07a221aa29c84e398" category="paragraph">定義済みポリシーでは、電子メール通知が送信されるかどうか、およびAIPラベルが追加されるかどうかだけを変更できます。その他の値は変更できません。</block>
+  <block id="a12113b6b49f31212d0614b3ea69ea2b" category="list-text">[ポリシーリスト]ページで、変更するポリシーの*Edit*をクリックします。</block>
+  <block id="46cca5a0b236597ecbbc433af09a7cdd" category="inline-image-macro">既存のポリシーの編集を開始する方法を示すスクリーンショット。</block>
+  <block id="3056771597dc5384f17bbb61e33a97e3" category="paragraph"><block ref="3056771597dc5384f17bbb61e33a97e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9edd844856e16adcca10bdc9965cd880" category="list-text">このページの項目（名前、概要 、電子メール通知が送信されているかどうか、およびAIPラベルが追加されているかどうか）を変更する場合は、変更を行って*ポリシーの保存*をクリックします。</block>
+  <block id="d0cb19a0fd724606f26b87b211d86b49" category="paragraph">保存されたクエリのフィルタを変更する場合は、[クエリの編集]をクリックします。</block>
+  <block id="cc9419324ea7def41675382a6f26c64b" category="inline-image-macro">[ポリシーの編集]ページの[クエリの編集]ボタンを選択するスクリーンショット。</block>
+  <block id="1c5fef5f58eb8467fc88591877ccc7e3" category="paragraph"><block ref="1c5fef5f58eb8467fc88591877ccc7e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f83e3b5da3e9770bafefd94e5a39763" category="list-text">そのクエリーを定義する[調査]ページで、フィルタを追加、削除、またはカスタマイズしてクエリーを編集し、[変更の保存*]をクリックします。</block>
+  <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">フィルタ設定を変更してクエリを編集する方法を示すスクリーンショット。</block>
+  <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a5816406505d9f49c1bfa13c98461f7" category="paragraph">ポリシーはただちに変更されます。そのポリシーに定義されたアクションは、電子メールの送信、AIPラベルの追加、またはファイルの削除のいずれかが、次の内部で実行されます。</block>
+  <block id="f7ed3633a3e848b0d67caa9326d256b6" category="summary">データセンスは、データをスキャンするすべての作業環境およびデータソースのファイルに対して実行された管理アクティビティを記録します。データセンス監査ログファイルの内容を表示したり、ファイルの変更内容をダウンロードしたりできます。</block>
+  <block id="5de1b662853ab92b885225780d3125b7" category="doc">データセンスアクションの履歴を監査します</block>
+  <block id="f8563669b8d53fea23814d12a98674cd" category="paragraph">たとえば、発行された要求、要求の時刻、ファイルが削除された場合のソースの場所、ファイルが移動された場合のソースとデスティネーションの場所などの詳細を確認できます。</block>
+  <block id="f4d44f4e933c52507fc1f60eb487d44a" category="section-title">ログファイルの内容</block>
+  <block id="787cbeccb975d71260f61cb0fbe84553" category="paragraph">監査ログの各行には、次の形式で情報が表示されます。</block>
+  <block id="727fb114deba541b53a0b54311e03930" category="paragraph">`&lt;full date&gt;|&lt;status&gt;| datasense_audit_logger |&lt;module&gt;| 0 | 0 | File &lt;full file path&gt; deleted from device &lt;device path&gt;-&lt;result&gt;</block>
+  <block id="5e6b85294dad6f04a041aa32199d996d" category="list-text">日付と時刻–イベントの完全なタイムスタンプ</block>
+  <block id="79480e26f983c197c4338ae916966c93" category="list-text">Status -情報、警告</block>
+  <block id="8c5560001ce7d874ad9b883caee72f9c" category="list-text">アクションタイプ（削除、コピー、移動、ポリシーの作成、ポリシーの更新、 JSONレポートなどをダウンロード可能）</block>
+  <block id="eee2e3db044c9200dc614ed87a9c8fde" category="list-text">ファイル名（ファイルに関連するアクションの場合）</block>
+  <block id="b5afb88a144b5f1d8fef11e9d449b1ed" category="list-text">アクションの詳細–何が行われたか：アクションによって異なります</block>
+  <block id="cca60f73053d584e7caacfd33a8f046e" category="list-text">ポリシー名</block>
+  <block id="3c14ec40364ae096849c696c3497ff60" category="list-text">移動元と移動先のデータ用</block>
+  <block id="c02ceb243337f566ebb5a2984a4d72eb" category="list-text">コピー元およびコピー先の場合</block>
+  <block id="9291a80cf17849a4539e082f526f27ad" category="list-text">タグの場合：タグ名</block>
+  <block id="f23528dfcdf994100f2eae046bc926bb" category="list-text">をクリックします</block>
+  <block id="a9092ee7bb29e06d9e8627660b37d08b" category="list-text">Eメールアラートの場合–Eメールアドレス/アカウント</block>
+  <block id="e701a25b99aca57280ba389dd0e551c6" category="paragraph">たとえば、ログファイルの次の行は、コピー処理が成功し、コピー処理が失敗した場合を示しています。</block>
+  <block id="4892afff6c12a31702739804f9402dd2" category="section-title">ログファイルへのアクセス</block>
+  <block id="d59821cfb2e317baf0245fb19951e0ab" category="paragraph">監査ログは、Data Senseマシンの「/opt/NetApp/audit_logs/&lt;date&gt;/DataSense _audit_log_&lt;date&gt;_&lt;process_name&gt;.log」に保存されています</block>
+  <block id="e5eca4fc7ad5570fad3191bed0884198" category="paragraph">オンプレミス環境の場合は、ログファイルに直接移動できます。</block>
+  <block id="98f328f96d0161df06aca21d942ebe0f" category="paragraph">データセンスをクラウドに導入した場合、データセンスインスタンスにSSHで接続できます。システムにSSHを実行するには、ユーザとパスワードを入力するか、Cloud Manager Connectorのインストール時に指定したSSHキーを使用します。SSHコマンドは次のとおりです。</block>
+  <block id="68949c94f1832ab05cf85f6b69ec229e" category="list-text">&lt;path to the ssh key&gt;= ssh認証キーの場所</block>
+  <block id="6201afe97e09ec3e016aaa1892aba5f8" category="list-text">&lt;マシンユーザー&gt;：</block>
+  <block id="00652c6d951c09819e4a6a53b108211b" category="list-text">AWSの場合=&lt;ec2-user&gt;を使用します</block>
+  <block id="cb993b12f83c5591a219738eee794717" category="list-text">Azureの場合：Cloud Managerインスタンス用に作成したユーザを使用します</block>
+  <block id="d2086bc9ec16fb03f22bf35d5eba0661" category="list-text">GCPの場合：Cloud Managerインスタンス用に作成されたユーザを使用します</block>
+  <block id="e472530054de00e342edd7e4c55b3cbb" category="list-text">&lt;data sense IP&gt;は仮想マシンインスタンスのIPアドレスです</block>
+  <block id="3ca10cbf1786d683696248daeef7a67c" category="inline-link">ポートおよびセキュリティグループ</block>
+  <block id="ee12d73176832fa8b8e8c95cacc10226" category="paragraph">システムにアクセスするには、セキュリティグループのインバウンドルールを変更する必要があります。を参照してください<block ref="5475739789a5b3429571b56a0421c3e8" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">たとえば、 100 個のファイルを削除するなど、多くのファイルで ［ 調査結果 ］ ペインからアクションを実行すると、プロセスに時間がかかることがあります。アクションステータスペインでこれらの非同期アクションのステータスを監視して、すべてのファイルにいつ適用されたかを確認できます。</block>
+  <block id="70669aa10fb7138a5de7f7526f548131" category="paragraph">たとえば、 100 個のファイルを削除するなど、多くのファイルで ［ 調査結果 ］ ペインからアクションを実行すると、プロセスに時間がかかることがあります。これらの非同期アクションのステータスは、 _Action Status_Pane で監視できるので、すべてのファイルにいつ適用されたかを知ることができます。</block>
+  <block id="a5129dfbdf0dc4588d520f42de3004dd" category="paragraph">これにより、正常に完了した操作、現在実行中の操作、および失敗した操作を確認できるため、問題を診断して修正できます。</block>
+  <block id="0b11e28340112432b7a51a8bf0bb5fbf" category="paragraph">レポートは、.csvファイル（最大5、000行のデータを含めることができます）、またはNFS共有にエクスポートする.jsonファイル（無制限の行数を含めることができます）としてローカルマシンに保存できます。ファイル（非構造化データ）、ディレクトリ（フォルダおよびファイル共有）、またはデータベース（構造化データ）をスキャンする場合、レポートファイルは最大3つダウンロードされます。</block>
+  <block id="1f48130430181607c67c25cf69b5768e" category="paragraph">ファイル共有にエクスポートするときは、データセンスにエクスポートアクセスのための正しい権限があることを確認してください。</block>
+  <block id="038235769c3322b247e85f9bc8d7b5da" category="list-text">データの.csvレポートと.jsonレポートのどちらをダウンロードするかを選択し、*レポートのダウンロード*をクリックします。</block>
+  <block id="02b8107c002e6577adbfdfd6d6f1b208" category="inline-image-macro">調査レポートのダウンロードページのスクリーンショット。複数のオプションがあります。</block>
+  <block id="0b0eacf696b45d65c53ff1b5473edb39" category="paragraph"><block ref="0b0eacf696b45d65c53ff1b5473edb39" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="baa6537e5347accba4142c762df4cdf0" category="paragraph">JSONレポートを選択するときは、レポートをダウンロードするNFS共有の名前を「&lt;host_name&gt;：/&lt;share_path&gt;`」の形式で入力します。</block>
+  <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">レポートをダウンロード中であることを示すメッセージがダイアログに表示されます。</block>
+  <block id="2bbb59657134248b81caacac241c5f02" category="paragraph">JSONレポートの生成の進捗状況は、で確認できます <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
+  <block id="8cb8a6e0c4d4366f74cd4f0b6f61a0f6" category="paragraph">非構造化ディレクトリデータレポート*には、フォルダおよびファイル共有に関する次の情報が含まれています。</block>
+  <block id="76cbd87b5322b897c255d541785ad658" category="list-text">ストレージリポジトリ（フォルダ、ファイル共有など）</block>
+  <block id="45fe1c24aae6844389ce04f26df40a13" category="list-text">ファイルパス（ディレクトリ名）</block>
+  <block id="eed7cc7f64269eb19a98b58ae0d79b6f" category="list-text">検出時刻</block>
+  <block id="e1b1adec6acf239fb7bfb9f392edd34d" category="list-text">オープンアクセス権</block>
+  <block id="c24fc9c3402e7cb47c72d71cf6d864be" category="list-text">ディレクトリタイプ</block>
+  <block id="78e0e9962072075c2d4f339eb9afa286" category="summary">データスキャンは、ストレージシステムとデータにほとんど影響を与えません。ただし、影響が非常に小さい場合でも、低速スキャンを実行するようにデータセンスを設定できます。</block>
+  <block id="5108bf4a4931cd23ea67515ca4dda122" category="paragraph">有効にすると、すべてのデータソースで低速スキャンが使用されます。 1 つの作業環境またはデータソースで低速スキャンを設定することはできません。</block>
+  <block id="6e9e29956db54618d5e8ec6b0eff1198" category="sidebar">クラウドデータの管理</block>
+  <block id="de7c2221ebd4bb34920ea78443597b07" category="sidebar">データセンスアクションのステータスを表示します</block>
+  <block id="f97c31d47e6ac9d9ca09fb78ef2a60e9" category="sidebar">データセンスアクションの履歴を監査します</block>
+  <block id="92c1e8fd60a521cc7e363da6f67787e3" category="sidebar">データセンススキャンの速度を下げます</block>
+  <block id="f6d825cab88ad7cdfab0c8987213dab8" category="sidebar">データセンスをアンインストールします</block>
 </blocks>
