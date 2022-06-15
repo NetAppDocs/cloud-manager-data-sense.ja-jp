@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-highlights.html 
-keywords: compliance, privacy, filter data, delete files, move files, copy files, clone files, sync files, data sense 
+keywords: compliance, privacy, filter data, delete files, move files, copy files, clone files, sync files, data sense, migration 
 summary: Cloud Data Sense は、プライベートデータを管理するためのさまざまな方法を提供します。一部の機能を使用すると、データの移行準備が簡単になります。また、他の機能を使用してデータを変更することもできます。 
 ---
 = プライベートデータの管理

@@ -18,7 +18,7 @@ Cloud Data Sense の新機能をご確認ください。
 
 
 
-== 2022年6月12日
+== 2022年6月12日（バージョン1.13.1）
 
 
 
@@ -56,7 +56,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 
 
-== 2022年5月11日
+== 2022年5月11日（バージョン1.12.1）
 
 
 
@@ -90,7 +90,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 
 
-== 2022 年 4 月 5 日
+== 2022年4月5日（バージョン1.11.1）
 
 
 
@@ -106,7 +106,7 @@ Data Sense と統合するグローバル Active Directory サーバは、以前
 
 
 
-== 2022 年 3 月 15 日
+== 2022年3月15日（バージョン1.10.0）
 
 
 

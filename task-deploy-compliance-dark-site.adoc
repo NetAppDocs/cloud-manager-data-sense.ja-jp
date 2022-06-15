@@ -173,7 +173,7 @@ _cloudmanager.cloud.netapp.com_ へのアクセスは、これらの外部サー
 +
 [source, cli]
 ----
-tar -xzf DataSense-offline-bundle-v1.10.0.tar.gz
+tar -xzf DataSense-offline-bundle-v1.13.1.tar.gz
 ----
 +
 これにより、必要なソフトウェアと実際のインストールファイル * cc_onpm_installer_<version>.tar.gz * が抽出されます。
@@ -195,7 +195,7 @@ image:screenshot_cloud_compliance_deploy_darksite.png["クラウドデータセ�
 +
 [source, cli]
 ----
-tar -xzf cc_onprem_installer_1.10.0.tar.gz
+tar -xzf cc_onprem_installer_1.13.1.tar.gz
 ----
 . インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。
 +
@@ -310,7 +310,7 @@ Cloud Data Sense インストーラがパッケージのインストールを完
 データセンスソフトウェアは定期的に新しい機能で更新されるため、定期的に新しいバージョンをチェックして最新のソフトウェアや機能を使用していることを確認する必要があります。自動的にアップグレードを実行するためのインターネット接続がないため、 Data Sense ソフトウェアを手動でアップグレードする必要があります。
 
 .作業を開始する前に
-* データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン 1.9.x がインストールされている場合は、 1.10.x にのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
+* データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.11.xがインストールされている場合は、1.12.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。
 * オンプレミスコネクタソフトウェアが最新バージョンにアップグレードされていることを確認します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["コネクタのアップグレード手順を参照してください"^]。
 
 
@@ -321,7 +321,7 @@ Cloud Data Sense インストーラがパッケージのインストールを完
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.10.0.tar.gz
+tar -xvf DataSense-offline-bundle-v1.13.1.tar.gz
 ----
 +
 これにより、インストールファイル * cc_onpm_installer_< バージョン >.tar.gz * が抽出されます。
@@ -330,7 +330,7 @@ tar -xvf DataSense-offline-bundle-v1.10.0.tar.gz
 +
 [source, cli]
 ----
-tar -xzf cc_onprem_installer_1.10.0.tar.gz
+tar -xzf cc_onprem_installer_1.13.1.tar.gz
 ----
 +
 これにより、アップグレードスクリプト * START_ダーク site_upgrade.sh * および必要なサードパーティ製ソフトウェアが抽出されます。

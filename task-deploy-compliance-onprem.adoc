@@ -194,7 +194,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["クラウドデータセン
 +
 [source, cli]
 ----
-tar -xzf cc_onprem_installer_1.10.0.tar.gz
+tar -xzf cc_onprem_installer_1.13.1.tar.gz
 ----
 . インストーラからプロンプトが表示されたら、一連のプロンプトに必要な値を入力するか、インストーラに必要なパラメータをコマンドライン引数として指定することができます。
 +

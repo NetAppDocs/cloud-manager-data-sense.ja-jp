@@ -648,7 +648,6 @@
   <block id="21118277527dde4297826bff350dbf36" category="admonition">Active Directory クレデンシャルは、最初の CIFS DP ボリュームの Storage VM にのみ登録されているため、その SVM 上のすべての DP ボリュームがスキャンされます。他の SVM 上のボリュームには Active Directory クレデンシャルが登録されないため、これらの DP ボリュームはスキャンされません。</block>
   <block id="9ef6e09ad71e21ce8a2bf770f33d9a48" category="summary">Cloud Data Sense の新機能をご確認ください。</block>
   <block id="5eb06296e8f3d6ac67a2567f14c49b55" category="doc">Cloud Data Sense の新機能</block>
-  <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022 年 3 月 15 日</block>
   <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">データセンスでは、 OneDrive アカウントと SharePoint アカウントでスキャン中のファイルに存在するアクセス許可を読み取ることができます。この情報は、ファイルの [ 調査 ] ペインの詳細、およびガバナンスダッシュボードの [ アクセス許可を開く ] 領域に表示されます。</block>
   <block id="d431283363f0e868742391138a4ffbd0" category="list-text">フランスの INSEE - INSEE コードは、フランス国立統計経済研究所（ INSEE ）がさまざまなエンティティを識別するために使用する数値コードです。</block>
   <block id="7457180e95a424d146842587474ec483" category="list-text">パスワード - この情報は、英数字の文字列の横にある「 password 」という単語を検索して、近接性検証を使用して識別されます。見つかったアイテムの数は、コンプライアンスダッシュボードの [ 個人の結果 ] の下に表示されます。［ 調査 ］ ペインでパスワードを含むファイルを検索するには、 ［ フィルタ * 個人データ ］ &gt; ［ パスワード * ］ を使用します。</block>
@@ -1611,7 +1610,6 @@
   <block id="83eda4419a75a1183b65be5e1e951635" category="paragraph">Cloud Data Sense インストーラがパッケージのインストールを完了し、インストールを登録します。インストールには 15 ～ 25 分かかる場合があります。</block>
   <block id="ec8f27d568c4acb2dfb698669f1f9bc0" category="section-title">Data Sense ソフトウェアをアップグレードする</block>
   <block id="c840103d2ed2c5f7278ba8cf28f45f9a" category="paragraph">データセンスソフトウェアは定期的に新しい機能で更新されるため、定期的に新しいバージョンをチェックして最新のソフトウェアや機能を使用していることを確認する必要があります。自動的にアップグレードを実行するためのインターネット接続がないため、 Data Sense ソフトウェアを手動でアップグレードする必要があります。</block>
-  <block id="fa37bb19179b71af06bce755af1b96d1" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン 1.9.x がインストールされている場合は、 1.10.x にのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
   <block id="6ecb62a68c1483e5e7f2d6eb6088821e" category="inline-link">コネクタのアップグレード手順を参照してください</block>
   <block id="f3f3a447ad50dc92c9c962b1bd43a5df" category="list-text">ダークサイトにデータセンスをインストールした Linux ホストにソフトウェアバンドルをコピーします。</block>
   <block id="58ac2a8543e710f81085aa9e92e7cd0c" category="list-text">ホストマシンでソフトウェアバンドルを解凍します。次に例を示します。</block>
@@ -2094,7 +2092,6 @@
   <block id="38aabb48c7b00e0c5ef0ec27ca5a850d" category="paragraph"><block ref="38aabb48c7b00e0c5ef0ec27ca5a850d" category="inline-link-rx"></block></block>
   <block id="7c04897feb206ad3e6d38ea88ccde2d4" category="paragraph"><block ref="7c04897feb206ad3e6d38ea88ccde2d4" category="inline-link-rx"></block></block>
   <block id="0e07c8e30d5d787d70fbc93583eb3032" category="paragraph"><block ref="0e07c8e30d5d787d70fbc93583eb3032" category="inline-link-rx"></block></block>
-  <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022 年 4 月 5 日</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
   <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">データセンスでは、オーストラリア TFN ( 税ファイル番号 ) 、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
@@ -2354,7 +2351,6 @@
   <block id="02fa34d7d96f4d3bb7e17ee4a2fc93a7" category="section-title">各データ調査レポートに含まれる情報</block>
   <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">非構造化ファイルデータレポート*には、ファイルに関する次の情報が含まれています。</block>
   <block id="f7a21d48814a155d5e8e39ddbf0827ae" category="paragraph">構造化データレポート*には、データベーステーブルに関する次の情報が含まれています。</block>
-  <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
   <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">Google Driveアカウントでのデータスキャンのサポートが追加されました</block>
   <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">Googleドライブアカウントをスキャンする方法をご覧ください</block>
   <block id="b3393b07bc5334485489796939a3c1ac" category="paragraph">Googleドライブアカウントからドキュメントやファイルをスキャンするために、Googleドライブアカウントをデータセンスに追加できるようになりました。<block ref="a42326c5e8654fdf4afea98988689f56" category="inline-link-rx"></block>。</block>
@@ -2442,7 +2438,6 @@
   <block id="234e430c736f07d10569c360fb740db6" category="cell">データ内およびフォルダ/共有内の権限のタイプを選択します</block>
   <block id="24f81a8dd0e927be2bf9fb46e2588281" category="paragraph">ボタンバーとポリシーで使用できるアクションは、現在、「ディレクトリ」レベルではサポートされていません。</block>
   <block id="d5ef18883c38c2dd1dffc30e93610cde" category="paragraph">ユーザーファイルが存在するGoogleドライブアカウントを追加します。複数のユーザーからファイルをスキャンする場合は、ユーザーごとにこの手順を実行する必要があります。</block>
-  <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
   <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">Data Investigationページから結果を.jsonレポートとしてダウンロードできるようになりました</block>
   <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">Data Investigationページからレポートを作成する方法を参照してください</block>
   <block id="6cb5a0e32d140f3770c280b471c48cd9" category="paragraph">[データ調査]ページでデータをフィルタリングした後、データを.jsonファイルに保存してNFS共有にエクスポートできます。これにより、ローカルシステム上の.csvファイルにデータを保存することができます。データセンスにエクスポートアクセスのための正しい権限があることを確認します。<block ref="0ee382d3ff8086e5d12287af8220734f" category="inline-link-rx"></block>。</block>
@@ -2552,4 +2547,9 @@
   <block id="f97c31d47e6ac9d9ca09fb78ef2a60e9" category="sidebar">データセンスアクションの履歴を監査します</block>
   <block id="92c1e8fd60a521cc7e363da6f67787e3" category="sidebar">データセンススキャンの速度を下げます</block>
   <block id="f6d825cab88ad7cdfab0c8987213dab8" category="sidebar">データセンスをアンインストールします</block>
+  <block id="360d69dcc915fa54a4ac5faccbaf2127" category="section-title">2022年6月12日（バージョン1.13.1）</block>
+  <block id="2dd4f685f001cb4e6c0149956ba4a997" category="section-title">2022年5月11日（バージョン1.12.1）</block>
+  <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日（バージョン1.11.1）</block>
+  <block id="2d2a847fccc748834cee74d3441a948b" category="section-title">2022年3月15日（バージョン1.10.0）</block>
+  <block id="a6e2475f148e034250ac7cb66419f3f3" category="list-text">データセンスソフトウェアは、一度に 1 つのメジャーバージョンをアップグレードできます。たとえば、バージョン1.11.xがインストールされている場合は、1.12.xにのみアップグレードできますいくつかのメジャーバージョンがサポートされている場合は、ソフトウェアを何度もアップグレードする必要があります。</block>
 </blocks>
