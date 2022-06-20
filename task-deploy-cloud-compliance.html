@@ -777,7 +777,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-12 13:11:20 +0000">05/12/2022</time>
+    <time datetime="2022-06-20 14:15:07 +0000">06/20/2022</time>
     
   
 
@@ -836,6 +836,13 @@
 </li>
 <li>
 <p>Azure または Azure NetApp Files で Cloud Volumes ONTAP 内のデータをスキャンする場合は、 Azure のコネクタを使用します。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Azure NetApp Files の場合は、スキャンするボリュームと同じ領域に配置する必要があります。</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>GCP の Cloud Volumes ONTAP でデータをスキャンする場合は、 GCP のコネクタを使用します。</p>
@@ -851,17 +858,21 @@
 <div class="paragraph">
 <p>ご覧のように、を使用する必要がある状況もあります <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors">"複数のコネクタ"</a>。</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="注記">
-</td>
-<td class="content">
-Azure NetApp Files ボリュームのスキャンを計画している場合は、スキャンするボリュームと同じリージョンに導入する必要があります。
-</td>
-</tr>
-</table>
+<div class="sect2">
+<h3 id="政府機関によるサポート">政府機関によるサポート</h3>
+<div class="paragraph">
+<p>コネクタが政府機関リージョン（AWS GovCloud、Azure Gov、またはAzure DoD）に導入されている場合は、Cloud Data Senseがサポートされます。この方法で展開する場合、データセンスには次の制約があります。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>OneDriveアカウント、SharePointアカウント、Googleドライブアカウントはスキャンできません。</p>
+</li>
+<li>
+<p>Microsoft Azure Information Protection（AIP）ラベル機能を統合できません。</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
