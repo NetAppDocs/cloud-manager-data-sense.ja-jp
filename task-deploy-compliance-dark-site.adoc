@@ -83,6 +83,7 @@ Cloud Data Sense によってスキャンされる最初の 1TB のデータは�
 
 * オペレーティングシステム：Red Hat Enterprise LinuxまたはCentOSバージョン8.0、8.1、8.4
 +
+** バージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.14以降である必要があります
 ** OS が Docker Engine をインストールできる必要があります（必要に応じて、 _firewalld_service を無効にするなど）。
 
 

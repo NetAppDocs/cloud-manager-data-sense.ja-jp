@@ -54,6 +54,10 @@ Cloud Data Sense によってスキャンされる最初の 1TB のデータは�
 
 * AWS 、 Amazon FSX for ONTAP 、または AWS S3 バケット内の Cloud Volumes ONTAP のデータをスキャンするときは、 AWS のコネクタを使用します。
 * Azure または Azure NetApp Files で Cloud Volumes ONTAP 内のデータをスキャンする場合は、 Azure のコネクタを使用します。
++
+** Azure NetApp Files の場合は、スキャンするボリュームと同じ領域に配置する必要があります。
+
+
 * GCP の Cloud Volumes ONTAP でデータをスキャンする場合は、 GCP のコネクタを使用します。
 
 
@@ -64,9 +68,6 @@ Cloud Data Sense によってスキャンされる最初の 1TB のデータは�
 ご覧のように、を使用する必要がある状況もあります https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["複数のコネクタ"]。
 
 
-NOTE: Azure NetApp Files ボリュームのスキャンを計画している場合は、スキャンするボリュームと同じリージョンに導入する必要があります。
-
-
 
 == Linux ホストシステムを準備
 
@@ -74,6 +75,7 @@ NOTE: Azure NetApp Files ボリュームのスキャンを計画している場�
 
 * オペレーティングシステム：Red Hat Enterprise LinuxまたはCentOSバージョン8.0、8.1、8.4
 +
+** バージョン7.8または7.9を使用できますが、Linuxカーネルのバージョンは4.14以降である必要があります
 ** OS が Docker エンジンをインストールできる必要があります（必要に応じて、 _firewalld_service を無効にするなど）。
 
 

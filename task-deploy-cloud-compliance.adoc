@@ -52,6 +52,10 @@ Cloud Data Sense によってスキャンされる最初の 1TB のデータは�
 
 * AWS 、 Amazon FSX for ONTAP 、または AWS S3 バケット内の Cloud Volumes ONTAP のデータをスキャンするときは、 AWS のコネクタを使用します。
 * Azure または Azure NetApp Files で Cloud Volumes ONTAP 内のデータをスキャンする場合は、 Azure のコネクタを使用します。
++
+** Azure NetApp Files の場合は、スキャンするボリュームと同じ領域に配置する必要があります。
+
+
 * GCP の Cloud Volumes ONTAP でデータをスキャンする場合は、 GCP のコネクタを使用します。
 
 
@@ -62,7 +66,14 @@ Cloud Data Sense によってスキャンされる最初の 1TB のデータは�
 ご覧のように、を使用する必要がある状況もあります https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["複数のコネクタ"]。
 
 
-NOTE: Azure NetApp Files ボリュームのスキャンを計画している場合は、スキャンするボリュームと同じリージョンに導入する必要があります。
+
+=== 政府機関によるサポート
+
+コネクタが政府機関リージョン（AWS GovCloud、Azure Gov、またはAzure DoD）に導入されている場合は、Cloud Data Senseがサポートされます。この方法で展開する場合、データセンスには次の制約があります。
+
+* OneDriveアカウント、SharePointアカウント、Googleドライブアカウントはスキャンできません。
+* Microsoft Azure Information Protection（AIP）ラベル機能を統合できません。
+
 
 
 
