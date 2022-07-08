@@ -91,7 +91,7 @@ Data Sense ソフトウェアへのアップグレードは、インスタンス
 
 ONTAP ボリュームの FSX に対してクラウドデータセンスを有効にすることができます。
 
-. Cloud Manager の上部で、 * Data Sense * をクリックし、 * Configuration * タブを選択します。
+. Cloud Managerの左側のナビゲーションメニューで、* Data Sense *をクリックし、* Configuration *タブを選択します。
 +
 image:screenshot_fsx_scanning_activate.png["Cloud Data Sense インスタンスを展開した直後の [ 構成 ] タブのスクリーンショット。"]
 

@@ -21,7 +21,7 @@ summary: グローバル Active Directory をクラウドデータセンスと�
 この統合により、データセンスの良い場所で追加情報 を利用できるようになります。
 
 * 「ファイル所有者」を使用できます。 link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["フィルタ"] [ 調査 ] ペインで、ファイルのメタデータの結果を確認できます。SID （セキュリティ ID ）を含むファイル所有者ではなく、実際のユーザ名が入力されます。
-* を参照してください link:task-controlling-private-data.html#viewing-permissions-for-files["フルファイル権限"] 各ファイルについて、 [ すべてのアクセス許可の表示 ] ボタンをクリックします。
+* を参照してください link:task-controlling-private-data.html#viewing-permissions-for-files-and-directories["フルファイル権限"] [すべてのアクセス許可の表示]ボタンをクリックしたときに、各ファイルおよびディレクトリについて、
 * を参照してください link:task-controlling-governance-data.html["ガバナンスダッシュボード"]を選択すると、 [ アクセス許可 ] パネルに、データに関するより詳細な情報が表示されます。
 
 
@@ -38,7 +38,7 @@ Active Directory と Cloud Data Sense との統合により、次のデータソ
 * Cloud Volumes ONTAP
 * Azure NetApp Files の特長
 * FSX for ONTAP の略
-* 他社の CIFS ファイル共有（ NFS ファイル共有ではない）
+* ネットアップ以外のCIFSファイル共有（NFSファイル共有は除く）
 
 
 データベーススキーマ、OneDriveアカウント、SharePointアカウント、Googleドライブアカウント、Amazon S3アカウント、 または、Simple Storage Service（S3）プロトコルを使用するObject Storageの略。
@@ -50,6 +50,8 @@ Active Directory と Cloud Data Sense との統合により、次のデータソ
 データセンスを導入し、データソースでスキャンを有効化したら、 Active Directory とデータセンスを統合できます。Active Directory には、 DNS サーバの IP アドレスまたは LDAP サーバの IP アドレスを使用してアクセスできます。
 
 Active Directory のクレデンシャルは読み取り専用ですが、管理者のクレデンシャルを指定することで、データセンスは昇格された権限を必要とするすべてのデータを読み取ることができます。クレデンシャルは Cloud Data Sense インスタンスに保存されます。
+
+ファイルの「最終アクセス時間」がデータセンス分類スキャンによって変更されないようにするには、ユーザーに書き込み属性権限を与えることをお勧めします。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。
 
 .要件
 * 社内のユーザに対して Active Directory がすでに設定されている必要があります。
@@ -70,7 +72,7 @@ LDAP サーバの IP アドレス、または複数の IP アドレス
 
 * Data Sense インスタンスによるアウトバウンド通信用に、次のポートが開いている必要があります。
 +
-[cols="15,15,25,25"]
+[cols="20,20,30,30"]
 |===
 | プロトコル | ポート | 宛先 | 目的 
 

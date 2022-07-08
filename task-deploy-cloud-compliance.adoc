@@ -165,7 +165,7 @@ Web ブラウザから Cloud Data Sense への接続を確認する:: Cloud Data
 クラウドデータセンスのインスタンスをクラウドに導入するには、次の手順を実行します。
 
 .手順
-. Cloud Manager で、 * Data sense * をクリックします。
+. Cloud Managerの左側のナビゲーションメニューで、* Data sense *をクリックします。
 . [ データセンスを活動化（ Activate Data sense ） ] をクリックし
 +
 image:screenshot_cloud_compliance_deploy_start.png["Cloud Data Sense を有効にするボタンを選択するスクリーンショット。"]

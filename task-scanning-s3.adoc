@@ -108,7 +108,7 @@ Data Sense ソフトウェアへのアップグレードは、インスタンス
 前提条件を確認したら、 Amazon S3 で Cloud Data Sense を有効にします。
 
 .手順
-. Cloud Manager の上部にある * Canvas * をクリックします。
+. Cloud Managerの左ナビゲーションメニューから、* Canvas *をクリックします。
 . Amazon S3 作業環境を選択します。
 +
 image:screenshot_s3_we.gif["Amazon S3 作業環境アイコンのスクリーンショット"]

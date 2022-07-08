@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task-managing-repo-scanning.html 
+keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan 
+summary: 作業環境とデータソースごとに、スキャンされるデータを管理できます。変更は「リポジトリ」単位で行うことができます。つまり、ボリューム、バケット、共有、スキーマ、ユーザ、 など、スキャンするデータソースの種類によって異なります。 
+---
+= リポジトリのスキャン設定を変更します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+作業環境とデータソースごとに、スキャンされるデータを管理できます。変更は「リポジトリ」単位で行うことができます。つまり、ボリューム、バケット、共有、スキーマ、ユーザ、 など、スキャンするデータソースの種類によって異なります。
+
+変更できる点は'リポジトリがスキャンされているかどうか'およびデータセンスがを実行しているかどうかです link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングスキャンまたはマッピング&分類スキャン"]。また、一定期間にわたるボリュームのスキャンを停止する必要がある場合などに、スキャンを一時停止および再開することもできます。
+
+
+
+== スキャンされているリポジトリを表示します
+
+データがスキャンしている、それぞれの作業環境およびデータソースのリポジトリを個別に表示できます。
+
+.手順
+. [構成（Configuration）]タブで、作業環境の[*構成*（* Configuration *）]ボタンをクリックします。
++
+image:screenshot_compliance_config_button.png["作業環境の設定ボタンをクリックする方法を示すスクリーンショット。"]
+
+. [Scan Configuration]ページでは、すべてのリポジトリのスキャン設定を表示できます。
++
+image:screenshot_compliance_repo_scan_settings.png[""]
+
+
+
+
+
+== リポジトリのスキャンタイプを変更する
+
+設定ページからは、作業環境でマッピング専用スキャンまたはマッピングおよび分類スキャンをいつでも開始または停止できます。マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。また、マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。
+
+
+TIP: データベースをマッピング専用スキャンに設定することはできません。データベーススキャンは、[オフ]または[オン]にできます。これは、[マップアンド分類]と同じです。
+
+.手順
+. [構成（Configuration）]タブで、作業環境の[*構成*（* Configuration *）]ボタンをクリックします。
++
+image:screenshot_compliance_config_button.png["作業環境の設定ボタンをクリックする方法を示すスクリーンショット。"]
+
+. Scan Configurationページでは、任意のリポジトリ（この例ではバケット）を変更して* Map *スキャンまたは* Map & Classify *スキャンを実行したり、* Off *を選択して特定のバケットのスキャンを停止したりできます。
++
+image:screenshot_compliance_repo_scanning.png["バケットのスキャンのタイプを選択する方法を示すスクリーンショット。"]
+
+
+
+特定の作業環境では、ページ上部のボタンバーを使用して、すべてのリポジトリのスキャンタイプをグローバルに変更できます。これは、ONTAP システム用のCloud Volumes ONTAP 、オンプレミスONTAP 、Azure NetApp Files 、およびAmazon FSXに有効です。
+
+次の例は、Azure NetApp Files システムのボタンバーを示しています。
+
+image:screenshot_compliance_repo_scan_all.png["作業環境内のすべてのボリュームに同じスキャン設定を行う方法を示すスクリーンショット。"]
+
+
+
+== リポジトリのスキャンの一時停止と再開
+
+特定のコンテンツのスキャンを一時的に停止する場合は'リポジトリ上のスキャンを一時的に停止できますこれは、スキャンを「オフ」にするのとは異なります。スキャンをオフにすると、そのボリュームに関するすべてのインデックスと情報がシステムから削除されます。スキャンを一時停止すると、リポジトリに変更や追加があってもデータスキャンは実行されませんが、現在の結果はすべてシステムに表示されたままになります。
+
+スキャンはいつでも再開できます。
+
+.手順
+. [構成（Configuration）]タブで、作業環境の[*構成*（* Configuration *）]ボタンをクリックします。
++
+image:screenshot_compliance_config_button.png["作業環境の設定ボタンをクリックする方法を示すスクリーンショット。"]
+
+. スキャン設定ページで、一時停止ボタンをクリックしてボリュームのスキャンを一時停止するか、再開ボタンを押して以前に一時停止したボリュームのスキャンを再開します。
++
+image:screenshot_compliance_repo_pause_resume.png["ボリューム上でスキャンを一時停止および再開する方法を示すスクリーンショット。"]
+
+

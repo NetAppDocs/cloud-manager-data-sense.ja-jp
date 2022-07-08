@@ -64,6 +64,8 @@ sidebar:
       url: "/task-org-private-data.html"
     - title: プライベートデータを管理
       url: "/task-managing-highlights.html"
+    - title: スキャン設定を変更します
+      url: task-managing-repo-scanning.html
     - title: レポートを生成します
       url: "/task-generating-compliance-reports.html"
     - title: dsar に応答します

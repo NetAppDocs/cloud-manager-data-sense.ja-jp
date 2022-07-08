@@ -77,7 +77,7 @@ Data Sense ソフトウェアへのアップグレードは、インスタンス
 
 Azure NetApp Files ボリュームでクラウドデータセンスを有効にすることができます。
 
-. Cloud Manager の上部で、 * Data Sense * をクリックし、 * Configuration * タブを選択します。
+. Cloud Managerの左側のナビゲーションメニューで、* Data Sense *をクリックし、* Configuration *タブを選択します。
 +
 image:screenshot_cloud_compliance_anf_scan_config.png["Cloud Data Sense インスタンスを展開した直後の [ 構成 ] タブのスクリーンショット。"]
 

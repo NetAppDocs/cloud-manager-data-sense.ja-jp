@@ -119,7 +119,7 @@ Cloud Manager アカウント ID は、 Cloud Manager の上部にある「 * Ac
 Cloud Manager アカウント用の Cloud Data Sense ライセンスを購入したら、そのライセンスを Cloud Manager に追加して Data Sense サービスを使用できるようにする必要があります。
 
 .手順
-. [ すべてのサービス ] 、 [ デジタルウォレット ] 、 [ データサービスライセンス ] の順にクリックします。
+. Cloud Managerの左側のナビゲーションメニューで、* Digital Wallet *をクリックし、* Data Services Licenses *タブを選択します。
 . [ ライセンスの追加 ] をクリックします。
 . _ ライセンスの追加 _ ダイアログで、ライセンス情報を入力し、 * ライセンスの追加 * をクリックします。
 +

@@ -293,7 +293,6 @@
   <block id="630b1746cba34ee88564bdc613bf0b35" category="paragraph">Cloud Manager アカウント ID は、 Cloud Manager の上部にある「 * Account * 」ドロップダウンを選択し、アカウントの横にある「 * Manage Account * 」をクリックすると確認できます。アカウント ID は、 [ 概要 ] タブにあります。</block>
   <block id="5926b237f59ca274742cde276b6a5bac" category="section-title">Cloud Data Sense BYOL ライセンスをアカウントに追加します</block>
   <block id="02c6444ad614e59dee7ae1689fab2801" category="paragraph">Cloud Manager アカウント用の Cloud Data Sense ライセンスを購入したら、そのライセンスを Cloud Manager に追加して Data Sense サービスを使用できるようにする必要があります。</block>
-  <block id="14e73879f741aacd67e792f34954460d" category="list-text">[ すべてのサービス ] 、 [ デジタルウォレット ] 、 [ データサービスライセンス ] の順にクリックします。</block>
   <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">[ ライセンスの追加 ] をクリックします。</block>
   <block id="c1b2dc0798d3960e25b8a12c751f53ec" category="list-text">_ ライセンスの追加 _ ダイアログで、ライセンス情報を入力し、 * ライセンスの追加 * をクリックします。</block>
   <block id="7f7c5e4ae2c507e186a653433fed0cd3" category="list-text">データセンスライセンスのシリアル番号があり、 NSS アカウントを知っている場合は、 * シリアル番号を入力 * オプションを選択してその情報を入力します。</block>
@@ -485,7 +484,6 @@
   <block id="1be367688fc23bb032651eb31109ed8b" category="paragraph">* 注： * クラウドデータセンスをオンプレミスの場所に導入することは、現在 S3 バケットのスキャンではサポートされていません。</block>
   <block id="837c1bb1176f89b108bb8eed4314592a" category="section-title">S3 作業環境でのデータセンスのアクティブ化</block>
   <block id="5f276b0eb14937eeb24e212fa7a0e43b" category="paragraph">前提条件を確認したら、 Amazon S3 で Cloud Data Sense を有効にします。</block>
-  <block id="61c2f2d570697060ba80bae6ffdd50f8" category="list-text">Cloud Manager の上部にある * Canvas * をクリックします。</block>
   <block id="d65142db38828c0dd5d365061085a9bf" category="list-text">Amazon S3 作業環境を選択します。</block>
   <block id="0935819aba236aea3b813f76e288f13a" category="inline-image-macro">Amazon S3 作業環境アイコンのスクリーンショット</block>
   <block id="a3a4b47224ab5ffd3c2bd00fdf40f4ab" category="paragraph"><block ref="a3a4b47224ab5ffd3c2bd00fdf40f4ab" category="inline-image-macro-rx" type="image"></block></block>
@@ -550,7 +548,6 @@
   <block id="2b37397498157ed616fd415901df0835" category="paragraph">* 注： * オンプレミスの場所にクラウドデータセンスを導入することは、 Azure NetApp Files ボリュームのスキャンでは現在サポートされていません。</block>
   <block id="f77e8a45486f483464f5f52dca10d70c" category="section-title">作業環境でクラウドデータを有効に活用</block>
   <block id="20a452722d026aa77880a9fd88194b4f" category="paragraph">Azure NetApp Files ボリュームでクラウドデータセンスを有効にすることができます。</block>
-  <block id="d270db2bb61d015b27718ed8c1f25b57" category="list-text">Cloud Manager の上部で、 * Data Sense * をクリックし、 * Configuration * タブを選択します。</block>
   <block id="b6599bf453dd513e01762c7781050350" category="inline-image-macro">Cloud Data Sense インスタンスを展開した直後の [ 構成 ] タブのスクリーンショット。</block>
   <block id="3fa60157071f64285cbc6d2d32d19012" category="paragraph"><block ref="3fa60157071f64285cbc6d2d32d19012" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd786557a341a9cbd5fb1a642121a675" category="inline-link-macro">マッピングおよび分類スキャンについて説明します</block>
@@ -1125,7 +1122,6 @@
   <block id="255e1125d849f7edda6bed80ac46496e" category="inline-image-macro">［ ポリシー ］ タブで ［ 特定のポリシーの調査結果 ］ を選択するスクリーンショット。</block>
   <block id="81d6d5b017dce15ac441154a1942e517" category="paragraph"><block ref="81d6d5b017dce15ac441154a1942e517" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b0449a02f1a4c60439d939f1f9e382e5" category="section-title">カスタムポリシーを作成しています</block>
-  <block id="54493f05733c09f82465526928da246f" category="paragraph">組織固有の検索結果を提供する独自のカスタムポリシーを作成できます。</block>
   <block id="15dd93dd8e5fe369d32909872743ce92" category="inline-link-macro">[ データ調査 ] ページでデータをフィルタリングします</block>
   <block id="e79836025e6c80215ec3756e85223edb" category="list-text">[ データ調査 ] ページで、使用するすべてのフィルタを選択して検索を定義します。を参照してください <block ref="d1293e68d9fa9285793720fd1947772e" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="4383466aa7c287f23e7f4932fd00aaf2" category="list-text">必要な方法でフィルタ特性をすべて設定したら、 [ この検索からポリシーを作成する *] をクリックします。</block>
@@ -1203,7 +1199,6 @@
   <block id="c39a62af3ed5ce08e86086b818d3d335" category="paragraph">また、スキャン対象のデータベースサーバを追加した場合、 Data Fusion の機能を使用してファイルをスキャンし、データベースから一意の識別子がこれらのファイルまたは他のデータベースのいずれに存在するかを特定できます。を参照してください <block ref="e5fd618a95839b26abd9eb3c166b6d5a" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="ff63178a8a067a8614bbbfdf75252bf4" category="inline-link-macro">個人データのテーブル</block>
   <block id="0b89e2aeea46e7ca57ab15ff5bbc7f74" category="paragraph">一部のタイプの個人データについては、データセンスは _ 近接性検証 _ を使用してその結果を検証します。検証は、見つかった個人データに近接した 1 つまたは複数の定義済みキーワードを検索することによって行われます。たとえば、データセンスは米国を識別しますソーシャルセキュリティ番号（ SSN ）は、 IT の横に近接語（ _SSN_or_social security_ など）が表示されている場合、 SSN として表示されます。 <block ref="62bae47b4917c28b4ad589ca12fe7ebd" category="inline-link-macro-rx"></block> データセンスがプロキシミティ検証を使用する場合に表示されます</block>
-  <block id="df4c66c4f63f4c5e874acda3b86c5b2c" category="list-text">Cloud Manager の上部で、 * Data Sense * をクリックし、 * Compliance * タブをクリックします。</block>
   <block id="60ad0ad2112ed7d01c4169fe8dd4d46c" category="list-text">すべての個人データの詳細を調査するには、個人データの割合の横にあるアイコンをクリックします。</block>
   <block id="819ca50f7f9d152780e0af73aca0ddf8" category="inline-image-macro">個人データの割合を選択するスクリーンショット。</block>
   <block id="d09574e77dd26bea3b96a734447bbe75" category="paragraph"><block ref="d09574e77dd26bea3b96a734447bbe75" category="inline-image-macro-rx" type="image"></block></block>
@@ -1256,7 +1251,6 @@
   <block id="850dcc64352d6ec82fb2c15e439c169b" category="list-text">ファイルに特定のステータスを割り当てることができます。を参照してください <block ref="8a1b9fcafc24ba7d6db53f4a655335df" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="826ff42fce3b59aaac99a39a16e48c77" category="inline-link-macro">ファイルへのユーザの割り当て</block>
   <block id="7f3e4f2b8ecea86e2f1c636c83d0be8a" category="list-text">ファイルに対して実行する必要があるフォローアップアクションを担当するファイルを Cloud Manager ユーザに割り当てることができます。を参照してください <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="3f35cf889c11310542bc8d10e634400d" category="section-title">ファイルの権限を表示しています</block>
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">詳細なファイル権限を示すスクリーンショット。</block>
   <block id="33b3bef30743bda1b0909a4417b45583" category="paragraph"><block ref="33b3bef30743bda1b0909a4417b45583" category="inline-image-macro-rx" type="image"></block></block>
   <block id="70762168244eed6d4b30ab53961acada" category="inline-link-macro">詳細については、「方法」を参照してください</block>
@@ -1427,7 +1421,6 @@
   <block id="f196c67b757c83b8c5a1d80a1da79e14" category="paragraph">データがスキャンしているソースファイルを任意の NFS 共有に移動できます。NFS 共有をデータセンスと統合する必要はありません（を参照） <block ref="29fc238c82f37afa6e56193b0cf6f5eb" category="inline-link-macro-rx"></block>）。</block>
   <block id="4ae80798b0ef194ea50cfe00aa1b363c" category="admonition">データベースに存在するファイルは移動できません。</block>
   <block id="362922d3096f2a8f75a966c92ac6d984" category="paragraph">ファイルを移動するには、アカウント管理者またはワークスペース管理者の役割が必要です。</block>
-  <block id="c571c996a76d770b0c1d1febba3ad20f" category="paragraph">ファイルを移動するには、 NFS 共有でデータセンスインスタンスからのアクセスが許可されている必要があります。</block>
   <block id="cc7802d7dd00fcef6b110f6c11d254d0" category="list-text">[ データ調査結果 ] ペインで、移動するファイルを選択します。</block>
   <block id="9ec28b3e8959ec52791e2484cca2dae5" category="inline-image-macro">移動するファイルを選択する方法を示すスクリーンショット。 [ データの調査 ] ページから [ 移動 ] ボタンをクリックします。</block>
   <block id="9c17966e66e119d1fcd44440de888f1b" category="paragraph"><block ref="9c17966e66e119d1fcd44440de888f1b" category="inline-image-macro-rx" type="image"></block></block>
@@ -1788,7 +1781,6 @@
   <block id="cee01e26d9873a492cd26708c55925af" category="paragraph">インターネット経由でアクセス可能な Cloud Volumes ONTAP およびオンプレミス ONTAP システムをスキャンする場合は、を実行します <block ref="c89857d519a71c77b0c6382714aad98b" category="inline-link-macro-rx"></block> または <block ref="5433f857b708e940349e34ece6281ba0" category="inline-link-macro-rx"></block>。</block>
   <block id="d333c08e9475c687b2f43af219ed2ef8" category="inline-link-macro">クラウドデータセンスは、インターネットにアクセスできないオンプレミス環境に導入できます</block>
   <block id="bad250383d747755d4698187d23fbd63" category="paragraph">インターネットにアクセスできないダークサイトにインストールされているオンプレミスの ONTAP システムをスキャンする場合は、を実行する必要があります <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。そのため、 Cloud Manager Connector をオンプレミスと同じ場所に導入する必要があります。</block>
-  <block id="f947968927432b4644f18d2ac33b09e9" category="paragraph">クラウドデータセンスは、 Cloud Volumes ONTAP システム（ AWS 、 Azure 、 GCP ）とオンプレミスの ONTAP クラスタで有効にすることができます。</block>
   <block id="817ea177fc4419cc549ce831aeafb435" category="paragraph"><block ref="817ea177fc4419cc549ce831aeafb435" category="inline-image-macro-rx" type="image"></block></block>
   <block id="472e7a83931581b62865caa4abc4d063" category="list-text">クラウドデータセンスインスタンスと、 Cloud Volumes ONTAP またはオンプレミスの ONTAP クラスタのボリュームを含む各ネットワークとの間にネットワーク接続が確立されていることを確認します。</block>
   <block id="3bc6d8be912323e41974b6ab56b6e194" category="list-text">Cloud Volumes ONTAP のセキュリティグループがデータセンスインスタンスからのインバウンドトラフィックを許可していることを確認します。</block>
@@ -1806,14 +1798,12 @@
   <block id="b2c97ae425dd751b0e48a3acae79cf4a" category="inline-link-macro">フィルタ</block>
   <block id="24f4168fd88693a87618a03db8811608" category="list-text">「ファイル所有者」を使用できます。 <block ref="58ee51d48568237ca49c41cc2a7a829a" category="inline-link-macro-rx"></block> [ 調査 ] ペインで、ファイルのメタデータの結果を確認できます。SID （セキュリティ ID ）を含むファイル所有者ではなく、実際のユーザ名が入力されます。</block>
   <block id="5f91c0845412e72586ca4ccff087de46" category="inline-link-macro">フルファイル権限</block>
-  <block id="76a2568d44aedbfacc35617822e95485" category="list-text">を参照してください <block ref="2eb65e0132f8d42218742a4af3905e1d" category="inline-link-macro-rx"></block> 各ファイルについて、 [ すべてのアクセス許可の表示 ] ボタンをクリックします。</block>
   <block id="81e5b92aee0f8f905eee80ff5eb977c0" category="inline-link-macro">ガバナンスダッシュボード</block>
   <block id="42489059db009c868dd8059af06dcec7" category="list-text">を参照してください <block ref="f7adeeb4ba56b793f51d27ca048d717a" category="inline-link-macro-rx"></block>を選択すると、 [ アクセス許可 ] パネルに、データに関するより詳細な情報が表示されます。</block>
   <block id="84f064335aeff156ccda8eb3c64109d6" category="admonition">ローカルユーザの SID および不明なドメインの SID は、実際のユーザ名に変換されません。</block>
   <block id="4a919c0fe6ccdcc43ad4d3dc9a232b18" category="paragraph">Active Directory と Cloud Data Sense との統合により、次のデータソース内からデータを識別できます。</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="list-text">FSX for ONTAP の略</block>
-  <block id="e43e62e4bd2ef2b0d4d1e421a22a0be2" category="list-text">他社の CIFS ファイル共有（ NFS ファイル共有ではない）</block>
   <block id="cd77c160f6007bd570b07762f3b9388f" category="section-title">Active Directory サーバに接続しています</block>
   <block id="fb4850605d162a3c4b4728471f852d3a" category="paragraph">Active Directory のクレデンシャルは読み取り専用ですが、管理者のクレデンシャルを指定することで、データセンスは昇格された権限を必要とするすべてのデータを読み取ることができます。クレデンシャルは Cloud Data Sense インスタンスに保存されます。</block>
   <block id="f116dfc235147909ef3b37492dd58497" category="list-text">社内のユーザに対して Active Directory がすでに設定されている必要があります。</block>
@@ -2091,8 +2081,6 @@
   <block id="7c04897feb206ad3e6d38ea88ccde2d4" category="paragraph"><block ref="7c04897feb206ad3e6d38ea88ccde2d4" category="inline-link-rx"></block></block>
   <block id="0e07c8e30d5d787d70fbc93583eb3032" category="paragraph"><block ref="0e07c8e30d5d787d70fbc93583eb3032" category="inline-link-rx"></block></block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
-  <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">データセンスでは、オーストラリア TFN ( 税ファイル番号 ) 、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
-  <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
   <block id="6fef68839fa6cc086be3d7d7abb69cad" category="paragraph">。<block ref="d5f59196a7b849b257c625be10a1d93c" category="inline-link-rx"></block> クラウドデータセンスのサポートが追加されました。従量課金制（ PAYGO ）サブスクリプションを使用して、ネットアップのライセンスを使用するだけでなく、 Google Cloud ストレージに導入された Cloud Volumes ONTAP システムからデータをスキャンできるようになりました。</block>
   <block id="9ffceb20e382df6e4587add0d24af321" category="cell">オーストラリア TFN ( 税ファイル番号 )</block>
   <block id="e1ae59ed032376d2ab05147c6442f610" category="cell">オーストラリア運転免許証番号</block>
@@ -2458,7 +2446,6 @@
   <block id="6775b9f23287b6402bc8411ab5b11d92" category="paragraph">使用する必要がある手順は、データをクラウドに導入したかオンプレミスホストに導入したかによって異なります。</block>
   <block id="3325b8b31e1f0276d3f3c68710c053ca" category="section-title">クラウド環境からData Senseをアンインストールする</block>
   <block id="117243dba6c9c06c6c248291c96b2528" category="paragraph">データセンスを使用する必要がなくなった場合は、クラウドプロバイダからCloud Data Senseインスタンスをアンインストールして削除できます。</block>
-  <block id="b8e5adfb411b3f965688d14300f72fe8" category="list-text">[データセンス]ページの上部で、をクリックします <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> ボタンをクリックし、[データセンスのアンインストール]をクリックします。</block>
   <block id="d05a8f1c218a9404fb6bc0b36df7780d" category="inline-image-macro">Data Senseソフトウェアをアンインストールするボタンのスクリーンショット。</block>
   <block id="a6baf0432e96f26b75d936e4d60a595e" category="paragraph"><block ref="a6baf0432e96f26b75d936e4d60a595e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b6d077046b2cf0c110fa9676e30656f1" category="list-text">[データの削除]センスダイアログで、「*uninstall*」と入力して、インスタンスと関連するすべてのデータを削除することを確認し、[アンインストール*]をクリックします。</block>
@@ -2467,9 +2454,7 @@
   <block id="14d42ec9da514e9d5a8e667c07121542" category="paragraph">データセンスを使用しない場合や再インストールが必要な問題 がある場合は、ホストからデータセンスをアンインストールできます。</block>
   <block id="9fa93379f19a53edba45b6ad3485c2ec" category="list-text">[Uninstall Data sense dialog]に「*uninstall*」と入力して、すべての設定情報をクリアしてから、「Uninstall *」をクリックします。</block>
   <block id="f5778aefaac6fff25d1b42554bc3eb10" category="list-text">ホストからのアンインストールを完了するには、次のように、ホストマシンでアンインストールスクリプトを実行します。</block>
-  <block id="7698c6686eb8c7fbf683f3a1e915967f" category="paragraph">ファイルへのアクセス権を持つすべてのユーザーまたはグループのリストと、そのファイルに含まれるアクセス権の種類を表示するには、 * すべてのアクセス権を表示 * をクリックします。このボタンは、CIFS共有、SharePoint、OneDriveのデータに対してのみ使用できます。</block>
   <block id="ba7710e66e983f5d109ee54ee938f343" category="paragraph">をクリックできます <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> をクリックすると、グループの一部であるユーザのリストが表示されます。</block>
-  <block id="0e7d2f821010d49ba7fdedf5b66839be" category="paragraph">また、ユーザまたはグループの名前をクリックすると、[調査]ページにそのユーザまたはグループの名前が表示され、[ユーザ/グループの権限]フィルタに入力されます。これにより、そのユーザまたはグループがアクセスできるすべてのファイルを表示できます。</block>
   <block id="0dde885c45d0ef5ba59d628be1651196" category="inline-link-macro">データ調査レポートの詳細については、こちらをご覧ください</block>
   <block id="d0db8780768b860617a4252d66600fdb" category="paragraph">ページをリファインした後で、そのページの内容をレポートとしてダウンロードする場合は、をクリックします <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> ボタンを押します。レポートは、.csvファイル（最大5、000行のデータを含めることができます）または、NFS共有にエクスポートする.jsonファイル（無制限の行数を含めることができます）として保存できます。 <block ref="94b4ac215f06d804e337d419fce0c8e4" category="inline-link-macro-rx"></block>。</block>
   <block id="26ec7ebe8b7297e79affc05b3e89352b" category="cell">IDの数</block>
@@ -2558,4 +2543,70 @@
   <block id="b3478a494adde25715314b14559dd6a4" category="list-text">OneDriveアカウント、SharePointアカウント、Googleドライブアカウントはスキャンできません。</block>
   <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">Microsoft Azure Information Protection（AIP）ラベル機能を統合できません。</block>
   <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">政府機関に導入した場合、制限はありますか？</block>
+  <block id="3f1d923e5a351dcc541f10e98f5da114" category="summary">作業環境とデータソースごとに、スキャンされるデータを管理できます。変更は「リポジトリ」単位で行うことができます。つまり、ボリューム、バケット、共有、スキーマ、ユーザ、 など、スキャンするデータソースの種類によって異なります。</block>
+  <block id="cb73c564126960ae6ca282e79abf7c40" category="doc">リポジトリのスキャン設定を変更します</block>
+  <block id="e4723f182b426a80c2a46707ff02e15e" category="inline-link-macro">マッピングスキャンまたはマッピング&amp;amp;分類スキャン</block>
+  <block id="4645b000842c59ed1aaeb9e534c34e85" category="paragraph">変更できる点は'リポジトリがスキャンされているかどうか'およびデータセンスがを実行しているかどうかです <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>。また、一定期間にわたるボリュームのスキャンを停止する必要がある場合などに、スキャンを一時停止および再開することもできます。</block>
+  <block id="1c4489a47397251870bd0d51f8701063" category="section-title">スキャンされているリポジトリを表示します</block>
+  <block id="bdedbcd07e14573fe6ff9e61fa471628" category="paragraph">データがスキャンしている、それぞれの作業環境およびデータソースのリポジトリを個別に表示できます。</block>
+  <block id="86cfaa233cd6203ca98aec701f702508" category="list-text">[構成（Configuration）]タブで、作業環境の[*構成*（* Configuration *）]ボタンをクリックします。</block>
+  <block id="c220e333c84311a5247ea56021c7f9af" category="inline-image-macro">作業環境の設定ボタンをクリックする方法を示すスクリーンショット。</block>
+  <block id="42b33a03e844c37998934099293f35e3" category="paragraph"><block ref="42b33a03e844c37998934099293f35e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d572e0d4b826c4aedc53e9ebf7b16a8f" category="list-text">[Scan Configuration]ページでは、すべてのリポジトリのスキャン設定を表示できます。</block>
+  <block id="2767187e50c5d0cd06a373007090d513" category="paragraph"><block ref="2767187e50c5d0cd06a373007090d513" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dbb0dfda8b378050531f81450c4bc33e" category="section-title">リポジトリのスキャンタイプを変更する</block>
+  <block id="80442a9b9f6c43539008be8521ce5283" category="paragraph">設定ページからは、作業環境でマッピング専用スキャンまたはマッピングおよび分類スキャンをいつでも開始または停止できます。マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。また、マッピングのみのスキャンからマッピングおよび分類スキャンに変更することもできます。</block>
+  <block id="d2ec03a8c1a8422301c71b6c3e6e8b4c" category="admonition">データベースをマッピング専用スキャンに設定することはできません。データベーススキャンは、[オフ]または[オン]にできます。これは、[マップアンド分類]と同じです。</block>
+  <block id="e2fd7fccc8e37c687bd3d80bafb4e9fd" category="list-text">Scan Configurationページでは、任意のリポジトリ（この例ではバケット）を変更して* Map *スキャンまたは* Map &amp; Classify *スキャンを実行したり、* Off *を選択して特定のバケットのスキャンを停止したりできます。</block>
+  <block id="d2c070afb22765e227addc428b9bb43d" category="inline-image-macro">バケットのスキャンのタイプを選択する方法を示すスクリーンショット。</block>
+  <block id="8d501a2dffff147be5f9997f70b34348" category="paragraph"><block ref="8d501a2dffff147be5f9997f70b34348" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a4bff1a8423db1d5e3d7178be9560749" category="paragraph">特定の作業環境では、ページ上部のボタンバーを使用して、すべてのリポジトリのスキャンタイプをグローバルに変更できます。これは、ONTAP システム用のCloud Volumes ONTAP 、オンプレミスONTAP 、Azure NetApp Files 、およびAmazon FSXに有効です。</block>
+  <block id="648f292c272072450d20c88db515b454" category="paragraph">次の例は、Azure NetApp Files システムのボタンバーを示しています。</block>
+  <block id="b0d05a288f1ee1691adac4ca34c54fca" category="inline-image-macro">作業環境内のすべてのボリュームに同じスキャン設定を行う方法を示すスクリーンショット。</block>
+  <block id="12a2ab51f6d8555b1efcc9582dee655b" category="paragraph"><block ref="12a2ab51f6d8555b1efcc9582dee655b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c47f43803aeca87b8119b45040e033c" category="section-title">リポジトリのスキャンの一時停止と再開</block>
+  <block id="73344c9ec25564b49b1fcd623ff60d92" category="paragraph">特定のコンテンツのスキャンを一時的に停止する場合は'リポジトリ上のスキャンを一時的に停止できますこれは、スキャンを「オフ」にするのとは異なります。スキャンをオフにすると、そのボリュームに関するすべてのインデックスと情報がシステムから削除されます。スキャンを一時停止すると、リポジトリに変更や追加があってもデータスキャンは実行されませんが、現在の結果はすべてシステムに表示されたままになります。</block>
+  <block id="0f9fab6026fbdbed86f2befe8eae64e1" category="paragraph">スキャンはいつでも再開できます。</block>
+  <block id="8b072c4e238b04c04c81cef3ed309703" category="list-text">スキャン設定ページで、一時停止ボタンをクリックしてボリュームのスキャンを一時停止するか、再開ボタンを押して以前に一時停止したボリュームのスキャンを再開します。</block>
+  <block id="bc9b17eea5246a704bb26be367a3b35f" category="inline-image-macro">ボリューム上でスキャンを一時停止および再開する方法を示すスクリーンショット。</block>
+  <block id="9b0105a4da00bc6036dcb389d0f65890" category="paragraph"><block ref="9b0105a4da00bc6036dcb389d0f65890" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bbd24be95708f4b5983476f6dfe9842a" category="paragraph">クラウドデータセンスは、サポートされている任意のクラウドプロバイダのCloud Volumes ONTAP システム、およびオンプレミスのONTAP クラスタで有効にすることができます。</block>
+  <block id="d1344a7442837afc7dec09106074db55" category="list-text">Cloud Managerの左側のナビゲーションメニューで、* Data Sense *をクリックし、* Configuration *タブを選択します。</block>
+  <block id="d5b8d2f44acff1b98dd9992401eadf24" category="section-title">2022年7月6日（バージョン1.14）</block>
+  <block id="45b5235b8c737e18e646514c30664517" category="section-title">これで、ディレクトリにアクセスできるユーザとグループを表示できます</block>
+  <block id="949b2765e1f54f21e0cad7eec542e087" category="inline-link">フォルダおよびファイル共有にアクセスできるユーザとグループを表示する方法について説明します</block>
+  <block id="a90ca4eb6ddb2e74f2c65cdc04cc3fbb" category="paragraph">これまでは、個々のファイルに付与されているオープンアクセス権のタイプを表示できました。これで、ディレクトリ（フォルダおよびファイル共有）にアクセスできるすべてのユーザまたはグループ、およびディレクトリにアクセスできる権限のタイプのリストが表示されます。<block ref="b60fb470aa4bdcc4f286155f14ead62c" category="inline-link-rx"></block>。</block>
+  <block id="6a3dc819e6a301f028d6d27063bb3b04" category="section-title">リポジトリのスキャンを一時停止すると'特定のコンテンツのスキャンを一時的に停止できます</block>
+  <block id="1c32547b30cc36869742df049964326d" category="inline-link">スキャンを一時停止および再開する方法を参照してください</block>
+  <block id="686ab925b6e810c9c0fd8f818fda9d3f" category="paragraph">スキャンを一時停止すると、ボリュームやバケットへの追加や変更はデータスキャンを実行できなくなりますが、現在の結果はすべてシステムで使用できるようになります。<block ref="a7d93e406d54440657820ff66e02fe00" category="inline-link-rx"></block>。</block>
+  <block id="74055d71ba1631fb4f3285d57f607264" category="section-title">3つの追加状態からのUSドライバーのライセンスデータは、データセンスで識別できます</block>
+  <block id="c249f6d964b8afde45218a63824a58eb" category="paragraph">データセンスは、インディアナ、ニューヨーク、テキサスの運転免許証データを含むファイルを識別して分類できます。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3096c7d9e0dca154e6250efb3ce3736" category="section-title">ポリシーは、検索条件に一致するディレクトリを返すようになりました</block>
+  <block id="9fadb6e2508d92e954b40d39c36e9687" category="inline-link">ポリシーの作成の詳細については、こちらをご覧ください</block>
+  <block id="108104172f74542ec4477bdc3526c5a6" category="paragraph">以前は、カスタムポリシーを作成したときに、検索条件に一致したファイルが結果に表示されていました。これで、クエリに一致するディレクトリ（フォルダおよびファイル共有）も結果に表示されます。<block ref="15372ef6946b4e16102f5b52608f8748" category="inline-link-rx"></block>。</block>
+  <block id="7d96313dbf4a19b7144c3ff41f415250" category="section-title">データセンスでは、一度に最大100,000個のファイルを移動できます</block>
+  <block id="3e0c53bc3881ac60b7e7165fda5915c1" category="inline-link">データセンスを使用してファイルを移動する方法をご覧ください</block>
+  <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">スキャンしたデータソースからNFS共有へのファイル移動にData Senseを使用する場合は、ファイルの最大数が100、000ファイルに増加しています。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
+  <block id="b71c8f6fc8800b6bd7a829954617c2fb" category="paragraph">データセンスでは、オーストラリア TFN ( 税ファイル番号 ) 、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="c761b545ddd43d078ae7ea86495182db" category="paragraph">Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。 <block ref="de464dfb9c55e9818cd55e6911bff3a5" category="inline-link-macro-rx"></block>。</block>
+  <block id="7d3fd85c1133d516ea08b3afb6e176b0" category="list-text">を参照してください <block ref="48c020a7f60397cfd78a107333e0da79" category="inline-link-macro-rx"></block> [すべてのアクセス許可の表示]ボタンをクリックしたときに、各ファイルおよびディレクトリについて、</block>
+  <block id="dfb9b838b2fdca41edadb04c9ebbb240" category="list-text">ネットアップ以外のCIFSファイル共有（NFSファイル共有は除く）</block>
+  <block id="4f872362ba4f34050c74d7c25062ac0d" category="paragraph">ファイルの「最終アクセス時間」がデータセンス分類スキャンによって変更されないようにするには、ユーザーに書き込み属性権限を与えることをお勧めします。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。</block>
+  <block id="5f5211c62ad18524e9e94e7a1524c835" category="list-text">[データセンス]ページの上部で、をクリックします <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 次に、[データセンスのアンインストール]をクリックします。</block>
+  <block id="58c8e0b1374b7f5b507570dc0385f473" category="cell">インディアナ運転免許証</block>
+  <block id="0e03a64a4a78cbeacfa2d9a80a300d92" category="cell">ニューヨーク運転免許証</block>
+  <block id="9816532bdb11b99d3175be528e41c5b6" category="cell">Texas Driver's License</block>
+  <block id="10d5fcf016b4a73801915a21a00696c8" category="list-text">Cloud Managerの左側のナビゲーションメニューで、* Data sense *をクリックします。</block>
+  <block id="89b56b1e048dcf0ec285e29a05d6d029" category="paragraph">同じ名前のファイルがコピー先に存在する場合、そのファイルは移動されません。</block>
+  <block id="f466f17a82f9ca3b39b50be85ceb8395" category="list-text">ファイルを移動するには、NFS共有でデータセンスインスタンスのIPアドレスからのアクセスが許可されている必要があります。</block>
+  <block id="32e8c942a25aad00e497d3bf394f59d4" category="list-text">一度に移動できるファイルの最大数は100、000です。</block>
+  <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">組織固有の検索結果を提供する独自のカスタムポリシーを作成できます。検索条件に一致するすべてのファイルとディレクトリ（共有とフォルダ）の結果が返されます。</block>
+  <block id="5587c065d5a62295455b157389cd71e5" category="paragraph">データを削除し、ポリシーの結果に基づいてAIPラベルを割り当てるアクションは、ファイルに対してのみ有効です。検索条件に一致するディレクトリは、自動的に削除することも、AIPラベルを割り当てることもできません。</block>
+  <block id="ebfefcd98f010a948a1d7251ef132972" category="list-text">Cloud Managerの左側のナビゲーションメニューで、* Digital Wallet *をクリックし、* Data Services Licenses *タブを選択します。</block>
+  <block id="2b54a7ae07982e70cef31bd5b16e720e" category="list-text">Cloud Managerの左ナビゲーションメニューから、* Canvas *をクリックします。</block>
+  <block id="51b8dedb8a5e2f213889cf52ba25b5a0" category="list-text">Cloud Managerの左側のナビゲーションメニューで、* Data Sense *をクリックし、* Compliance *タブをクリックします。</block>
+  <block id="90915c385560094095567649cbd732aa" category="section-title">ファイルおよびディレクトリの権限を表示する</block>
+  <block id="ef86e9a879fad347d62a184c49f26eb6" category="paragraph">ファイルまたはディレクトリへのアクセス権を持つすべてのユーザーまたはグループのリスト、およびそれらが持っているアクセス権のタイプを表示するには、*すべてのアクセス権を表示*をクリックします。このボタンは、CIFS共有、SharePoint、OneDriveのデータに対してのみ使用できます。</block>
+  <block id="b242cddbb1cb85737a2fd06f1d715934" category="paragraph">さらに、 ユーザまたはグループの名前をクリックすると、[調査]ページにそのユーザまたはグループの名前が表示され、[ユーザ/グループの権限]フィルタに入力されます。これにより、そのユーザまたはグループがアクセスできるすべてのファイルとディレクトリを表示できます。</block>
+  <block id="5fbc192bfa4a81daea4e7a6b15e2ade8" category="sidebar">スキャン設定を変更します</block>
 </blocks>
