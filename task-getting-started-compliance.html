@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/ja-jp/cloud-manager-data-sense/search.html"
           data-type="widget" 
-          data-placeholder="ドキュメントを検索" 
-          data-no-results-found="{query}に該当する結果はありません" 
-          data-did-you-mean="{suggestion} を検索" 
-          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
-          data-results-found="{hitCount} 件見つかりました"  
+          data-placeholder="ドキュメントを検索"
+          data-no-results-found="{query}に該当する結果はありません"
+          data-did-you-mean="{suggestion} を検索"
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?"
+          data-results-found="{hitCount} 件見つかりました"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -761,7 +763,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-07-08 17:10:33 +0000">07/08/2022</time>
+    <time datetime="2022-07-12 19:37:26 +0000">07/12/2022</time>
     
   
 
@@ -962,6 +964,9 @@
 <p>各作業環境について、 * CIFS 資格情報の編集 * をクリックし、システム上の CIFS ボリュームにアクセスするために必要なユーザー名とパスワードを入力します。</p>
 <div class="paragraph">
 <p>クレデンシャルは読み取り専用ですが、管理者のクレデンシャルを指定することで、データセンスは昇格された権限が必要なデータを読み取ることができます。クレデンシャルは Cloud Data Sense インスタンスに保存されます。</p>
+</div>
+<div class="paragraph">
+<p>ファイルの「最終アクセス時間」がデータセンス分類スキャンによって変更されないようにするには、ユーザーに書き込み属性権限を与えることをお勧めします。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。</p>
 </div>
 <div class="paragraph">
 <p>クレデンシャルを入力すると、すべての CIFS ボリュームが認証されたことを示すメッセージが表示されます。</p>

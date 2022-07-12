@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/ja-jp/cloud-manager-data-sense/search.html"
           data-type="widget" 
-          data-placeholder="ドキュメントを検索" 
-          data-no-results-found="{query}に該当する結果はありません" 
-          data-did-you-mean="{suggestion} を検索" 
-          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
-          data-results-found="{hitCount} 件見つかりました"  
+          data-placeholder="ドキュメントを検索"
+          data-no-results-found="{query}に該当する結果はありません"
+          data-did-you-mean="{suggestion} を検索"
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?"
+          data-results-found="{hitCount} 件見つかりました"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -761,7 +763,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:31:12 +0000">04/14/2022</time>
+    <time datetime="2022-07-12 19:37:26 +0000">07/12/2022</time>
     
   
 
@@ -827,6 +829,9 @@
 </li>
 <li>
 <p>CIFS （ SMB ）共有の場合は、共有への読み取りアクセスを提供する Active Directory クレデンシャルがあることを確認します。管理者クレデンシャルが推奨されるのは、 Cloud Data Sense で管理者権限が必要なデータをスキャンする必要がある場合です。</p>
+<div class="paragraph">
+<p>ファイルの「最終アクセス時間」がデータセンス分類スキャンによって変更されないようにするには、ユーザーに書き込み属性権限を与えることをお勧めします。可能であれば、すべてのファイルに対する権限を持つ組織内の親グループにActive Directory構成ユーザーを含めることをお勧めします。</p>
+</div>
 </li>
 </ul>
 </div>
