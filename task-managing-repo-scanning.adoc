@@ -78,4 +78,10 @@ image:screenshot_compliance_config_button.png["作業環境の設定ボタンを
 +
 image:screenshot_compliance_repo_pause_resume.png["ボリューム上でスキャンを一時停止および再開する方法を示すスクリーンショット。"]
 
++
+一部のデータソースでは、SharePointサイトで以下に示すように、メニューに[一時停止]および[再開]機能が用意されています。
+
++
+image:screenshot_compliance_repo_pause_resume2.png["SharePointサイトでスキャンを一時停止および再開する方法を示すスクリーンショット。"]
+
 
